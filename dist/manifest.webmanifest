@@ -1,0 +1,17 @@
+{
+  "name": "TurboQuest — Seu modo prova",
+  "short_name": "TurboQuest",
+  "description": "Treino adaptativo e revisão inteligente para provas e concursos.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080b16",
+  "theme_color": "#0c1020",
+  "orientation": "portrait-primary",
+  "lang": "pt-BR",
+  "icons": [{
+    "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%237c5cff'/%3E%3Cpath d='M35 8 16 36h14l-2 20 20-30H34z' fill='white'/%3E%3C/svg%3E",
+    "sizes": "any",
+    "type": "image/svg+xml",
+    "purpose": "any maskable"
+  }]
+}
