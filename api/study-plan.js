@@ -1,4 +1,5 @@
 const MODEL = 'gemini-3.8-flash';
+const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || 'openrouter/free';
 
 function json(res, status, body) {
   res.status(status).setHeader('Content-Type', 'application/json; charset=utf-8');
@@ -15,8 +16,9 @@ function parseModelJson(text) {
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { error: 'Método não permitido.' });
-  const key = process.env.GEMINI_API_KEY;
-  if (!key) return json(res, 503, { error: 'Configure GEMINI_API_KEY nas variáveis do Vercel.' });
+  const openrouterKey = process.env.OPENROUTER_API_KEY;
+  const geminiKey = process.env.GEMINI_API_KEY;
+  if (!openrouterKey && !geminiKey) return json(res, 503, { error: 'Configure OPENROUTER_API_KEY nas variáveis do Vercel.' });
   const { action, edital, cargo, exam = 'IBGE' } = req.body || {};
   if (!edital || edital.length < 80) return json(res, 400, { error: 'O edital precisa conter mais texto.' });
 
@@ -31,19 +33,28 @@ EDITAL:\n${edital.slice(0, 220000)}`
 {"exam":"","board":"","roles":[""],"examDate":"","totalQuestions":0,"subjects":[{"name":"","questions":0,"weight":0,"topics":[]}],"summary":"","warnings":[]}
 EDITAL:\n${edital.slice(0, 220000)}`;
 
-  const payload = {
+  const useOpenRouter = Boolean(openrouterKey);
+  const payload = useOpenRouter ? {
+    model: OPENROUTER_MODEL,
+    messages: [{ role: 'user', content: prompt }],
+    max_tokens: 5000,
+    temperature: 0.25,
+    ...(isResearch ? { tools: [{ type: 'openrouter:web_search', parameters: { max_results: 5, max_total_results: 12, search_context_size: 'low' } }], max_tool_calls: 5 } : {})
+  } : {
     contents: [{ role: 'user', parts: [{ text: prompt }] }],
-    generationConfig: { responseMimeType: 'application/json', maxOutputTokens: 4500, thinkingConfig: { thinkingLevel: isResearch ? 'low' : 'high' } }
+    generationConfig: { responseMimeType: 'application/json', maxOutputTokens: 4500, thinkingConfig: { thinkingLevel: isResearch ? 'low' : 'high' } },
+    ...(isResearch ? { tools: [{ googleSearch: {} }] } : {})
   };
-  if (isResearch) payload.tools = [{ googleSearch: {} }];
 
   try {
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`, {
-      method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key }, body: JSON.stringify(payload)
+    const response = await fetch(useOpenRouter ? 'https://openrouter.ai/api/v1/chat/completions' : `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`, {
+      method: 'POST',
+      headers: useOpenRouter ? { 'Content-Type': 'application/json', Authorization: `Bearer ${openrouterKey}`, 'HTTP-Referer': 'https://turboquest.vercel.app', 'X-Title': 'TurboQuest' } : { 'Content-Type': 'application/json', 'x-goog-api-key': geminiKey },
+      body: JSON.stringify(payload)
     });
     const data = await response.json();
-    if (!response.ok) return json(res, response.status, { error: data.error?.message || 'Falha na API Gemini.' });
-    const text = data.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
-    return json(res, 200, { result: parseModelJson(text), grounding: data.candidates?.[0]?.groundingMetadata || null, model: MODEL });
+    if (!response.ok) return json(res, response.status, { error: data.error?.message || 'Falha no motor de IA.' });
+    const text = useOpenRouter ? data.choices?.[0]?.message?.content || '' : data.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
+    return json(res, 200, { result: parseModelJson(text), grounding: useOpenRouter ? data.choices?.[0]?.message?.annotations || null : data.candidates?.[0]?.groundingMetadata || null, model: useOpenRouter ? OPENROUTER_MODEL : MODEL });
   } catch (error) { return json(res, 500, { error: 'Não foi possível concluir a análise agora.' }); }
 }
