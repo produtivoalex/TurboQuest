@@ -1,0 +1,1147 @@
+{
+  "batch": "batch-007b",
+  "status": "review",
+  "generatedBy": "curadoria nesta conversa",
+  "questions": [
+    {
+      "id": "ibge26-b007-041",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "interpretação de texto",
+      "difficulty": "hard",
+      "statement": "Leia: “O aumento de visitas concluídas foi acompanhado por mais pedidos de correção. Por isso, a coordenação evitou tratar o número bruto como prova de melhora.” A conclusão coerente com o trecho é:",
+      "options": [
+        "A coordenação rejeita qualquer contagem de visitas.",
+        "O volume cresceu, mas a qualidade exige análise adicional.",
+        "Os pedidos de correção comprovam queda do volume.",
+        "O texto afirma que todas as visitas foram inúteis.",
+        "A coordenação decidiu interromper a coleta."
+      ],
+      "answer": 1,
+      "explanation": "O número de visitas cresceu, mas o aumento das correções impede concluir, apenas pelo volume, que houve melhoria global do trabalho.",
+      "whyWrong": [
+        "O texto questiona o indicador isolado, não toda contagem.",
+        "Correta. O número de visitas cresceu, mas o aumento das correções impede concluir, apenas pelo volume, que houve melhoria global do trabalho.",
+        "Correções não demonstram redução de visitas.",
+        "Nenhuma inutilidade geral é afirmada.",
+        "Não há decisão de interromper a coleta."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-042",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "coesão textual",
+      "difficulty": "hard",
+      "statement": "Em “O setor foi revisado; entretanto, ainda havia duas pendências”, o conector introduz uma relação de:",
+      "options": [
+        "Causa",
+        "Finalidade",
+        "Oposição",
+        "Conclusão",
+        "Condição"
+      ],
+      "answer": 2,
+      "explanation": "Entretanto marca oposição ou ressalva: a revisão ocorreu, mas não eliminou todas as pendências.",
+      "whyWrong": [
+        "Não apresenta a razão da revisão.",
+        "Não apresenta o objetivo da revisão.",
+        "Correta. Entretanto marca oposição ou ressalva: a revisão ocorreu, mas não eliminou todas as pendências.",
+        "Conclusão seria indicada por portanto ou logo.",
+        "Não estabelece hipótese condicional."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-043",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "referência pronominal",
+      "difficulty": "hard",
+      "statement": "Em “A supervisora entregou à agente sua planilha”, a expressão “sua planilha” pode referir-se a duas pessoas. Qual reescrita elimina a ambiguidade e indica que a planilha pertence à agente?",
+      "options": [
+        "A supervisora entregou sua planilha à agente.",
+        "A supervisora entregou à agente a planilha da agente.",
+        "A supervisora, sua planilha, entregou à agente.",
+        "A agente entregou sua planilha à supervisora.",
+        "A supervisora entregou à agente a própria planilha."
+      ],
+      "answer": 1,
+      "explanation": "Ao explicitar “a planilha da agente”, a reescrita fixa o possuidor sem depender da interpretação ambígua de “sua”.",
+      "whyWrong": [
+        "“Sua” continua podendo referir-se à supervisora.",
+        "Correta. Ao explicitar “a planilha da agente”, a reescrita fixa o possuidor sem depender da interpretação ambígua de “sua”.",
+        "A inserção não resolve a referência e compromete a frase.",
+        "Inverte quem realiza a entrega.",
+        "“A própria” pode retomar a supervisora conforme o contexto."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-044",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "concordância verbal",
+      "difficulty": "hard",
+      "statement": "Ao revisar um relatório da operação censitária, assinale a alternativa em que a concordância está de acordo com a norma-padrão:",
+      "options": [
+        "Houveram divergências entre os registros.",
+        "Fazem três dias que a equipe retornou.",
+        "Existem duas pendências no setor.",
+        "Foi identificados novos endereços.",
+        "A equipe e a chefia concordou com o ajuste."
+      ],
+      "answer": 2,
+      "explanation": "Existir é verbo pessoal e concorda com “duas pendências”. Haver com sentido de existir e fazer indicando tempo decorrido ficam no singular.",
+      "whyWrong": [
+        "Haver existencial é impessoal: houve.",
+        "Fazer temporal é impessoal: faz.",
+        "Correta. Existir é verbo pessoal e concorda com “duas pendências”. Haver com sentido de existir e fazer indicando tempo decorrido ficam no singular.",
+        "O particípio deveria concordar: foram identificados.",
+        "Sujeito composto pede concordaram."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-045",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "concordância nominal",
+      "difficulty": "hard",
+      "statement": "A frase “Seguem ______ as cópias solicitadas” deve ser completada, na norma-padrão, por:",
+      "options": [
+        "anexo",
+        "anexos",
+        "anexa",
+        "anexas",
+        "em anexa"
+      ],
+      "answer": 3,
+      "explanation": "O adjetivo “anexas” concorda em gênero e número com “as cópias”, núcleo feminino plural do termo a que se refere.",
+      "whyWrong": [
+        "Forma masculina singular.",
+        "Forma masculina plural.",
+        "Forma feminina singular.",
+        "Correta. O adjetivo “anexas” concorda em gênero e número com “as cópias”, núcleo feminino plural do termo a que se refere.",
+        "“Em anexa” não é construção adequada."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-046",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "regência verbal",
+      "difficulty": "hard",
+      "statement": "Segundo a norma-padrão, em “A equipe assistiu ___ treinamento”, com o sentido de presenciar, a lacuna deve receber:",
+      "options": [
+        "o",
+        "ao",
+        "do",
+        "pelo",
+        "no"
+      ],
+      "answer": 1,
+      "explanation": "Assistir, no sentido de presenciar, rege a preposição a; com artigo masculino o, ocorre a combinação “ao”.",
+      "whyWrong": [
+        "Falta a preposição exigida nesse sentido.",
+        "Correta. Assistir, no sentido de presenciar, rege a preposição a; com artigo masculino o, ocorre a combinação “ao”.",
+        "De não é a preposição regida aqui.",
+        "Por não expressa a regência pedida.",
+        "Em não corresponde à regência de assistir no sentido usado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-047",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "crase",
+      "difficulty": "hard",
+      "statement": "No período “A equipe retornou ___ unidade e informou o resultado ___ supervisora”, ambas as lacunas devem ser preenchidas por:",
+      "options": [
+        "a",
+        "à",
+        "as",
+        "às",
+        "há"
+      ],
+      "answer": 1,
+      "explanation": "Retornar a e informar a exigem preposição a; “unidade” e “supervisora” admitem artigo feminino a. Em ambos os casos há crase.",
+      "whyWrong": [
+        "Faltaria marcar a fusão de preposição e artigo.",
+        "Correta. Retornar a e informar a exigem preposição a; “unidade” e “supervisora” admitem artigo feminino a. Em ambos os casos há crase.",
+        "As está no plural e não traz a preposição.",
+        "Às é plural, incompatível com os nomes singulares.",
+        "Há é forma do verbo haver."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-048",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "pontuação",
+      "difficulty": "hard",
+      "statement": "Na redação de um relatório sobre endereços, em qual alternativa as vírgulas isolam corretamente um aposto explicativo?",
+      "options": [
+        "O CNEFE cadastro de endereços, apoia a localização.",
+        "O CNEFE, cadastro de endereços, apoia a localização.",
+        "O CNEFE cadastro, de endereços apoia a localização.",
+        "O CNEFE, cadastro de endereços apoia, a localização.",
+        "O CNEFE cadastro de endereços apoia, a localização."
+      ],
+      "answer": 1,
+      "explanation": "“Cadastro de endereços” explica o termo anterior e aparece entre duas vírgulas, sem separar o verbo de seu complemento.",
+      "whyWrong": [
+        "Falta a primeira vírgula do aposto.",
+        "Correta. “Cadastro de endereços” explica o termo anterior e aparece entre duas vírgulas, sem separar o verbo de seu complemento.",
+        "As vírgulas fragmentam o aposto.",
+        "A segunda vírgula invade a relação verbo-complemento.",
+        "A vírgula separa verbo e complemento."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-049",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "colocação pronominal",
+      "difficulty": "hard",
+      "statement": "Na norma-padrão, a frase que emprega corretamente o pronome átono após uma palavra atrativa é:",
+      "options": [
+        "Não deve-se alterar o registro.",
+        "Não se deve alterar o registro.",
+        "Jamais faria-se a correção assim.",
+        "Quem informou-me o prazo?",
+        "Nunca enviou-se o arquivo."
+      ],
+      "answer": 1,
+      "explanation": "A palavra negativa “não” atrai o pronome átono para antes do verbo: “não se deve”.",
+      "whyWrong": [
+        "A negativa atrai o pronome para antes do verbo.",
+        "Correta. A palavra negativa “não” atrai o pronome átono para antes do verbo: “não se deve”.",
+        "Jamais também atrai o pronome.",
+        "Pronome relativo ou interrogativo atrai o pronome átono.",
+        "Nunca exige próclise: nunca se enviou."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-050",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "voz verbal",
+      "difficulty": "hard",
+      "statement": "A transformação correta da frase “A equipe conferiu os formulários” para a voz passiva analítica é:",
+      "options": [
+        "Os formulários conferiram a equipe.",
+        "Os formulários foram conferidos pela equipe.",
+        "A equipe foi conferida pelos formulários.",
+        "Conferiram-se a equipe e os formulários.",
+        "Os formulários tinham conferido a equipe."
+      ],
+      "answer": 1,
+      "explanation": "O objeto direto torna-se sujeito paciente; o verbo passa a “foram conferidos” e o agente da passiva é “pela equipe”.",
+      "whyWrong": [
+        "Inverte agentes sem construir passiva.",
+        "Correta. O objeto direto torna-se sujeito paciente; o verbo passa a “foram conferidos” e o agente da passiva é “pela equipe”.",
+        "Troca o paciente pela equipe.",
+        "Não preserva a relação original entre agente e paciente.",
+        "Mantém formulários como agentes da ação."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-051",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "valor semântico",
+      "difficulty": "hard",
+      "statement": "Em “A equipe revisou o arquivo para que os dados fossem enviados sem erros”, a oração introduzida por “para que” expressa:",
+      "options": [
+        "Concessão",
+        "Finalidade",
+        "Consequência inevitável",
+        "Tempo anterior",
+        "Comparação"
+      ],
+      "answer": 1,
+      "explanation": "“Para que” introduz o objetivo da revisão: possibilitar envio sem erros. O resultado pretendido não é apresentado como fato já ocorrido.",
+      "whyWrong": [
+        "Não indica obstáculo superado.",
+        "Correta. “Para que” introduz o objetivo da revisão: possibilitar envio sem erros. O resultado pretendido não é apresentado como fato já ocorrido.",
+        "Objetivo não equivale a consequência necessária.",
+        "Não marca momento anterior.",
+        "Não compara dois termos."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-052",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "reescrita",
+      "difficulty": "hard",
+      "statement": "Qual reescrita preserva o sentido de “Se os dados estiverem consistentes, a transmissão será autorizada”?",
+      "options": [
+        "A transmissão será autorizada embora os dados estejam inconsistentes.",
+        "A consistência dos dados basta, segundo a frase, para autorizar a transmissão.",
+        "A transmissão foi autorizada antes da conferência.",
+        "A consistência é consequência obrigatória da transmissão.",
+        "A transmissão será proibida mesmo com dados consistentes."
+      ],
+      "answer": 1,
+      "explanation": "A oração com “se” estabelece condição suficiente para a autorização no enunciado; a paráfrase mantém essa relação condicional.",
+      "whyWrong": [
+        "Introduz concessão e inconsistência não afirmadas.",
+        "Correta. A oração com “se” estabelece condição suficiente para a autorização no enunciado; a paráfrase mantém essa relação condicional.",
+        "Muda o tempo e antecipa a autorização.",
+        "Inverte a direção da relação apresentada.",
+        "Contradiz o resultado previsto para dados consistentes."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-053",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "ambiguidade",
+      "difficulty": "hard",
+      "statement": "Em um registro de campo, a frase “O agente falou com o supervisor no veículo” é ambígua porque:",
+      "options": [
+        "“No veículo” pode indicar onde ocorreu a conversa ou onde estava o supervisor.",
+        "“Agente” admite apenas sentido químico.",
+        "Não há verbo na frase.",
+        "“Supervisor” é pronome indefinido.",
+        "O tempo verbal é obrigatoriamente futuro."
+      ],
+      "answer": 0,
+      "explanation": "O adjunto “no veículo” pode ligar-se ao evento de falar ou à posição do supervisor, produzindo duas leituras sem contexto adicional.",
+      "whyWrong": [
+        "Correta. O adjunto “no veículo” pode ligar-se ao evento de falar ou à posição do supervisor, produzindo duas leituras sem contexto adicional.",
+        "O contexto usa agente como pessoa.",
+        "“Falou” é o verbo.",
+        "Supervisor é substantivo.",
+        "“Falou” está no pretérito perfeito."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-054",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "acentuação",
+      "difficulty": "hard",
+      "statement": "Assinale o par em que as duas palavras devem receber acento gráfico segundo a ortografia vigente:",
+      "options": [
+        "ideia e jiboia",
+        "saude e pais (nação)",
+        "voo e enjoo",
+        "assembleia e colmeia",
+        "heroico e paranoico"
+      ],
+      "answer": 1,
+      "explanation": "“Saúde” e “país” apresentam hiatos com u/i tônicos nas condições previstas pela regra de acentuação.",
+      "whyWrong": [
+        "Ideia e jiboia perderam acento no acordo vigente.",
+        "Correta. “Saúde” e “país” apresentam hiatos com u/i tônicos nas condições previstas pela regra de acentuação.",
+        "Voo e enjoo não levam acento atualmente.",
+        "Assembleia e colmeia não são acentuadas.",
+        "Heroico e paranoico não recebem acento gráfico."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-055",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "coesão referencial",
+      "difficulty": "hard",
+      "statement": "Em “O mapa foi atualizado. Esse documento orientará as próximas visitas”, a expressão “esse documento”:",
+      "options": [
+        "Retoma “o mapa” e mantém a progressão do texto.",
+        "Anuncia necessariamente outro documento.",
+        "Indica oposição entre os períodos.",
+        "Substitui o verbo atualizar.",
+        "Elimina a referência territorial."
+      ],
+      "answer": 0,
+      "explanation": "A expressão retoma o elemento mencionado antes e evita repetição literal, mantendo clara a continuidade temática entre as duas frases.",
+      "whyWrong": [
+        "Correta. A expressão retoma o elemento mencionado antes e evita repetição literal, mantendo clara a continuidade temática entre as duas frases.",
+        "Não há apresentação obrigatória de novo documento.",
+        "Não funciona como conector adversativo.",
+        "Retoma um nome, não o verbo.",
+        "A referência ao mapa continua identificável."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-056",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "paralelismo",
+      "difficulty": "hard",
+      "statement": "Em um relatório, a redação “É necessário conferir os registros, a validação dos dados e transmitir o lote” apresenta falta de paralelismo. Qual versão a corrige?",
+      "options": [
+        "É necessário conferir os registros, validar os dados e transmitir o lote.",
+        "É necessário a conferência dos registros, validar os dados e o lote.",
+        "É necessário os registros, dados e a transmissão.",
+        "É necessário conferir, os registros validar e transmitir o lote.",
+        "É necessário conferir os registros, da validação e transmissão."
+      ],
+      "answer": 0,
+      "explanation": "A enumeração usa três verbos no infinitivo com estrutura semelhante: conferir, validar e transmitir.",
+      "whyWrong": [
+        "Correta. A enumeração usa três verbos no infinitivo com estrutura semelhante: conferir, validar e transmitir.",
+        "Mistura expressão nominal e verbal.",
+        "Não mantém as três ações pretendidas.",
+        "A pontuação e os complementos comprometem a estrutura.",
+        "“Da validação” rompe a sequência de infinitivos."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-057",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "interpretação de conectores",
+      "difficulty": "hard",
+      "statement": "Leia: “A equipe concluiu a revisão, porque o prazo permitiu uma segunda conferência.” Nesse contexto, “porque” introduz:",
+      "options": [
+        "Uma justificativa causal para a conclusão da revisão.",
+        "Uma condição futura para revisar.",
+        "Uma oposição ao prazo.",
+        "Uma comparação entre equipes.",
+        "Uma finalidade ainda não alcançada."
+      ],
+      "answer": 0,
+      "explanation": "A disponibilidade de prazo é apresentada como causa ou explicação para a possibilidade de concluir a revisão.",
+      "whyWrong": [
+        "Correta. A disponibilidade de prazo é apresentada como causa ou explicação para a possibilidade de concluir a revisão.",
+        "Não há hipótese condicional.",
+        "O conector não expressa contraste.",
+        "Não há comparação.",
+        "O trecho relata revisão concluída, não objetivo futuro."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-058",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "concordância e impessoalidade",
+      "difficulty": "hard",
+      "statement": "Em “Havia três formulários pendentes”, a substituição por “existir”, preservando tempo e sentido, resulta em:",
+      "options": [
+        "Existia três formulários pendentes.",
+        "Existiam três formulários pendentes.",
+        "Existiriam três formulários pendentes.",
+        "Existe três formulários pendentes.",
+        "Existindo três formulários pendentes."
+      ],
+      "answer": 1,
+      "explanation": "Haver com sentido de existir é impessoal e fica no singular; existir é pessoal e concorda com “três formulários” no pretérito imperfeito.",
+      "whyWrong": [
+        "Existir deve concordar com o sujeito plural.",
+        "Correta. Haver com sentido de existir é impessoal e fica no singular; existir é pessoal e concorda com “três formulários” no pretérito imperfeito.",
+        "Muda para o futuro do pretérito.",
+        "Além da concordância, muda o tempo verbal.",
+        "Gerúndio não substitui a oração finita."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-059",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "regência nominal",
+      "difficulty": "hard",
+      "statement": "Em “O relatório é compatível ___ os registros transmitidos”, qual preposição completa adequadamente a frase?",
+      "options": [
+        "a",
+        "de",
+        "com",
+        "por",
+        "em"
+      ],
+      "answer": 2,
+      "explanation": "O adjetivo “compatível” admite a construção “compatível com”, indicando concordância ou possibilidade de coexistência entre relatório e registros.",
+      "whyWrong": [
+        "Não é a relação nominal usual no contexto.",
+        "“De” não completa a regência indicada.",
+        "Correta. O adjetivo “compatível” admite a construção “compatível com”, indicando concordância ou possibilidade de coexistência entre relatório e registros.",
+        "“Por” não expressa a relação pretendida.",
+        "“Em” não é a preposição exigida aqui."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-060",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "pontuação e sentido",
+      "difficulty": "hard",
+      "statement": "Compare: “Os agentes que receberam treinamento revisaram os dados” e “Os agentes, que receberam treinamento, revisaram os dados”. A segunda frase:",
+      "options": [
+        "Apresenta “que receberam treinamento” como explicação sobre todos os agentes referidos.",
+        "Restringe os agentes a um subconjunto treinado.",
+        "Nega que houve treinamento.",
+        "Afirma que ninguém revisou os dados.",
+        "Troca o tempo verbal da revisão."
+      ],
+      "answer": 0,
+      "explanation": "As vírgulas tornam a oração adjetiva explicativa: o treinamento é atribuído ao conjunto de agentes mencionado, sem restringi-lo a parte dele.",
+      "whyWrong": [
+        "Correta. As vírgulas tornam a oração adjetiva explicativa: o treinamento é atribuído ao conjunto de agentes mencionado, sem restringi-lo a parte dele.",
+        "A leitura restritiva pertence à primeira frase, sem vírgulas.",
+        "O treinamento continua afirmado.",
+        "A revisão continua afirmada.",
+        "O verbo permanece no mesmo tempo."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-061",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "porcentagem",
+      "difficulty": "hard",
+      "statement": "De 240 entrevistas previstas, 180 foram concluídas. Qual percentual da meta ainda falta cumprir?",
+      "options": [
+        "15%",
+        "20%",
+        "25%",
+        "30%",
+        "75%"
+      ],
+      "answer": 2,
+      "explanation": "Faltam 60 entrevistas. A razão 60/240 equivale a 0,25, ou 25% da meta inicial.",
+      "whyWrong": [
+        "15% corresponde a 36 entrevistas.",
+        "20% corresponde a 48.",
+        "Correta. Faltam 60 entrevistas. A razão 60/240 equivale a 0,25, ou 25% da meta inicial.",
+        "30% corresponde a 72.",
+        "75% é a parte já concluída."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-062",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "razão",
+      "difficulty": "hard",
+      "statement": "Em um posto, a razão entre formulários revisados e pendentes é 3:2. Se há 50 formulários nessas duas situações, quantos estão revisados?",
+      "options": [
+        "15",
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "answer": 3,
+      "explanation": "A razão total tem 5 partes; cada parte representa 10 formulários. Os revisados correspondem a 3 partes, ou 30.",
+      "whyWrong": [
+        "Não corresponde a 3 de 5 partes de 50.",
+        "20 é a quantidade pendente.",
+        "Metade ignora a razão 3:2.",
+        "Correta. A razão total tem 5 partes; cada parte representa 10 formulários. Os revisados correspondem a 3 partes, ou 30.",
+        "35 exigiria razão diferente."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-063",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "conjuntos",
+      "difficulty": "hard",
+      "statement": "Entre 60 agentes, 34 dominam planilhas, 29 dominam mapas digitais e 12 dominam ambas as ferramentas. Quantos dominam pelo menos uma delas?",
+      "options": [
+        "39",
+        "46",
+        "51",
+        "63",
+        "75"
+      ],
+      "answer": 2,
+      "explanation": "Pela inclusão e exclusão, 34 + 29 - 12 = 51. As 12 pessoas da interseção não podem ser contadas duas vezes.",
+      "whyWrong": [
+        "Subtrai mais pessoas do que a interseção.",
+        "Não resulta da união dos conjuntos dados.",
+        "Correta. Pela inclusão e exclusão, 34 + 29 - 12 = 51. As 12 pessoas da interseção não podem ser contadas duas vezes.",
+        "63 conta a interseção duas vezes.",
+        "Supera o total de agentes."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-064",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "negação de quantificadores",
+      "difficulty": "hard",
+      "statement": "Ao negar formalmente a afirmação “Todos os setores foram revisados e transmitidos”, obtém-se:",
+      "options": [
+        "Nenhum setor foi revisado nem transmitido.",
+        "Ao menos um setor não foi revisado ou não foi transmitido.",
+        "Todos os setores foram revisados ou transmitidos.",
+        "Ao menos um setor foi revisado e transmitido.",
+        "Nenhum setor foi transmitido."
+      ],
+      "answer": 1,
+      "explanation": "Negar o universal produz existência de exceção; negar a conjunção produz disjunção: falta revisão ou transmissão em pelo menos um setor.",
+      "whyWrong": [
+        "A negação não exige que todos falhem.",
+        "Correta. Negar o universal produz existência de exceção; negar a conjunção produz disjunção: falta revisão ou transmissão em pelo menos um setor.",
+        "Troca e por ou sem negar o universal.",
+        "Uma ocorrência correta não nega que todos sejam corretos.",
+        "A negação não exige ausência total de transmissão."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-065",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "condicional",
+      "difficulty": "hard",
+      "statement": "Considere a regra “Se o arquivo foi validado, então pode ser transmitido”. Sabe-se apenas que o arquivo pode ser transmitido. Qual conclusão é logicamente válida?",
+      "options": [
+        "Foi validado necessariamente.",
+        "Não foi validado.",
+        "A regra, sozinha, não permite concluir se foi validado.",
+        "A regra é falsa.",
+        "O arquivo já foi transmitido."
+      ],
+      "answer": 2,
+      "explanation": "A permissão de transmissão pode decorrer de outras condições não excluídas. Afirmar o consequente não prova o antecedente.",
+      "whyWrong": [
+        "É a falácia de afirmar o consequente.",
+        "A permissão também não prova ausência de validação.",
+        "Correta. A permissão de transmissão pode decorrer de outras condições não excluídas. Afirmar o consequente não prova o antecedente.",
+        "Nenhum fato contradiz a regra.",
+        "Poder transmitir difere de ter transmitido."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-066",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "média aritmética",
+      "difficulty": "hard",
+      "statement": "Uma equipe fez 12, 16, 18 e 14 visitas em quatro dias. Quantas visitas precisa fazer no quinto dia para obter média de 16 visitas por dia?",
+      "options": [
+        "16",
+        "18",
+        "20",
+        "22",
+        "24"
+      ],
+      "answer": 2,
+      "explanation": "Para média 16 em cinco dias, o total deve ser 80. Nos quatro primeiros dias houve 60 visitas; faltam 20.",
+      "whyWrong": [
+        "Com 16, o total seria 76.",
+        "Com 18, seria 78.",
+        "Correta. Para média 16 em cinco dias, o total deve ser 80. Nos quatro primeiros dias houve 60 visitas; faltam 20.",
+        "Com 22, seria 82.",
+        "Com 24, seria 84."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-067",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "equações",
+      "difficulty": "hard",
+      "statement": "Um posto enviou 12 formulários a mais que outro. Juntos enviaram 88. Quantos formulários enviou o posto de menor produção?",
+      "options": [
+        "32",
+        "36",
+        "38",
+        "40",
+        "50"
+      ],
+      "answer": 2,
+      "explanation": "Se o menor enviou x, o outro enviou x+12. Então 2x+12=88, logo 2x=76 e x=38.",
+      "whyWrong": [
+        "Somado a 44, daria 76.",
+        "Somado a 48, daria 84.",
+        "Correta. Se o menor enviou x, o outro enviou x+12. Então 2x+12=88, logo 2x=76 e x=38.",
+        "Somado a 52, daria 92.",
+        "50 é o volume do posto maior."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-068",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "sequências",
+      "difficulty": "hard",
+      "statement": "Os números 4, 7, 13, 22 e 34 seguem acréscimos de 3, 6, 9 e 12. Qual é o próximo termo?",
+      "options": [
+        "43",
+        "46",
+        "49",
+        "52",
+        "58"
+      ],
+      "answer": 2,
+      "explanation": "Os acréscimos aumentam de 3 em 3. O próximo é 15; portanto, 34 + 15 = 49.",
+      "whyWrong": [
+        "Usaria acréscimo de 9.",
+        "Usaria acréscimo de 12 outra vez.",
+        "Correta. Os acréscimos aumentam de 3 em 3. O próximo é 15; portanto, 34 + 15 = 49.",
+        "Usaria acréscimo de 18.",
+        "Usaria acréscimo de 24."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-069",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "probabilidade",
+      "difficulty": "hard",
+      "statement": "Em uma caixa há quatro fichas verdes, três azuis e uma vermelha. Uma ficha é retirada ao acaso. Qual a probabilidade de NÃO ser azul?",
+      "options": [
+        "3/8",
+        "4/8",
+        "5/8",
+        "6/8",
+        "7/8"
+      ],
+      "answer": 2,
+      "explanation": "São oito fichas ao todo. Cinco não são azuis (quatro verdes e uma vermelha), portanto a probabilidade é 5/8.",
+      "whyWrong": [
+        "3/8 é a probabilidade de ser azul.",
+        "Conta apenas as verdes.",
+        "Correta. São oito fichas ao todo. Cinco não são azuis (quatro verdes e uma vermelha), portanto a probabilidade é 5/8.",
+        "Inclui uma ficha azul indevidamente.",
+        "Exclui somente a vermelha."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-070",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "argumentação",
+      "difficulty": "hard",
+      "statement": "Premissas: “Nenhum registro incompleto é transmitido” e “Alguns registros do lote foram transmitidos”. Conclui-se necessariamente que:",
+      "options": [
+        "Todos os registros do lote estão completos.",
+        "Alguns registros do lote estão completos.",
+        "Nenhum registro do lote está completo.",
+        "Todos os registros completos foram transmitidos.",
+        "Há registro incompleto transmitido."
+      ],
+      "answer": 1,
+      "explanation": "Se nenhum incompleto é transmitido, todo registro que de fato foi transmitido é completo. Como alguns foram transmitidos, alguns são completos.",
+      "whyWrong": [
+        "As premissas não abrangem todos os registros.",
+        "Correta. Se nenhum incompleto é transmitido, todo registro que de fato foi transmitido é completo. Como alguns foram transmitidos, alguns são completos.",
+        "Contradiz a existência de transmitidos completos.",
+        "A recíproca não é garantida.",
+        "Contradiz a primeira premissa."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    }
+  ]
+}

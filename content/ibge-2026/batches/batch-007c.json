@@ -1,0 +1,1302 @@
+{
+  "batch": "batch-007c",
+  "status": "review",
+  "generatedBy": "curadoria nesta conversa",
+  "questions": [
+    {
+      "id": "ibge26-b007-071",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "estrutura censitária",
+      "difficulty": "hard",
+      "statement": "Uma equipe precisa encaminhar uma dúvida sobre monitoramento da qualidade em nível estadual. Segundo a estrutura temporária descrita no material, qual unidade exerce essa atribuição?",
+      "options": [
+        "Centro Nacional de Qualidade",
+        "Centro Estadual de Qualidade",
+        "Agência municipal de correios",
+        "Posto de atendimento previdenciário",
+        "Secretaria municipal de agricultura"
+      ],
+      "answer": 1,
+      "explanation": "O CEQ, vinculado às Superintendências Estaduais, monitora em nível estadual a qualidade dos dados do Censo Agropecuário.",
+      "whyWrong": [
+        "O CNQ monitora a qualidade em âmbito nacional.",
+        "Correta. O CEQ, vinculado às Superintendências Estaduais, monitora em nível estadual a qualidade dos dados do Censo Agropecuário.",
+        "Correios não integra essa estrutura de qualidade.",
+        "Não é unidade da operação censitária.",
+        "Não é a unidade definida para monitoramento estadual."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 12",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-072",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "estrutura censitária",
+      "difficulty": "hard",
+      "statement": "O material descreve os postos censitários como base operacional da supervisão e dos recenseadores. Quanto à sua abrangência territorial, um posto pode atender:",
+      "options": [
+        "Apenas um setor censitário",
+        "Um município ou conjunto de municípios",
+        "Obrigatoriamente uma unidade federativa inteira",
+        "Somente a sede nacional do IBGE",
+        "Exclusivamente municípios sem área rural"
+      ],
+      "answer": 1,
+      "explanation": "O posto apoia a realização do censo e pode atender a um município ou a um conjunto de municípios, conforme a organização da operação.",
+      "whyWrong": [
+        "Um posto pode abranger vários setores.",
+        "Correta. O posto apoia a realização do censo e pode atender a um município ou a um conjunto de municípios, conforme a organização da operação.",
+        "Abrangência estadual não é obrigatória.",
+        "O posto é base local, não somente da sede nacional.",
+        "A existência de área rural não exclui a organização do posto."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 13",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-073",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "atribuições do ACR",
+      "difficulty": "hard",
+      "statement": "Um posto apresenta atraso e alertas no sistema de acompanhamento. Conforme a apostila, qual ação integra diretamente as atribuições do Agente Censitário Regional?",
+      "options": [
+        "Apenas aplicar entrevistas sem acompanhar equipes",
+        "Monitorar cobertura e cronograma e analisar indicadores operacionais",
+        "Substituir a chefia nacional do IBGE",
+        "Produzir sozinho todos os mapas do país",
+        "Declarar encerrado o censo sem avaliar pendências"
+      ],
+      "answer": 1,
+      "explanation": "O ACR coordena as atividades no âmbito do posto, acompanha equipes, cobertura, prazos, indicadores e alertas operacionais.",
+      "whyWrong": [
+        "O ACR coordena e acompanha, não se limita à entrevista.",
+        "Correta. O ACR coordena as atividades no âmbito do posto, acompanha equipes, cobertura, prazos, indicadores e alertas operacionais.",
+        "Sua atuação é no âmbito do posto.",
+        "A produção nacional de mapas não é a função descrita.",
+        "Pendências integram o acompanhamento do posto."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 16",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-074",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "atribuições do ACS",
+      "difficulty": "hard",
+      "statement": "Após detectar erros frequentes nos formulários de um recenseador, o responsável direto por orientá-lo e acompanhar sua correção, segundo a estrutura de campo, é:",
+      "options": [
+        "O Agente Censitário Supervisor",
+        "O candidato inscrito para ACA",
+        "Um morador do setor",
+        "O operador dos Correios",
+        "O produtor entrevistado"
+      ],
+      "answer": 0,
+      "explanation": "O ACS supervisiona recenseadores, realiza treinamento, presta apoio técnico e acompanha a qualidade e a cobertura do trabalho de campo.",
+      "whyWrong": [
+        "Correta. O ACS supervisiona recenseadores, realiza treinamento, presta apoio técnico e acompanha a qualidade e a cobertura do trabalho de campo.",
+        "O ACA apoia atividades administrativas do posto.",
+        "Morador não exerce supervisão funcional.",
+        "Correios não compõem a cadeia de supervisão.",
+        "Informante fornece dados, não supervisiona o agente."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 17",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-075",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "instrumentos de trabalho",
+      "difficulty": "hard",
+      "statement": "Em campo, o recenseador vê uma estrada que pode marcar o limite do setor. Para confirmar o perímetro oficial, deve combinar o mapa com:",
+      "options": [
+        "A memória de visitas anteriores apenas",
+        "O descritivo do setor",
+        "O preço dos imóveis da região",
+        "Uma rota sugerida por aplicativo externo",
+        "O número de moradores entrevistados"
+      ],
+      "answer": 1,
+      "explanation": "O descritivo define textualmente o contorno do setor e deve ser consultado junto ao mapa quando houver dúvida sobre seus limites.",
+      "whyWrong": [
+        "Memória não substitui instrumento oficial.",
+        "Correta. O descritivo define textualmente o contorno do setor e deve ser consultado junto ao mapa quando houver dúvida sobre seus limites.",
+        "Valor imobiliário não define perímetro censitário.",
+        "Rota externa não altera limites oficiais.",
+        "Número de entrevistas não identifica a fronteira."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 20",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-076",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "lista prévia de endereços",
+      "difficulty": "hard",
+      "statement": "A lista prévia do DMC não inclui uma unidade agropecuária encontrada durante o percurso. Qual conduta corresponde à orientação do material?",
+      "options": [
+        "Ignorar a unidade por não constar na lista.",
+        "Visitá-la e incluí-la na relação de endereços após a verificação.",
+        "Entrevistá-la apenas se outro recenseador concordar.",
+        "Substituir o endereço por outro da lista.",
+        "Registrar a unidade fora do setor sem confirmar localização."
+      ],
+      "answer": 1,
+      "explanation": "A lista prévia apoia a coleta, mas não limita a cobertura: novos endereços encontrados em campo devem ser visitados e incluídos no DMC.",
+      "whyWrong": [
+        "A cobertura inclui unidades ausentes da lista.",
+        "Correta. A lista prévia apoia a coleta, mas não limita a cobertura: novos endereços encontrados em campo devem ser visitados e incluídos no DMC.",
+        "A inclusão segue verificação e procedimentos da operação.",
+        "Substituição criaria erro de identificação.",
+        "Primeiro é preciso confirmar a vinculação territorial."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 21",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-077",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "lista prévia de endereços",
+      "difficulty": "hard",
+      "statement": "Um endereço da lista prévia não é encontrado após a verificação em campo. Qual atualização a apostila prevê para esse caso?",
+      "options": [
+        "Mantê-lo como confirmado sem visita.",
+        "Excluí-lo da lista após verificar que não existe em campo.",
+        "Inventar coordenada para preservá-lo.",
+        "Duplicá-lo em setor vizinho.",
+        "Marcar entrevista concluída automaticamente."
+      ],
+      "answer": 1,
+      "explanation": "A atualização da lista inclui confirmar endereços presentes, adicionar novos e excluir aqueles não encontrados em campo após verificação.",
+      "whyWrong": [
+        "Confirmação pressupõe presença verificada.",
+        "Correta. A atualização da lista inclui confirmar endereços presentes, adicionar novos e excluir aqueles não encontrados em campo após verificação.",
+        "Coordenada inventada falseia a localização.",
+        "Duplicação pode gerar contagem indevida.",
+        "Não se conclui entrevista sem unidade e informações."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 21",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-078",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "escala cartográfica",
+      "difficulty": "hard",
+      "statement": "Em um mapa na escala 1:50.000, a distância entre o posto e uma unidade é de 4 cm. Qual distância aproximada no terreno?",
+      "options": [
+        "200 m",
+        "500 m",
+        "1 km",
+        "2 km",
+        "20 km"
+      ],
+      "answer": 3,
+      "explanation": "Cada centímetro representa 50.000 cm, ou 500 m. Quatro centímetros representam 2.000 m, equivalentes a 2 km.",
+      "whyWrong": [
+        "Confunde centímetros do mapa com metros reais.",
+        "É a distância de 1 cm no mapa.",
+        "Corresponde a 2 cm no mapa.",
+        "Correta. Cada centímetro representa 50.000 cm, ou 500 m. Quatro centímetros representam 2.000 m, equivalentes a 2 km.",
+        "Multiplica indevidamente por dez."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 24",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-079",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "interpretação de mapas",
+      "difficulty": "hard",
+      "statement": "Um símbolo aparece junto a uma via no mapa do setor, mas seu significado não é familiar ao recenseador. Qual procedimento a apostila recomenda antes de interpretá-lo?",
+      "options": [
+        "Atribuir o significado mais comum.",
+        "Consultar a legenda do mapa.",
+        "Ignorar a via.",
+        "Perguntar ao primeiro morador e dispensar o mapa.",
+        "Alterar o símbolo no DMC."
+      ],
+      "answer": 1,
+      "explanation": "A legenda relaciona símbolos e significados usados naquele mapa. O material orienta a não interpretar um símbolo antes de consultá-la.",
+      "whyWrong": [
+        "Símbolos podem variar entre mapas.",
+        "Correta. A legenda relaciona símbolos e significados usados naquele mapa. O material orienta a não interpretar um símbolo antes de consultá-la.",
+        "Ignorar a via pode prejudicar orientação.",
+        "Informação local pode complementar, não substituir a legenda.",
+        "O agente não deve modificar o padrão cartográfico."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 24",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-080",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "imagem de satélite",
+      "difficulty": "hard",
+      "statement": "Uma construção visível na imagem de satélite não aparece na lista de endereços. Após confirmar que está no setor, o recenseador deve:",
+      "options": [
+        "Visitar e registrar a nova unidade no DMC.",
+        "Desconsiderar a imagem por não ser uma lista oficial.",
+        "Contar a construção como entrevista completa.",
+        "Inseri-la em setor distante por conveniência.",
+        "Apagar os endereços vizinhos."
+      ],
+      "answer": 0,
+      "explanation": "A imagem pode revelar unidades não listadas. A apostila orienta verificar em campo, visitar e registrar no DMC os novos endereços pertinentes.",
+      "whyWrong": [
+        "Correta. A imagem pode revelar unidades não listadas. A apostila orienta verificar em campo, visitar e registrar no DMC os novos endereços pertinentes.",
+        "A imagem ajuda a detectar omissões possíveis.",
+        "Construção observada não equivale a entrevista.",
+        "A vinculação deve respeitar o setor correto.",
+        "Não há motivo para excluir endereços vizinhos."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 27",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-081",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "descritivo do setor",
+      "difficulty": "hard",
+      "statement": "Ao comparar mapa e campo, o agente encontra um limite difícil de reconhecer devido a mudanças na paisagem. Qual ação respeita o procedimento descrito?",
+      "options": [
+        "Redesenhar o perímetro por conta própria.",
+        "Comunicar imediatamente a dificuldade à supervisão.",
+        "Coletar livremente em ambos os setores.",
+        "Ignorar a parte duvidosa.",
+        "Usar exclusivamente o GPS e abandonar o descritivo."
+      ],
+      "answer": 1,
+      "explanation": "A apostila orienta comunicar inconsistências de limite à supervisão. O recenseador não pode alterar o perímetro do setor por iniciativa própria.",
+      "whyWrong": [
+        "O agente não tem autorização para mudar o limite.",
+        "Correta. A apostila orienta comunicar inconsistências de limite à supervisão. O recenseador não pode alterar o perímetro do setor por iniciativa própria.",
+        "Coleta duplicada ameaça a cobertura correta.",
+        "Omissão deixa área sem investigação.",
+        "GPS auxilia, mas não substitui mapa e descritivo."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 30",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-082",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "setores a serem excluídos",
+      "difficulty": "hard",
+      "statement": "O descritivo informa que um pequeno setor urbano fica inteiramente dentro do perímetro rural atribuído ao recenseador, mas deve ser excluído. O agente deve:",
+      "options": [
+        "Coletar em ambos por estarem no mesmo perímetro externo.",
+        "Não coletar no setor excluído, cuja responsabilidade é de outro recenseador.",
+        "Apagar o setor urbano do mapa.",
+        "Coletar apenas se a distância for curta.",
+        "Alterar o código do setor urbano para rural."
+      ],
+      "answer": 1,
+      "explanation": "Setores internos indicados como excluídos não integram a área de responsabilidade do agente; outro recenseador realizará a coleta ali.",
+      "whyWrong": [
+        "O descritivo define uma exclusão explícita.",
+        "Correta. Setores internos indicados como excluídos não integram a área de responsabilidade do agente; outro recenseador realizará a coleta ali.",
+        "O agente não modifica a cartografia oficial.",
+        "Distância não muda responsabilidade territorial.",
+        "Código do setor não pode ser alterado por conveniência."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 30",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-083",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "estruturas não setorizadas",
+      "difficulty": "hard",
+      "statement": "Uma pequena localidade dentro do setor não foi individualizada em setor próprio. Segundo o descritivo, a equipe deve:",
+      "options": [
+        "Ignorá-la porque não recebeu código separado.",
+        "Recenseá-la no setor atribuído, com atenção ao acesso e à abordagem.",
+        "Exigir que a localidade se torne município.",
+        "Transferi-la automaticamente a outro recenseador.",
+        "Considerar todas as unidades não recenseáveis."
+      ],
+      "answer": 1,
+      "explanation": "Estruturas territoriais não setorizadas podem estar dentro do setor e devem ser recenseadas normalmente, com atenção especial à abordagem.",
+      "whyWrong": [
+        "Ausência de setor próprio não implica ausência de coleta.",
+        "Correta. Estruturas territoriais não setorizadas podem estar dentro do setor e devem ser recenseadas normalmente, com atenção especial à abordagem.",
+        "A divisão municipal não depende da equipe de campo.",
+        "Não há transferência automática descrita.",
+        "A recenseabilidade depende dos conceitos da operação."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 31",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-084",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "situação e tipo de setor",
+      "difficulty": "hard",
+      "statement": "Na classificação territorial apresentada na apostila, a “situação” do setor está ligada principalmente:",
+      "options": [
+        "À distinção entre urbano e rural.",
+        "À profissão do produtor.",
+        "À quantidade de entrevistas transmitidas.",
+        "Ao modelo do DMC.",
+        "À idade média dos moradores."
+      ],
+      "answer": 0,
+      "explanation": "Situação classifica o setor segundo ocupação do espaço, especialmente urbano ou rural; tipo trata características territoriais específicas.",
+      "whyWrong": [
+        "Correta. Situação classifica o setor segundo ocupação do espaço, especialmente urbano ou rural; tipo trata características territoriais específicas.",
+        "Profissão do produtor não classifica a situação do setor.",
+        "Produção de entrevistas é indicador operacional.",
+        "Equipamento não define setor urbano ou rural.",
+        "Idade não é o critério apresentado."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 35",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-085",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "tipos especiais de setor",
+      "difficulty": "hard",
+      "statement": "Um setor classificado em tipo especial apresenta restrição de acesso. Qual conclusão se ajusta à apostila?",
+      "options": [
+        "O tipo pode exigir pré-abordagem específica com responsável pelo local.",
+        "Todo setor especial deve ser ignorado.",
+        "O tipo substitui a situação urbano-rural.",
+        "A equipe pode ultrapassar qualquer restrição sem contato.",
+        "A restrição transforma automaticamente a área em massa d’água."
+      ],
+      "answer": 0,
+      "explanation": "Tipos especiais podem demandar contato e pré-abordagem com informante ou responsável. O tipo acrescenta uma característica operacional ao setor.",
+      "whyWrong": [
+        "Correta. Tipos especiais podem demandar contato e pré-abordagem com informante ou responsável. O tipo acrescenta uma característica operacional ao setor.",
+        "A visita depende dos critérios da operação, não de exclusão geral.",
+        "Situação e tipo são classificações distintas.",
+        "Acesso deve respeitar procedimentos previstos.",
+        "Massa d’água é classificação territorial distinta."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 36",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-086",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "identidade autodeclarada",
+      "difficulty": "hard",
+      "statement": "Uma pessoa afirma pertencer a mais de uma comunidade tradicional. Conforme a orientação da apostila, o agente deve:",
+      "options": [
+        "Registrar a autodeclaração sem impor identidade única.",
+        "Escolher por aparência qual identidade aceitar.",
+        "Pedir comprovação familiar para uma das identidades.",
+        "Corrigir a declaração com base em opinião de terceiros.",
+        "Omitir a informação por não caber em uma identidade única."
+      ],
+      "answer": 0,
+      "explanation": "O pertencimento é autodeclaratório e pode incluir múltiplas identidades. A orientação proíbe questionar, julgar ou tentar corrigir a declaração.",
+      "whyWrong": [
+        "Correta. O pertencimento é autodeclaratório e pode incluir múltiplas identidades. A orientação proíbe questionar, julgar ou tentar corrigir a declaração.",
+        "A aparência não substitui a autodeclaração.",
+        "Comprovação familiar não é condição indicada.",
+        "Opinião de terceiros não prevalece sobre o informante.",
+        "A multiplicidade deve ser respeitada."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 40",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-087",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "áreas de interesse operacional",
+      "difficulty": "hard",
+      "statement": "Uma Área de Interesse Operacional de povo ou comunidade tradicional atravessa parte de dois setores. O que a apostila afirma sobre esse recorte?",
+      "options": [
+        "É independente da setorização e pode ser maior ou menor que um setor.",
+        "Coincide obrigatoriamente com um único setor.",
+        "Elimina os limites de todos os setores envolvidos.",
+        "Só existe em capitais.",
+        "Impede perguntas específicas no DMC."
+      ],
+      "answer": 0,
+      "explanation": "AIO é recorte operacional independente dos setores; pode abranger parte de setor, vários setores ou até município inteiro.",
+      "whyWrong": [
+        "Correta. AIO é recorte operacional independente dos setores; pode abranger parte de setor, vários setores ou até município inteiro.",
+        "AIO não precisa coincidir com setor.",
+        "O recorte não apaga a setorização oficial.",
+        "Não há restrição a capitais.",
+        "Perguntas específicas podem aparecer no DMC."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 41",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-088",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "endereçamento CNEFE",
+      "difficulty": "hard",
+      "statement": "Uma unidade rural não possui endereço formal. Segundo o padrão CNEFE descrito no material, o registro deve:",
+      "options": [
+        "Usar referências localmente reconhecidas que permitam individualizar e localizar a unidade.",
+        "Inventar número oficial para preencher todos os campos.",
+        "Deixar a unidade sem identificação.",
+        "Registrar somente o nome do morador.",
+        "Substituir o endereço pelo código do município."
+      ],
+      "answer": 0,
+      "explanation": "Na ausência de endereço formal, a orientação é usar referências reconhecidas localmente que individualizem e possibilitem localizar a unidade.",
+      "whyWrong": [
+        "Correta. Na ausência de endereço formal, a orientação é usar referências reconhecidas localmente que individualizem e possibilitem localizar a unidade.",
+        "Número inventado gera informação falsa.",
+        "A unidade precisa ser localizável.",
+        "Nome pessoal não substitui componentes do endereço e pode ferir sigilo.",
+        "Município sozinho não individualiza a unidade."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 43",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-089",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "logradouro e localidade",
+      "difficulty": "hard",
+      "statement": "Em área rural, um acesso não tem nome oficial conhecido, mas moradores o identificam por um nome estável. Qual registro é prioritário nessa situação?",
+      "options": [
+        "O nome localmente reconhecido, após buscar a forma oficial.",
+        "Uma expressão genérica como “estrada qualquer”.",
+        "O nome de um morador que vive perto.",
+        "Um nome criado pelo recenseador.",
+        "Apenas o CEP municipal."
+      ],
+      "answer": 0,
+      "explanation": "Apostila prioriza denominação oficial; se inexistente ou não identificável, utiliza-se o nome localmente reconhecido para o logradouro.",
+      "whyWrong": [
+        "Correta. Apostila prioriza denominação oficial; se inexistente ou não identificável, utiliza-se o nome localmente reconhecido para o logradouro.",
+        "Termo genérico não identifica bem o lugar.",
+        "Nome de pessoa não deve ser usado para identificar unidade.",
+        "Nome inventado perde reconhecimento local.",
+        "CEP amplo não substitui logradouro."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 44",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-090",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "componentes do endereço",
+      "difficulty": "hard",
+      "statement": "Duas unidades entram pelo mesmo número de uma estrada, uma na casa da frente e outra nos fundos. Qual componente do endereço ajuda a diferenciá-las?",
+      "options": [
+        "Complemento.",
+        "CEP sozinho.",
+        "Latitude do município.",
+        "Tipo do setor.",
+        "Nome do entrevistador."
+      ],
+      "answer": 0,
+      "explanation": "O complemento distingue unidades que compartilham o mesmo número no logradouro; “frente” e “fundos” são exemplos citados.",
+      "whyWrong": [
+        "Correta. O complemento distingue unidades que compartilham o mesmo número no logradouro; “frente” e “fundos” são exemplos citados.",
+        "CEP pode ser comum a várias unidades.",
+        "Coordenada municipal não individualiza as duas.",
+        "Tipo de setor não é componente que distingue entradas.",
+        "Nome do entrevistador não integra o endereço."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 46",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-091",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "ponto de referência",
+      "difficulty": "hard",
+      "statement": "Um endereço rural não tem número nem complemento que permita localizá-lo no logradouro. Conforme o material, o ponto de referência:",
+      "options": [
+        "É obrigatório e deve indicar elemento fixo e reconhecível.",
+        "É proibido em qualquer endereço rural.",
+        "Deve conter o nome completo de um morador.",
+        "Substitui automaticamente todos os outros componentes.",
+        "Pode ser um elemento temporário que desaparece no dia seguinte."
+      ],
+      "answer": 0,
+      "explanation": "Nessa situação o ponto de referência é obrigatório; deve ajudar a localizar a unidade por elemento fixo e estável, sem identificar pessoas.",
+      "whyWrong": [
+        "Correta. Nessa situação o ponto de referência é obrigatório; deve ajudar a localizar a unidade por elemento fixo e estável, sem identificar pessoas.",
+        "O material destaca seu valor em áreas rurais.",
+        "Identificação pessoal fere o sigilo estatístico.",
+        "Complementa o endereço, não apaga os demais dados.",
+        "Elemento instável não ajuda a futura localização."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 47",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-092",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "captura de coordenadas",
+      "difficulty": "hard",
+      "statement": "Numa área rural, o recenseador vai captar coordenadas de um estabelecimento com sede. Onde a apostila recomenda posicionar o DMC?",
+      "options": [
+        "Na entrada da edificação que representa a sede, quando houver.",
+        "No centro geométrico do município.",
+        "Na residência do agente.",
+        "Em qualquer estrada distante.",
+        "No posto censitário antes da visita."
+      ],
+      "answer": 0,
+      "explanation": "As coordenadas do endereço devem representar o ponto de acesso à unidade; havendo sede, o local ideal é a entrada da edificação correspondente.",
+      "whyWrong": [
+        "Correta. As coordenadas do endereço devem representar o ponto de acesso à unidade; havendo sede, o local ideal é a entrada da edificação correspondente.",
+        "Centro municipal não localiza a unidade.",
+        "Posição do agente fora do local não representa o endereço.",
+        "Estrada distante pode deslocar o ponto.",
+        "O posto não corresponde ao acesso ao estabelecimento."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 49",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-093",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "período de referência",
+      "difficulty": "hard",
+      "statement": "A apostila define data de referência em 31/12/2025 e período de referência de 01/01 a 31/12/2025. Um evento ocorrido em março de 2026 deve ser tratado como:",
+      "options": [
+        "Evento dentro do período de 2025.",
+        "Evento posterior ao período; não deve ser confundido com acontecimentos de 2025.",
+        "Fato ocorrido na data de referência.",
+        "Evento automaticamente recenseável por acontecer antes da entrevista.",
+        "Dado que altera retroativamente 31/12/2025."
+      ],
+      "answer": 1,
+      "explanation": "Março de 2026 está fora do período de 2025. A coleta precisa distinguir fatos do período e situação na data de referência da situação posterior.",
+      "whyWrong": [
+        "Março de 2026 não integra o ano de 2025.",
+        "Correta. Março de 2026 está fora do período de 2025. A coleta precisa distinguir fatos do período e situação na data de referência da situação posterior.",
+        "A data de referência é 31/12/2025.",
+        "Data de entrevista não redefine o período.",
+        "Fato posterior não altera o passado."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 51",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-094",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "subsistência",
+      "difficulty": "hard",
+      "statement": "Uma família consome a maior parte dos alimentos que produz e, ocasionalmente, troca uma pequena parte por outros produtos. Conforme a apostila, isso:",
+      "options": [
+        "Pode continuar sendo produção de subsistência.",
+        "Deixa de ser subsistência por qualquer troca.",
+        "É necessariamente atividade industrial.",
+        "Prova que não existe exploração agropecuária.",
+        "Dispensa a abordagem inicial."
+      ],
+      "answer": 0,
+      "explanation": "Na produção de subsistência, alimentos atendem necessidades vitais da família; venda ou troca eventual de parte da produção não exclui o conceito.",
+      "whyWrong": [
+        "Correta. Na produção de subsistência, alimentos atendem necessidades vitais da família; venda ou troca eventual de parte da produção não exclui o conceito.",
+        "Troca eventual é compatível com o conceito apresentado.",
+        "Produção de alimentos não se torna industrial pela troca.",
+        "A produção pode caracterizar unidade recenseável.",
+        "O enquadramento é feito pelo questionário de abordagem."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 53",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-095",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "abordagem inicial",
+      "difficulty": "hard",
+      "statement": "Ao olhar pela cerca, o agente vê horta e árvores, mas não sabe se há produção de subsistência ou apenas lazer. Como deve classificar a unidade?",
+      "options": [
+        "Por decisão visual imediata do agente.",
+        "Pelo questionário de abordagem inicial, após perguntar sobre a atividade.",
+        "Pelo tamanho da cerca.",
+        "Pela aparência da casa.",
+        "Automaticamente como não recenseável."
+      ],
+      "answer": 1,
+      "explanation": "A aparência não basta para identificar a atividade. A apostila determina perguntar e usar o questionário de abordagem inicial para classificar.",
+      "whyWrong": [
+        "A observação visual não resolve a finalidade da produção.",
+        "Correta. A aparência não basta para identificar a atividade. A apostila determina perguntar e usar o questionário de abordagem inicial para classificar.",
+        "A cerca não define recenseabilidade.",
+        "A casa não informa a finalidade produtiva.",
+        "A unidade pode produzir para subsistência."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 53",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-096",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "estabelecimento agropecuário",
+      "difficulty": "hard",
+      "statement": "Uma produção agrícola para subsistência ocorre em área urbana de pequeno tamanho. Qual afirmação está de acordo com o conceito oficial?",
+      "options": [
+        "A localização urbana impede o enquadramento.",
+        "O pequeno tamanho impede o enquadramento.",
+        "Pode ser estabelecimento, pois tamanho, localização e destino para subsistência não o excluem.",
+        "Somente venda formal permite recenseamento.",
+        "A forma jurídica da unidade deve ser empresarial."
+      ],
+      "answer": 2,
+      "explanation": "O estabelecimento é definido pela unidade de produção ou exploração; não depende de tamanho, forma jurídica, localização rural ou venda.",
+      "whyWrong": [
+        "O conceito abrange área urbana.",
+        "Não há tamanho mínimo no conceito citado.",
+        "Correta. O estabelecimento é definido pela unidade de produção ou exploração; não depende de tamanho, forma jurídica, localização rural ou venda.",
+        "Subsistência é finalidade produtiva admitida.",
+        "Pessoa física também pode ser produtora."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 55",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-097",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "aquicultura",
+      "difficulty": "hard",
+      "statement": "Um pesque-pague compra peixes já criados por terceiros e apenas oferece a pesca aos visitantes. Segundo o exemplo da apostila, esse local:",
+      "options": [
+        "É estabelecimento aquícola por qualquer compra de peixe.",
+        "Não é enquadrado como estabelecimento agropecuário se não houver criação e engorda próprias.",
+        "É sempre classificado como lavoura temporária.",
+        "Deve ser recenseado pelo número de visitantes.",
+        "É produtor sem área obrigatoriamente."
+      ],
+      "answer": 1,
+      "explanation": "O material considera pesque-pague estabelecimento quando há criação e engorda de peixes; somente comprar peixes criados não atende esse critério.",
+      "whyWrong": [
+        "Compra não equivale à criação ou engorda.",
+        "Correta. O material considera pesque-pague estabelecimento quando há criação e engorda de peixes; somente comprar peixes criados não atende esse critério.",
+        "Não há cultivo vegetal descrito.",
+        "Visitantes não definem a atividade investigada.",
+        "Produtor sem área é situação diferente."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 56",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-098",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "produtor sem área",
+      "difficulty": "hard",
+      "statement": "Uma pessoa instala colmeias em área de outro estabelecimento e produz mel sem possuir terreno próprio. A apostila orienta:",
+      "options": [
+        "Ignorar a atividade por falta de propriedade.",
+        "Registrar a atividade e aplicar o questionário como produtor sem área.",
+        "Somar a produção obrigatoriamente ao dono da terra.",
+        "Entrevistar apenas o proprietário da área.",
+        "Classificar a atividade como não produtiva."
+      ],
+      "answer": 1,
+      "explanation": "O produtor de mel com colmeias em área alheia é exemplo expresso de produtor sem área; a atividade deve ser registrada e investigada.",
+      "whyWrong": [
+        "Propriedade da terra não é exigência desse caso.",
+        "Correta. O produtor de mel com colmeias em área alheia é exemplo expresso de produtor sem área; a atividade deve ser registrada e investigada.",
+        "O produtor da atividade deve ser identificado.",
+        "O dono da terra não substitui automaticamente o produtor.",
+        "Produção de mel é atividade produtiva."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 57",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-099",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "propriedade e estabelecimento",
+      "difficulty": "hard",
+      "statement": "Uma propriedade rural foi dividida em duas explorações independentes, conduzidas por produtores diferentes. Segundo a apostila, ela pode conter:",
+      "options": [
+        "Exatamente um estabelecimento por possuir matrícula única.",
+        "Mais de um estabelecimento agropecuário.",
+        "Nenhum estabelecimento por haver dois produtores.",
+        "Somente um estabelecimento industrial.",
+        "Apenas produtores sem área."
+      ],
+      "answer": 1,
+      "explanation": "Uma propriedade pode abrigar diferentes explorações sob produtores distintos; cada exploração pode corresponder a um estabelecimento.",
+      "whyWrong": [
+        "Matrícula ou propriedade não define sozinha a unidade censitária.",
+        "Correta. Uma propriedade pode abrigar diferentes explorações sob produtores distintos; cada exploração pode corresponder a um estabelecimento.",
+        "Duas explorações podem ser recenseáveis.",
+        "Nada indica atividade industrial.",
+        "Os produtores exploram partes da propriedade."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 60",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-100",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "sede e setor",
+      "difficulty": "hard",
+      "statement": "Um estabelecimento contínuo ocupa áreas em dois setores, e sua sede está no setor A. Em qual setor ele será recenseado?",
+      "options": [
+        "No setor A, onde está a sede.",
+        "No setor B, se for mais fácil acessar.",
+        "Nos dois, com questionário completo em cada.",
+        "Em setor escolhido pelo entrevistador.",
+        "Em nenhum até dividir a área."
+      ],
+      "answer": 0,
+      "explanation": "Para estabelecimento que se estende por mais de um setor, a apostila determina recenseamento no setor em que se localiza a sede.",
+      "whyWrong": [
+        "Correta. Para estabelecimento que se estende por mais de um setor, a apostila determina recenseamento no setor em que se localiza a sede.",
+        "Facilidade de acesso não define setor de recenseamento.",
+        "Duplicação gera contagem indevida.",
+        "A escolha é regulada pelo critério da sede.",
+        "Não é necessário dividir a exploração contínua."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 61",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-101",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "ausência de sede",
+      "difficulty": "hard",
+      "statement": "Um estabelecimento ocupa dois setores censitários, mas não possui sede identificada. A maior parte de suas terras fica no setor B. O recenseamento ocorrerá:",
+      "options": [
+        "No setor A por ordem alfabética.",
+        "No setor B, onde está a maior parte da área.",
+        "Em ambos, dividindo a produção.",
+        "Apenas no setor de residência do produtor.",
+        "Somente após nova divisão municipal."
+      ],
+      "answer": 1,
+      "explanation": "Na ausência de sede, o critério indicado é o setor em que está localizada a maior parte das terras do estabelecimento.",
+      "whyWrong": [
+        "Ordem alfabética não é critério.",
+        "Correta. Na ausência de sede, o critério indicado é o setor em que está localizada a maior parte das terras do estabelecimento.",
+        "A unidade não deve ser duplicada por setor.",
+        "Residência fora da área não substitui esse critério.",
+        "Divisão municipal não é condição para a coleta."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 61",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-102",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "áreas não contínuas",
+      "difficulty": "hard",
+      "statement": "Um produtor explora duas áreas separadas no mesmo município, com os mesmos trabalhadores e administração, mas utiliza conjuntos técnicos totalmente distintos. Para reuni-las em uma unidade, segundo a apostila:",
+      "options": [
+        "Basta serem do mesmo produtor.",
+        "Basta estarem no mesmo município.",
+        "Todas as quatro condições devem ser atendidas; a diferença de recursos técnicos impede reuni-las.",
+        "A distância entre as áreas não importa e nenhuma condição é exigida.",
+        "A decisão depende somente do nome da fazenda."
+      ],
+      "answer": 2,
+      "explanation": "A unidade exige simultaneamente mesmo município, recursos técnicos, pessoal e administração. Falta de uma condição separa os estabelecimentos.",
+      "whyWrong": [
+        "Mesmo produtor não basta.",
+        "Município é apenas uma das condições.",
+        "Correta. A unidade exige simultaneamente mesmo município, recursos técnicos, pessoal e administração. Falta de uma condição separa os estabelecimentos.",
+        "O material exige quatro condições simultâneas.",
+        "Nome da fazenda não substitui os critérios."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 61",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-103",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "rios e estradas na área",
+      "difficulty": "hard",
+      "statement": "Uma estrada corta ao meio terras de uma exploração. Conforme a apostila, esse fato isolado:",
+      "options": [
+        "Caracteriza obrigatoriamente áreas não contínuas.",
+        "Não caracteriza descontinuidade da área do estabelecimento.",
+        "Cria dois municípios.",
+        "Impede qualquer coleta agropecuária.",
+        "Transforma o estabelecimento em produtor sem área."
+      ],
+      "answer": 1,
+      "explanation": "Rios, estradas ou ferrovias que cortam terras não caracterizam, por si, descontinuidade da área do estabelecimento.",
+      "whyWrong": [
+        "O material diz expressamente o contrário.",
+        "Correta. Rios, estradas ou ferrovias que cortam terras não caracterizam, por si, descontinuidade da área do estabelecimento.",
+        "Estrada não cria divisão municipal.",
+        "A coleta pode prosseguir normalmente.",
+        "Há terras exploradas, diferentemente do exemplo de produtor sem área."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 62",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-104",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "sucessão e partilha",
+      "difficulty": "hard",
+      "statement": "Um estabelecimento está em partilha, e os herdeiros concordam em mantê-lo como uma única exploração. Segundo o material, deve-se:",
+      "options": [
+        "Recenseá-lo como uma unidade, obtendo informações do inventariante, representante ou condômino responsável.",
+        "Criar um questionário por herdeiro independentemente da exploração.",
+        "Omiti-lo até o fim da partilha.",
+        "Escolher o herdeiro mais velho como produtor.",
+        "Recensear apenas a área registrada no inventário."
+      ],
+      "answer": 0,
+      "explanation": "Com consenso entre herdeiros, o material orienta um estabelecimento e indica quem pode prestar as informações.",
+      "whyWrong": [
+        "Correta. Com consenso entre herdeiros, o material orienta um estabelecimento e indica quem pode prestar as informações.",
+        "A separação só se aplica a situações como ocupação individual das partes.",
+        "Partilha em andamento não impede a coleta.",
+        "Idade não é critério de informante.",
+        "A unidade de exploração orienta o recenseamento."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 65",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-105",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "litígio",
+      "difficulty": "hard",
+      "statement": "Há disputa judicial sobre uma exploração. Para identificar o produtor na data de referência, a apostila determina considerar:",
+      "options": [
+        "Quem detinha o título mais antigo.",
+        "Quem era economicamente responsável pela exploração naquela data.",
+        "Quem compareceu primeiro ao posto.",
+        "Quem reside mais perto da sede.",
+        "O autor da ação judicial obrigatoriamente."
+      ],
+      "answer": 1,
+      "explanation": "No litígio, o produtor é a pessoa que respondia economicamente pela exploração na data de referência, independentemente da posição processual.",
+      "whyWrong": [
+        "Título antigo pode não indicar exploração atual.",
+        "Correta. No litígio, o produtor é a pessoa que respondia economicamente pela exploração na data de referência, independentemente da posição processual.",
+        "Ordem de comparecimento não é critério.",
+        "Proximidade residencial é irrelevante.",
+        "Ser autor da ação não prova responsabilidade econômica."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 65",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-106",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "estabelecimento sem produção",
+      "difficulty": "hard",
+      "statement": "Um estabelecimento existente em 31/12/2025 perdeu a produção do ano por evento climático. Segundo o material, ele:",
+      "options": [
+        "Não deve ser recenseado por ausência de colheita.",
+        "Deve ser recenseado e ter registrado o motivo da ausência de produção.",
+        "Só será recenseado se vender produtos em 2026.",
+        "Deve ser classificado como residência de lazer.",
+        "É necessariamente produtor sem área."
+      ],
+      "answer": 1,
+      "explanation": "O material inclui estabelecimentos existentes na data de referência sem produção por razões climáticas e manda registrar o motivo em Observações do DMC.",
+      "whyWrong": [
+        "Ausência de produção no período não exclui a unidade existente.",
+        "Correta. O material inclui estabelecimentos existentes na data de referência sem produção por razões climáticas e manda registrar o motivo em Observações do DMC.",
+        "Venda posterior não é requisito indicado.",
+        "Perda de produção não converte a exploração em lazer.",
+        "A unidade possui área no enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 65",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-107",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "exploração comunitária",
+      "difficulty": "hard",
+      "statement": "Em uma área comunitária, as famílias trabalham juntas na mesma produção e dividem os resultados. Qual orientação de questionário consta da apostila?",
+      "options": [
+        "Um questionário para a produção coletiva.",
+        "Um questionário para cada família, mesmo sem produção individual.",
+        "Nenhum questionário por ser área coletiva.",
+        "Um questionário para cada parcela municipal.",
+        "Somente cadastro de endereço sem produção."
+      ],
+      "answer": 0,
+      "explanation": "Quando a produção é coletiva e dividida entre as famílias, a apostila determina preencher apenas um questionário.",
+      "whyWrong": [
+        "Correta. Quando a produção é coletiva e dividida entre as famílias, a apostila determina preencher apenas um questionário.",
+        "Questionários individuais aplicam-se à produção individualizada.",
+        "Exploração coletiva pode ser recenseável.",
+        "Parcela municipal não é o critério descrito.",
+        "A produção deve ser investigada."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 66",
+          "url": "https://ftp.ibge.gov.br/edital/PSS_Censo_Agro/2026_02/Edital_2_2026_AC_ACQ_Apostila_de_Estudo_dos_conhecimentos_tecnicos.pdf"
+        }
+      ],
+      "status": "review"
+    }
+  ]
+}

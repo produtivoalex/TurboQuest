@@ -1,0 +1,1407 @@
+{
+  "batch": "batch-007a",
+  "status": "review",
+  "generatedBy": "curadoria nesta conversa",
+  "questions": [
+    {
+      "id": "ibge26-b007-001",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "planejamento e controle",
+      "difficulty": "hard",
+      "statement": "Uma coordenação estabeleceu meta semanal de visitas e, ao fim da semana, comparou o realizado, identificou atraso por falta de transporte e remanejou veículos. Qual etapa corresponde ao remanejamento?",
+      "options": [
+        "Fixação da meta",
+        "Mensuração do resultado",
+        "Diagnóstico da causa",
+        "Ação corretiva",
+        "Formulação da missão"
+      ],
+      "answer": 3,
+      "explanation": "O remanejamento altera a execução após comparação e diagnóstico do desvio; portanto, é a ação corretiva do processo de controle.",
+      "whyWrong": [
+        "A meta foi fixada antes da semana.",
+        "A mensuração foi a contagem das visitas.",
+        "O diagnóstico identificou a falta de transporte.",
+        "Correta. O remanejamento altera a execução após comparação e diagnóstico do desvio; portanto, é a ação corretiva do processo de controle.",
+        "A missão descreve finalidade institucional, não medida operacional."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-002",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "processo decisório",
+      "difficulty": "hard",
+      "statement": "Duas soluções reduzem o atraso de uma equipe: contratar transporte adicional ou redistribuir veículos ociosos. Antes de decidir, o gestor compara custo, prazo e impacto em outras equipes. Essa comparação constitui:",
+      "options": [
+        "Definição do problema",
+        "Avaliação de alternativas",
+        "Execução da decisão",
+        "Controle posterior",
+        "Delegação de autoridade"
+      ],
+      "answer": 1,
+      "explanation": "Os critérios são aplicados a cursos de ação possíveis antes da escolha. Essa é a avaliação de alternativas no processo decisório.",
+      "whyWrong": [
+        "O atraso já foi reconhecido como problema.",
+        "Correta. Os critérios são aplicados a cursos de ação possíveis antes da escolha. Essa é a avaliação de alternativas no processo decisório.",
+        "A execução ocorre depois da escolha.",
+        "O controle mede efeitos depois da implementação.",
+        "Não há transferência de poder decisório descrita."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-003",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "delegação",
+      "difficulty": "hard",
+      "statement": "Um supervisor autoriza um agente a reorganizar a ordem das visitas dentro de limites definidos, mas mantém o acompanhamento das metas. Qual conclusão é correta?",
+      "options": [
+        "A responsabilidade do supervisor desapareceu.",
+        "O agente recebeu autoridade delimitada para uma tarefa.",
+        "A delegação extinguiu o dever de prestar contas.",
+        "O agente passou a definir o objetivo institucional.",
+        "O supervisor deixou de exercer controle."
+      ],
+      "answer": 1,
+      "explanation": "Delegar permite atribuir poder de decisão dentro de limites. O superior continua responsável pelo acompanhamento e pelos resultados da unidade.",
+      "whyWrong": [
+        "O superior preserva sua responsabilidade gerencial.",
+        "Correta. Delegar permite atribuir poder de decisão dentro de limites. O superior continua responsável pelo acompanhamento e pelos resultados da unidade.",
+        "Prestação de contas permanece necessária.",
+        "Reordenar visitas não permite mudar o objetivo institucional.",
+        "O enunciado afirma que o supervisor acompanha as metas."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-004",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "indicadores de desempenho",
+      "difficulty": "hard",
+      "statement": "A equipe A realizou mais entrevistas que a equipe B, mas apresentou proporção maior de formulários devolvidos para correção. Qual avaliação é mais adequada?",
+      "options": [
+        "A é necessariamente superior porque produziu mais.",
+        "B é necessariamente superior porque produziu menos.",
+        "É preciso considerar volume e qualidade antes de comparar o desempenho.",
+        "O retrabalho não integra avaliação de desempenho.",
+        "Nenhum indicador pode ser usado nessa comparação."
+      ],
+      "answer": 2,
+      "explanation": "Quantidade isolada não mede resultado útil. A comparação deve incluir qualidade, retrabalho e contexto da produção das equipes.",
+      "whyWrong": [
+        "Ignora devoluções e retrabalho.",
+        "Produção menor não prova qualidade maior.",
+        "Correta. Quantidade isolada não mede resultado útil. A comparação deve incluir qualidade, retrabalho e contexto da produção das equipes.",
+        "Retrabalho é dimensão relevante de qualidade.",
+        "Indicadores são úteis quando interpretados em conjunto."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-005",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "comunicação organizacional",
+      "difficulty": "hard",
+      "statement": "Uma orientação escrita gerou interpretações divergentes entre postos. Para reduzir o ruído sem perder rastreabilidade, a chefia deve:",
+      "options": [
+        "Enviar a mesma mensagem sem explicações.",
+        "Substituir todo registro escrito por conversa informal.",
+        "Esclarecer a instrução, registrar a versão corrigida e confirmar o entendimento.",
+        "Responsabilizar imediatamente todos os postos.",
+        "Permitir que cada posto adote seu próprio critério."
+      ],
+      "answer": 2,
+      "explanation": "A medida combina clareza, registro da orientação vigente e retorno dos destinatários. Assim reduz interpretações distintas e preserva rastreabilidade.",
+      "whyWrong": [
+        "Repetir texto ambíguo mantém o ruído.",
+        "Conversa sem registro prejudica a referência comum.",
+        "Correta. A medida combina clareza, registro da orientação vigente e retorno dos destinatários. Assim reduz interpretações distintas e preserva rastreabilidade.",
+        "Punição não resolve a ambiguidade da mensagem.",
+        "Critérios locais distintos reduzem padronização."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-006",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "gestão de conflitos",
+      "difficulty": "hard",
+      "statement": "Duas equipes disputam o mesmo veículo em horários coincidentes. Há horários alternativos e prioridades diferentes. O primeiro passo gerencial mais sólido é:",
+      "options": [
+        "Prometer o veículo integralmente às duas.",
+        "Determinar uso por sorteio sem conhecer as demandas.",
+        "Mapear necessidades, horários e prioridades antes de negociar a alocação.",
+        "Retirar o veículo de ambas por prazo indeterminado.",
+        "Pedir que cada equipe resolva sem compartilhar informações."
+      ],
+      "answer": 2,
+      "explanation": "A decisão exige conhecer restrições e prioridade das tarefas. A negociação informada permite reduzir o conflito sem prejudicar desnecessariamente a operação.",
+      "whyWrong": [
+        "Promessa incompatível aumenta o conflito.",
+        "Sorteio ignora prioridade e possibilidade de ajuste.",
+        "Correta. A decisão exige conhecer restrições e prioridade das tarefas. A negociação informada permite reduzir o conflito sem prejudicar desnecessariamente a operação.",
+        "Retirada integral não explora alternativas disponíveis.",
+        "Falta de informações impede coordenação."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-007",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "planejamento",
+      "difficulty": "hard",
+      "statement": "Uma gerência define que a unidade deve concluir determinada etapa em três meses. Cada posto, então, detalha atividades semanais, responsáveis e recursos. O detalhamento dos postos corresponde principalmente ao:",
+      "options": [
+        "Planejamento operacional",
+        "Planejamento estratégico de longo prazo",
+        "Controle final",
+        "Diagnóstico externo",
+        "Redesenho da missão"
+      ],
+      "answer": 0,
+      "explanation": "Atividades, responsáveis, recursos e prazos semanais concretizam a execução da meta em nível operacional.",
+      "whyWrong": [
+        "Correta. Atividades, responsáveis, recursos e prazos semanais concretizam a execução da meta em nível operacional.",
+        "O nível estratégico define diretrizes amplas, não tarefas semanais.",
+        "Controle verifica resultados durante ou após a execução.",
+        "Análise externa pode subsidiar o plano, mas não é o detalhamento descrito.",
+        "A missão não é redefinida pela escala semanal."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-008",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "liderança",
+      "difficulty": "hard",
+      "statement": "Um novo agente ainda não domina o aplicativo de coleta; outro domina a ferramenta, mas precisa decidir entre rotas. Uma orientação gerencial ajustada à situação seria:",
+      "options": [
+        "Dar a ambos a mesma instrução minuciosa.",
+        "Oferecer treinamento técnico ao primeiro e autonomia delimitada ao segundo.",
+        "Deixar ambos sem apoio para testar iniciativa.",
+        "Transferir todas as decisões ao primeiro agente.",
+        "Dispensar acompanhamento dos dois."
+      ],
+      "answer": 1,
+      "explanation": "O grau de orientação e autonomia deve acompanhar a competência e a tarefa de cada agente. O primeiro precisa de apoio técnico; o segundo pode receber espaço decisório.",
+      "whyWrong": [
+        "Necessidades diferentes exigem apoio diferente.",
+        "Correta. O grau de orientação e autonomia deve acompanhar a competência e a tarefa de cada agente. O primeiro precisa de apoio técnico; o segundo pode receber espaço decisório.",
+        "Ausência de apoio compromete aprendizado e controle.",
+        "O primeiro ainda não domina a ferramenta.",
+        "Autonomia não elimina acompanhamento."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-009",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "sistemas abertos",
+      "difficulty": "hard",
+      "statement": "Uma mudança no acesso a comunidades altera rotas e horários previstos. Ao atualizar o plano com base nessa informação, a organização demonstra:",
+      "options": [
+        "Isolamento do ambiente",
+        "Adaptação ao ambiente externo",
+        "Abandono de seus objetivos",
+        "Supressão do controle",
+        "Eliminação da divisão de trabalho"
+      ],
+      "answer": 1,
+      "explanation": "Organizações como sistemas abertos recebem informações do ambiente e ajustam processos para continuar perseguindo seus objetivos.",
+      "whyWrong": [
+        "O plano mudou justamente por informação externa.",
+        "Correta. Organizações como sistemas abertos recebem informações do ambiente e ajustam processos para continuar perseguindo seus objetivos.",
+        "Adaptar meios não equivale a abandonar objetivos.",
+        "O ajuste pode reforçar o controle.",
+        "As atribuições continuam existindo."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-010",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "eficácia e eficiência",
+      "difficulty": "hard",
+      "statement": "Uma equipe concluiu todas as visitas previstas, mas consumiu o dobro de combustível planejado sem justificativa operacional. Em relação aos indicadores, ela foi:",
+      "options": [
+        "Eficaz quanto à meta de visitas, com eficiência de recursos a investigar.",
+        "Ineficaz quanto à meta porque gastou mais.",
+        "Eficiente por ter atingido qualquer resultado.",
+        "Necessariamente ineficaz e eficiente.",
+        "Impossível de avaliar em qualquer dimensão."
+      ],
+      "answer": 0,
+      "explanation": "A eficácia refere-se ao alcance da meta de visitas. O consumo elevado exige análise da eficiência no uso dos recursos; uma dimensão não substitui a outra.",
+      "whyWrong": [
+        "Correta. A eficácia refere-se ao alcance da meta de visitas. O consumo elevado exige análise da eficiência no uso dos recursos; uma dimensão não substitui a outra.",
+        "A meta de visitas foi atingida.",
+        "Alcançar resultado não demonstra uso eficiente dos recursos.",
+        "As classificações invertem os fatos narrados.",
+        "Há dados suficientes para avaliar ao menos as duas dimensões citadas."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-011",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "controle preventivo",
+      "difficulty": "hard",
+      "statement": "Antes de iniciar a coleta, uma coordenação verifica se os dispositivos estão configurados e se as equipes receberam treinamento. O controle é predominantemente:",
+      "options": [
+        "Posterior, pois mede apenas resultados finais.",
+        "Preventivo, pois busca evitar falhas antes da execução.",
+        "Corretivo, pois reprocessa entrevistas já transmitidas.",
+        "Informal, pois não pode usar listas de verificação.",
+        "Estratégico, pois muda a missão da instituição."
+      ],
+      "answer": 1,
+      "explanation": "A verificação antecede a operação e reduz a chance de problemas durante a coleta; por isso é controle preventivo.",
+      "whyWrong": [
+        "Ainda não há resultado final.",
+        "Correta. A verificação antecede a operação e reduz a chance de problemas durante a coleta; por isso é controle preventivo.",
+        "Nenhuma entrevista já transmitida é corrigida no enunciado.",
+        "Listas de verificação podem formalizar a atividade.",
+        "Preparar dispositivos não altera a missão institucional."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-012",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "qualidade em serviços",
+      "difficulty": "hard",
+      "statement": "Um posto reduz o tempo médio de atendimento, porém aumenta a taxa de informações incompletas. A conclusão gerencial mais consistente é:",
+      "options": [
+        "Houve melhoria inequívoca.",
+        "A rapidez isolada não demonstra melhoria da qualidade total.",
+        "Informações incompletas não afetam o usuário.",
+        "Deve-se abandonar a medição de tempo.",
+        "O posto tornou-se necessariamente mais caro."
+      ],
+      "answer": 1,
+      "explanation": "Tempo e completude são dimensões do serviço. A redução de uma com piora da outra pede avaliação conjunta de qualidade e retrabalho.",
+      "whyWrong": [
+        "Ignora a piora da completude.",
+        "Correta. Tempo e completude são dimensões do serviço. A redução de uma com piora da outra pede avaliação conjunta de qualidade e retrabalho.",
+        "O usuário pode precisar retornar ou receber serviço incompleto.",
+        "Tempo continua sendo indicador útil.",
+        "O enunciado não informa custos."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-013",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "responsabilidade e autoridade",
+      "difficulty": "hard",
+      "statement": "Um servidor responde por conferir formulários, mas não pode solicitar correções nem acessar os registros necessários. A falha de desenho organizacional é:",
+      "options": [
+        "Excesso de comunicação horizontal.",
+        "Incompatibilidade entre responsabilidade atribuída e autoridade ou recursos disponíveis.",
+        "Ausência de objetivo institucional.",
+        "Controle posterior excessivo.",
+        "Planejamento estratégico muito detalhado."
+      ],
+      "answer": 1,
+      "explanation": "A responsabilidade por um resultado precisa vir acompanhada dos meios e da autoridade necessários para executar e corrigir a tarefa.",
+      "whyWrong": [
+        "Comunicação horizontal não explica falta de acesso.",
+        "Correta. A responsabilidade por um resultado precisa vir acompanhada dos meios e da autoridade necessários para executar e corrigir a tarefa.",
+        "O objetivo de conferir formulários existe.",
+        "Não se descreve controle posterior excessivo.",
+        "Não há detalhe de planejamento estratégico."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-014",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "avaliação de desempenho",
+      "difficulty": "hard",
+      "statement": "Um gestor avalia agentes apenas pelo número bruto de entrevistas, embora seus setores tenham distâncias e acesso muito diferentes. O principal risco é:",
+      "options": [
+        "A comparação perder validade por ignorar condições de trabalho relevantes.",
+        "O número bruto medir todas as dimensões da qualidade.",
+        "O controle se tornar automaticamente preventivo.",
+        "A avaliação eliminar qualquer viés.",
+        "Os agentes passarem a trabalhar no mesmo setor."
+      ],
+      "answer": 0,
+      "explanation": "A comparação precisa considerar contexto e critérios pertinentes. Distância e acessibilidade podem afetar produtividade sem refletir esforço ou competência.",
+      "whyWrong": [
+        "Correta. A comparação precisa considerar contexto e critérios pertinentes. Distância e acessibilidade podem afetar produtividade sem refletir esforço ou competência.",
+        "Volume isolado não mede qualidade integral.",
+        "A avaliação descrita ocorre sobre produção realizada.",
+        "Ignorar contexto introduz viés.",
+        "Os setores continuam diferentes."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-015",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "comunicação e feedback",
+      "difficulty": "hard",
+      "statement": "Após orientar uma equipe, o supervisor pede que ela descreva como aplicará o procedimento em um caso concreto. Esse pedido serve principalmente para:",
+      "options": [
+        "Verificar compreensão por meio de feedback.",
+        "Transferir integralmente a responsabilidade ao grupo.",
+        "Anular a instrução inicial.",
+        "Substituir qualquer documento oficial.",
+        "Impedir a manifestação de dúvidas."
+      ],
+      "answer": 0,
+      "explanation": "A equipe demonstra, com suas próprias palavras, se compreendeu e consegue aplicar a orientação. O retorno permite corrigir ruídos antes da execução.",
+      "whyWrong": [
+        "Correta. A equipe demonstra, com suas próprias palavras, se compreendeu e consegue aplicar a orientação. O retorno permite corrigir ruídos antes da execução.",
+        "A responsabilidade do supervisor permanece.",
+        "A instrução é testada, não anulada.",
+        "A verificação complementa o documento oficial.",
+        "O procedimento favorece identificação de dúvidas."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-016",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "coordenação",
+      "difficulty": "hard",
+      "statement": "A equipe de campo conclui registros que dependem de validação por outro posto. Sem combinar prazos de entrega e retorno, ambas atingem metas locais, mas a operação atrasa. Falta sobretudo:",
+      "options": [
+        "Especialização técnica.",
+        "Coordenação entre atividades interdependentes.",
+        "Motivação individual.",
+        "Autoridade normativa externa.",
+        "Um novo objetivo institucional."
+      ],
+      "answer": 1,
+      "explanation": "As etapas dependem uma da outra. É preciso alinhar prazos, responsabilidades e fluxo de retorno para que o resultado conjunto ocorra no prazo.",
+      "whyWrong": [
+        "As equipes podem dominar suas tarefas e ainda assim atrasar a cadeia.",
+        "Correta. As etapas dependem uma da outra. É preciso alinhar prazos, responsabilidades e fluxo de retorno para que o resultado conjunto ocorra no prazo.",
+        "O problema é de integração do fluxo, não de vontade individual.",
+        "Nenhuma norma externa é indicada como causa.",
+        "O objetivo comum já está definido."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-017",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "tomada de decisão",
+      "difficulty": "hard",
+      "statement": "Em situação urgente, o gestor escolhe uma solução viável com dados incompletos, registra as premissas e prevê revisão após obter novas evidências. Essa conduta:",
+      "options": [
+        "É necessariamente irracional.",
+        "Combina decisão sob restrição de informação com monitoramento.",
+        "Dispensa critérios de decisão.",
+        "Garante resultado ótimo.",
+        "Impede qualquer ajuste futuro."
+      ],
+      "answer": 1,
+      "explanation": "A decisão pode ocorrer com informação limitada. Registrar premissas e acompanhar efeitos permite revisar o curso escolhido.",
+      "whyWrong": [
+        "Urgência não torna toda decisão irracional.",
+        "Correta. A decisão pode ocorrer com informação limitada. Registrar premissas e acompanhar efeitos permite revisar o curso escolhido.",
+        "Critérios continuam necessários.",
+        "Solução viável não significa ótima.",
+        "A revisão está prevista no enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-018",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "gestão de riscos",
+      "difficulty": "hard",
+      "statement": "Um posto percebe que a conexão de dados costuma falhar no fim da tarde. Antes do próximo turno, organiza a coleta offline prevista e define horário de sincronização. A medida é:",
+      "options": [
+        "Resposta preventiva a um risco identificado.",
+        "Correção de um dado já perdido.",
+        "Mudança da finalidade da pesquisa.",
+        "Eliminação garantida de qualquer falha.",
+        "Delegação de toda a operação à equipe de TI."
+      ],
+      "answer": 0,
+      "explanation": "A falha recorrente foi identificada e o procedimento de contingência preparado antes do turno; isso reduz impacto provável do risco.",
+      "whyWrong": [
+        "Correta. A falha recorrente foi identificada e o procedimento de contingência preparado antes do turno; isso reduz impacto provável do risco.",
+        "Não há dado perdido a recuperar no caso.",
+        "A finalidade da pesquisa permanece.",
+        "Contingência reduz impacto, sem garantir ausência de falhas.",
+        "A equipe de campo mantém sua responsabilidade."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-019",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "trabalho em equipe",
+      "difficulty": "hard",
+      "statement": "Numa reunião, cada integrante apresenta obstáculos da própria etapa, e o grupo combina entregas que dependem umas das outras. O principal ganho dessa prática é:",
+      "options": [
+        "Reduzir a interdependência a zero.",
+        "Criar entendimento compartilhado e alinhar compromissos.",
+        "Substituir a responsabilidade individual.",
+        "Eliminar a necessidade de registro.",
+        "Aumentar a ambiguidade dos papéis."
+      ],
+      "answer": 1,
+      "explanation": "A troca de informações torna dependências visíveis e permite pactuar entregas, responsáveis e prazos para o resultado coletivo.",
+      "whyWrong": [
+        "As atividades continuam interdependentes.",
+        "Correta. A troca de informações torna dependências visíveis e permite pactuar entregas, responsáveis e prazos para o resultado coletivo.",
+        "Responsabilidades individuais permanecem.",
+        "Registrar compromissos pode ser necessário.",
+        "O alinhamento tende a esclarecer papéis."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-020",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "indicadores",
+      "difficulty": "hard",
+      "statement": "O indicador “entrevistas concluídas por dia” cresce após a equipe deixar casos difíceis para depois. Por que ele não deve ser interpretado sozinho?",
+      "options": [
+        "Porque produtividade diária nunca é mensurável.",
+        "Porque pode melhorar enquanto cobertura e resolutividade pioram.",
+        "Porque qualquer crescimento indica fraude.",
+        "Porque não existe meta para entrevistas.",
+        "Porque casos difíceis são sempre irrelevantes."
+      ],
+      "answer": 1,
+      "explanation": "O ganho numérico pode ocultar seleção de casos fáceis. Cobertura, pendências e qualidade precisam compor a avaliação da operação.",
+      "whyWrong": [
+        "A contagem é mensurável.",
+        "Correta. O ganho numérico pode ocultar seleção de casos fáceis. Cobertura, pendências e qualidade precisam compor a avaliação da operação.",
+        "O dado isolado não prova fraude.",
+        "Metas podem existir e ainda assim exigir contexto.",
+        "Casos difíceis integram a cobertura prevista."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-021",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "planejamento",
+      "difficulty": "hard",
+      "statement": "Um plano define objetivo, responsável, prazo e recurso, mas não estabelece como verificar o cumprimento. Qual elemento falta para permitir acompanhamento consistente?",
+      "options": [
+        "Indicador ou critério de avaliação",
+        "Nome informal da equipe",
+        "Nova missão institucional",
+        "Aumento automático do orçamento",
+        "Substituição do objetivo por uma atividade"
+      ],
+      "answer": 0,
+      "explanation": "Além de ação, responsável, prazo e recurso, o acompanhamento requer critério de resultado ou indicador que permita comparar o realizado com o esperado.",
+      "whyWrong": [
+        "Correta. Além de ação, responsável, prazo e recurso, o acompanhamento requer critério de resultado ou indicador que permita comparar o realizado com o esperado.",
+        "O nome da equipe não mede o resultado.",
+        "Não há necessidade de reformular a missão.",
+        "Mais orçamento não cria critério de verificação.",
+        "Atividade não substitui objetivo mensurável."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-022",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "organização",
+      "difficulty": "hard",
+      "statement": "Em uma unidade, duas pessoas acreditam ser responsáveis pelo mesmo documento, enquanto ninguém cuida de sua guarda final. A função administrativa a ajustar primeiro é:",
+      "options": [
+        "Organização das atribuições e do fluxo de trabalho",
+        "Motivação por premiação",
+        "Controle externo da população",
+        "Previsão de receita",
+        "Publicidade institucional"
+      ],
+      "answer": 0,
+      "explanation": "A sobreposição e a lacuna de responsabilidades mostram falha na distribuição de tarefas, autoridade e fluxo, aspectos da função organização.",
+      "whyWrong": [
+        "Correta. A sobreposição e a lacuna de responsabilidades mostram falha na distribuição de tarefas, autoridade e fluxo, aspectos da função organização.",
+        "Prêmio não define quem guarda o documento.",
+        "Não se trata de controle social externo.",
+        "Receita não resolve a atribuição.",
+        "Divulgação institucional não corrige o fluxo."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-023",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "documentação e arquivo",
+      "difficulty": "hard",
+      "statement": "Uma unidade precisa recuperar rapidamente solicitações recebidas em meses anteriores. Qual prática contribui diretamente para essa necessidade?",
+      "options": [
+        "Classificação e registro padronizados dos documentos",
+        "Guardar tudo em uma única pasta sem nomes",
+        "Eliminar documentos após a leitura",
+        "Depender apenas da memória do servidor",
+        "Misturar versões sem identificação"
+      ],
+      "answer": 0,
+      "explanation": "Classificação e registro consistentes permitem localizar documentos por critérios definidos, recuperar seu contexto e acompanhar sua tramitação.",
+      "whyWrong": [
+        "Correta. Classificação e registro consistentes permitem localizar documentos por critérios definidos, recuperar seu contexto e acompanhar sua tramitação.",
+        "Uma pasta indiferenciada dificulta busca.",
+        "A eliminação exige regras de temporalidade.",
+        "Memória individual não oferece rastreabilidade.",
+        "Versões não identificadas criam incerteza."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-024",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "atendimento ao público",
+      "difficulty": "hard",
+      "statement": "Uma pessoa procura informação sobre um procedimento, mas o servidor não tem competência para decidir seu pedido. Qual atitude preserva qualidade no atendimento?",
+      "options": [
+        "Orientar o canal competente e explicar os passos conhecidos com clareza.",
+        "Prometer deferimento para encerrar a conversa.",
+        "Negar toda informação por não decidir o pedido.",
+        "Encaminhar sem indicar destino.",
+        "Registrar decisão que cabe a outra unidade."
+      ],
+      "answer": 0,
+      "explanation": "O servidor pode orientar de modo claro e encaminhar ao canal responsável, sem prometer decisão que não está autorizado a tomar.",
+      "whyWrong": [
+        "Correta. O servidor pode orientar de modo claro e encaminhar ao canal responsável, sem prometer decisão que não está autorizado a tomar.",
+        "Promessa sem competência cria falsa expectativa.",
+        "A falta de competência decisória não impede orientação.",
+        "Encaminhamento sem destino não ajuda o usuário.",
+        "Não se pode decidir em nome de outra unidade."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-025",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "controle",
+      "difficulty": "hard",
+      "statement": "Ao conferir um processo antes do envio, o servidor encontra documento obrigatório ausente e solicita sua inclusão. A conferência funciona como:",
+      "options": [
+        "Controle preventivo no fluxo",
+        "Avaliação exclusivamente estratégica",
+        "Delegação de autoridade",
+        "Mudança de objetivo institucional",
+        "Publicidade externa"
+      ],
+      "answer": 0,
+      "explanation": "A conferência intercepta a falha antes que o processo avance, permitindo correção no fluxo e reduzindo retrabalho posterior.",
+      "whyWrong": [
+        "Correta. A conferência intercepta a falha antes que o processo avance, permitindo correção no fluxo e reduzindo retrabalho posterior.",
+        "A ação é operacional, não revisão estratégica da instituição.",
+        "Não se descreve transferência de autoridade.",
+        "O objetivo permanece o mesmo.",
+        "Não há divulgação externa no caso."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-026",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "arquivos e pastas",
+      "difficulty": "hard",
+      "statement": "Um agente precisa preservar a planilha original e trabalhar em uma versão separada. Qual operação atende diretamente a esse objetivo?",
+      "options": [
+        "Mover o arquivo para outra pasta.",
+        "Copiar o arquivo e renomear a cópia.",
+        "Excluir o arquivo original.",
+        "Criar apenas um atalho.",
+        "Alterar a extensão do original."
+      ],
+      "answer": 1,
+      "explanation": "Copiar cria outra instância do arquivo; renomear a cópia ajuda a distinguir as versões sem alterar o original.",
+      "whyWrong": [
+        "Mover altera a localização, sem criar versão separada.",
+        "Correta. Copiar cria outra instância do arquivo; renomear a cópia ajuda a distinguir as versões sem alterar o original.",
+        "Excluir elimina a referência original.",
+        "Atalho aponta para o mesmo arquivo.",
+        "Mudar extensão não duplica o conteúdo."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-027",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "planilhas e filtros",
+      "difficulty": "hard",
+      "statement": "Uma lista tem registros de cinco municípios. O agente quer visualizar somente os de um município sem apagar os demais. Deve usar:",
+      "options": [
+        "Classificação crescente do arquivo inteiro.",
+        "Filtro pelo valor da coluna município.",
+        "Exclusão das outras linhas.",
+        "Função SOMA na coluna município.",
+        "Renomeação da planilha."
+      ],
+      "answer": 1,
+      "explanation": "O filtro seleciona temporariamente as linhas que atendem ao critério. Os demais registros permanecem na planilha.",
+      "whyWrong": [
+        "Classificar muda a ordem, mas não oculta os demais.",
+        "Correta. O filtro seleciona temporariamente as linhas que atendem ao critério. Os demais registros permanecem na planilha.",
+        "Excluir remove informações.",
+        "SOMA opera com valores numéricos.",
+        "Renomear não modifica a visualização das linhas."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-028",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "CONT.SE",
+      "difficulty": "hard",
+      "statement": "Na planilha, B2:B21 contém a situação de vinte registros, com os textos “Pendente” e “Concluído”. Qual fórmula conta os pendentes?",
+      "options": [
+        "=SOMA(B2:B21;\"Pendente\")",
+        "=CONT.SE(B2:B21;\"Pendente\")",
+        "=MÉDIA(B2:B21)",
+        "=CONT.SE(\"Pendente\";B2:B21)",
+        "=CLASSIFICAR(B2:B21)"
+      ],
+      "answer": 1,
+      "explanation": "CONT.SE recebe intervalo e critério, nessa ordem. A função conta as células de B2:B21 cujo conteúdo é Pendente.",
+      "whyWrong": [
+        "SOMA não conta ocorrências de texto.",
+        "Correta. CONT.SE recebe intervalo e critério, nessa ordem. A função conta as células de B2:B21 cujo conteúdo é Pendente.",
+        "MÉDIA não serve para contar categorias textuais.",
+        "Os argumentos de CONT.SE estão invertidos.",
+        "Classificar ordena ou reorganiza, sem contar pendências."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-029",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "SOMA e MÉDIA",
+      "difficulty": "hard",
+      "statement": "As células C2:C5 contêm 4, 6, 8 e 10 visitas. Para obter o número médio de visitas por dia, o agente deve usar:",
+      "options": [
+        "=SOMA(C2:C5)",
+        "=MÉDIA(C2:C5)",
+        "=CONT.SE(C2:C5;\">0\")",
+        "=MÁXIMO(C2:C5)",
+        "=MÍNIMO(C2:C5)"
+      ],
+      "answer": 1,
+      "explanation": "A função MÉDIA soma os quatro valores e divide pela quantidade de células numéricas; o resultado é 7 visitas por dia.",
+      "whyWrong": [
+        "SOMA retorna 28, não 7.",
+        "Correta. A função MÉDIA soma os quatro valores e divide pela quantidade de células numéricas; o resultado é 7 visitas por dia.",
+        "CONT.SE retorna a contagem de células positivas.",
+        "MÁXIMO retorna 10.",
+        "MÍNIMO retorna 4."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-030",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "operação offline",
+      "difficulty": "hard",
+      "statement": "Durante uma queda de sinal, um aplicativo autorizado permite salvar registros localmente. Antes de tentar a transmissão, o agente deve:",
+      "options": [
+        "Apagar os registros locais e refazer a coleta.",
+        "Verificar se foram salvos e sincronizar pelo fluxo previsto quando a conexão voltar.",
+        "Enviar cópias por aplicativo pessoal.",
+        "Trocar a senha para uma senha compartilhada.",
+        "Marcar todos como transmitidos manualmente."
+      ],
+      "answer": 1,
+      "explanation": "Salvar localmente não equivale a transmitir. O agente deve preservar os dados, verificar o estado dos registros e seguir a sincronização prevista.",
+      "whyWrong": [
+        "Apagar dados aumenta o risco de perda.",
+        "Correta. Salvar localmente não equivale a transmitir. O agente deve preservar os dados, verificar o estado dos registros e seguir a sincronização prevista.",
+        "Canal pessoal pode violar controles da operação.",
+        "Senha compartilhada compromete a segurança.",
+        "Marcação manual não comprova transmissão."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-031",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "logs de transmissão",
+      "difficulty": "hard",
+      "statement": "O aplicativo informa que um lote não foi recebido. O registro de transmissão mostra horário, identificador e erro retornado. Esses dados servem principalmente para:",
+      "options": [
+        "Diagnosticar a falha e comprovar o estado da tentativa.",
+        "Substituir definitivamente o lote não recebido.",
+        "Garantir que o lote chegou apesar do erro.",
+        "Divulgar credenciais de acesso.",
+        "Eliminar a necessidade de nova tentativa."
+      ],
+      "answer": 0,
+      "explanation": "O log oferece evidências do que ocorreu na tentativa de transmissão e orienta diagnóstico ou nova ação; não substitui os dados do lote.",
+      "whyWrong": [
+        "Correta. O log oferece evidências do que ocorreu na tentativa de transmissão e orienta diagnóstico ou nova ação; não substitui os dados do lote.",
+        "Metadados de transmissão não contêm necessariamente o lote.",
+        "Uma mensagem de erro não comprova recebimento.",
+        "Credenciais não devem ser divulgadas.",
+        "Pode ser necessário retransmitir pelo procedimento."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-032",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "integridade dos dados",
+      "difficulty": "hard",
+      "statement": "Uma planilha foi alterada após a revisão sem que se saiba por quem. Qual controle ajudaria a investigar a mudança?",
+      "options": [
+        "Histórico de versões e identificação de usuário.",
+        "Redução do brilho da tela.",
+        "Renomeação do computador.",
+        "Uso exclusivo de letras maiúsculas.",
+        "Remoção de todas as fórmulas."
+      ],
+      "answer": 0,
+      "explanation": "Histórico de versões e contas individuais permitem comparar alterações e atribuir ações, favorecendo integridade e rastreabilidade.",
+      "whyWrong": [
+        "Correta. Histórico de versões e contas individuais permitem comparar alterações e atribuir ações, favorecendo integridade e rastreabilidade.",
+        "Brilho não registra alterações.",
+        "Nome do computador não identifica cada edição.",
+        "Caixa alta não preserva histórico.",
+        "Remover fórmulas pode destruir informação útil."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-033",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "confidencialidade",
+      "difficulty": "hard",
+      "statement": "Um arquivo com dados de trabalho deve ser enviado a outra equipe autorizada. Qual configuração melhor limita a exposição?",
+      "options": [
+        "Link público sem prazo.",
+        "Permissão somente aos destinatários necessários.",
+        "Senha publicada no mesmo grupo aberto.",
+        "Cópia em pasta compartilhada com todos.",
+        "Desativação dos registros de acesso."
+      ],
+      "answer": 1,
+      "explanation": "Conceder acesso apenas a quem precisa reduz circulação indevida de dados e facilita identificar responsabilidades pelo uso.",
+      "whyWrong": [
+        "Link público amplia a exposição.",
+        "Correta. Conceder acesso apenas a quem precisa reduz circulação indevida de dados e facilita identificar responsabilidades pelo uso.",
+        "Senha em grupo aberto perde proteção.",
+        "Pasta ampla concede acesso excessivo.",
+        "Logs ajudam a acompanhar acessos."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-034",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "Android e aplicativos",
+      "difficulty": "hard",
+      "statement": "Um aplicativo de coleta solicita atualização. Antes de instalar uma versão recebida por mensagem informal, o agente deve:",
+      "options": [
+        "Seguir o canal oficial de atualização definido pela operação.",
+        "Instalar imediatamente o arquivo recebido.",
+        "Compartilhar o pacote com toda a equipe.",
+        "Desativar o bloqueio de tela.",
+        "Ignorar qualquer atualização, mesmo a oficial."
+      ],
+      "answer": 0,
+      "explanation": "Aplicativos de trabalho devem ser atualizados por canais autorizados; arquivos informais podem ser adulterados ou incompatíveis.",
+      "whyWrong": [
+        "Correta. Aplicativos de trabalho devem ser atualizados por canais autorizados; arquivos informais podem ser adulterados ou incompatíveis.",
+        "Origem informal não garante autenticidade.",
+        "Propagar pacote suspeito amplia o risco.",
+        "Bloqueio de tela protege acesso ao dispositivo.",
+        "Atualizações oficiais podem corrigir falhas e riscos."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-035",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "Wi-Fi e dados móveis",
+      "difficulty": "hard",
+      "statement": "O dispositivo exibe Wi-Fi conectado, mas a transmissão falha porque a rede local está sem acesso à internet. A explicação correta é:",
+      "options": [
+        "Conexão ao Wi-Fi não garante acesso à internet.",
+        "Wi-Fi e internet são sinônimos.",
+        "A transmissão sempre ocorre por Bluetooth.",
+        "O aplicativo necessariamente apagou os dados.",
+        "O problema prova que a senha do usuário expirou."
+      ],
+      "answer": 0,
+      "explanation": "O Wi-Fi estabelece conexão com a rede local; essa rede pode não estar conectada à internet ou ao serviço exigido pelo aplicativo.",
+      "whyWrong": [
+        "Correta. O Wi-Fi estabelece conexão com a rede local; essa rede pode não estar conectada à internet ou ao serviço exigido pelo aplicativo.",
+        "Rede local pode existir sem rota para a internet.",
+        "Bluetooth não é implicado no enunciado.",
+        "Falha de rede não prova apagamento.",
+        "Nada indica expiração de senha."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-036",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "classificação de dados",
+      "difficulty": "hard",
+      "statement": "Uma tabela contém as colunas município, setor e data. Para ver primeiro os setores mais recentes dentro de cada município, deve-se:",
+      "options": [
+        "Classificar apenas a coluna data isoladamente.",
+        "Classificar a tabela por município e, em seguida, por data decrescente.",
+        "Filtrar somente os setores mais recentes e apagar os demais.",
+        "Somar os valores da coluna município.",
+        "Renomear os arquivos por ordem alfabética."
+      ],
+      "answer": 1,
+      "explanation": "A ordenação em vários níveis agrupa os registros por município e organiza as datas dentro de cada grupo, preservando as linhas completas.",
+      "whyWrong": [
+        "Ordenar uma coluna isolada pode desalinhar os registros.",
+        "Correta. A ordenação em vários níveis agrupa os registros por município e organiza as datas dentro de cada grupo, preservando as linhas completas.",
+        "Filtrar não produz a ordenação solicitada e apagar perde dados.",
+        "Município é categoria textual, não soma.",
+        "Nome de arquivo não reorganiza linhas da tabela."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-037",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "recortar e copiar",
+      "difficulty": "hard",
+      "statement": "Um agente precisa retirar um arquivo de uma pasta e colocá-lo em outra, sem deixar cópia na pasta de origem. Deve usar:",
+      "options": [
+        "Copiar e colar.",
+        "Recortar e colar.",
+        "Criar atalho.",
+        "Duplicar e renomear.",
+        "Abrir e fechar o arquivo."
+      ],
+      "answer": 1,
+      "explanation": "Recortar e colar move o item para o destino, enquanto copiar e colar preserva uma cópia no local original.",
+      "whyWrong": [
+        "Copiar mantém o original.",
+        "Correta. Recortar e colar move o item para o destino, enquanto copiar e colar preserva uma cópia no local original.",
+        "Atalho referencia o arquivo sem movê-lo.",
+        "Duplicar cria outra instância.",
+        "Abrir e fechar não muda a pasta."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-038",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "backup",
+      "difficulty": "hard",
+      "statement": "Uma equipe faz cópia de segurança, mas nunca testa a recuperação. O principal risco dessa prática é:",
+      "options": [
+        "A cópia existir e não ser restaurável quando necessária.",
+        "A cópia sempre ficar mais rápida.",
+        "Os arquivos originais se tornarem automaticamente públicos.",
+        "O antivírus deixar de funcionar.",
+        "A internet ser desativada permanentemente."
+      ],
+      "answer": 0,
+      "explanation": "O teste de restauração verifica integridade e procedimento. Sem ele, pode-se descobrir tarde demais que a cópia está incompleta ou inutilizável.",
+      "whyWrong": [
+        "Correta. O teste de restauração verifica integridade e procedimento. Sem ele, pode-se descobrir tarde demais que a cópia está incompleta ou inutilizável.",
+        "Velocidade de cópia não é o risco principal.",
+        "Backup não publica arquivos automaticamente.",
+        "Antivírus é mecanismo independente.",
+        "Não há relação necessária com desativação da internet."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-039",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "perfis e senhas",
+      "difficulty": "hard",
+      "statement": "Dois agentes usam a mesma conta para registrar operações distintas. Qual consequência prejudica mais diretamente a auditoria?",
+      "options": [
+        "Fica difícil atribuir cada ação ao agente que a realizou.",
+        "A tela fica necessariamente mais lenta.",
+        "O sistema perde a função de imprimir.",
+        "O arquivo muda automaticamente de formato.",
+        "O Wi-Fi deixa de funcionar."
+      ],
+      "answer": 0,
+      "explanation": "Credenciais individuais permitem ligar ações a responsáveis. Conta compartilhada enfraquece rastreabilidade e dificulta apurar erros ou acesso indevido.",
+      "whyWrong": [
+        "Correta. Credenciais individuais permitem ligar ações a responsáveis. Conta compartilhada enfraquece rastreabilidade e dificulta apurar erros ou acesso indevido.",
+        "Desempenho não decorre necessariamente da conta compartilhada.",
+        "Impressão é assunto distinto.",
+        "Formato do arquivo não depende desse compartilhamento.",
+        "Wi-Fi pode funcionar normalmente."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b007-040",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "gráficos em planilhas",
+      "difficulty": "hard",
+      "statement": "Para comparar o número de visitas concluídas por cinco postos, qual visualização costuma ser mais adequada?",
+      "options": [
+        "Gráfico de colunas, com um valor por posto.",
+        "Mapa sem dados territoriais.",
+        "Gráfico de dispersão com um único ponto.",
+        "Imagem decorativa sem escala.",
+        "Histograma que mistura os cinco postos em uma classe."
+      ],
+      "answer": 0,
+      "explanation": "Colunas permitem comparar magnitudes de categorias discretas, como postos, mantendo a identificação de cada valor.",
+      "whyWrong": [
+        "Correta. Colunas permitem comparar magnitudes de categorias discretas, como postos, mantendo a identificação de cada valor.",
+        "Mapa exige finalidade espacial e dados apropriados.",
+        "Um ponto não compara cinco postos.",
+        "Imagem sem escala não permite leitura quantitativa.",
+        "A agregação sugerida esconde a comparação entre postos."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    }
+  ]
+}
