@@ -1,5 +1,7 @@
 const MODEL = 'gemini-3.8-flash';
 const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || 'openrouter/free';
+const GROQ_RESEARCH_MODEL = process.env.GROQ_RESEARCH_MODEL || 'openai/gpt-oss-120b';
+const GROQ_FORMAT_MODEL = process.env.GROQ_FORMAT_MODEL || 'openai/gpt-oss-20b';
 
 function json(res, status, body) {
   res.status(status).setHeader('Content-Type', 'application/json; charset=utf-8');
@@ -14,11 +16,41 @@ function parseModelJson(text) {
   return { summary: cleaned };
 }
 
+function isResearchShape(value) {
+  return value && Array.isArray(value.sources) && value.strategy && Array.isArray(value.strategy.priorities);
+}
+
+async function groqChat(key, model, messages, extra = {}) {
+  const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
+    body: JSON.stringify({ model, messages, max_tokens: 6000, temperature: 0.2, ...extra })
+  });
+  const data = await response.json();
+  if (!response.ok) throw new Error(data.error?.message || 'Falha na API Groq.');
+  return { text: data.choices?.[0]?.message?.content || '', data };
+}
+
+async function groqResearch(key, prompt) {
+  const research = await groqChat(key, GROQ_RESEARCH_MODEL, [{ role: 'user', content: `${prompt}\n\nFaça a pesquisa em texto estruturado, não tente responder em JSON. Consulte fontes oficiais, provas anteriores da banca e materiais relevantes. Organize por fontes, padrões da banca, prioridades e recomendações. Faça até 5 buscas internas e cite URLs reais.` }], { search_settings: { country: 'brazil' } });
+  const formatPrompt = `Converta o dossiê de pesquisa abaixo em SOMENTE JSON válido, sem markdown e sem comentários. Não invente URLs: use apenas as fontes presentes no dossiê. Se algum campo não existir, use lista vazia ou string vazia. Gere no máximo 12 questões iniciais. Formato obrigatório:\n{"sources":[{"title":"","url":"","why":""}],"strategy":{"priorities":[{"subject":"","weight":0,"questionShare":0,"topics":[]}],"notes":[]},"questions":[{"subject":"","difficulty":"medium|hard","statement":"","options":["","","",""],"answer":0,"explanation":"","sourceUrl":""}]}\nDOSSIÊ:\n${research.text.slice(0, 70000)}`;
+  let formatted = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: formatPrompt }]);
+  let result = parseModelJson(formatted.text);
+  if (!isResearchShape(result)) {
+    formatted = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: `${formatPrompt}\n\nA resposta anterior não estava válida. Corrija e devolva somente o objeto JSON completo.` }]);
+    result = parseModelJson(formatted.text);
+  }
+  if (!isResearchShape(result)) throw new Error('O Groq concluiu a pesquisa, mas não conseguiu estruturar o plano.');
+  result.strategy.notes = [...(result.strategy.notes || []), 'Pesquisa realizada pelo Groq e estruturada automaticamente pelo TurboQuest.'];
+  return { result, grounding: null, model: GROQ_RESEARCH_MODEL };
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { error: 'Método não permitido.' });
   const openrouterKey = process.env.OPENROUTER_API_KEY;
   const geminiKey = process.env.GEMINI_API_KEY;
-  if (!openrouterKey && !geminiKey) return json(res, 503, { error: 'Configure OPENROUTER_API_KEY nas variáveis do Vercel.' });
+  const groqKey = process.env.GROQ_API_KEY;
+  if (!openrouterKey && !geminiKey && !groqKey) return json(res, 503, { error: 'Configure GROQ_API_KEY, OPENROUTER_API_KEY ou GEMINI_API_KEY nas variáveis do Vercel.' });
   const { action, edital, cargo, exam = 'IBGE' } = req.body || {};
   if (!edital || edital.length < 80) return json(res, 400, { error: 'O edital precisa conter mais texto.' });
 
@@ -34,6 +66,10 @@ EDITAL:\n${edital.slice(0, 220000)}`
 EDITAL:\n${edital.slice(0, 220000)}`;
 
   const useOpenRouter = Boolean(openrouterKey);
+  if (isResearch && groqKey) {
+    try { return json(res, 200, await groqResearch(groqKey, prompt)); }
+    catch (error) { return json(res, 502, { error: error.message || 'Não foi possível concluir a pesquisa com Groq.' }); }
+  }
   const payload = useOpenRouter ? {
     model: OPENROUTER_MODEL,
     messages: [{ role: 'user', content: prompt }],
