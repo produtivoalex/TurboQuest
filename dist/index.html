@@ -19,9 +19,19 @@
     @media(max-width:900px){body{padding-bottom:env(safe-area-inset-bottom)}.side{position:fixed;top:auto;bottom:0;left:0;right:0;padding:8px 10px calc(8px + env(safe-area-inset-bottom));border-top:1px solid #ffffff16;border-bottom:0;box-shadow:0 -12px 35px #050711aa}.brand,.side-note{display:none}.nav{width:100%;justify-content:space-around;gap:3px}.nav button{justify-content:center;min-width:0;flex:1;border-radius:11px;padding:9px 5px}.nav button span{font-size:20px}.nav button.active{box-shadow:inset 0 2px var(--purple)}.main{padding-bottom:92px}.primary,.ghost,.option,.difficulty button{min-height:44px}.setup-row .primary{width:100%}.source{align-items:flex-start}.source a{font-size:14px;line-height:1.35}}
     @media(max-width:430px){.main{padding-left:12px;padding-right:12px}.top h1{font-size:27px}.hero-card h2{font-size:22px}.quiz-actions{position:sticky;bottom:76px;background:#0b0f1d;padding-top:10px}.q-meta{gap:6px}}
   </style>
+  <style>
+    .member-shell{min-height:100vh;background:linear-gradient(180deg,#10152b 0,#080b16 54%);color:var(--text);padding:24px clamp(16px,5vw,72px) 60px}.member-nav{display:flex;align-items:center;justify-content:space-between;max-width:1320px;margin:auto}.member-brand{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:850}.member-brand .bolt{width:34px;height:34px}.member-profile{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:13px}.member-avatar{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#8b6cff,#45d6e8);color:#fff;font-weight:800}.member-hero{max-width:1320px;margin:58px auto 42px}.member-hero .eyebrow{color:var(--cyan)}.member-hero h1{font-size:clamp(34px,6vw,68px);max-width:730px;line-height:1.02;margin:12px 0}.member-hero p{max-width:600px;color:#bbc2dc;font-size:18px}.member-row{max-width:1320px;margin:auto}.member-row h2{font-size:20px;margin:0 0 16px}.member-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}.member-card{min-height:285px;border:1px solid #ffffff16;border-radius:18px;overflow:hidden;background:#11172a;box-shadow:0 18px 44px #0005;transition:transform .2s,border-color .2s}.member-card:hover{transform:translateY(-5px);border-color:#8b6cff}.member-thumb{height:160px;padding:18px;display:flex;align-items:flex-end;background:linear-gradient(135deg,#234f68,#24205a 58%,#151a39);position:relative}.member-thumb:after{content:'✦';position:absolute;right:20px;top:10px;font-size:88px;color:#ffffff13}.member-thumb strong{font-size:25px;position:relative;z-index:1}.member-info{padding:16px}.member-info p{color:var(--muted);font-size:13px;min-height:40px;margin:8px 0 14px}.member-info .primary{width:100%}.member-meta{display:flex;gap:7px;flex-wrap:wrap}.member-meta span{font-size:11px;color:#c6cbea;background:#ffffff0d;padding:5px 8px;border-radius:99px}.member-footer{max-width:1320px;margin:56px auto 0;color:#687292;font-size:12px}
+    #memberShell.hidden{display:none}#appShell{display:none}@media(max-width:600px){.member-shell{padding:18px 14px 40px}.member-hero{margin:45px auto 34px}.member-hero p{font-size:16px}.member-card{min-height:270px}}
+  </style>
 </head>
 <body>
-  <div class="app">
+  <section class="member-shell" id="memberShell">
+    <div class="member-nav"><div class="member-brand"><span class="bolt">ϟ</span>TurboQuest</div><div class="member-profile"><span>Área de membros</span><span class="member-avatar">AQ</span></div></div>
+    <div class="member-hero"><div class="eyebrow">Sua biblioteca de preparação</div><h1>Estude no ritmo que leva você à aprovação.</h1><p>Escolha um banco de questões, acompanhe seu progresso e treine com revisão inteligente em qualquer dispositivo.</p></div>
+    <div class="member-row"><h2>Meus concursos</h2><div class="member-grid"><article class="member-card"><div class="member-thumb"><strong>IBGE 2026</strong></div><div class="member-info"><div class="member-meta"><span>IBFC</span><span>54 questões disponíveis</span><span>PWA</span></div><p>Censo Agropecuário, Florestal e Aquícola · cargos ACA, ACI, AOR, ACR e ACS.</p><button class="primary" id="enterIbge">Continuar estudando →</button></div></article></div></div>
+    <div class="member-footer">TurboQuest · conteúdo editorial revisado · seu progresso fica salvo neste dispositivo</div>
+  </section>
+  <div class="app" id="appShell">
     <aside class="side">
       <div class="brand"><span class="bolt">ϟ</span>TurboQuest</div>
       <nav class="nav" aria-label="Navegação principal">
@@ -44,6 +54,9 @@
     </main>
   </div>
   <div class="toast" id="toast"></div>
+  <script>
+    (function(){const member=document.getElementById('memberShell'),app=document.getElementById('appShell'),enter=document.getElementById('enterIbge');function openApp(){member.classList.add('hidden');app.style.display='grid';localStorage.setItem('tq-member-open','1');window.scrollTo(0,0)}if(localStorage.getItem('tq-member-open')==='1')openApp();enter.addEventListener('click',openApp)})();
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
