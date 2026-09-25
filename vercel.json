@@ -1,4 +1,9 @@
 {
+  "functions": {
+    "api/content-library.js": {
+      "includeFiles": ["content/**"]
+    }
+  },
   "rewrites": [
     { "source": "/sw.js", "destination": "/dist/sw.js" },
     { "source": "/manifest.webmanifest", "destination": "/dist/manifest.webmanifest" },
