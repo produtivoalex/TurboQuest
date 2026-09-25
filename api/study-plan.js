@@ -14,6 +14,18 @@ function parseModelJson(text) {
   return { summary: cleaned };
 }
 
+function validateQuestions(value) {
+  const questions = Array.isArray(value?.questions) ? value.questions : [];
+  const valid = questions.filter(question => {
+    const options = Array.isArray(question?.options) ? question.options : [];
+    return question && String(question.statement || '').length >= 40 && options.length >= 4 &&
+      options.every(option => String(option || '').length >= 8) &&
+      Number.isInteger(question.answer) && question.answer >= 0 && question.answer < options.length &&
+      String(question.explanation || '').length >= 80;
+  });
+  return { ...value, questions: valid };
+}
+
 function isResearchShape(value) {
   return value && Array.isArray(value.sources) && value.strategy && Array.isArray(value.strategy.priorities);
 }
@@ -92,6 +104,26 @@ async function groqJson(key, prompt) {
   return { result: parseModelJson(response.text), grounding: null, model: GROQ_FORMAT_MODEL };
 }
 
+async function groqGenerate(key, prompt, count) {
+  const response = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: prompt + '\n\nGere exatamente ' + count + ' questões. Retorne SOMENTE JSON válido, sem markdown.' }], {
+    max_completion_tokens: 6500,
+    temperature: 0.35,
+    timeoutMs: 55000
+  });
+  const result = validateQuestions(parseModelJson(response.text));
+  if (result.questions.length < Math.max(1, Math.floor(count * 0.8))) {
+    throw new Error('O modelo retornou ' + result.questions.length + ' questões válidas de ' + count + ' solicitadas.');
+  }
+  return { result, grounding: null, model: GROQ_FORMAT_MODEL };
+}
+
+function buildGeneratePrompt({ exam, cargo, edital, background }) {
+  return 'Você é um elaborador sênior de questões para concursos. Gere questões de altíssima qualidade a partir do edital e do background pesquisado.\n' +
+    'Respeite disciplinas, pesos, tópicos e atribuições do cargo. Exija raciocínio, interpretação, aplicação ou distinção conceitual real. Use enunciados contextualizados no estilo da banca, sem copiar questões. Crie quatro alternativas plausíveis, homogêneas e tecnicamente próximas, sem alternativas absurdas ou que revelem a resposta. Varie a posição do gabarito entre A, B, C e D. Não repita ideia, cenário, tópico ou estrutura dentro do lote. A dificuldade deve ser real. Explique o raciocínio e por que os distratores estão errados. Nunca invente regra, número ou fonte; use sourceUrl apenas de URLs do background.\n' +
+    'Formato: {"questions":[{"subject":"","difficulty":"medium|hard|very-hard","topic":"","statement":"","options":["","","",""],"answer":0,"explanation":"","whyWrong":["","","",""],"sourceUrl":""}]}\n' +
+    'CONCURSO: ' + exam + '\nCARGO: ' + (cargo || 'não informado') + '\nEDITAL:\n' + edital + '\nBACKGROUND PESQUISADO:\n' + (background || 'Nenhum background foi fornecido; use somente o edital.');
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { error: 'Método não permitido.' });
   const groqKey = process.env.GROQ_API_KEY;
@@ -101,19 +133,24 @@ export default async function handler(req, res) {
   if (!edital || edital.length < 80) return json(res, 400, { error: 'O edital precisa conter mais texto.' });
 
   const isResearch = action === 'research';
+  const isGenerate = action === 'generate';
+  const requestedCount = Math.max(1, Math.min(10, Number(req.body?.count) || 5));
+  const background = String(req.body?.background || '').slice(0, 30000);
   const editalForPrompt = isResearch ? edital.slice(0, 5000) : edital.slice(0, 220000);
-  const prompt = isResearch
+  let prompt = isResearch
     ? `Você é o motor estratégico do TurboQuest. O estudante vai prestar ${exam}, para o cargo: ${cargo || 'não informado'}.
 Analise o edital abaixo e faça uma pesquisa ampla e atualizada na web, usando fontes oficiais, provas anteriores da mesma banca e questões de concursos equivalentes. Não invente fontes: registre URLs e explique a relevância.
-Crie um background estratégico completo para geração posterior em massa e até 6 questões difíceis, sem alternativas óbvias, respeitando a distribuição e os pesos do edital. Inclua gabarito e explicação curta. Responda SOMENTE JSON válido no formato:
+Crie um background estratégico completo para geração posterior em massa, sem impor limite artificial de questões. Não desperdice espaço com questões de demonstração; concentre-se em fontes, distribuição, tópicos, padrões da banca, armadilhas e critérios de qualidade. Responda SOMENTE JSON válido no formato:
 {"sources":[{"title":"","url":"","why":""}],"strategy":{"priorities":[{"subject":"","weight":0,"questionShare":0,"topics":[]}],"notes":[]},"questions":[{"subject":"","difficulty":"medium|hard","statement":"","options":["","","",""],"answer":0,"explanation":"","sourceUrl":""}]}
 EDITAL:\n${editalForPrompt}`
     : `Você é um analista especialista em editais de concursos brasileiros. Analise integralmente este edital para o TurboQuest. Extraia cargo(s), banca, órgão, datas, número de questões, pesos, disciplinas, tópicos, critérios e qualquer regra relevante. Não faça perguntas ainda. Responda SOMENTE JSON válido no formato:
 {"exam":"","board":"","roles":[""],"examDate":"","totalQuestions":0,"subjects":[{"name":"","questions":0,"weight":0,"topics":[]}],"summary":"","warnings":[]}
 EDITAL:\n${editalForPrompt}`;
 
+  if (isGenerate) prompt = buildGeneratePrompt({ exam, cargo, edital: edital.slice(0, 50000), background });
+
   try {
-    const run = (key, compact = false) => isResearch ? groqResearch(key, prompt, compact) : groqJson(key, prompt);
+    const run = (key, compact = false) => isResearch ? groqResearch(key, prompt, compact) : isGenerate ? groqGenerate(key, prompt, requestedCount) : groqJson(key, prompt);
     let result;
     try {
       result = await run(groqKey || backupKey);
@@ -127,8 +164,10 @@ EDITAL:\n${editalForPrompt}`;
       result.result.strategy = result.result.strategy || {};
       result.result.strategy.notes = [...(result.result.strategy.notes || []), 'A chave Groq principal falhou; foi usada a chave de backup.'];
     }
-    result.result.strategy = result.result.strategy || {};
-    result.result.strategy.notes = [...(result.result.strategy.notes || []), 'Background pesquisado pelo Groq com browser_search e pronto para geração de questões em massa.'];
+    if (isResearch) {
+      result.result.strategy = result.result.strategy || {};
+      result.result.strategy.notes = [...(result.result.strategy.notes || []), 'Background pesquisado pelo Groq com browser_search e pronto para geração de questões em massa.'];
+    }
     return json(res, 200, result);
   } catch (error) {
     return json(res, 502, { error: `Groq não conseguiu concluir a pesquisa: ${error.message || 'erro desconhecido'}.` });
