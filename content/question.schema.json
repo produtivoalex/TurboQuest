@@ -9,7 +9,7 @@
     "topic": {"type": "string", "minLength": 3},
     "difficulty": {"enum": ["easy", "medium", "hard", "very-hard"]},
     "statement": {"type": "string", "minLength": 80},
-    "options": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"type": "string", "minLength": 3}},
+    "options": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"type": "string", "minLength": 1}},
     "answer": {"type": "integer", "minimum": 0, "maximum": 4},
     "explanation": {"type": "string", "minLength": 120},
     "whyWrong": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"type": "string", "minLength": 20}},

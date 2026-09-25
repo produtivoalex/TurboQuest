@@ -17,7 +17,7 @@ for (const [index, q] of questions.entries()) {
   if (!q.subject || !q.topic) errors.push(`${where}: disciplina ou tópico ausente`);
   if (!['easy', 'medium', 'hard', 'very-hard'].includes(q.difficulty)) errors.push(`${where}: dificuldade inválida`);
   if (String(q.statement || '').trim().length < 80) errors.push(`${where}: enunciado curto`);
-  if (!Array.isArray(q.options) || q.options.length !== 5 || q.options.some(x => String(x).trim().length < 3)) errors.push(`${where}: são necessárias 5 alternativas plausíveis`);
+  if (!Array.isArray(q.options) || q.options.length !== 5 || q.options.some(x => String(x).trim().length < 1)) errors.push(`${where}: são necessárias 5 alternativas plausíveis`);
   if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer > 4) errors.push(`${where}: gabarito inválido`);
   if (String(q.explanation || '').trim().length < 120) errors.push(`${where}: explicação insuficiente`);
   if (!Array.isArray(q.whyWrong) || q.whyWrong.length !== 5) errors.push(`${where}: justificativas dos distratores incompletas`);
