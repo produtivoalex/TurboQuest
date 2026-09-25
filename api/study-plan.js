@@ -70,7 +70,7 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { error: 'Método não permitido.' });
   const geminiKey = process.env.GEMINI_API_KEY;
   const groqKey = process.env.GROQ_API_KEY;
-  if (!geminiKey) return json(res, 503, { error: 'GEMINI_API_KEY não está configurada no ambiente Production do Vercel.' });
+  if (!geminiKey && !groqKey) return json(res, 503, { error: 'Configure GEMINI_API_KEY ou GROQ_API_KEY nas variáveis Production do Vercel.' });
   const { action, edital, cargo, exam = 'IBGE' } = req.body || {};
   if (!edital || edital.length < 80) return json(res, 400, { error: 'O edital precisa conter mais texto.' });
 
@@ -109,6 +109,16 @@ EDITAL:\n${editalForPrompt}`;
     if (isResearch && !hasLiveResearch(result, grounding, MODEL)) throw new Error('Gemini não retornou evidências de pesquisa web ativa.');
     return json(res, 200, { result, grounding, model: MODEL });
   } catch (error) {
-    return json(res, 502, { error: `Gemini falhou: ${error.message || 'resposta inválida'}` });
+    if (groqKey) {
+      try {
+        const fallback = isResearch ? await groqResearch(groqKey, prompt) : await groqJson(groqKey, prompt);
+        fallback.result.strategy = fallback.result.strategy || {};
+        fallback.result.strategy.notes = [...(fallback.result.strategy.notes || []), `Gemini falhou (${error.message || 'resposta inválida'}); Groq assumiu automaticamente.`];
+        return json(res, 200, fallback);
+      } catch (fallbackError) {
+        return json(res, 502, { error: `Gemini falhou: ${error.message || 'resposta inválida'}. Groq também falhou: ${fallbackError.message || 'erro desconhecido'}.` });
+      }
+    }
+    return json(res, 502, { error: `Gemini falhou: ${error.message || 'resposta inválida'}. Configure também GROQ_API_KEY para fallback.` });
   }
 }
