@@ -1,0 +1,100 @@
+[
+  {
+    "id": "ibge26-tec-0001",
+    "roles": ["acr", "acs"],
+    "subject": "Conhecimentos Técnicos",
+    "topic": "data e período de referência",
+    "difficulty": "hard",
+    "statement": "Durante a coleta do Censo Agropecuário, Florestal e Aquícola, um produtor informa que uma atividade começou em janeiro de 2026, embora a entrevista esteja sendo realizada posteriormente. Considerando as referências temporais do material técnico, qual procedimento é adequado?",
+    "options": [
+      "Registrar a atividade automaticamente, pois toda atividade existente na entrevista pertence ao período censitário.",
+      "Desconsiderar a atividade sem qualquer registro, porque somente atividades iniciadas antes de 2025 podem existir.",
+      "Verificar a data e o período de referência definidos para o Censo antes de decidir se a informação integra o levantamento.",
+      "Registrar a atividade apenas se o produtor declarar que ela já gerou receita no momento da entrevista.",
+      "Substituir a data informada pelo dia da entrevista para manter todas as respostas na mesma referência."
+    ],
+    "answer": 2,
+    "explanation": "A coleta não considera simplesmente tudo o que existe no momento da entrevista. O recenseador precisa aplicar a data e o período de referência definidos para o levantamento. Assim, a informação deve ser confrontada com essas referências antes do registro; não se pode substituir a referência oficial pela data da entrevista nem decidir apenas pela existência de receita.",
+    "whyWrong": [
+      "A existência no dia da entrevista não basta para incluir uma atividade fora do período de referência.",
+      "A alternativa cria uma restrição que não corresponde ao critério temporal apresentado no material.",
+      "É a alternativa correta: a referência temporal é o critério para decidir a inclusão da informação.",
+      "Receita não é o critério temporal determinante para essa decisão.",
+      "A data da entrevista não pode substituir a data ou o período de referência do levantamento."
+    ],
+    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "p. 51", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "status": "approved"
+  },
+  {
+    "id": "ibge26-tec-0002",
+    "roles": ["acr", "acs"],
+    "subject": "Conhecimentos Técnicos",
+    "topic": "estabelecimento agropecuário",
+    "difficulty": "medium",
+    "statement": "Uma unidade produtiva possui pequena extensão, está localizada em área urbana e pertence a uma pessoa jurídica. À luz do conceito utilizado no Censo Agropecuário, qual conclusão é correta?",
+    "options": [
+      "A unidade não é recenseável por estar em área urbana.",
+      "A unidade não é recenseável por pertencer a uma pessoa jurídica.",
+      "A unidade somente é recenseável se superar um tamanho mínimo de área.",
+      "A unidade pode ser um estabelecimento agropecuário, pois tamanho, forma jurídica e localização não são decisivos isoladamente.",
+      "A unidade só pode ser recenseada se possuir produção destinada à exportação."
+    ],
+    "answer": 3,
+    "explanation": "O material define estabelecimento agropecuário como unidade de produção ou exploração dedicada total ou parcialmente a atividades agropecuárias, florestais ou aquícolas. O conceito independe do tamanho, da forma jurídica, da localização rural ou urbana e do valor da produção. O ponto decisivo é a existência da atividade enquadrada no conceito.",
+    "whyWrong": [
+      "A localização urbana, por si só, não exclui a unidade.",
+      "A forma jurídica não impede o enquadramento como estabelecimento.",
+      "Não há requisito geral de tamanho mínimo no conceito apresentado.",
+      "É a alternativa correta, pois reúne os critérios e as independências do conceito.",
+      "Exportação não é requisito para a unidade ser recenseável."
+    ],
+    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 51 e 55", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "status": "approved"
+  },
+  {
+    "id": "ibge26-tec-0003",
+    "roles": ["acr", "acs"],
+    "subject": "Conhecimentos Técnicos",
+    "topic": "escala cartográfica",
+    "difficulty": "hard",
+    "statement": "Em um mapa de setor censitário com escala 1:50.000, a distância entre dois pontos de interesse mede 3 cm. Desconsiderando a inclinação do terreno, qual distância real essa medida representa?",
+    "options": ["150 metros", "500 metros", "1.500 metros", "15.000 metros", "150.000 metros"],
+    "answer": 2,
+    "explanation": "Na escala 1:50.000, cada centímetro no mapa corresponde a 50.000 centímetros no terreno. Portanto, 3 cm correspondem a 150.000 cm. Dividindo por 100, obtêm-se 1.500 metros, ou 1,5 km.",
+    "whyWrong": [
+      "Resulta de uma conversão ou multiplicação incompleta e não corresponde a 150.000 cm.",
+      "Representa apenas a correspondência aproximada de 1 cm convertida de modo incorreto.",
+      "É a alternativa correta após aplicar a escala e converter centímetros para metros.",
+      "Desloca uma casa decimal na conversão final.",
+      "Confunde a distância em centímetros com a distância já convertida para metros."
+    ],
+    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 24-25", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "status": "approved"
+  },
+  {
+    "id": "ibge26-tec-0004",
+    "roles": ["acr", "acs"],
+    "subject": "Conhecimentos Técnicos",
+    "topic": "limites do setor censitário",
+    "difficulty": "hard",
+    "statement": "Durante o percurso, o recenseador identifica uma divergência entre o descritivo do setor e os elementos observados no terreno. A alteração do limite parece incluir um estabelecimento que ficou fora da área atribuída. Segundo o material técnico, qual deve ser sua conduta?",
+    "options": [
+      "Alterar imediatamente o perímetro no mapa para evitar perda de cobertura.",
+      "Ignorar a divergência e seguir o percurso originalmente planejado sem comunicação.",
+      "Recensear o estabelecimento e alterar o limite somente depois do encerramento do setor.",
+      "Comunicar imediatamente a supervisão e não alterar o perímetro por iniciativa própria.",
+      "Transferir o estabelecimento para o setor vizinho sem registrar a ocorrência."
+    ],
+    "answer": 3,
+    "explanation": "O material orienta que o recenseador não pode alterar o perímetro do setor censitário por iniciativa própria. Diante de inconsistência ou dificuldade de identificação, deve comunicar imediatamente a supervisão. Essa regra evita invasão de área de outro setor e omissão de parte da área sob responsabilidade.",
+    "whyWrong": [
+      "A alteração direta pode gerar sobreposição ou modificar oficialmente o setor sem autorização.",
+      "Ignorar a divergência pode comprometer cobertura e qualidade da coleta.",
+      "Adiar a comunicação não resolve a inconsistência e mantém o risco operacional.",
+      "É a alternativa correta: comunicar a supervisão e preservar o limite oficial.",
+      "A transferência sem registro também altera a responsabilidade territorial sem procedimento adequado."
+    ],
+    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 28-30", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "status": "approved"
+  }
+]
