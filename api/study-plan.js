@@ -60,12 +60,14 @@ async function groqChat(key, model, messages, extra = {}) {
     });
     const data = await response.json();
     if (response.ok) return { text: data.choices?.[0]?.message?.content || '', data };
+    const errorMessage = data.error?.message || 'Falha na API Groq.';
+    if (/tokens per day|TPD/i.test(errorMessage)) throw new Error(errorMessage);
     if (response.status === 429 && attempt < 2) {
-      const retrySeconds = Number(response.headers.get('retry-after')) || Number(String(data.error?.message || '').match(/try again in ([\d.]+)s/i)?.[1]) || 5;
+      const retrySeconds = Number(response.headers.get('retry-after')) || Number(String(errorMessage).match(/try again in ([\d.]+)s/i)?.[1]) || 5;
       await new Promise(resolve => setTimeout(resolve, Math.min(10000, Math.ceil(retrySeconds * 1000) + 500)));
       continue;
     }
-    throw new Error(data.error?.message || 'Falha na API Groq.');
+    throw new Error(errorMessage);
   }
   throw new Error('A API Groq não respondeu após as tentativas automáticas.');
 }
@@ -87,7 +89,8 @@ async function groqJson(key, prompt) {
 export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { error: 'Método não permitido.' });
   const groqKey = process.env.GROQ_API_KEY;
-  if (!groqKey) return json(res, 503, { error: 'GROQ_API_KEY não está configurada nas variáveis Production do Vercel.' });
+  const backupKey = process.env.GROQ_API_KEY_BACKUP;
+  if (!groqKey && !backupKey) return json(res, 503, { error: 'Configure GROQ_API_KEY nas variáveis Production do Vercel.' });
   const { action, edital, cargo, exam = 'IBGE' } = req.body || {};
   if (!edital || edital.length < 80) return json(res, 400, { error: 'O edital precisa conter mais texto.' });
 
@@ -104,7 +107,18 @@ EDITAL:\n${editalForPrompt}`
 EDITAL:\n${editalForPrompt}`;
 
   try {
-    const result = isResearch ? await groqResearch(groqKey, prompt) : await groqJson(groqKey, prompt);
+    const run = key => isResearch ? groqResearch(key, prompt) : groqJson(key, prompt);
+    let result;
+    let primaryError = null;
+    try {
+      result = await run(groqKey || backupKey);
+    } catch (error) {
+      primaryError = error;
+      if (!backupKey || backupKey === groqKey) throw error;
+      result = await run(backupKey);
+      result.result.strategy = result.result.strategy || {};
+      result.result.strategy.notes = [...(result.result.strategy.notes || []), 'A chave Groq principal falhou; foi usada a chave de backup.'];
+    }
     result.result.strategy = result.result.strategy || {};
     result.result.strategy.notes = [...(result.result.strategy.notes || []), 'Background pesquisado pelo Groq com browser_search e pronto para geração de questões em massa.'];
     return json(res, 200, result);
