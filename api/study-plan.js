@@ -72,8 +72,9 @@ async function groqChat(key, model, messages, extra = {}) {
   throw new Error('A API Groq não respondeu após as tentativas automáticas.');
 }
 
-async function groqResearch(key, prompt) {
-  const response = await groqChat(key, GROQ_RESEARCH_MODEL, [{ role: 'user', content: `${prompt}\n\nFaça pesquisa web ativa e obrigatória usando browser_search. Consulte fontes oficiais e provas anteriores da banca. Construa um background estratégico para geração posterior em massa: padrões de cobrança, prioridades, armadilhas, dificuldade e regras para distratores. Retorne SOMENTE JSON válido no formato solicitado. Gere até 4 questões iniciais e cite somente URLs retornadas pela busca.` }], { max_completion_tokens: 1200, tool_choice: 'required', tools: [{ type: 'browser_search' }], reasoning_effort: 'low', timeoutMs: 25000 });
+async function groqResearch(key, prompt, compact = false) {
+  const requestPrompt = compact ? prompt.slice(0, 2500) : prompt;
+  const response = await groqChat(key, GROQ_RESEARCH_MODEL, [{ role: 'user', content: `${requestPrompt}\n\nFaça pesquisa web ativa e obrigatória usando browser_search. Consulte fontes oficiais e provas anteriores da banca. Construa um background estratégico para geração posterior em massa: padrões de cobrança, prioridades, armadilhas, dificuldade e regras para distratores. Retorne SOMENTE JSON válido no formato solicitado. Gere até ${compact ? 1 : 4} questão inicial e cite somente URLs retornadas pela busca.` }], { max_completion_tokens: compact ? 700 : 1200, tool_choice: 'required', tools: [{ type: 'browser_search' }], reasoning_effort: 'low', timeoutMs: 25000 });
   const result = parseModelJson(response.text);
   addGroqSources(result, response.data, response.text);
   if (!hasLiveResearch(result, null, GROQ_RESEARCH_MODEL, response.data)) throw new Error('O Groq não retornou evidências de pesquisa web ativa.');
@@ -107,14 +108,14 @@ EDITAL:\n${editalForPrompt}`
 EDITAL:\n${editalForPrompt}`;
 
   try {
-    const run = key => isResearch ? groqResearch(key, prompt) : groqJson(key, prompt);
+    const run = (key, compact = false) => isResearch ? groqResearch(key, prompt, compact) : groqJson(key, prompt);
     let result;
     try {
       result = await run(groqKey || backupKey);
     } catch (error) {
       if (!backupKey || backupKey === groqKey) throw error;
       try {
-        result = await run(backupKey);
+        result = await run(backupKey, true);
       } catch (backupError) {
         throw new Error(`Chave principal: ${error.message || 'falhou'}. Chave de backup: ${backupError.message || 'falhou'}.`);
       }
