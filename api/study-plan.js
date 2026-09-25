@@ -46,7 +46,7 @@ async function groqChat(key, model, messages, extra = {}) {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
     signal: AbortSignal.timeout(timeoutMs),
-    body: JSON.stringify({ model, messages, max_tokens: 3500, temperature: 0.2, ...requestOptions })
+    body: JSON.stringify({ model, messages, max_completion_tokens: 1800, temperature: 0.2, ...requestOptions })
   });
   const data = await response.json();
   if (!response.ok) throw new Error(data.error?.message || 'Falha na API Groq.');
@@ -54,7 +54,7 @@ async function groqChat(key, model, messages, extra = {}) {
 }
 
 async function groqResearch(key, prompt) {
-  const response = await groqChat(key, GROQ_RESEARCH_MODEL, [{ role: 'user', content: `${prompt}\n\nFaça pesquisa web ativa e obrigatória usando browser_search. Consulte fontes oficiais, provas anteriores da banca e materiais relevantes. Retorne SOMENTE JSON válido, sem markdown, neste formato: {"sources":[{"title":"","url":"","why":""}],"strategy":{"priorities":[{"subject":"","weight":0,"questionShare":0,"topics":[]}],"notes":[]},"questions":[{"subject":"","difficulty":"medium|hard","statement":"","options":["","","",""],"answer":0,"explanation":"","sourceUrl":""}]}. Use no máximo 4 questões e cite somente URLs retornadas pela busca.` }], { max_tokens: 3000, tool_choice: 'required', tools: [{ type: 'browser_search' }], reasoning_effort: 'low', timeoutMs: 25000 });
+  const response = await groqChat(key, GROQ_RESEARCH_MODEL, [{ role: 'user', content: `${prompt}\n\nFaça pesquisa web ativa e obrigatória usando browser_search. Consulte fontes oficiais, provas anteriores da banca e materiais relevantes. Retorne SOMENTE JSON válido, sem markdown, neste formato: {"sources":[{"title":"","url":"","why":""}],"strategy":{"priorities":[{"subject":"","weight":0,"questionShare":0,"topics":[]}],"notes":[]},"questions":[{"subject":"","difficulty":"medium|hard","statement":"","options":["","","",""],"answer":0,"explanation":"","sourceUrl":""}]}. Use no máximo 2 questões e cite somente URLs retornadas pela busca.` }], { max_completion_tokens: 1400, tool_choice: 'required', tools: [{ type: 'browser_search' }], reasoning_effort: 'low', timeoutMs: 25000 });
   const result = parseModelJson(response.text);
   if (!hasLiveResearch(result, null, GROQ_RESEARCH_MODEL)) throw new Error('O Groq não retornou evidências de pesquisa web ativa.');
   result.strategy.notes = [...(result.strategy.notes || []), 'Pesquisa realizada pelo Groq e estruturada automaticamente pelo TurboQuest.'];
@@ -62,7 +62,7 @@ async function groqResearch(key, prompt) {
 }
 
 async function groqJson(key, prompt) {
-  const response = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: `${prompt.slice(0, 16000)}\n\nRetorne somente JSON válido, sem markdown.` }], { max_tokens: 2500 });
+  const response = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: `${prompt.slice(0, 8000)}\n\nRetorne somente JSON válido, sem markdown.` }], { max_completion_tokens: 1600 });
   return { result: parseModelJson(response.text), grounding: null, model: GROQ_FORMAT_MODEL };
 }
 
@@ -75,7 +75,7 @@ export default async function handler(req, res) {
   if (!edital || edital.length < 80) return json(res, 400, { error: 'O edital precisa conter mais texto.' });
 
   const isResearch = action === 'research';
-  const editalForPrompt = isResearch ? edital.slice(0, 16000) : edital.slice(0, 220000);
+  const editalForPrompt = isResearch ? edital.slice(0, 8000) : edital.slice(0, 220000);
   const prompt = isResearch
     ? `Você é o motor estratégico do TurboQuest. O estudante vai prestar ${exam}, para o cargo: ${cargo || 'não informado'}.
 Analise o edital abaixo e faça uma pesquisa ampla e atualizada na web, usando fontes oficiais, provas anteriores da mesma banca e questões de concursos equivalentes. Não invente fontes: registre URLs e explique a relevância.
