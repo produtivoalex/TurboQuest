@@ -41,15 +41,23 @@ function addGroundingSources(value, grounding) {
 
 async function groqChat(key, model, messages, extra = {}) {
   const { timeoutMs = 30000, ...requestOptions } = extra;
-  const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
-    signal: AbortSignal.timeout(timeoutMs),
-    body: JSON.stringify({ model, messages, max_completion_tokens: 1800, temperature: 0.2, ...requestOptions })
-  });
-  const data = await response.json();
-  if (!response.ok) throw new Error(data.error?.message || 'Falha na API Groq.');
-  return { text: data.choices?.[0]?.message?.content || '', data };
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
+      signal: AbortSignal.timeout(timeoutMs),
+      body: JSON.stringify({ model, messages, max_completion_tokens: 1800, temperature: 0.2, ...requestOptions })
+    });
+    const data = await response.json();
+    if (response.ok) return { text: data.choices?.[0]?.message?.content || '', data };
+    if (response.status === 429 && attempt < 2) {
+      const retrySeconds = Number(response.headers.get('retry-after')) || Number(String(data.error?.message || '').match(/try again in ([\d.]+)s/i)?.[1]) || 5;
+      await new Promise(resolve => setTimeout(resolve, Math.min(10000, Math.ceil(retrySeconds * 1000) + 500)));
+      continue;
+    }
+    throw new Error(data.error?.message || 'Falha na API Groq.');
+  }
+  throw new Error('A API Groq não respondeu após as tentativas automáticas.');
 }
 
 async function groqResearch(key, prompt) {
