@@ -1,5 +1,5 @@
 const MODEL = 'gemini-3.1-flash-lite';
-const GROQ_RESEARCH_MODEL = process.env.GROQ_RESEARCH_MODEL || 'openai/gpt-oss-120b';
+const GROQ_RESEARCH_MODEL = process.env.GROQ_RESEARCH_MODEL || 'openai/gpt-oss-20b';
 const GROQ_FORMAT_MODEL = process.env.GROQ_FORMAT_MODEL || 'openai/gpt-oss-20b';
 
 function json(res, status, body) {
@@ -30,10 +30,12 @@ function hasLiveResearch(value, grounding, model) {
 }
 
 async function groqChat(key, model, messages, extra = {}) {
+  const { timeoutMs = 30000, ...requestOptions } = extra;
   const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
-    body: JSON.stringify({ model, messages, max_tokens: 6000, temperature: 0.2, ...extra })
+    signal: AbortSignal.timeout(timeoutMs),
+    body: JSON.stringify({ model, messages, max_tokens: 3500, temperature: 0.2, ...requestOptions })
   });
   const data = await response.json();
   if (!response.ok) throw new Error(data.error?.message || 'Falha na API Groq.');
@@ -41,14 +43,8 @@ async function groqChat(key, model, messages, extra = {}) {
 }
 
 async function groqResearch(key, prompt) {
-  const research = await groqChat(key, GROQ_RESEARCH_MODEL, [{ role: 'user', content: `${prompt}\n\nFaça pesquisa web ativa e obrigatória. Consulte fontes oficiais, provas anteriores da banca e materiais relevantes. Organize por fontes, padrões da banca, prioridades e recomendações. Faça até 5 buscas internas e cite as URLs reais retornadas pela busca.` }], { max_tokens: 3000, tool_choice: 'required', tools: [{ type: 'browser_search' }], reasoning_effort: 'low' });
-  const formatPrompt = `Converta o dossiê de pesquisa abaixo em SOMENTE JSON válido, sem markdown e sem comentários. Não invente URLs: use apenas as fontes presentes no dossiê. Se algum campo não existir, use lista vazia ou string vazia. Gere no máximo 6 questões iniciais. Formato obrigatório:\n{"sources":[{"title":"","url":"","why":""}],"strategy":{"priorities":[{"subject":"","weight":0,"questionShare":0,"topics":[]}],"notes":[]},"questions":[{"subject":"","difficulty":"medium|hard","statement":"","options":["","","",""],"answer":0,"explanation":"","sourceUrl":""}]}\nDOSSIÊ:\n${research.text.slice(0, 18000)}`;
-  let formatted = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: formatPrompt }], { max_tokens: 3000 });
-  let result = parseModelJson(formatted.text);
-  if (!isResearchShape(result)) {
-    formatted = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: `${formatPrompt}\n\nA resposta anterior não estava válida. Corrija e devolva somente o objeto JSON completo.` }], { max_tokens: 3000 });
-    result = parseModelJson(formatted.text);
-  }
+  const response = await groqChat(key, GROQ_RESEARCH_MODEL, [{ role: 'user', content: `${prompt}\n\nFaça pesquisa web ativa e obrigatória usando browser_search. Consulte fontes oficiais, provas anteriores da banca e materiais relevantes. Retorne SOMENTE JSON válido, sem markdown, neste formato: {"sources":[{"title":"","url":"","why":""}],"strategy":{"priorities":[{"subject":"","weight":0,"questionShare":0,"topics":[]}],"notes":[]},"questions":[{"subject":"","difficulty":"medium|hard","statement":"","options":["","","",""],"answer":0,"explanation":"","sourceUrl":""}]}. Use no máximo 4 questões e cite somente URLs retornadas pela busca.` }], { max_tokens: 3000, tool_choice: 'required', tools: [{ type: 'browser_search' }], reasoning_effort: 'low', timeoutMs: 25000 });
+  const result = parseModelJson(response.text);
   if (!hasLiveResearch(result, null, GROQ_RESEARCH_MODEL)) throw new Error('O Groq não retornou evidências de pesquisa web ativa.');
   result.strategy.notes = [...(result.strategy.notes || []), 'Pesquisa realizada pelo Groq e estruturada automaticamente pelo TurboQuest.'];
   return { result, grounding: null, model: GROQ_RESEARCH_MODEL };
@@ -90,6 +86,7 @@ EDITAL:\n${editalForPrompt}`;
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'x-goog-api-key': geminiKey },
+      signal: AbortSignal.timeout(25000),
       body: JSON.stringify(payload)
     });
     const data = await response.json();
