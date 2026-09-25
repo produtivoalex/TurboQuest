@@ -1,0 +1,15 @@
+{
+  "target": 1500,
+  "batchSize": 50,
+  "workflow": ["generate", "structural_validate", "deduplicate", "fact_check", "approve"],
+  "allocations": [
+    {"subject": "Conhecimentos Técnicos", "roles": ["acr", "acs"], "target": 400},
+    {"subject": "Noções de Administração/Situações Gerenciais", "roles": ["aor", "acr", "acs"], "target": 350},
+    {"subject": "Noções de Administração", "roles": ["aca"], "target": 250},
+    {"subject": "Língua Portuguesa", "roles": ["aca", "aci", "aor", "acr", "acs"], "target": 250},
+    {"subject": "Raciocínio Lógico Quantitativo", "roles": ["aca", "aci", "aor", "acr", "acs"], "target": 150},
+    {"subject": "Noções de Informática", "roles": ["aci", "aor"], "target": 75},
+    {"subject": "Noções Básicas de Informática", "roles": ["aor"], "target": 25}
+  ],
+  "note": "Questões compartilhadas entre cargos compatíveis contam uma vez no banco, mas aparecem nos filtros de todos os cargos aplicáveis."
+}
