@@ -1,6 +1,7 @@
 {
   "rewrites": [
     { "source": "/sw.js", "destination": "/dist/sw.js" },
+    { "source": "/app.js", "destination": "/dist/app.js" },
     { "source": "/manifest.webmanifest", "destination": "/dist/manifest.webmanifest" },
     { "source": "/(.*)", "destination": "/dist/index.html" }
   ]
