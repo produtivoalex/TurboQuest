@@ -46,4 +46,18 @@ assert.equal(engine.buildQueue([missed], { records: { [missed.id]: easyAgain } }
 const old = engine.loadState({ getItem: key => key === 'tq-state-v3' ? '{"done":25,"correct":18}' : null });
 assert.equal(old.done, 25); assert.equal(old.correct, 18);
 assert.equal(engine.formatClock(125000), '02:05');
-console.log('Fila, matriz de 5 cargos, fraquezas, revisões, migração e cronômetro: OK');
+assert.equal(engine.formatDuration(7500000), '2h 05min');
+assert.equal(engine.formatDuration(45000), '45 s');
+const report = engine.subjectReport({ records: {
+  [bank[0].id]: { attempts: 2, correct: 1, timeMs: 60000 },
+  older: { subject: 'Língua Portuguesa', attempts: 1, correct: 0, timeMs: 30000 }
+} }, bank);
+assert.equal(report.reduce((sum, row) => sum + row.done, 0), 3);
+assert.equal(report.find(row => row.subject === bank[0].subject).correct, 1);
+assert.equal(report.find(row => row.subject === 'Língua Portuguesa').wrong, 1);
+const legacyReport = engine.subjectReport({ done: 5, correct: 3, records: {} }, bank);
+assert.equal(legacyReport[0].subject, 'Histórico sem disciplina');
+assert.equal(legacyReport[0].wrong, 2);
+assert(bank.every(q => engine.studyTip(q).length > 50), 'todas as questões têm dica');
+assert.equal(manifest.exam.category, 'processo_seletivo_simplificado');
+console.log('Fila, matriz, revisões, migração, tempo, relatórios e dicas: OK');

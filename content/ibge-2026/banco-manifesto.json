@@ -11,6 +11,8 @@
   "ownerOnlyPublishing": true,
   "exam": {
     "board": "IBFC",
+    "category": "processo_seletivo_simplificado",
+    "categoryLabel": "Processo seletivo",
     "notice": "Edital nº 01/2026",
     "totalQuestions": 60,
     "alternatives": 5,

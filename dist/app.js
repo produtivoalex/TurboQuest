@@ -10,7 +10,7 @@ function localDay(now = Date.now()) {
 }
 
 function freshState() {
-  return { done: 0, correct: 0, role: '', records: {}, days: {} };
+  return { done: 0, correct: 0, role: '', records: {}, days: {}, totalStudyMs: 0, updatedAt: 0 };
 }
 
 function loadState(storage) {
@@ -134,17 +134,127 @@ function formatClock(ms) {
   return `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`;
 }
 
+function formatDuration(ms) {
+  const minutes = Math.floor(Math.max(0, ms) / 60000);
+  return minutes >= 60 ? `${Math.floor(minutes / 60)}h ${String(minutes % 60).padStart(2, '0')}min` :
+    minutes ? `${minutes} min` : `${Math.floor(Math.max(0, ms) / 1000)} s`;
+}
+
+function subjectReport(state, bank) {
+  const byId = new Map(bank.map(q => [q.id, q]));
+  const result = new Map();
+  for (const [id, record] of Object.entries(state.records || {})) {
+    const subject = record.subject || byId.get(id)?.subject || 'Questões de versões anteriores';
+    const row = result.get(subject) || { subject, done: 0, correct: 0, wrong: 0, timeMs: 0 };
+    row.done += record.attempts || 0;
+    row.correct += record.correct || 0;
+    row.wrong += Math.max(0, (record.attempts || 0) - (record.correct || 0));
+    row.timeMs += record.timeMs || 0;
+    result.set(subject, row);
+  }
+  const reported = [...result.values()].reduce((sum, row) => sum + row.done, 0);
+  if ((state.done || 0) > reported) {
+    const extra = (state.done || 0) - reported;
+    const right = Math.max(0, (state.correct || 0) - [...result.values()].reduce((sum, row) => sum + row.correct, 0));
+    result.set('Histórico sem disciplina', { subject: 'Histórico sem disciplina', done: extra, correct: Math.min(extra, right), wrong: Math.max(0, extra - right), timeMs: 0 });
+  }
+  return [...result.values()].sort((a, b) => b.done - a.done || a.subject.localeCompare(b.subject));
+}
+
+const TIPS = [
+  [/data e período|período de referência/i, 'Separe a data da entrevista do período a que a resposta deve se referir. A atividade precisa ser julgada pelo recorte temporal pedido, não pelo momento atual.'],
+  [/geometria/i, 'Desenhe a figura e anote as medidas com unidades. Em retângulos, área é base × altura e perímetro soma todos os lados.'],
+  [/atendimento ao público|abordagem inicial/i, 'Identifique a necessidade, comunique com clareza e confirme o entendimento. Não confunda acolhimento com promessa fora da competência do agente.'],
+  [/processo decisório|tomada de decisão|decisão programada/i, 'Liste objetivo, alternativas e critérios. Decisão programada é repetitiva e segue procedimento; a não programada exige análise nova.'],
+  [/sistemas abertos/i, 'Pense em entradas, transformação, saídas e feedback. Um sistema aberto interage com o ambiente; não funciona isolado.'],
+  [/qualidade em serviços|controle de qualidade|qualidade$/i, 'Verifique se a alternativa atende ao padrão definido e à necessidade do usuário. Qualidade não é apenas rapidez nem ausência de reclamação.'],
+  [/responsabilidade e autoridade|unidade de comando/i, 'Autoridade permite decidir e orientar; responsabilidade é prestar contas pelo resultado. Unidade de comando evita ordens conflitantes.'],
+  [/avaliação de desempenho|análise de causa/i, 'Compare o resultado com critérios previamente definidos. Trate causa, não só sintoma; um indicador isolado não explica todo o desempenho.'],
+  [/gestão de riscos|continuidade operacional/i, 'Risco combina chance e impacto. Identifique prevenção, resposta e recuperação; um plano de continuidade mantém as atividades essenciais.'],
+  [/documentação e arquivo|arquivos e pastas|arquivos e cópias|extensões de arquivo/i, 'Separe nome, extensão e localização. Mover muda o local; copiar mantém o original; renomear a extensão não converte o conteúdo.'],
+  [/operação offline|logs de transmissão/i, 'Offline significa registrar localmente e transmitir depois. Confirme no log ou recibo se a sincronização terminou antes de concluir que os dados chegaram.'],
+  [/confidencialidade/i, 'Confidencialidade limita quem pode ler. Não confunda com integridade (dados corretos) nem disponibilidade (acesso quando necessário).'],
+  [/Android|Wi-Fi|dados móveis|redes$|DNS|HTTPS|navegadores|navegação na web|navegação privada/i, 'Distinga conexão, identificação do destino e proteção dos dados. Navegação privada não torna a conexão anônima; HTTPS protege o tráfego, não garante que o site seja confiável.'],
+  [/recortar e copiar|atalhos de teclado|editor de texto|formatação/i, 'Simule a ação passo a passo. Copiar preserva o original; recortar prepara a remoção ao colar; formatar muda aparência, não necessariamente conteúdo.'],
+  [/referência pronominal|colocação pronominal/i, 'Identifique o termo retomado pelo pronome. Em colocação, procure palavras atrativas antes de aplicar a regra de próclise/ênclise.'],
+  [/voz verbal|voz passiva/i, 'Ache quem pratica e quem sofre a ação. Ao passar para a passiva, preserve o tempo verbal e o sentido original.'],
+  [/valor semântico|reescrita|ambiguidade|paralelismo|parônimos/i, 'Compare as frases pelo sentido, não só pela gramática. Troque a expressão por uma paráfrase curta e veja se a relação lógica permanece.'],
+  [/acentuação|ortografia/i, 'Separe sílabas, localize a tônica e aplique a regra ao padrão identificado; não decida apenas pela aparência da palavra.'],
+  [/equação|equações|sequência/i, 'Escreva a relação em símbolos e teste com os dados do enunciado. Em sequência, compare diferenças ou razões antes de escolher a próxima posição.'],
+  [/estrutura censitária|atribuições|instrumentos de trabalho|áreas de interesse operacional/i, 'Identifique o agente, sua atribuição e o instrumento citado. Uma ação operacional não deve ser atribuída automaticamente a qualquer cargo.'],
+  [/imagem de satélite|ponto de referência/i, 'Use a imagem ou referência para localizar, mas confirme a delimitação pelo mapa e descritivo. Aparência visual não substitui critério territorial.'],
+  [/identidade autodeclarada/i, 'Se o quesito é autodeclarado, registre a resposta da pessoa; não a substitua por inferência do entrevistador.'],
+  [/áreas não contínuas|rios e estradas|continuidade territorial|litígio|sucessão e partilha/i, 'Não decida só pelo limite físico ou documento de propriedade. Confira continuidade, administração da exploração e referência temporal exigidas pelo conceito.'],
+  [/estrutura organizacional|departamentalização|estrutura informal/i, 'Desenhe mentalmente quem responde a quem. Estrutura formal está no organograma; relações informais surgem da interação real.'],
+  [/motivação|gestão de processos|processos$|gestão de mudanças|capacitação/i, 'Distinga pessoas, fluxo de trabalho e resultado. Escolha a intervenção que ataca a causa identificada e permite verificar o efeito.'],
+  [/SWOT/i, 'Forças e fraquezas são internas; oportunidades e ameaças vêm do ambiente externo. Classifique antes de comparar as alternativas.'],
+  [/priorização|distribuição de trabalho|negociação|metas SMART|prestação de contas/i, 'Ordene por urgência e impacto, explicite responsável e prazo e defina um critério observável de conclusão. Evite ações vagas.'],
+  [/e-mail|cópia oculta/i, 'Destinatários em Cc ficam visíveis; em Cco, não aparecem aos demais destinatários. Verifique também assunto, anexo e destinatário antes de enviar.'],
+  [/armazenamento/i, 'Compare capacidade e finalidade: memória temporária, armazenamento persistente e cópia de segurança não exercem a mesma função.'],
+  [/modificador e complemento|alteração de limites/i, 'No endereço, modificador e complemento refinam a localização. Mudança territorial exige conferir a delimitação oficial, não apenas a descrição informal.'],
+  [/lazer versus produção|atividade industrial|arrendatário sem área/i, 'Pergunte se há exploração agropecuária no período de referência. Posse da terra, lazer ou transformação industrial isolados não bastam para definir estabelecimento.'],
+  [/crase/i, 'Troque o termo feminino por um masculino: se surgir “ao”, há forte indicação de “à”. Confira também as exceções da expressão.'],
+  [/concordância|impessoalidade/i, 'Localize o núcleo do sujeito antes de escolher o verbo. Em “haver” com sentido de existir e “fazer” indicando tempo, use o singular.'],
+  [/regência/i, 'Ache primeiro o verbo ou nome regente e pergunte qual preposição ele exige; só depois compare as alternativas.'],
+  [/pontuação|oração restritiva/i, 'Leia o trecho sem a expressão entre vírgulas: se o sentido essencial mudar, a vírgula pode estar isolando indevidamente uma restrição.'],
+  [/coesão|pronome|conector|conectivo|inferência|interpretação|compreensão/i, 'Volte à frase anterior e substitua o pronome ou conectivo por seu referente ou relação lógica. Releia o parágrafo inteiro antes de concluir.'],
+  [/porcentag|variação percentual|juros simples/i, 'Converta a taxa em fator antes da conta: aumento de 20% = multiplicar por 1,20; desconto de 20% = por 0,80. Percentuais sucessivos não se somam.'],
+  [/regra de três|razão|razões|proporção|escala|velocidade/i, 'Anote unidades e sentido da relação antes de montar a proporção. Grandezas inversas exigem inverter uma das razões.'],
+  [/probabilidade|combinatória|conjuntos|inclusão-exclusão/i, 'Conte o universo primeiro. Para “pelo menos um”, tente o complemento; para união de conjuntos, subtraia a interseção contada duas vezes.'],
+  [/média|mediana|frações/i, 'Escreva os valores em uma linha. Para média ponderada, some produto × peso e divida pela soma dos pesos; para mediana, ordene antes.'],
+  [/negação|condicional|proposicional|equivalência|dedução|argumentação|disjunção/i, 'Traduza a frase para P e Q. “Se P, então Q” só é falsa quando P é verdadeira e Q é falsa; negue quantificadores trocando “todo” por “existe ... não”.'],
+  [/CONT.SE/i, 'Separe intervalo e critério. CONT.SE conta células que atendem ao critério; não soma seus valores.'],
+  [/referência absoluta|referência mista|referências absolutas|referências mistas/i, 'Em planilhas, o cifrão fixa a parte imediatamente seguinte: $A fixa a coluna; $1 fixa a linha. Simule copiar a fórmula uma célula.'],
+  [/planilha|filtro|classificação|ordenação|CSV|gráfico/i, 'Diferencie alterar a visualização de alterar os dados: filtro oculta linhas, ordenação muda a ordem, fórmula calcula e CSV não guarda toda a formatação.'],
+  [/backup|sincronização|nuvem|integridade|segurança|phishing|senha|autenticação|privilégio|permissões/i, 'Pergunte qual propriedade está em jogo: confidencialidade, integridade ou disponibilidade. Backup recupera dados; sincronização sozinha pode replicar um erro.'],
+  [/planejamento|controle|organização|direção|funções administrativas/i, 'Use a sequência PODC: planejar define objetivos; organizar distribui recursos; dirigir conduz pessoas; controlar compara resultado e corrige desvios.'],
+  [/eficácia|eficiência|efetividade|indicadores/i, 'Eficiência olha o uso de recursos; eficácia olha o alcance da meta; efetividade olha o impacto real. Identifique o que o indicador está medindo.'],
+  [/delegação|centralização|liderança|feedback|conflito|comunicação|equipe/i, 'Separe decisão, execução e responsabilidade final. Em cenários gerenciais, procure a ação que esclarece prioridades e mantém acompanhamento.'],
+  [/estabelecimento|produtor|subsistência|lavoura|aquicultura|boitel|exploração/i, 'No conceito censitário, priorize a exploração agropecuária sob uma mesma administração, não apenas a titularidade da propriedade. Confira o período de referência.'],
+  [/setor|mapa|descritivo|coordenadas|sede|endereço|CNEFE|logradouro|localidade/i, 'Leia o limite territorial e o descritivo antes de decidir o setor. Endereço, sede e área explorada cumprem papéis diferentes na classificação.']
+];
+
+const VIDEOS = [
+  { test: q => /Língua Portuguesa/.test(q.subject) && /crase/i.test(q.topic), id: 'yUpRa62vcSI', title: 'Crase — Professor Noslen' },
+  { test: q => /Língua Portuguesa/.test(q.subject) && /regência verbal/i.test(q.topic), id: 'B0EgJVneeGE', title: 'Regência verbal — Professor Noslen' },
+  { test: q => /Língua Portuguesa/.test(q.subject) && /interpretação|compreensão/i.test(q.topic), id: '6t3lnCNCB6Q', title: 'Compreensão e interpretação de texto — Professor Noslen' },
+  { test: q => /Língua Portuguesa/.test(q.subject) && /concordância verbal/i.test(q.topic) && !/haver|fazer|impessoalidade/i.test(q.topic), id: '4ZJnTqTk4_Y', title: 'Concordância verbal — Professor Noslen' },
+  { test: q => /Língua Portuguesa/.test(q.subject) && /concordância.*(haver|fazer|impessoalidade)/i.test(q.topic), id: 'iZ7Ryffdoc0', title: 'Verbos impessoais — Professor Noslen' },
+  { test: q => /Raciocínio Lógico/.test(q.subject) && /negação|proposicional/i.test(q.topic), id: 'XLEJ236hXr4', title: 'Proposições e negação — Julio Bara' },
+  { test: q => /Raciocínio Lógico/.test(q.subject) && /^porcentagem$/i.test(q.topic), id: 'CERiIwParX4', title: 'Porcentagem: teoria e exemplos — Professor Ferretto' },
+  { test: q => /Informática/.test(q.subject) && /CONT.SE/i.test(q.topic), id: 'CdKZHHKaVd0', title: 'Função CONT.SE — Curso de Excel Online' },
+  { test: q => /Administração/.test(q.subject) && /funções administrativas|planejamento e controle/i.test(q.topic), id: 'J9p1h3JqB5U', title: 'Funções da administração — Mundo da Administração' },
+  { test: q => /Conhecimentos Técnicos/.test(q.subject) && /estrutura censitária/i.test(q.topic), id: 'cW6h020IZhs', title: 'O que é o Censo Agropecuário — IBGE Explica' }
+];
+
+function studyTip(q) {
+  return TIPS.find(([pattern]) => pattern.test(q.topic))?.[1] ||
+    'Antes de olhar as alternativas, sublinhe a condição decisiva do enunciado e formule sua resposta em uma frase. Depois compare com a explicação.';
+}
+
+function studyVideo(q) { return VIDEOS.find(video => video.test(q)) || null; }
+
 if (typeof module !== 'undefined') module.exports = {
-  loadState, median, subjectAccuracy, priorityForQuestion, examWeights, buildQueue, schedule, formatClock, localDay
+  loadState, median, subjectAccuracy, priorityForQuestion, examWeights, buildQueue, schedule, formatClock, formatDuration, subjectReport, studyTip, studyVideo, localDay
 };
 
 if (typeof document !== 'undefined') {
   const state = loadState(localStorage);
   let bank = [], manifest = null, queue = [], at = 0, session = null, timer = null;
   let questionMs = 0, sessionMs = 0, lastTick = 0, answered = false, confidenceSaved = false;
-  let sessionResult = { done: 0, correct: 0, totalMs: 0 };
+  let sessionResult = { done: 0, correct: 0, totalMs: 0, subjects: {} };
+  let authConfig = null, auth = null, syncReady = false, syncTimer = null, syncing = false, dirty = false;
+  const AUTH_KEY = 'tq-auth-v1';
 
-  const save = () => localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  function save() {
+    state.updatedAt = Date.now();
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    if (auth && syncReady) {
+      dirty = true;
+      clearTimeout(syncTimer);
+      syncTimer = setTimeout(syncProgress, 1200);
+    }
+  }
   const show = id => { document.querySelectorAll('.view').forEach(el => el.classList.remove('active')); $(`#${id}`).classList.add('active'); scrollTo(0, 0); };
   const toast = message => { const el = $('#toast'); el.textContent = message; el.classList.add('show'); clearTimeout(el.hideTimer); el.hideTimer = setTimeout(() => el.classList.remove('show'), 3500); };
   const today = () => state.days[localDay()] || { done: 0, correct: 0, reviewed: 0 };
@@ -157,6 +267,115 @@ if (typeof document !== 'undefined') {
     $('#dailyBar').style.width = `${Math.min(100, day.done / DAILY_GOAL * 100)}%`;
     $('#dailyNote').textContent = day.done >= DAILY_GOAL ? 'Meta de hoje concluída. Continue se fizer sentido para você.' :
       day.done ? `Mais ${DAILY_GOAL - day.done} para a meta de hoje.` : 'Comece com uma sessão curta. Sem pressão.';
+  }
+
+  function makeSubjectRow(row) {
+    const el = document.createElement('div'); el.className = 'subject-row';
+    const title = document.createElement('strong'); title.textContent = row.subject;
+    const detail = document.createElement('small');
+    detail.textContent = `${row.done} ${row.done === 1 ? 'questão' : 'questões'} · ${row.correct} acertos · ${row.wrong} erros · ${Math.round(row.correct / row.done * 100)}%${row.timeMs ? ` · ${formatClock(row.timeMs)} resolvendo` : ''}`;
+    const meter = document.createElement('div'); meter.className = 'meter';
+    const fill = document.createElement('i'); fill.style.width = `${Math.round(row.correct / row.done * 100)}%`; meter.append(fill);
+    el.append(title, detail, meter); return el;
+  }
+
+  function renderProfile() {
+    $('#profileDone').textContent = state.done;
+    $('#profileCorrect').textContent = state.correct;
+    $('#profileWrong').textContent = Math.max(0, state.done - state.correct);
+    $('#profileTime').textContent = formatDuration(state.totalStudyMs || 0);
+    const rows = subjectReport(state, bank);
+    $('#profileSubjects').replaceChildren(...(rows.length ? rows.map(makeSubjectRow) : [document.createTextNode('Responda sua primeira questão para ver o desempenho por disciplina.')]));
+    const weakest = rows.filter(row => !/^(Questões de versões anteriores|Histórico sem disciplina)$/.test(row.subject) && row.done >= 2).sort((a, b) => a.correct / a.done - b.correct / b.done)[0];
+    $('#profileInsight').textContent = weakest ? `Sua maior oportunidade de revisão agora: ${weakest.subject} (${Math.round(weakest.correct / weakest.done * 100)}% em ${weakest.done} questões). ${weakest.done < 5 ? 'A amostra ainda é pequena; continue praticando.' : 'Priorize alguns exercícios desse assunto.'}` :
+      'Comece a responder para descobrir onde vale concentrar a revisão. A análise de dificuldade precisa de pelo menos 2 questões por disciplina.';
+    $('#footerStatus').textContent = auth && syncReady ? 'TurboQuest · progresso sincronizado com sua conta quando há internet' : 'TurboQuest · progresso salvo neste dispositivo';
+  }
+
+  function authStatus(message) { $('#authStatus').textContent = message; }
+  function setAuthUi() {
+    $('#authForm').hidden = !!auth;
+    $('#signOut').hidden = !auth;
+    $('#openProfile').textContent = auth?.user?.email ? auth.user.email.slice(0, 2).toUpperCase() : 'EU';
+    renderProfile();
+  }
+  async function supabase(path, options = {}, token = auth?.access_token) {
+    const response = await fetch(`${authConfig.supabaseUrl}${path}`, {
+      ...options,
+      headers: { apikey: authConfig.supabaseAnonKey, 'Content-Type': 'application/json', ...(token ? { Authorization: `Bearer ${token}` } : {}), ...options.headers }
+    });
+    const data = await response.json().catch(() => null);
+    if (!response.ok) throw new Error(data?.msg || data?.error_description || data?.message || `Erro ${response.status}`);
+    return data;
+  }
+  async function refreshAuth() {
+    if (!auth?.refresh_token) throw new Error('Sessão expirada. Entre novamente.');
+    const next = await supabase('/auth/v1/token?grant_type=refresh_token', { method: 'POST', body: JSON.stringify({ refresh_token: auth.refresh_token }) }, null);
+    auth = next; localStorage.setItem(AUTH_KEY, JSON.stringify(auth)); setAuthUi(); return auth;
+  }
+  async function cloudGet() {
+    const path = `/rest/v1/tq_progress?user_id=eq.${encodeURIComponent(auth.user.id)}&select=payload,updated_at`;
+    try { return (await supabase(path))[0] || null; }
+    catch (error) { if (/401|JWT|expired/i.test(error.message)) { await refreshAuth(); return (await supabase(path))[0] || null; } throw error; }
+  }
+  async function cloudPut() {
+    const payload = { user_id: auth.user.id, payload: state, updated_at: new Date().toISOString() };
+    try { await supabase('/rest/v1/tq_progress?on_conflict=user_id', { method: 'POST', headers: { Prefer: 'resolution=merge-duplicates' }, body: JSON.stringify(payload) }); }
+    catch (error) { if (/401|JWT|expired/i.test(error.message)) { await refreshAuth(); await supabase('/rest/v1/tq_progress?on_conflict=user_id', { method: 'POST', headers: { Prefer: 'resolution=merge-duplicates' }, body: JSON.stringify(payload) }); } else throw error; }
+  }
+  async function syncProgress() {
+    if (!auth || !syncReady || syncing || !dirty) return;
+    syncing = true; dirty = false; authStatus(`Conectado como ${auth.user.email} · sincronizando…`);
+    try { await cloudPut(); authStatus(`Conectado como ${auth.user.email} · progresso salvo na nuvem`); }
+    catch (error) { dirty = true; authStatus(`Progresso salvo neste aparelho; sincronização pendente: ${error.message}`); }
+    finally { syncing = false; if (dirty && navigator.onLine) { clearTimeout(syncTimer); syncTimer = setTimeout(syncProgress, 10000); } }
+  }
+  async function restoreCloud() {
+    syncReady = false;
+    const remote = await cloudGet();
+    if (remote?.payload?.records) {
+      const cloudState = { ...freshState(), ...remote.payload };
+      const preferLocal = state.done && state.updatedAt > cloudState.updatedAt &&
+        confirm(`Há progresso neste aparelho (${state.done} respostas) e na conta (${cloudState.done} respostas). OK: enviar o progresso deste aparelho. Cancelar: carregar o progresso da conta. Uma cópia local será guardada.`);
+      if (!preferLocal) {
+        if (state.done && (state.done !== cloudState.done || state.updatedAt !== cloudState.updatedAt))
+          localStorage.setItem(`tq-backup-${Date.now()}`, JSON.stringify(state));
+        Object.assign(state, cloudState);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      }
+      syncReady = true;
+      if (preferLocal) { dirty = true; await syncProgress(); }
+    } else { syncReady = true; dirty = true; await syncProgress(); }
+    $('#role').value = state.role || '';
+    renderSubjects(); renderStats(); renderProfile();
+    if (!dirty) authStatus(`Conectado como ${auth.user.email} · progresso carregado da nuvem`);
+    setAuthUi();
+  }
+  async function initAuth() {
+    try {
+      authConfig = await fetch('/api/config', { cache: 'no-store' }).then(response => response.json());
+      if (!authConfig.supabaseUrl || !authConfig.supabaseAnonKey) { authStatus('Sincronização ainda não configurada. Seu progresso continua salvo neste aparelho.'); $('#authForm').hidden = true; return; }
+      auth = JSON.parse(localStorage.getItem(AUTH_KEY) || 'null');
+      if (auth) {
+        try { await refreshAuth(); await restoreCloud(); }
+        catch (error) { auth = null; localStorage.removeItem(AUTH_KEY); authStatus(`Entre novamente para sincronizar. ${error.message}`); }
+      } else authStatus('Crie uma conta ou entre para continuar no celular e no computador.');
+    } catch { authStatus('Sem conexão com o serviço de contas. Seu progresso permanece neste aparelho.'); }
+    setAuthUi();
+  }
+  async function submitAuth(kind) {
+    if (!authConfig?.supabaseUrl) return;
+    const email = $('#authEmail').value.trim(), password = $('#authPassword').value;
+    if (!email || password.length < 6) return authStatus('Informe um e-mail válido e senha de pelo menos 6 caracteres.');
+    authStatus(kind === 'signup' ? 'Criando conta…' : 'Entrando…');
+    try {
+      const data = kind === 'signup' ? await supabase('/auth/v1/signup', { method: 'POST', body: JSON.stringify({ email, password }) }, null) :
+        await supabase('/auth/v1/token?grant_type=password', { method: 'POST', body: JSON.stringify({ email, password }) }, null);
+      if (!data.access_token) { authStatus('Conta criada. Confirme o e-mail recebido e depois toque em Entrar.'); return; }
+      auth = data; localStorage.setItem(AUTH_KEY, JSON.stringify(auth));
+      await restoreCloud(); $('#authPassword').value = '';
+    } catch (error) { authStatus(`Não foi possível ${kind === 'signup' ? 'criar a conta' : 'entrar'}: ${error.message}`); }
+    setAuthUi();
   }
 
   function renderSubjects() {
@@ -185,7 +404,9 @@ if (typeof document !== 'undefined') {
     if (!session || document.hidden) { lastTick = performance.now(); return; }
     const now = performance.now(), delta = Math.max(0, now - lastTick); lastTick = now;
     sessionMs += delta;
+    state.totalStudyMs += delta;
     if (!answered) questionMs += delta;
+    if (Math.floor(sessionMs / 15000) !== Math.floor((sessionMs - delta) / 15000)) save();
     $('#questionClock').textContent = formatClock(questionMs);
     if (session.minutes) {
       const remaining = session.minutes * 60000 - sessionMs;
@@ -234,11 +455,15 @@ if (typeof document !== 'undefined') {
     day.done++; if (ok) day.correct++; if (previous.attempts) day.reviewed++;
     state.days[localDay(now)] = day;
     state.done++; if (ok) state.correct++;
-    const record = { ...previous, attempts: previous.attempts + 1, correct: previous.correct + (ok ? 1 : 0),
+    const record = { ...previous, subject: q.subject, topic: q.topic, attempts: previous.attempts + 1, correct: previous.correct + (ok ? 1 : 0),
       lastAt: now, lastMs: Math.round(questionMs),
+      timeMs: (previous.timeMs || 0) + Math.round(questionMs),
       correctTimes: ok ? [...(previous.correctTimes || []).slice(-4), Math.round(questionMs)] : (previous.correctTimes || []) };
     state.records[q.id] = ok ? record : schedule(record, false, null, now);
     sessionResult.done++; if (ok) sessionResult.correct++; sessionResult.totalMs += questionMs;
+    const subject = sessionResult.subjects[q.subject] || { subject: q.subject, done: 0, correct: 0, wrong: 0, timeMs: 0 };
+    subject.done++; if (ok) subject.correct++; else subject.wrong++; subject.timeMs += questionMs;
+    sessionResult.subjects[q.subject] = subject;
     save(); renderStats(); updateMilestones(day, oldDone);
     const explanation = document.createElement('div'); explanation.className = 'explanation';
     const title = document.createElement('b'); title.textContent = ok ? 'Correto.' : 'Ainda não.';
@@ -250,6 +475,29 @@ if (typeof document !== 'undefined') {
       explanation.append(speed);
     }
     $('#explain').append(explanation);
+    const tip = document.createElement('div'); tip.className = 'tip';
+    const tipTitle = document.createElement('b'); tipTitle.textContent = 'Dica para resolver mais rápido';
+    const tipBody = document.createElement('span'); tipBody.textContent = studyTip(q);
+    tip.append(tipTitle, tipBody); $('#explain').append(tip);
+    const video = studyVideo(q);
+    const videoCard = document.createElement('div'); videoCard.className = 'video-card';
+    const videoTitle = document.createElement('b'); videoTitle.textContent = video ? 'Aula sobre este assunto' : 'Quer ver uma aula?';
+    const videoText = document.createElement('p'); videoText.textContent = video ? video.title : `Ainda não selecionamos um vídeo específico para “${q.topic}”. Você pode pesquisar pelo tópico.`;
+    videoCard.append(videoTitle, videoText);
+    if (video) {
+      const play = document.createElement('button'); play.className = 'outline'; play.type = 'button'; play.textContent = 'Assistir aqui';
+      play.addEventListener('click', () => {
+        const frame = document.createElement('div'); frame.className = 'video-frame';
+        const iframe = document.createElement('iframe'); iframe.src = `https://www.youtube-nocookie.com/embed/${video.id}`;
+        iframe.title = video.title; iframe.loading = 'lazy'; iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share'; iframe.allowFullscreen = true;
+        frame.append(iframe); play.replaceWith(frame);
+      }); videoCard.append(play);
+      const link = document.createElement('a'); link.href = `https://www.youtube.com/watch?v=${video.id}`; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = 'Abrir no YouTube'; link.className = 'textbtn'; videoCard.append(link);
+    } else {
+      const link = document.createElement('a'); link.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(`${q.subject} ${q.topic} aula`)}`;
+      link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = `Buscar aula de ${q.topic}`; link.className = 'textbtn'; videoCard.append(link);
+    }
+    $('#explain').append(videoCard);
     $('#confidence').hidden = !ok;
     $('#next').disabled = false;
   }
@@ -286,7 +534,7 @@ if (typeof document !== 'undefined') {
     const count = mode === 'custom' ? Math.max(1, Math.min(100, Number($('#customCount').value) || 10)) : mode === 'count20' ? 20 : 10;
     queue = buildQueue(filtered(), state, manifest, role, minutes ? 100 : count);
     if (!queue.length) return toast('Nenhuma questão disponível agora com esses filtros. Tente outra disciplina ou aguarde a revisão.');
-    session = { minutes }; sessionMs = 0; at = 0; sessionResult = { done: 0, correct: 0, totalMs: 0 };
+    session = { minutes }; sessionMs = 0; at = 0; sessionResult = { done: 0, correct: 0, totalMs: 0, subjects: {} };
     $('#sessionSummary').hidden = true;
     $('#sessionClock').textContent = minutes ? `${minutes}:00 restantes` : '';
     $('#sessionClock').hidden = !minutes;
@@ -301,16 +549,34 @@ if (typeof document !== 'undefined') {
     const summary = $('#sessionSummary');
     if (result.done) {
       const accuracy = Math.round(result.correct / result.done * 100);
-      summary.textContent = `Sessão concluída: ${result.done} ${result.done === 1 ? 'questão' : 'questões'} · ${accuracy}% de acertos · média de ${formatClock(result.totalMs / result.done)} por questão.`;
+      const heading = document.createElement('h3'); heading.textContent = 'Sessão concluída';
+      const overview = document.createElement('p'); overview.textContent = `${result.done} ${result.done === 1 ? 'questão' : 'questões'} · ${result.correct} acertos · ${result.done - result.correct} erros · ${accuracy}% de aproveitamento`;
+      const timing = document.createElement('p'); timing.textContent = `${formatClock(sessionMs)} de estudo · média de ${formatClock(result.totalMs / result.done)} por questão`;
+      const rows = Object.values(result.subjects).sort((a, b) => a.correct / a.done - b.correct / b.done);
+      const label = document.createElement('strong'); label.textContent = 'Por disciplina';
+      const list = document.createElement('div'); list.className = 'subject-list'; list.append(...rows.map(makeSubjectRow));
+      const insight = document.createElement('p'); insight.textContent = rows.length ?
+        `Para revisar primeiro: ${rows[0].subject} (${rows[0].wrong} ${rows[0].wrong === 1 ? 'erro' : 'erros'} em ${rows[0].done} questões). ${rows[0].done < 5 ? 'É uma amostra pequena; confirme com mais exercícios.' : ''}` : '';
+      const profileLink = document.createElement('button'); profileLink.type = 'button'; profileLink.className = 'textbtn'; profileLink.textContent = 'Ver todo o meu progresso →'; profileLink.addEventListener('click', () => { renderProfile(); show('profile'); });
+      summary.replaceChildren(heading, overview, timing, label, list, insight, profileLink);
       summary.hidden = false;
       toast(accuracy >= 80 ? 'Sessão concluída com boa precisão. Continue no seu ritmo.' : 'Sessão concluída. Os erros já entraram na fila de revisão.');
     }
-    renderStats(); show('study');
+    save(); renderStats(); renderProfile(); show('study');
   }
 
   $('#openStudy').addEventListener('click', () => show('study'));
   $('#openStudy').addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); show('study'); } });
   $('#back').addEventListener('click', () => show('home'));
+  $('#openProfile').addEventListener('click', () => { if (session) finish(); renderProfile(); show('profile'); });
+  $('#profileBack').addEventListener('click', () => show('home'));
+  $('#authForm').addEventListener('submit', event => { event.preventDefault(); submitAuth('signin'); });
+  $('#signUp').addEventListener('click', () => submitAuth('signup'));
+  $('#signOut').addEventListener('click', async () => {
+    if (dirty) await syncProgress();
+    if (dirty && !confirm('A sincronização está pendente. Sair agora? O progresso continuará neste aparelho.')) return;
+    auth = null; syncReady = false; localStorage.removeItem(AUTH_KEY); setAuthUi(); authStatus('Você saiu. O progresso continua salvo neste aparelho.');
+  });
   $('#quit').addEventListener('click', finish);
   $('#next').addEventListener('click', next);
   $('#begin').addEventListener('click', start);
@@ -320,17 +586,19 @@ if (typeof document !== 'undefined') {
   $('#role').addEventListener('change', () => { state.role = $('#role').value; save(); renderSubjects(); });
   $('#subject').addEventListener('change', renderTopics);
   $('#mode').addEventListener('change', () => { $('#customCountField').hidden = $('#mode').value !== 'custom'; });
-  document.addEventListener('visibilitychange', () => { lastTick = performance.now(); });
+  document.addEventListener('visibilitychange', () => { if (document.hidden && session) { tick(); save(); } lastTick = performance.now(); });
+  window.addEventListener('online', () => { if (dirty) syncProgress(); });
   $('#clear').addEventListener('click', () => { $('#subject').value = ''; renderTopics(); $('#topic').value = ''; $('#difficulty').value = ''; });
   $('#apply').addEventListener('click', () => { $('#customize').hidden = true; toast('Filtros aplicados à próxima sessão.'); });
   $('#role').value = state.role || '';
-  renderStats();
+  renderStats(); renderProfile(); initAuth();
   Promise.all([
     fetch(`/content/ibge-2026/questions.json?v=${Date.now()}`, { cache: 'no-store' }).then(response => { if (!response.ok) throw new Error('Banco indisponível'); return response.json(); }),
     fetch('/content/ibge-2026/banco-manifesto.json', { cache: 'no-store' }).then(response => response.ok ? response.json() : null).catch(() => null)
   ]).then(([data, exam]) => {
     bank = (data.questions || []).filter(q => q.status === 'approved'); manifest = exam;
-    $('#available').textContent = bank.length; renderSubjects();
+    $('#available').textContent = bank.length; renderSubjects(); renderProfile();
+    if (manifest?.exam?.categoryLabel) $('#examType').textContent = `${manifest.exam.categoryLabel} · IBGE · ${manifest.exam.board} · 2026`;
   }).catch(() => toast('Não foi possível carregar o banco. Verifique sua conexão.'));
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=study-v1').then(registration => registration.update()).catch(() => {});
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=profile-v1').then(registration => registration.update()).catch(() => {});
 }
