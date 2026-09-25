@@ -111,7 +111,7 @@ async function groqGenerate(key, prompt, count, editorial = false) {
     timeoutMs: 55000
   });
   const result = validateQuestions(parseModelJson(response.text), editorial);
-  if (result.questions.length < Math.max(1, Math.floor(count * 0.8))) {
+  if (result.questions.length < (editorial ? 1 : Math.max(1, Math.floor(count * 0.8)))) {
     throw new Error('O modelo retornou ' + result.questions.length + ' questões válidas de ' + count + ' solicitadas.');
   }
   return { result, grounding: null, model: GROQ_FORMAT_MODEL };
