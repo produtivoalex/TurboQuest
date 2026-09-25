@@ -1,4 +1,4 @@
-const CACHE='turboquest-v10-profile-insights';
+const CACHE='turboquest-v11-resumable-study';
 const CORE=['/','/app.js','/manifest.webmanifest'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));

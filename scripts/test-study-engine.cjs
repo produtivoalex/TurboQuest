@@ -33,9 +33,14 @@ const dueQueue = engine.buildQueue(subjectPool, { records: { [missed.id]: due } 
 assert.equal(dueQueue[0].id, missed.id, 'erro vencido vem antes de questão inédita na disciplina');
 
 const wrong = engine.schedule({ attempts: 1 }, false, null, now);
-assert.equal(wrong.dueAt - now, 5 * 60000);
+assert.equal(wrong.dueAt - now, 8 * 3600000);
 const hard = engine.schedule({ attempts: 1, correct: 1 }, true, 'hard', now);
-assert.equal(hard.dueAt - now, 30 * 60000);
+assert.equal(hard.dueAt - now, 18 * 3600000);
+const wrongAgain = engine.schedule(wrong, false, null, now + 8 * 3600000);
+assert.equal(wrongAgain.dueAt - (now + 8 * 3600000), 16 * 3600000);
+assert.equal(engine.eligibleAt({ wrong: 1, lastAt: now, dueAt: now + 5 * 60000 }), now + 8 * 3600000,
+  'prazos antigos de 5 minutos não voltam imediatamente');
+assert.equal(engine.buildQueue([missed], { records: { [missed.id]: { wrong: 1, lastAt: now, dueAt: now + 5 * 60000 } } }, manifest, 'aca', 1, now + 30 * 60000).length, 0);
 const easy = engine.schedule({ attempts: 1, correct: 1 }, true, 'easy', now);
 assert.equal(easy.dueAt - now, 14 * 86400000);
 assert.equal(engine.buildQueue([missed], { records: { [missed.id]: easy } }, manifest, 'aca', 1, now).length, 0);
@@ -59,5 +64,8 @@ const legacyReport = engine.subjectReport({ done: 5, correct: 3, records: {} }, 
 assert.equal(legacyReport[0].subject, 'Histórico sem disciplina');
 assert.equal(legacyReport[0].wrong, 2);
 assert(bank.every(q => engine.studyTip(q).length > 50), 'todas as questões têm dica');
+const phishing = bank.find(q => q.topic === 'phishing');
+assert.equal(engine.studyVideo(phishing).startSeconds, 61);
+assert.equal(engine.studyVideo(phishing).endSeconds, 449);
 assert.equal(manifest.exam.category, 'processo_seletivo_simplificado');
 console.log('Fila, matriz, revisões, migração, tempo, relatórios e dicas: OK');

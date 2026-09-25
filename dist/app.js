@@ -10,7 +10,7 @@ function localDay(now = Date.now()) {
 }
 
 function freshState() {
-  return { done: 0, correct: 0, role: '', records: {}, days: {}, totalStudyMs: 0, updatedAt: 0 };
+  return { done: 0, correct: 0, role: '', records: {}, days: {}, totalStudyMs: 0, updatedAt: 0, activeSession: null };
 }
 
 function loadState(storage) {
@@ -49,7 +49,7 @@ function subjectAccuracy(state, subject, bank) {
 
 function priorityForQuestion(q, state, bank, now) {
   const record = state.records[q.id];
-  if (record && record.dueAt > now) return -Infinity;
+  if (record && eligibleAt(record) > now) return -Infinity;
   const subjectRate = subjectAccuracy(state, q.subject, bank);
   const subjectNeed = subjectRate === null ? 0 : Math.max(0, .85 - subjectRate);
   const topicRecords = bank.filter(item => item.topic === q.topic && item.subject === q.subject)
@@ -68,6 +68,14 @@ function priorityForQuestion(q, state, bank, now) {
   return 55 + Math.min(15, overdueDays * 2) + difficulty + 16 * subjectNeed + 18 * topicNeed;
 }
 
+function eligibleAt(record) {
+  if (!record || record.retired) return Infinity;
+  // Protect older 5/30-minute schedules too; recognition right after an answer is not recall.
+  const minimumGap = record.lastOutcome === 'hard' ? 18 : record.lastOutcome === 'wrong' ? 8 :
+    record.hard || record.wrong ? 8 : 0;
+  return Math.max(Number(record.dueAt) || 0, (Number(record.lastAt) || 0) + minimumGap * 3600000);
+}
+
 function examWeights(manifest, role, subjects) {
   const row = manifest?.roles?.find(item => item.id === role);
   const source = row?.subjects || [];
@@ -80,7 +88,7 @@ function examWeights(manifest, role, subjects) {
 function buildQueue(pool, state, manifest, role, count, now = Date.now()) {
   const allowed = manifest?.roles?.find(item => item.id === role)?.subjects.map(item => item.name);
   const scope = allowed ? pool.filter(q => allowed.includes(q.subject)) : pool;
-  const available = scope.filter(q => !state.records[q.id] || (!state.records[q.id].retired && (state.records[q.id].dueAt || 0) <= now));
+  const available = scope.filter(q => !state.records[q.id] || eligibleAt(state.records[q.id]) <= now);
   if (!available.length) return [];
   const subjects = [...new Set(available.map(q => q.subject))];
   const base = examWeights(manifest, role, subjects);
@@ -110,14 +118,17 @@ function schedule(record, ok, confidence, now) {
   const previousInterval = Math.max(0, Number(next.intervalDays) || 0);
   if (!ok) {
     next.wrong = (next.wrong || 0) + 1;
-    next.intervalDays = 0;
-    next.dueAt = now + 5 * 60000;
+    next.lastOutcome = 'wrong';
+    next.intervalDays = next.wrong > 1 ? 16 / 24 : 8 / 24;
+    next.dueAt = now + next.intervalDays * DAY_MS;
   } else if (confidence === 'hard') {
     next.hard = (next.hard || 0) + 1;
-    next.intervalDays = previousInterval < 1 ? 0 : Math.max(1, Math.round(previousInterval / 2));
-    next.dueAt = now + (next.intervalDays ? next.intervalDays * DAY_MS : 30 * 60000);
+    next.lastOutcome = 'hard';
+    next.intervalDays = previousInterval < 1 ? 18 / 24 : Math.max(2, Math.round(previousInterval / 2));
+    next.dueAt = now + next.intervalDays * DAY_MS;
   } else {
     next.easyCount = (next.easyCount || 0) + 1;
+    next.lastOutcome = 'easy';
     if (next.easyCount >= 2) {
       next.retired = true;
       next.dueAt = null;
@@ -216,13 +227,25 @@ const TIPS = [
 
 const VIDEOS = [
   { test: q => /Língua Portuguesa/.test(q.subject) && /crase/i.test(q.topic), id: 'yUpRa62vcSI', title: 'Crase — Professor Noslen' },
+  { test: q => /Língua Portuguesa/.test(q.subject) && /concordância nominal/i.test(q.topic), id: 'wtYgEDzjcWM', title: 'Concordância nominal — Professor Noslen' },
+  { test: q => /Língua Portuguesa/.test(q.subject) && /colocação pronominal/i.test(q.topic), id: 'l_WxqVvmyGo', title: 'Colocação pronominal — Professor Noslen' },
   { test: q => /Língua Portuguesa/.test(q.subject) && /regência verbal/i.test(q.topic), id: 'B0EgJVneeGE', title: 'Regência verbal — Professor Noslen' },
   { test: q => /Língua Portuguesa/.test(q.subject) && /interpretação|compreensão/i.test(q.topic), id: '6t3lnCNCB6Q', title: 'Compreensão e interpretação de texto — Professor Noslen' },
+  { test: q => /Língua Portuguesa/.test(q.subject) && /coesão textual/i.test(q.topic), id: 'IIU6i3UXyi0', title: 'Coesão e coerência — Professor Noslen' },
+  { test: q => /Língua Portuguesa/.test(q.subject) && /^pontuação$/i.test(q.topic), id: '9tdpcfdr244', title: 'Pontuação: vírgula e outros sinais — Professor Noslen' },
   { test: q => /Língua Portuguesa/.test(q.subject) && /concordância verbal/i.test(q.topic) && !/haver|fazer|impessoalidade/i.test(q.topic), id: '4ZJnTqTk4_Y', title: 'Concordância verbal — Professor Noslen' },
   { test: q => /Língua Portuguesa/.test(q.subject) && /concordância.*(haver|fazer|impessoalidade)/i.test(q.topic), id: 'iZ7Ryffdoc0', title: 'Verbos impessoais — Professor Noslen' },
   { test: q => /Raciocínio Lógico/.test(q.subject) && /negação|proposicional/i.test(q.topic), id: 'XLEJ236hXr4', title: 'Proposições e negação — Julio Bara' },
+  { test: q => /Raciocínio Lógico/.test(q.subject) && /^conjuntos$/i.test(q.topic), id: '0aUEDxYjZg8', title: 'Conjuntos: introdução — Professor Ferretto' },
+  { test: q => /Raciocínio Lógico/.test(q.subject) && /^razão$|^razão e proporção$/i.test(q.topic), id: '8f8BMdUXXV8', title: 'Razão e proporção — Professor Ferretto' },
+  { test: q => /Raciocínio Lógico/.test(q.subject) && /regra de três composta/i.test(q.topic), id: 'buYey1YGJhA', title: 'Regra de três composta — Professor Ferretto' },
+  { test: q => /Raciocínio Lógico/.test(q.subject) && /regra de três$/i.test(q.topic), id: 'alLifth7gxE', title: 'Regra de três simples — Professor Ferretto' },
+  { test: q => /Raciocínio Lógico/.test(q.subject) && /^probabilidade$/i.test(q.topic), id: 'WAlsxyDf0U8', title: 'Probabilidade básica — Rafa Jesus' },
   { test: q => /Raciocínio Lógico/.test(q.subject) && /^porcentagem$/i.test(q.topic), id: 'CERiIwParX4', title: 'Porcentagem: teoria e exemplos — Professor Ferretto' },
+  { test: q => /Informática/.test(q.subject) && /phishing/i.test(q.topic), id: 'EihZ8WFBGKA', startSeconds: 61, endSeconds: 449, title: 'Phishing — Curso em Vídeo (trecho específico)' },
   { test: q => /Informática/.test(q.subject) && /CONT.SE/i.test(q.topic), id: 'CdKZHHKaVd0', title: 'Função CONT.SE — Curso de Excel Online' },
+  { test: q => /Administração/.test(q.subject) && /gestão de riscos/i.test(q.topic), id: 'TQPuT9IPYWs', title: 'Gestão de riscos para concursos — Prof. Marcelo Soares' },
+  { test: q => /Administração/.test(q.subject) && /análise SWOT/i.test(q.topic), id: 'UD0E32fK9Yg', title: 'Análise SWOT — Prof. Marcelo Soares' },
   { test: q => /Administração/.test(q.subject) && /funções administrativas|planejamento e controle/i.test(q.topic), id: 'J9p1h3JqB5U', title: 'Funções da administração — Mundo da Administração' },
   { test: q => /Conhecimentos Técnicos/.test(q.subject) && /estrutura censitária/i.test(q.topic), id: 'cW6h020IZhs', title: 'O que é o Censo Agropecuário — IBGE Explica' }
 ];
@@ -235,13 +258,14 @@ function studyTip(q) {
 function studyVideo(q) { return VIDEOS.find(video => video.test(q)) || null; }
 
 if (typeof module !== 'undefined') module.exports = {
-  loadState, median, subjectAccuracy, priorityForQuestion, examWeights, buildQueue, schedule, formatClock, formatDuration, subjectReport, studyTip, studyVideo, localDay
+  loadState, median, subjectAccuracy, priorityForQuestion, eligibleAt, examWeights, buildQueue, schedule, formatClock, formatDuration, subjectReport, studyTip, studyVideo, localDay
 };
 
 if (typeof document !== 'undefined') {
   const state = loadState(localStorage);
   let bank = [], manifest = null, queue = [], at = 0, session = null, timer = null;
   let questionMs = 0, sessionMs = 0, lastTick = 0, answered = false, confidenceSaved = false;
+  let selectedAnswer = null, speedBaseline = null, speedDayRate = null;
   let sessionResult = { done: 0, correct: 0, totalMs: 0, subjects: {} };
   let authConfig = null, auth = null, syncReady = false, syncTimer = null, syncing = false, dirty = false;
   const AUTH_KEY = 'tq-auth-v1';
@@ -290,6 +314,17 @@ if (typeof document !== 'undefined') {
     $('#profileInsight').textContent = weakest ? `Sua maior oportunidade de revisão agora: ${weakest.subject} (${Math.round(weakest.correct / weakest.done * 100)}% em ${weakest.done} questões). ${weakest.done < 5 ? 'A amostra ainda é pequena; continue praticando.' : 'Priorize alguns exercícios desse assunto.'}` :
       'Comece a responder para descobrir onde vale concentrar a revisão. A análise de dificuldade precisa de pelo menos 2 questões por disciplina.';
     $('#footerStatus').textContent = auth && syncReady ? 'TurboQuest · progresso sincronizado com sua conta quando há internet' : 'TurboQuest · progresso salvo neste dispositivo';
+  }
+
+  function renderResume() {
+    const saved = state.activeSession;
+    $('#openStudy .hero-cta span').textContent = saved && !session ? 'Ver sessão pausada' : 'Começar a estudar';
+    $('#resumePanel').hidden = !saved || !!session;
+    if (!saved || session) return;
+    const completed = (saved.result?.done || 0);
+    const total = saved.queueIds?.length || 0;
+    $('#resumeTitle').textContent = completed ? `${completed} respondidas. Sua sessão está guardada.` : 'Sua sessão está guardada.';
+    $('#resumeDescription').textContent = `${Math.min(saved.at + 1, total)} de ${total} na fila · ${formatClock(saved.sessionMs || 0)} de estudo${saved.minutes ? ` · ${formatClock(Math.max(0, saved.minutes * 60000 - (saved.sessionMs || 0)))} restantes` : ''}.`;
   }
 
   function authStatus(message) { $('#authStatus').textContent = message; }
@@ -347,7 +382,7 @@ if (typeof document !== 'undefined') {
       if (preferLocal) { dirty = true; await syncProgress(); }
     } else { syncReady = true; dirty = true; await syncProgress(); }
     $('#role').value = state.role || '';
-    renderSubjects(); renderStats(); renderProfile();
+    renderSubjects(); renderStats(); renderProfile(); renderResume();
     if (!dirty) authStatus(`Conectado como ${auth.user.email} · progresso carregado da nuvem`);
     setAuthUi();
   }
@@ -400,13 +435,21 @@ if (typeof document !== 'undefined') {
       (!topic || q.topic === topic) && (!difficulty || q.difficulty === difficulty));
   }
 
+  function persistSession() {
+    if (!session) return;
+    state.activeSession = { queueIds: queue.map(q => q.id), at, minutes: session.minutes, sessionMs,
+      questionMs, result: sessionResult, answeredIndex: selectedAnswer, confidenceSaved, speedBaseline, speedDayRate, role: state.role };
+    save();
+    renderResume();
+  }
+
   function tick() {
     if (!session || document.hidden) { lastTick = performance.now(); return; }
     const now = performance.now(), delta = Math.max(0, now - lastTick); lastTick = now;
     sessionMs += delta;
     state.totalStudyMs += delta;
     if (!answered) questionMs += delta;
-    if (Math.floor(sessionMs / 15000) !== Math.floor((sessionMs - delta) / 15000)) save();
+    if (Math.floor(sessionMs / 15000) !== Math.floor((sessionMs - delta) / 15000)) persistSession();
     $('#questionClock').textContent = formatClock(questionMs);
     if (session.minutes) {
       const remaining = session.minutes * 60000 - sessionMs;
@@ -415,11 +458,12 @@ if (typeof document !== 'undefined') {
     }
   }
 
-  function draw() {
+  function draw(snapshot = null) {
     const q = queue[at];
     if (!q) return finish();
-    questionMs = 0; answered = false; confidenceSaved = false;
-    $('#questionClock').textContent = '00:00';
+    questionMs = snapshot?.questionMs || 0; answered = false; confidenceSaved = !!snapshot?.confidenceSaved;
+    selectedAnswer = null; speedBaseline = snapshot?.speedBaseline || null; speedDayRate = snapshot?.speedDayRate || null;
+    $('#questionClock').textContent = formatClock(questionMs);
     $('#counter').textContent = session.minutes ? `Questão ${at + 1}` : `${at + 1} / ${queue.length}`;
     $('#progress').style.width = session.minutes ? `${Math.min(100, sessionMs / (session.minutes * 60000) * 100)}%` : `${at / queue.length * 100}%`;
     $('#qsubject').textContent = q.subject; $('#qtopic').textContent = q.topic;
@@ -432,6 +476,7 @@ if (typeof document !== 'undefined') {
       const label = document.createElement('span'); label.textContent = option;
       button.append(letter, label); button.addEventListener('click', () => answer(index)); return button;
     }));
+    if (Number.isInteger(snapshot?.answeredIndex)) renderFeedback(snapshot.answeredIndex, true);
     lastTick = performance.now();
   }
 
@@ -441,18 +486,66 @@ if (typeof document !== 'undefined') {
     else if (day.reviewed === 5) toast('Cinco revisões concluídas. Seu conhecimento está ficando mais firme.');
   }
 
-  function answer(index) {
-    if (answered || !session) return;
-    tick(); if (!session) return; answered = true;
-    const q = queue[at], ok = index === q.answer, now = Date.now();
+  function renderFeedback(index, restored = false) {
+    const q = queue[at], ok = index === q.answer;
+    answered = true; selectedAnswer = index;
     const buttons = [...$('#answers').children];
     buttons.forEach((button, i) => { button.disabled = true; if (i === q.answer) button.classList.add('correct'); if (i === index && !ok) button.classList.add('wrong'); });
+    const explanation = document.createElement('div'); explanation.className = 'explanation';
+    const title = document.createElement('b'); title.textContent = ok ? 'Correto.' : 'Ainda não.';
+    const body = document.createElement('span'); body.textContent = ` ${q.explanation}`;
+    explanation.append(title, document.createElement('br'), body);
+    if (ok && speedBaseline && questionMs >= 10000 && questionMs <= speedBaseline * .85 && speedDayRate >= .8) {
+      const speed = document.createElement('div'); speed.className = 'speed-note';
+      speed.textContent = `Bom ritmo: ${Math.round((1 - questionMs / speedBaseline) * 100)}% mais rápido que seu padrão, mantendo a precisão.`;
+      explanation.append(speed);
+    }
+    $('#explain').append(explanation);
+    const tip = document.createElement('div'); tip.className = 'tip';
+    const tipTitle = document.createElement('b'); tipTitle.textContent = 'Dica para resolver mais rápido';
+    const tipBody = document.createElement('span'); tipBody.textContent = studyTip(q);
+    tip.append(tipTitle, tipBody); $('#explain').append(tip);
+    const video = studyVideo(q);
+    const videoCard = document.createElement('div'); videoCard.className = 'video-card';
+    const videoTitle = document.createElement('b'); videoTitle.textContent = video ? 'Aula selecionada para este assunto' : 'Quer ver uma aula?';
+    const videoText = document.createElement('p'); videoText.textContent = video ? `${video.title}${video.startSeconds ? ` · trecho ${formatClock(video.startSeconds * 1000)}${video.endSeconds ? `–${formatClock(video.endSeconds * 1000)}` : ''}` : ''}` : `Ainda não selecionamos um vídeo específico para “${q.topic}”. Você pode pesquisar pelo tópico.`;
+    videoCard.append(videoTitle, videoText);
+    if (video) {
+      const reason = document.createElement('small'); reason.className = 'quiet';
+      reason.textContent = 'Seleção editorial: assunto específico, canal confiável e vídeo disponível.';
+      videoCard.append(reason, document.createElement('br'));
+      const play = document.createElement('button'); play.className = 'outline'; play.type = 'button'; play.textContent = 'Assistir aqui';
+      play.addEventListener('click', () => {
+        const frame = document.createElement('div'); frame.className = 'video-frame';
+        const iframe = document.createElement('iframe'); iframe.src = `https://www.youtube-nocookie.com/embed/${video.id}${video.startSeconds ? `?start=${video.startSeconds}${video.endSeconds ? `&end=${video.endSeconds}` : ''}` : ''}`;
+        iframe.title = video.title; iframe.loading = 'lazy'; iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share'; iframe.allowFullscreen = true;
+        frame.append(iframe); play.replaceWith(frame);
+      }); videoCard.append(play);
+      const link = document.createElement('a'); link.href = `https://www.youtube.com/watch?v=${video.id}${video.startSeconds ? `&t=${video.startSeconds}s` : ''}`; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = 'Abrir no YouTube'; link.className = 'textbtn'; videoCard.append(link);
+    } else {
+      const link = document.createElement('a'); link.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(`${q.subject} ${q.topic} aula`)}`;
+      link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = `Buscar aula de ${q.topic}`; link.className = 'textbtn'; videoCard.append(link);
+    }
+    $('#explain').append(videoCard);
+    $('#confidence').hidden = !ok || confidenceSaved;
+    $('#next').disabled = false;
+    if (restored && confidenceSaved && ok) {
+      const note = document.createElement('small'); note.className = 'review-note'; note.textContent = 'Sua avaliação desta questão já foi salva.';
+      $('#explain').append(note);
+    }
+  }
+
+  function answer(index) {
+    if (answered || !session) return;
+    tick(); if (!session) return;
+    const q = queue[at], ok = index === q.answer, now = Date.now();
     const previous = state.records[q.id] || { attempts: 0, correct: 0, wrong: 0, hard: 0, times: [] };
     const oldTimes = Object.values(state.records).flatMap(record => record.correctTimes || []).filter(value => value >= 10000 && value <= 600000);
-    const baseline = median(oldTimes.length >= 5 ? oldTimes.slice(-30) : []);
+    speedBaseline = median(oldTimes.length >= 5 ? oldTimes.slice(-30) : []);
     const day = state.days[localDay(now)] || { done: 0, correct: 0, reviewed: 0 };
     const oldDone = day.done;
     day.done++; if (ok) day.correct++; if (previous.attempts) day.reviewed++;
+    speedDayRate = day.correct / day.done;
     state.days[localDay(now)] = day;
     state.done++; if (ok) state.correct++;
     const record = { ...previous, subject: q.subject, topic: q.topic, attempts: previous.attempts + 1, correct: previous.correct + (ok ? 1 : 0),
@@ -464,52 +557,18 @@ if (typeof document !== 'undefined') {
     const subject = sessionResult.subjects[q.subject] || { subject: q.subject, done: 0, correct: 0, wrong: 0, timeMs: 0 };
     subject.done++; if (ok) subject.correct++; else subject.wrong++; subject.timeMs += questionMs;
     sessionResult.subjects[q.subject] = subject;
-    save(); renderStats(); updateMilestones(day, oldDone);
-    const explanation = document.createElement('div'); explanation.className = 'explanation';
-    const title = document.createElement('b'); title.textContent = ok ? 'Correto.' : 'Ainda não.';
-    const body = document.createElement('span'); body.textContent = ` ${q.explanation}`;
-    explanation.append(title, document.createElement('br'), body);
-    if (ok && baseline && questionMs >= 10000 && questionMs <= baseline * .85 && day.correct / day.done >= .8) {
-      const speed = document.createElement('div'); speed.className = 'speed-note';
-      speed.textContent = `Bom ritmo: ${Math.round((1 - questionMs / baseline) * 100)}% mais rápido que seu padrão, mantendo a precisão.`;
-      explanation.append(speed);
-    }
-    $('#explain').append(explanation);
-    const tip = document.createElement('div'); tip.className = 'tip';
-    const tipTitle = document.createElement('b'); tipTitle.textContent = 'Dica para resolver mais rápido';
-    const tipBody = document.createElement('span'); tipBody.textContent = studyTip(q);
-    tip.append(tipTitle, tipBody); $('#explain').append(tip);
-    const video = studyVideo(q);
-    const videoCard = document.createElement('div'); videoCard.className = 'video-card';
-    const videoTitle = document.createElement('b'); videoTitle.textContent = video ? 'Aula sobre este assunto' : 'Quer ver uma aula?';
-    const videoText = document.createElement('p'); videoText.textContent = video ? video.title : `Ainda não selecionamos um vídeo específico para “${q.topic}”. Você pode pesquisar pelo tópico.`;
-    videoCard.append(videoTitle, videoText);
-    if (video) {
-      const play = document.createElement('button'); play.className = 'outline'; play.type = 'button'; play.textContent = 'Assistir aqui';
-      play.addEventListener('click', () => {
-        const frame = document.createElement('div'); frame.className = 'video-frame';
-        const iframe = document.createElement('iframe'); iframe.src = `https://www.youtube-nocookie.com/embed/${video.id}`;
-        iframe.title = video.title; iframe.loading = 'lazy'; iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share'; iframe.allowFullscreen = true;
-        frame.append(iframe); play.replaceWith(frame);
-      }); videoCard.append(play);
-      const link = document.createElement('a'); link.href = `https://www.youtube.com/watch?v=${video.id}`; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = 'Abrir no YouTube'; link.className = 'textbtn'; videoCard.append(link);
-    } else {
-      const link = document.createElement('a'); link.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(`${q.subject} ${q.topic} aula`)}`;
-      link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = `Buscar aula de ${q.topic}`; link.className = 'textbtn'; videoCard.append(link);
-    }
-    $('#explain').append(videoCard);
-    $('#confidence').hidden = !ok;
-    $('#next').disabled = false;
+    renderFeedback(index);
+    persistSession(); renderStats(); updateMilestones(day, oldDone);
   }
 
   function setConfidence(level) {
     if (confidenceSaved || !answered || !session) return;
     const q = queue[at], record = state.records[q.id];
     state.records[q.id] = schedule(record, true, level, Date.now());
-    confidenceSaved = true; save();
+    confidenceSaved = true; persistSession();
     $('#confidence').hidden = true;
     const message = document.createElement('small'); message.className = 'review-note';
-    message.textContent = level === 'hard' ? 'Vou trazer esta questão de volta em cerca de 30 minutos.' :
+    message.textContent = level === 'hard' ? `Revisão agendada para daqui a cerca de ${formatDuration(state.records[q.id].dueAt - Date.now())}.` :
       state.records[q.id].retired ? 'Ótimo. Esta questão saiu da fila de revisão.' : 'Ótimo. Uma revisão longa foi programada.';
     $('#explain').append(message);
   }
@@ -522,13 +581,14 @@ if (typeof document !== 'undefined') {
       const refill = buildQueue(remaining, state, manifest, state.role, 40, Date.now());
       queue.push(...refill);
     }
-    at++; draw();
+    at++; draw(); persistSession();
   }
 
   function start() {
     if (!bank.length) return toast('O banco ainda está carregando. Tente novamente.');
     const role = $('#role').value;
     if (!role) return toast('Escolha seu cargo para priorizar as disciplinas da sua prova.');
+    if (state.activeSession && !confirm('Há uma sessão pausada. Iniciar outra vai encerrar a fila anterior. Quer continuar?')) return;
     state.role = role; save();
     const mode = $('#mode').value, minutes = mode === 'time15' ? 15 : mode === 'time30' ? 30 : 0;
     const count = mode === 'custom' ? Math.max(1, Math.min(100, Number($('#customCount').value) || 10)) : mode === 'count20' ? 20 : 10;
@@ -538,13 +598,37 @@ if (typeof document !== 'undefined') {
     $('#sessionSummary').hidden = true;
     $('#sessionClock').textContent = minutes ? `${minutes}:00 restantes` : '';
     $('#sessionClock').hidden = !minutes;
-    show('quiz'); draw(); clearInterval(timer); timer = setInterval(tick, 250);
+    show('quiz'); draw(); persistSession(); clearInterval(timer); timer = setInterval(tick, 250);
+  }
+
+  function pause() {
+    if (!session) return;
+    tick(); if (!session) return;
+    persistSession(); clearInterval(timer); timer = null; session = null;
+    renderResume(); show('study'); if (auth && syncReady) syncProgress();
+    toast('Sessão pausada. Continue quando quiser, sem perder sua fila.');
+  }
+
+  function resume() {
+    const saved = state.activeSession;
+    if (!saved || !bank.length) return toast('Aguarde o carregamento das questões para continuar.');
+    const byId = new Map(bank.map(q => [q.id, q]));
+    if (!saved.queueIds?.length || saved.queueIds.some(id => !byId.has(id)) || saved.at >= saved.queueIds.length)
+      return toast('A fila salva contém questões indisponíveis. Encerre esta sessão para iniciar outra.');
+    queue = saved.queueIds.map(id => byId.get(id));
+    at = saved.at; session = { minutes: saved.minutes || 0 }; sessionMs = saved.sessionMs || 0;
+    sessionResult = saved.result || { done: 0, correct: 0, totalMs: 0, subjects: {} };
+    state.role = saved.role || state.role;
+    $('#role').value = state.role;
+    $('#sessionClock').hidden = !session.minutes;
+    $('#sessionClock').textContent = session.minutes ? `${formatClock(Math.max(0, session.minutes * 60000 - sessionMs))} restantes` : '';
+    show('quiz'); draw(saved); renderResume(); clearInterval(timer); timer = setInterval(tick, 250);
   }
 
   function finish() {
     if (!session) return;
     if (answered && !confidenceSaved && !$('#confidence').hidden) setConfidence('hard');
-    clearInterval(timer); timer = null; session = null;
+    clearInterval(timer); timer = null; session = null; state.activeSession = null;
     const result = sessionResult;
     const summary = $('#sessionSummary');
     if (result.done) {
@@ -562,13 +646,13 @@ if (typeof document !== 'undefined') {
       summary.hidden = false;
       toast(accuracy >= 80 ? 'Sessão concluída com boa precisão. Continue no seu ritmo.' : 'Sessão concluída. Os erros já entraram na fila de revisão.');
     }
-    save(); renderStats(); renderProfile(); show('study');
+    save(); renderStats(); renderProfile(); renderResume(); show('study');
+    if (auth && syncReady) syncProgress();
   }
 
   $('#openStudy').addEventListener('click', () => show('study'));
-  $('#openStudy').addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); show('study'); } });
   $('#back').addEventListener('click', () => show('home'));
-  $('#openProfile').addEventListener('click', () => { if (session) finish(); renderProfile(); show('profile'); });
+  $('#openProfile').addEventListener('click', () => { if (session) pause(); renderProfile(); show('profile'); });
   $('#profileBack').addEventListener('click', () => show('home'));
   $('#authForm').addEventListener('submit', event => { event.preventDefault(); submitAuth('signin'); });
   $('#signUp').addEventListener('click', () => submitAuth('signup'));
@@ -577,7 +661,9 @@ if (typeof document !== 'undefined') {
     if (dirty && !confirm('A sincronização está pendente. Sair agora? O progresso continuará neste aparelho.')) return;
     auth = null; syncReady = false; localStorage.removeItem(AUTH_KEY); setAuthUi(); authStatus('Você saiu. O progresso continua salvo neste aparelho.');
   });
-  $('#quit').addEventListener('click', finish);
+  $('#quit').addEventListener('click', pause);
+  $('#resume').addEventListener('click', resume);
+  $('#endPaused').addEventListener('click', () => { resume(); if (session) finish(); });
   $('#next').addEventListener('click', next);
   $('#begin').addEventListener('click', start);
   $('#easy').addEventListener('click', () => setConfidence('easy'));
@@ -586,19 +672,20 @@ if (typeof document !== 'undefined') {
   $('#role').addEventListener('change', () => { state.role = $('#role').value; save(); renderSubjects(); });
   $('#subject').addEventListener('change', renderTopics);
   $('#mode').addEventListener('change', () => { $('#customCountField').hidden = $('#mode').value !== 'custom'; });
-  document.addEventListener('visibilitychange', () => { if (document.hidden && session) { tick(); save(); } lastTick = performance.now(); });
+  document.addEventListener('visibilitychange', () => { if (document.hidden && session) persistSession(); lastTick = performance.now(); });
+  window.addEventListener('pagehide', () => { if (session) persistSession(); });
   window.addEventListener('online', () => { if (dirty) syncProgress(); });
   $('#clear').addEventListener('click', () => { $('#subject').value = ''; renderTopics(); $('#topic').value = ''; $('#difficulty').value = ''; });
   $('#apply').addEventListener('click', () => { $('#customize').hidden = true; toast('Filtros aplicados à próxima sessão.'); });
   $('#role').value = state.role || '';
-  renderStats(); renderProfile(); initAuth();
+  renderStats(); renderProfile(); renderResume(); initAuth();
   Promise.all([
     fetch(`/content/ibge-2026/questions.json?v=${Date.now()}`, { cache: 'no-store' }).then(response => { if (!response.ok) throw new Error('Banco indisponível'); return response.json(); }),
     fetch('/content/ibge-2026/banco-manifesto.json', { cache: 'no-store' }).then(response => response.ok ? response.json() : null).catch(() => null)
   ]).then(([data, exam]) => {
     bank = (data.questions || []).filter(q => q.status === 'approved'); manifest = exam;
-    $('#available').textContent = bank.length; renderSubjects(); renderProfile();
+    $('#available').textContent = bank.length; renderSubjects(); renderProfile(); renderResume();
     if (manifest?.exam?.categoryLabel) $('#examType').textContent = `${manifest.exam.categoryLabel} · IBGE · ${manifest.exam.board} · 2026`;
   }).catch(() => toast('Não foi possível carregar o banco. Verifique sua conexão.'));
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=profile-v1').then(registration => registration.update()).catch(() => {});
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=resume-v1').then(registration => registration.update()).catch(() => {});
 }
