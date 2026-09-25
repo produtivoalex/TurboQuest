@@ -1,0 +1,1883 @@
+{
+  "batch": "batch-006b",
+  "status": "review",
+  "generatedBy": "ChatGPT editorial curation",
+  "questions": [
+    {
+      "id": "ibge26-b006b-001",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "classes de palavras",
+      "difficulty": "hard",
+      "statement": "Em \"A equipe cuidadosamente revisou os dados\", a palavra \"cuidadosamente\" é: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "substantivo",
+        "adjetivo",
+        "advérbio",
+        "pronome",
+        "conjunção"
+      ],
+      "answer": 2,
+      "explanation": "A palavra modifica o verbo revisou, indicando modo; por isso exerce função de advérbio. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Incorreta: a alternativa afirma \"substantivo\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"adjetivo\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Correta: A palavra modifica o verbo revisou, indicando modo; por isso exerce função de advérbio. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"pronome\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"conjunção\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-002",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "acentuação",
+      "difficulty": "hard",
+      "statement": "Assinale a palavra corretamente acentuada segundo a norma-padrão: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "ideia",
+        "heroi",
+        "saúde",
+        "voo",
+        "item"
+      ],
+      "answer": 2,
+      "explanation": "Saúde recebe acento por formar hiato com vogal tônica u; as demais opções não apresentam a mesma justificativa ou estão sem acento quando necessário.",
+      "whyWrong": [
+        "Incorreta: a alternativa afirma \"ideia\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"heroi\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Correta: Saúde recebe acento por formar hiato com vogal tônica u; as demais opções não apresentam a mesma justificativa ou estão sem acento quando necessário.",
+        "Incorreta: a alternativa afirma \"voo\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"item\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-003",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "concordância",
+      "difficulty": "hard",
+      "statement": "Assinale a frase correta: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "Seguem anexas as planilhas solicitadas.",
+        "Segue anexos as planilhas solicitadas.",
+        "Houveram falhas no sistema.",
+        "Fazem três dias da visita.",
+        "A equipe ficaram pronta."
+      ],
+      "answer": 0,
+      "explanation": "O adjetivo anexas concorda com planilhas; haver e fazer, em certas construções, são impessoais. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: O adjetivo anexas concorda com planilhas; haver e fazer, em certas construções, são impessoais. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"Segue anexos as planilhas solicitadas.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"Houveram falhas no sistema.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"Fazem três dias da visita.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"A equipe ficaram pronta.\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-004",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "regência",
+      "difficulty": "hard",
+      "statement": "A construção adequada à norma-padrão é: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "O servidor informou o fato ao supervisor.",
+        "O servidor informou ao fato o supervisor.",
+        "A equipe chegou no setor às oito.",
+        "O relatório obedece o modelo.",
+        "O gestor visa o aperfeiçoamento do serviço."
+      ],
+      "answer": 0,
+      "explanation": "Informar algo a alguém admite a estrutura apresentada; as demais exigem atenção às preposições e regências específicas. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Informar algo a alguém admite a estrutura apresentada; as demais exigem atenção às preposições e regências específicas. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"O servidor informou ao fato o supervisor.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"A equipe chegou no setor às oito.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"O relatório obedece o modelo.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"O gestor visa o aperfeiçoamento do serviço.\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-005",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "crase",
+      "difficulty": "hard",
+      "statement": "Assinale a frase em que o emprego do acento indicativo de crase está correto: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "A equipe retornou à unidade prevista.",
+        "O agente entregou o formulário à um supervisor.",
+        "A coleta começou à partir das oito.",
+        "O relatório foi enviado à todos.",
+        "A visita ocorreu à prazo."
+      ],
+      "answer": 0,
+      "explanation": "Há preposição a e artigo feminino a antes de unidade; não se usa crase antes de artigo indefinido, pronome ou expressão inadequada.",
+      "whyWrong": [
+        "Correta: Há preposição a e artigo feminino a antes de unidade; não se usa crase antes de artigo indefinido, pronome ou expressão inadequada.",
+        "Incorreta: a alternativa afirma \"O agente entregou o formulário à um supervisor.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"A coleta começou à partir das oito.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"O relatório foi enviado à todos.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"A visita ocorreu à prazo.\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-006",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "orações",
+      "difficulty": "hard",
+      "statement": "Em \"Os dados que foram conferidos seguiram para transmissão\", a oração \"que foram conferidos\" é:",
+      "options": [
+        "subordinada adjetiva restritiva",
+        "subordinada adverbial causal",
+        "coordenada sindética",
+        "substantiva objetiva",
+        "subordinada adjetiva explicativa"
+      ],
+      "answer": 0,
+      "explanation": "A oração caracteriza e restringe o conjunto de dados, sem vírgulas; por isso é adjetiva restritiva. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: A oração caracteriza e restringe o conjunto de dados, sem vírgulas; por isso é adjetiva restritiva. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"subordinada adverbial causal\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"coordenada sindética\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"substantiva objetiva\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"subordinada adjetiva explicativa\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-007",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "coerência",
+      "difficulty": "hard",
+      "statement": "Um texto que afirma primeiro que a equipe concluiu a coleta e depois que a coleta ainda não começou apresenta:",
+      "options": [
+        "coesão perfeita",
+        "incoerência temporal",
+        "elipse nominal",
+        "regência imprópria apenas",
+        "metáfora obrigatória"
+      ],
+      "answer": 1,
+      "explanation": "As afirmações são incompatíveis quanto à sequência temporal, comprometendo a coerência do texto. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Incorreta: a alternativa afirma \"coesão perfeita\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Correta: As afirmações são incompatíveis quanto à sequência temporal, comprometendo a coerência do texto. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"elipse nominal\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"regência imprópria apenas\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"metáfora obrigatória\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-008",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "pontuação",
+      "difficulty": "hard",
+      "statement": "A vírgula está corretamente empregada em: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "Após a conferência, os dados foram enviados.",
+        "Os dados, foram enviados após a conferência.",
+        "A equipe enviou, os dados.",
+        "O supervisor que chegou, revisou tudo.",
+        "A equipe e o supervisor, conferiram os dados."
+      ],
+      "answer": 0,
+      "explanation": "A oração adverbial deslocada pode ser isolada; não se separa por vírgula sujeito e predicado nem verbo e complemento. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: A oração adverbial deslocada pode ser isolada; não se separa por vírgula sujeito e predicado nem verbo e complemento. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"Os dados, foram enviados após a conferência.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"A equipe enviou, os dados.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"O supervisor que chegou, revisou tudo.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"A equipe e o supervisor, conferiram os dados.\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-009",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "pronomes",
+      "difficulty": "hard",
+      "statement": "A forma que evita ambiguidade em \"O agente avisou o supervisor que estava atrasado\" é:",
+      "options": [
+        "O agente avisou ao supervisor que estava atrasado.",
+        "O agente, que estava atrasado, avisou o supervisor.",
+        "O agente avisou que o supervisor estava atrasado.",
+        "O supervisor avisou o agente atrasado.",
+        "O agente avisou o supervisor, estava atrasado."
+      ],
+      "answer": 2,
+      "explanation": "A reescrita explicita que o supervisor era o atrasado, eliminando a dúvida sobre o referente do pronome relativo. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Incorreta: a alternativa afirma \"O agente avisou ao supervisor que estava atrasado.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"O agente, que estava atrasado, avisou o supervisor.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Correta: A reescrita explicita que o supervisor era o atrasado, eliminando a dúvida sobre o referente do pronome relativo. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"O supervisor avisou o agente atrasado.\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"O agente avisou o supervisor, estava atrasado.\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-010",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "semântica",
+      "difficulty": "hard",
+      "statement": "Em um procedimento, dizer que uma etapa é \"precedente\" significa que ela: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "ocorre depois",
+        "ocorre antes",
+        "é opcional",
+        "é proibida",
+        "é simultânea necessariamente"
+      ],
+      "answer": 1,
+      "explanation": "Precedente é aquilo que vem antes ou serve de antecedente em uma sequência. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Incorreta: a alternativa afirma \"ocorre depois\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Correta: Precedente é aquilo que vem antes ou serve de antecedente em uma sequência. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"é opcional\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"é proibida\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"é simultânea necessariamente\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-011",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "responsabilidade",
+      "difficulty": "hard",
+      "statement": "Responsabilidade administrativa, em uma equipe, relaciona-se principalmente a: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "responder pelas tarefas e resultados atribuídos",
+        "ter sempre autoridade ilimitada",
+        "não prestar contas",
+        "transferir todo erro ao subordinado",
+        "evitar qualquer decisão"
+      ],
+      "answer": 0,
+      "explanation": "Responsabilidade envolve responder pela execução e pelos resultados dentro das atribuições, limites e recursos disponíveis.",
+      "whyWrong": [
+        "Correta: Responsabilidade envolve responder pela execução e pelos resultados dentro das atribuições, limites e recursos disponíveis.",
+        "Incorreta: a alternativa afirma \"ter sempre autoridade ilimitada\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"não prestar contas\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"transferir todo erro ao subordinado\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"evitar qualquer decisão\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-012",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "autoridade",
+      "difficulty": "hard",
+      "statement": "Uma autoridade bem definida ajuda a organização porque: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "clarifica quem pode decidir e por quais limites",
+        "elimina a necessidade de comunicação",
+        "impede cooperação entre áreas",
+        "torna metas desnecessárias",
+        "substitui o controle de resultados"
+      ],
+      "answer": 0,
+      "explanation": "Clareza de autoridade reduz conflitos e orienta decisões, sem eliminar comunicação, cooperação ou controle. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Clareza de autoridade reduz conflitos e orienta decisões, sem eliminar comunicação, cooperação ou controle. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"elimina a necessidade de comunicação\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"impede cooperação entre áreas\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"torna metas desnecessárias\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"substitui o controle de resultados\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-013",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "eficiência e eficácia",
+      "difficulty": "hard",
+      "statement": "A equipe que usa poucos recursos, mas não alcança o objetivo, pode ser eficiente em recursos e:",
+      "options": [
+        "eficaz quanto ao objetivo",
+        "ineficaz quanto ao objetivo",
+        "sempre excelente",
+        "eficaz por definição",
+        "impossível de avaliar"
+      ],
+      "answer": 1,
+      "explanation": "Eficiência relaciona recursos e meios; eficácia relaciona alcance do objetivo. Uma não garante a outra. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Incorreta: a alternativa afirma \"eficaz quanto ao objetivo\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Correta: Eficiência relaciona recursos e meios; eficácia relaciona alcance do objetivo. Uma não garante a outra. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"sempre excelente\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"eficaz por definição\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"impossível de avaliar\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-014",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "planejamento",
+      "difficulty": "hard",
+      "statement": "Um plano de ação de boa qualidade deve indicar: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "ações, responsáveis, prazos e critérios de acompanhamento",
+        "apenas uma intenção geral",
+        "somente o orçamento",
+        "apenas o nome do setor",
+        "resultados sem ações"
+      ],
+      "answer": 0,
+      "explanation": "A operacionalização exige definir o que será feito, por quem, quando e como será acompanhado. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: A operacionalização exige definir o que será feito, por quem, quando e como será acompanhado. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"apenas uma intenção geral\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"somente o orçamento\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"apenas o nome do setor\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"resultados sem ações\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-015",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "controle",
+      "difficulty": "hard",
+      "statement": "Se o resultado supera a meta, o controle deve: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "analisar a causa e verificar se o padrão continua adequado",
+        "punir a equipe por excesso de produção",
+        "ignorar o resultado",
+        "reduzir todos os recursos automaticamente",
+        "alterar os registros"
+      ],
+      "answer": 0,
+      "explanation": "Desvios positivos também merecem análise; podem revelar boa prática, meta inadequada ou circunstância excepcional. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Desvios positivos também merecem análise; podem revelar boa prática, meta inadequada ou circunstância excepcional. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"punir a equipe por excesso de produção\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"ignorar o resultado\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"reduzir todos os recursos automaticamente\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"alterar os registros\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-016",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "motivação",
+      "difficulty": "hard",
+      "statement": "Feedback construtivo deve: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "descrever comportamento observável, impacto e possibilidade de melhoria",
+        "rotular a personalidade do servidor",
+        "ser sempre público e constrangedor",
+        "focar apenas no erro",
+        "dispensar exemplos"
+      ],
+      "answer": 0,
+      "explanation": "Feedback útil é específico, respeitoso e orientado à melhoria, não à rotulação pessoal. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Feedback útil é específico, respeitoso e orientado à melhoria, não à rotulação pessoal. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"rotular a personalidade do servidor\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"ser sempre público e constrangedor\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"focar apenas no erro\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"dispensar exemplos\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-017",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "conflitos",
+      "difficulty": "hard",
+      "statement": "Em um conflito entre áreas com objetivo comum, uma solução gerencial inicial é: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "identificar interesses, dados e responsabilidades antes de escolher uma ação",
+        "definir culpado sem ouvir as partes",
+        "ocultar o conflito",
+        "separar metas incompatíveis sem análise",
+        "eliminar registros"
+      ],
+      "answer": 0,
+      "explanation": "Diagnóstico compartilhado permite distinguir fatos, interesses e responsabilidades e buscar solução alinhada ao objetivo.",
+      "whyWrong": [
+        "Correta: Diagnóstico compartilhado permite distinguir fatos, interesses e responsabilidades e buscar solução alinhada ao objetivo.",
+        "Incorreta: a alternativa afirma \"definir culpado sem ouvir as partes\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"ocultar o conflito\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"separar metas incompatíveis sem análise\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"eliminar registros\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-018",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "atendimento",
+      "difficulty": "hard",
+      "statement": "No atendimento público, tratar usuários com isonomia significa: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "aplicar critérios impessoais, respeitando necessidades e direitos previstos",
+        "dar prioridade a conhecidos",
+        "atender todos de forma idêntica mesmo em casos legalmente distintos",
+        "recusar orientação",
+        "ocultar critérios"
+      ],
+      "answer": 0,
+      "explanation": "Isonomia é tratamento impessoal e justo, admitindo diferenças justificadas por regras e necessidades legítimas. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Isonomia é tratamento impessoal e justo, admitindo diferenças justificadas por regras e necessidades legítimas. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"dar prioridade a conhecidos\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"atender todos de forma idêntica mesmo em casos legalmente distintos\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"recusar orientação\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"ocultar critérios\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-019",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "arquivo",
+      "difficulty": "hard",
+      "statement": "A temporalidade documental orienta: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "quanto tempo o documento deve ser mantido e qual sua destinação",
+        "a cor da pasta",
+        "o salário do servidor",
+        "a ordem de chegada do usuário",
+        "a troca de senha"
+      ],
+      "answer": 0,
+      "explanation": "Temporalidade apoia retenção, eliminação ou preservação conforme valor e regras aplicáveis ao documento. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Temporalidade apoia retenção, eliminação ou preservação conforme valor e regras aplicáveis ao documento. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"a cor da pasta\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"o salário do servidor\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"a ordem de chegada do usuário\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"a troca de senha\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-020",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "decisão",
+      "difficulty": "hard",
+      "statement": "Uma decisão baseada em indicador único pode ser perigosa porque: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "o indicador pode não representar todas as dimensões do resultado",
+        "indicadores nunca são úteis",
+        "qualquer dado é inválido",
+        "metas não podem ser comparadas",
+        "decisões não precisam de critérios"
+      ],
+      "answer": 0,
+      "explanation": "Indicadores são recortes; decisões robustas consideram contexto, qualidade, riscos e outras evidências relevantes. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Indicadores são recortes; decisões robustas consideram contexto, qualidade, riscos e outras evidências relevantes. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"indicadores nunca são úteis\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"qualquer dado é inválido\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"metas não podem ser comparadas\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"decisões não precisam de critérios\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-021",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "proporção",
+      "difficulty": "hard",
+      "statement": "Se 4 agentes revisam 120 formulários em 5 horas, mantendo o ritmo, 6 agentes revisam em 5 horas:",
+      "options": [
+        "150",
+        "160",
+        "180",
+        "200",
+        "240"
+      ],
+      "answer": 2,
+      "explanation": "Cada agente revisa 30 formulários no período; seis agentes revisam 180 formulários. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Incorreta: a alternativa afirma \"150\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"160\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Correta: Cada agente revisa 30 formulários no período; seis agentes revisam 180 formulários. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"200\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"240\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-022",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "desconto",
+      "difficulty": "hard",
+      "statement": "Um equipamento de 800 reais recebe desconto de 12,5%. O preço final é: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "700",
+        "720",
+        "725",
+        "750",
+        "787,50"
+      ],
+      "answer": 0,
+      "explanation": "Doze vírgula cinco por cento de 800 é 100; subtraindo o desconto, o preço é 700. A alternativa correta é a de índice 0. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Doze vírgula cinco por cento de 800 é 100; subtraindo o desconto, o preço é 700. A alternativa correta é a de índice 0. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"720\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"725\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"750\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"787,50\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-023",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "equação",
+      "difficulty": "hard",
+      "statement": "Se x/4 + 3 = 8, então x vale: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "12",
+        "16",
+        "20",
+        "24",
+        "32"
+      ],
+      "answer": 2,
+      "explanation": "Subtraindo 3, x/4 = 5; multiplicando por 4, x = 20. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Incorreta: a alternativa afirma \"12\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"16\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Correta: Subtraindo 3, x/4 = 5; multiplicando por 4, x = 20. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"24\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"32\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-024",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "múltiplos",
+      "difficulty": "hard",
+      "statement": "O menor número positivo divisível simultaneamente por 6 e 8 é: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "12",
+        "18",
+        "24",
+        "36",
+        "48"
+      ],
+      "answer": 2,
+      "explanation": "O mínimo múltiplo comum de 6 e 8 é 24. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Incorreta: a alternativa afirma \"12\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"18\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Correta: O mínimo múltiplo comum de 6 e 8 é 24. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"36\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"48\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-025",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "média ponderada",
+      "difficulty": "hard",
+      "statement": "Uma nota 8 tem peso 2 e uma nota 6 tem peso 1. A média ponderada é: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "6",
+        "6,67",
+        "7",
+        "7,33",
+        "8"
+      ],
+      "answer": 3,
+      "explanation": "A soma ponderada é 16 + 6 = 22; dividida pela soma dos pesos 3, resulta em 7,33 aproximadamente. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Incorreta: a alternativa afirma \"6\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"6,67\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"7\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Correta: A soma ponderada é 16 + 6 = 22; dividida pela soma dos pesos 3, resulta em 7,33 aproximadamente. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"8\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-026",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "negação",
+      "difficulty": "hard",
+      "statement": "A negação de \"Nenhuma equipe faltou\" é: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "Toda equipe faltou",
+        "Alguma equipe faltou",
+        "Nenhuma equipe compareceu",
+        "Todas as equipes compareceram",
+        "Apenas uma equipe não faltou"
+      ],
+      "answer": 1,
+      "explanation": "A negação de nenhuma é alguma: basta existir ao menos uma equipe que faltou. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Incorreta: a alternativa afirma \"Toda equipe faltou\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Correta: A negação de nenhuma é alguma: basta existir ao menos uma equipe que faltou. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"Nenhuma equipe compareceu\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"Todas as equipes compareceram\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"Apenas uma equipe não faltou\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-027",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "conjuntos",
+      "difficulty": "hard",
+      "statement": "De 50 pessoas, 32 usam aplicativo A, 27 usam B e 15 usam ambos. Quantas usam apenas A?",
+      "options": [
+        "15",
+        "17",
+        "20",
+        "32",
+        "44"
+      ],
+      "answer": 1,
+      "explanation": "Apenas A corresponde a 32 menos as 15 que também usam B, totalizando 17. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Incorreta: a alternativa afirma \"15\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Correta: Apenas A corresponde a 32 menos as 15 que também usam B, totalizando 17. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"20\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"32\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"44\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-028",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "probabilidade",
+      "difficulty": "hard",
+      "statement": "Ao lançar um dado honesto, a probabilidade de obter número par é: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "1/6",
+        "1/3",
+        "1/2",
+        "2/3",
+        "5/6"
+      ],
+      "answer": 2,
+      "explanation": "Há três resultados pares entre seis possíveis: 2, 4 e 6; logo, 3/6 = 1/2. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Incorreta: a alternativa afirma \"1/6\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"1/3\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Correta: Há três resultados pares entre seis possíveis: 2, 4 e 6; logo, 3/6 = 1/2. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"2/3\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"5/6\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-029",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "sequência",
+      "difficulty": "hard",
+      "statement": "Na sequência 2, 5, 10, 17, 26, o próximo termo é: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "31",
+        "35",
+        "36",
+        "37",
+        "40"
+      ],
+      "answer": 3,
+      "explanation": "As diferenças são 3, 5, 7 e 9; a próxima é 11, resultando em 37. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Incorreta: a alternativa afirma \"31\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"35\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"36\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Correta: As diferenças são 3, 5, 7 e 9; a próxima é 11, resultando em 37. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"40\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-030",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "tabela verdade",
+      "difficulty": "hard",
+      "statement": "A conjunção P e Q é verdadeira quando: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "P é verdadeira e Q é verdadeira",
+        "apenas P é verdadeira",
+        "apenas Q é verdadeira",
+        "ambas são falsas",
+        "P ou Q é falsa"
+      ],
+      "answer": 0,
+      "explanation": "A conjunção exige a verdade simultânea das duas proposições. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: A conjunção exige a verdade simultânea das duas proposições. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"apenas P é verdadeira\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"apenas Q é verdadeira\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"ambas são falsas\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"P ou Q é falsa\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-031",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "sistema operacional",
+      "difficulty": "hard",
+      "statement": "A lixeira de um sistema operacional normalmente permite: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "recuperar ou excluir definitivamente itens removidos, conforme o procedimento",
+        "criptografar todos os arquivos",
+        "substituir o backup",
+        "impedir qualquer exclusão",
+        "corrigir vírus automaticamente"
+      ],
+      "answer": 0,
+      "explanation": "A lixeira funciona como etapa intermediária para recuperar ou eliminar itens, mas não é backup nem antivírus. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: A lixeira funciona como etapa intermediária para recuperar ou eliminar itens, mas não é backup nem antivírus. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"criptografar todos os arquivos\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"substituir o backup\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"impedir qualquer exclusão\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"corrigir vírus automaticamente\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-032",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "arquivos",
+      "difficulty": "hard",
+      "statement": "Renomear um arquivo normalmente: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "altera sua identificação, preservando o conteúdo",
+        "apaga seu conteúdo",
+        "duplica o arquivo",
+        "muda sua extensão obrigatoriamente",
+        "envia o arquivo à internet"
+      ],
+      "answer": 0,
+      "explanation": "Renomear modifica o nome; o conteúdo permanece, salvo ação adicional ou mudança inadequada de extensão. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Renomear modifica o nome; o conteúdo permanece, salvo ação adicional ou mudança inadequada de extensão. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"apaga seu conteúdo\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"duplica o arquivo\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"muda sua extensão obrigatoriamente\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"envia o arquivo à internet\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-033",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "planilhas",
+      "difficulty": "hard",
+      "statement": "A função SOMA em uma planilha é usada para: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "adicionar valores de células ou intervalos",
+        "contar apenas textos",
+        "ordenar linhas",
+        "filtrar valores",
+        "criar senha"
+      ],
+      "answer": 0,
+      "explanation": "SOMA realiza adição de valores indicados em células ou intervalos. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: SOMA realiza adição de valores indicados em células ou intervalos. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"contar apenas textos\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"ordenar linhas\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"filtrar valores\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"criar senha\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-034",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "planilhas",
+      "difficulty": "hard",
+      "statement": "Ao copiar uma fórmula com referência relativa, a referência: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "pode ajustar-se conforme a nova posição",
+        "fica sempre fixa",
+        "é apagada",
+        "vira texto necessariamente",
+        "altera o valor original"
+      ],
+      "answer": 0,
+      "explanation": "Referências relativas acompanham o deslocamento da fórmula; referências absolutas usam cifrões para fixação. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Referências relativas acompanham o deslocamento da fórmula; referências absolutas usam cifrões para fixação. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"fica sempre fixa\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"é apagada\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"vira texto necessariamente\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"altera o valor original\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-035",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "rede",
+      "difficulty": "hard",
+      "statement": "O endereço IP serve para: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "identificar logicamente um dispositivo ou interface em uma rede",
+        "definir a senha do usuário",
+        "armazenar o antivírus",
+        "indicar o tamanho do monitor",
+        "substituir o navegador"
+      ],
+      "answer": 0,
+      "explanation": "O IP identifica logicamente uma interface para comunicação em uma rede, não sendo senha nem característica física. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: O IP identifica logicamente uma interface para comunicação em uma rede, não sendo senha nem característica física. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"definir a senha do usuário\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"armazenar o antivírus\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"indicar o tamanho do monitor\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"substituir o navegador\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-036",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "autenticação",
+      "difficulty": "hard",
+      "statement": "A autenticação em dois fatores aumenta a segurança porque: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "exige fatores independentes além da senha",
+        "permite usar a mesma senha em todos os sites",
+        "dispensa atualização",
+        "torna o usuário anônimo",
+        "elimina o risco de phishing"
+      ],
+      "answer": 0,
+      "explanation": "Um segundo fator reduz o impacto de senha vazada, embora não elimine todos os riscos. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Um segundo fator reduz o impacto de senha vazada, embora não elimine todos os riscos. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"permite usar a mesma senha em todos os sites\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"dispensa atualização\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"torna o usuário anônimo\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"elimina o risco de phishing\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-037",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "malware",
+      "difficulty": "hard",
+      "statement": "Ransomware é associado a: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "bloqueio ou cifragem de dados com exigência de resgate",
+        "melhoria automática do sistema",
+        "compactação legítima sem risco",
+        "controle de brilho",
+        "backup confiável"
+      ],
+      "answer": 0,
+      "explanation": "Ransomware costuma impedir acesso aos dados e exigir pagamento, razão pela qual backups protegidos são importantes. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Ransomware costuma impedir acesso aos dados e exigir pagamento, razão pela qual backups protegidos são importantes. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"melhoria automática do sistema\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"compactação legítima sem risco\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"controle de brilho\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"backup confiável\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-038",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "internet e intranet",
+      "difficulty": "hard",
+      "statement": "A intranet é: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "rede privada de uma organização que usa tecnologias semelhantes às da internet",
+        "qualquer site público",
+        "um antivírus corporativo",
+        "uma rede sem protocolos",
+        "um dispositivo móvel"
+      ],
+      "answer": 0,
+      "explanation": "Intranet é uma rede interna restrita, ainda que utilize protocolos e serviços semelhantes aos da internet. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Intranet é uma rede interna restrita, ainda que utilize protocolos e serviços semelhantes aos da internet. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"qualquer site público\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"um antivírus corporativo\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"uma rede sem protocolos\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"um dispositivo móvel\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-039",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "navegador",
+      "difficulty": "hard",
+      "statement": "Limpar o cache do navegador pode: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "remover cópias locais de recursos e exigir novo carregamento",
+        "apagar necessariamente arquivos do computador",
+        "alterar o servidor remoto",
+        "eliminar todas as senhas em qualquer situação",
+        "criar uma conta"
+      ],
+      "answer": 0,
+      "explanation": "Cache guarda recursos temporários; limpá-lo pode forçar novo download, sem alterar automaticamente o servidor. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Cache guarda recursos temporários; limpá-lo pode forçar novo download, sem alterar automaticamente o servidor. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"apagar necessariamente arquivos do computador\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"alterar o servidor remoto\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"eliminar todas as senhas em qualquer situação\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"criar uma conta\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-040",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "privacidade",
+      "difficulty": "hard",
+      "statement": "Antes de compartilhar uma planilha com dados pessoais, deve-se: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "verificar necessidade, destinatários, permissões e proteção dos dados",
+        "publicar o link aberto",
+        "remover somente o título",
+        "enviar para qualquer grupo",
+        "desativar o controle de acesso"
+      ],
+      "answer": 0,
+      "explanation": "Compartilhamento responsável exige finalidade, minimização, destinatários adequados e controles de acesso. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Compartilhamento responsável exige finalidade, minimização, destinatários adequados e controles de acesso. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"publicar o link aberto\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"remover somente o título\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"enviar para qualquer grupo\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"desativar o controle de acesso\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 - Processo Seletivo Simplificado IBGE",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-041",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "IBGE e produção de dados",
+      "difficulty": "hard",
+      "statement": "A padronização conceitual em uma operação do IBGE é importante para: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "permitir comparabilidade entre áreas e períodos",
+        "impedir qualquer análise estatística",
+        "substituir o trabalho de campo",
+        "eliminar a necessidade de treinamento",
+        "fazer todas as unidades serem iguais"
+      ],
+      "answer": 0,
+      "explanation": "Conceitos e procedimentos padronizados tornam os registros comparáveis sem negar as diferenças observadas no território.",
+      "whyWrong": [
+        "Correta: Conceitos e procedimentos padronizados tornam os registros comparáveis sem negar as diferenças observadas no território.",
+        "Incorreta: a alternativa afirma \"impedir qualquer análise estatística\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"substituir o trabalho de campo\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"eliminar a necessidade de treinamento\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"fazer todas as unidades serem iguais\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-042",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "supervisão",
+      "difficulty": "hard",
+      "statement": "A supervisão de campo deve combinar acompanhamento e orientação porque: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "identifica desvios enquanto ainda há oportunidade de corrigi-los",
+        "serve apenas para punir",
+        "substitui o recenseador",
+        "dispensa indicadores",
+        "impede dúvidas"
+      ],
+      "answer": 0,
+      "explanation": "A supervisão é preventiva e corretiva: acompanha a execução, orienta e ajuda a corrigir problemas no curso da operação. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: A supervisão é preventiva e corretiva: acompanha a execução, orienta e ajuda a corrigir problemas no curso da operação. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"serve apenas para punir\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"substitui o recenseador\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"dispensa indicadores\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"impede dúvidas\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-043",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "setor censitário",
+      "difficulty": "hard",
+      "statement": "Se uma unidade parece estar fora do setor indicado no mapa, o agente deve: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "verificar material e procedimento, comunicando a dúvida pelos canais previstos",
+        "alterar o limite no aplicativo sem registro",
+        "ignorar a unidade",
+        "duplicar a entrevista",
+        "escolher o setor mais próximo por conveniência"
+      ],
+      "answer": 0,
+      "explanation": "Dúvida territorial deve ser verificada e encaminhada; improvisar pode gerar omissão, duplicidade ou erro de vinculação. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Dúvida territorial deve ser verificada e encaminhada; improvisar pode gerar omissão, duplicidade ou erro de vinculação. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"alterar o limite no aplicativo sem registro\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"ignorar a unidade\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"duplicar a entrevista\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"escolher o setor mais próximo por conveniência\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-044",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "CNEFE",
+      "difficulty": "hard",
+      "statement": "A atualização de uma informação de endereço deve preservar: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "a identificação correta da unidade e a consistência dos componentes do endereço",
+        "somente o nome do informante",
+        "apenas o ponto de referência",
+        "qualquer grafia escolhida",
+        "o endereço anterior mesmo quando incorreto"
+      ],
+      "answer": 0,
+      "explanation": "A consistência exige identificar a unidade e registrar componentes de forma padronizada, sem apagar informação relevante indevidamente.",
+      "whyWrong": [
+        "Correta: A consistência exige identificar a unidade e registrar componentes de forma padronizada, sem apagar informação relevante indevidamente.",
+        "Incorreta: a alternativa afirma \"somente o nome do informante\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"apenas o ponto de referência\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"qualquer grafia escolhida\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"o endereço anterior mesmo quando incorreto\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-045",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "coordenadas",
+      "difficulty": "hard",
+      "statement": "Coordenadas obtidas por GPS devem ser usadas: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "como apoio à localização, respeitando precisão, contexto e procedimento do levantamento",
+        "como prova automática da propriedade",
+        "para substituir todas as perguntas",
+        "sem verificar o setor",
+        "para definir o gabarito"
+      ],
+      "answer": 0,
+      "explanation": "GPS auxilia localização, mas deve ser interpretado dentro do setor, da precisão disponível e das regras da operação. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: GPS auxilia localização, mas deve ser interpretado dentro do setor, da precisão disponível e das regras da operação. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"como prova automática da propriedade\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"para substituir todas as perguntas\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"sem verificar o setor\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"para definir o gabarito\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-046",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "estabelecimento agropecuário",
+      "difficulty": "very-hard",
+      "statement": "A propriedade da terra, isoladamente, não define o estabelecimento porque: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "o conceito considera a unidade de produção e sua exploração conforme os critérios oficiais",
+        "toda propriedade é sempre estabelecimento",
+        "somente o proprietário pode ser entrevistado",
+        "a sede não tem relevância",
+        "a área é sempre urbana"
+      ],
+      "answer": 0,
+      "explanation": "Propriedade e estabelecimento são conceitos distintos; o enquadramento depende da exploração e dos critérios do levantamento.",
+      "whyWrong": [
+        "Correta: Propriedade e estabelecimento são conceitos distintos; o enquadramento depende da exploração e dos critérios do levantamento.",
+        "Incorreta: a alternativa afirma \"toda propriedade é sempre estabelecimento\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"somente o proprietário pode ser entrevistado\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"a sede não tem relevância\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"a área é sempre urbana\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-047",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "produtor",
+      "difficulty": "hard",
+      "statement": "Para identificar o produtor, deve-se considerar: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "quem dirige ou responde pela exploração segundo os conceitos do levantamento",
+        "quem mora mais perto",
+        "quem possui o maior imóvel",
+        "quem vendeu mais no ano",
+        "qualquer trabalhador eventual"
+      ],
+      "answer": 0,
+      "explanation": "A identificação decorre da relação de direção ou responsabilidade pela exploração, não de proximidade, tamanho ou venda isolada.",
+      "whyWrong": [
+        "Correta: A identificação decorre da relação de direção ou responsabilidade pela exploração, não de proximidade, tamanho ou venda isolada.",
+        "Incorreta: a alternativa afirma \"quem mora mais perto\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"quem possui o maior imóvel\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"quem vendeu mais no ano\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"qualquer trabalhador eventual\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-048",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "unidades não recenseáveis",
+      "difficulty": "very-hard",
+      "statement": "Uma unidade que não atende aos critérios de recenseabilidade deve: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "ser tratada conforme a categoria e o fluxo previstos, sem forçar resposta produtiva",
+        "receber valores estimados",
+        "ser incluída sempre como estabelecimento",
+        "ser apagada sem registro",
+        "ser classificada pelo interesse do agente"
+      ],
+      "answer": 0,
+      "explanation": "O procedimento deve preservar a qualidade e registrar a situação correta, sem estimar ou forçar enquadramento. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: O procedimento deve preservar a qualidade e registrar a situação correta, sem estimar ou forçar enquadramento. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"receber valores estimados\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"ser incluída sempre como estabelecimento\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"ser apagada sem registro\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"ser classificada pelo interesse do agente\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-049",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "sigilo",
+      "difficulty": "very-hard",
+      "statement": "Guardar uma fotografia de formulário em aparelho pessoal, sem autorização, é inadequado porque:",
+      "options": [
+        "pode expor informação protegida fora dos controles institucionais",
+        "a fotografia sempre melhora a qualidade",
+        "o papel deixa de existir",
+        "o dado se torna público automaticamente",
+        "não há risco se o nome estiver abreviado"
+      ],
+      "answer": 0,
+      "explanation": "Dados individuais continuam protegidos; cópia pessoal sem autorização rompe controles de segurança e sigilo. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: Dados individuais continuam protegidos; cópia pessoal sem autorização rompe controles de segurança e sigilo. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"a fotografia sempre melhora a qualidade\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"o papel deixa de existir\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"o dado se torna público automaticamente\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"não há risco se o nome estiver abreviado\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "ibge26-b006b-050",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "qualidade da coleta",
+      "difficulty": "hard",
+      "statement": "Quando uma resposta parece inconsistente, o agente deve: Considere o contexto da operação descrito no edital e assinale a alternativa correta.",
+      "options": [
+        "revisar o conceito, esclarecer com o informante quando cabível e seguir o fluxo de validação",
+        "alterar para o valor mais comum",
+        "apagar a resposta",
+        "consultar redes sociais",
+        "marcar qualquer opção para concluir"
+      ],
+      "answer": 0,
+      "explanation": "A consistência deve ser resolvida com conceito, esclarecimento e validação, nunca com palpite ou alteração arbitrária. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+      "whyWrong": [
+        "Correta: A consistência deve ser resolvida com conceito, esclarecimento e validação, nunca com palpite ou alteração arbitrária. A alternativa correta preserva o critério do enunciado; as demais confundem conceitos ou acrescentam condições não apresentadas.",
+        "Incorreta: a alternativa afirma \"alterar para o valor mais comum\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"apagar a resposta\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"consultar redes sociais\"; ela não atende ao conceito ou procedimento central do enunciado.",
+        "Incorreta: a alternativa afirma \"marcar qualquer opção para concluir\"; ela não atende ao conceito ou procedimento central do enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "conteúdo programático e material oficial",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "review"
+    }
+  ]
+}
