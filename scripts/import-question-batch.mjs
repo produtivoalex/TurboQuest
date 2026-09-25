@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
 
 const input = process.argv[2];
 const approve = process.argv.includes('--approve');
@@ -8,6 +9,7 @@ const read = file => JSON.parse(fs.readFileSync(file, 'utf8'));
 const incomingData = read(input);
 const incoming = Array.isArray(incomingData) ? incomingData : incomingData.questions;
 if (!Array.isArray(incoming) || !incoming.length) throw new Error('O lote precisa ser um array ou possuir a chave questions.');
+if (approve) execFileSync(process.execPath, ['scripts/audit-question-batch.mjs', input], { stdio: 'inherit' });
 
 const masterPath = 'content/ibge-2026/questions.json';
 const masterData = read(masterPath);

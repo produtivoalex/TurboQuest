@@ -58,7 +58,7 @@ function priorityForQuestion(q, state, bank, now) {
   const topicCorrect = topicRecords.reduce((sum, item) => sum + (item.correct || 0), 0);
   const topicNeed = topicAttempts ? Math.max(0, .85 - topicCorrect / topicAttempts) : 0;
   if (!record) {
-    const curated = /^ibge26-b00[78]-/.test(q.id) ? 8 : 0;
+    const curated = /^ibge26-b009-/.test(q.id) ? 12 : /^ibge26-b008-/.test(q.id) ? 8 : /^ibge26-b007-/.test(q.id) ? 5 : 0;
     const templated = q.statement.includes('Considere o contexto da operação descrito no edital') ||
       q.explanation.includes('A alternativa correta preserva o critério do enunciado') ? 15 : 0;
     return 40 + curated - templated + 16 * subjectNeed + 18 * topicNeed;
