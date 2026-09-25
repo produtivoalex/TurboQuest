@@ -44,6 +44,11 @@ async function groqResearch(key, prompt) {
   return { result, grounding: null, model: GROQ_RESEARCH_MODEL };
 }
 
+async function groqJson(key, prompt) {
+  const response = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: `${prompt}\n\nRetorne somente JSON válido, sem markdown.` }]);
+  return { result: parseModelJson(response.text), grounding: null, model: GROQ_FORMAT_MODEL };
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { error: 'Método não permitido.' });
   const geminiKey = process.env.GEMINI_API_KEY;
@@ -63,10 +68,6 @@ EDITAL:\n${edital.slice(0, 220000)}`
 {"exam":"","board":"","roles":[""],"examDate":"","totalQuestions":0,"subjects":[{"name":"","questions":0,"weight":0,"topics":[]}],"summary":"","warnings":[]}
 EDITAL:\n${edital.slice(0, 220000)}`;
 
-  if (isResearch && groqKey) {
-    try { return json(res, 200, await groqResearch(groqKey, prompt)); }
-    catch (error) { return json(res, 502, { error: error.message || 'Não foi possível concluir a pesquisa com Groq.' }); }
-  }
   const payload = {
     contents: [{ role: 'user', parts: [{ text: prompt }] }],
     generationConfig: { responseMimeType: 'application/json', maxOutputTokens: 4500, thinkingConfig: { thinkingLevel: isResearch ? 'low' : 'high' } },
@@ -74,14 +75,29 @@ EDITAL:\n${edital.slice(0, 220000)}`;
   };
 
   try {
+    if (!geminiKey) throw new Error('Gemini não configurado.');
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'x-goog-api-key': geminiKey },
       body: JSON.stringify(payload)
     });
     const data = await response.json();
-    if (!response.ok) return json(res, response.status, { error: data.error?.message || 'Falha no motor de IA.' });
+    if (!response.ok) throw new Error(data.error?.message || `Gemini retornou HTTP ${response.status}.`);
     const text = data.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
-    return json(res, 200, { result: parseModelJson(text), grounding: data.candidates?.[0]?.groundingMetadata || null, model: MODEL });
-  } catch (error) { return json(res, 500, { error: 'Não foi possível concluir a análise agora.' }); }
+    const result = parseModelJson(text);
+    if (isResearch && !isResearchShape(result)) throw new Error('Gemini retornou uma pesquisa em formato inválido.');
+    return json(res, 200, { result, grounding: data.candidates?.[0]?.groundingMetadata || null, model: MODEL });
+  } catch (error) {
+    if (groqKey) {
+      try {
+        const fallback = isResearch ? await groqResearch(groqKey, prompt) : await groqJson(groqKey, prompt);
+        fallback.result.strategy = fallback.result.strategy || {};
+        fallback.result.strategy.notes = [...(fallback.result.strategy.notes || []), 'Gemini indisponível; fallback automático para Groq.'];
+        return json(res, 200, fallback);
+      } catch (fallbackError) {
+        return json(res, 502, { error: `Gemini falhou e o fallback Groq também falhou: ${fallbackError.message || error.message}` });
+      }
+    }
+    return json(res, 502, { error: error.message || 'Não foi possível concluir a análise agora.' });
+  }
 }
