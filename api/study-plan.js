@@ -19,6 +19,16 @@ function isResearchShape(value) {
   return value && Array.isArray(value.sources) && value.strategy && Array.isArray(value.strategy.priorities);
 }
 
+function hasLiveResearch(value, grounding, model) {
+  if (!isResearchShape(value)) return false;
+  const urls = value.sources.filter(source => /^https?:\/\//i.test(String(source?.url || '')));
+  if (!urls.length) return false;
+  if (model === MODEL) {
+    return Boolean(grounding && (grounding.webSearchQueries?.length || grounding.groundingChunks?.length || grounding.groundingSupports?.length));
+  }
+  return true;
+}
+
 async function groqChat(key, model, messages, extra = {}) {
   const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
     method: 'POST',
@@ -39,7 +49,7 @@ async function groqResearch(key, prompt) {
     formatted = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: `${formatPrompt}\n\nA resposta anterior não estava válida. Corrija e devolva somente o objeto JSON completo.` }]);
     result = parseModelJson(formatted.text);
   }
-  if (!isResearchShape(result)) throw new Error('O Groq concluiu a pesquisa, mas não conseguiu estruturar o plano.');
+  if (!hasLiveResearch(result, null, GROQ_RESEARCH_MODEL)) throw new Error('O Groq não retornou evidências de pesquisa web ativa.');
   result.strategy.notes = [...(result.strategy.notes || []), 'Pesquisa realizada pelo Groq e estruturada automaticamente pelo TurboQuest.'];
   return { result, grounding: null, model: GROQ_RESEARCH_MODEL };
 }
@@ -85,8 +95,9 @@ EDITAL:\n${edital.slice(0, 220000)}`;
     if (!response.ok) throw new Error(data.error?.message || `Gemini retornou HTTP ${response.status}.`);
     const text = data.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
     const result = parseModelJson(text);
-    if (isResearch && !isResearchShape(result)) throw new Error('Gemini retornou uma pesquisa em formato inválido.');
-    return json(res, 200, { result, grounding: data.candidates?.[0]?.groundingMetadata || null, model: MODEL });
+    const grounding = data.candidates?.[0]?.groundingMetadata || null;
+    if (isResearch && !hasLiveResearch(result, grounding, MODEL)) throw new Error('Gemini não retornou evidências de pesquisa web ativa.');
+    return json(res, 200, { result, grounding, model: MODEL });
   } catch (error) {
     if (groqKey) {
       try {
