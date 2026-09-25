@@ -57,7 +57,12 @@ function priorityForQuestion(q, state, bank, now) {
   const topicAttempts = topicRecords.reduce((sum, item) => sum + (item.attempts || 0), 0);
   const topicCorrect = topicRecords.reduce((sum, item) => sum + (item.correct || 0), 0);
   const topicNeed = topicAttempts ? Math.max(0, .85 - topicCorrect / topicAttempts) : 0;
-  if (!record) return 40 + 16 * subjectNeed + 18 * topicNeed;
+  if (!record) {
+    const curated = /^ibge26-b00[78]-/.test(q.id) ? 8 : 0;
+    const templated = q.statement.includes('Considere o contexto da operação descrito no edital') ||
+      q.explanation.includes('A alternativa correta preserva o critério do enunciado') ? 15 : 0;
+    return 40 + curated - templated + 16 * subjectNeed + 18 * topicNeed;
+  }
   const overdueDays = Math.max(0, (now - (record.dueAt || 0)) / DAY_MS);
   const difficulty = (record.wrong || 0) * 4 + (record.hard || 0) * 2;
   return 55 + Math.min(15, overdueDays * 2) + difficulty + 16 * subjectNeed + 18 * topicNeed;
@@ -193,6 +198,7 @@ if (typeof document !== 'undefined') {
     const q = queue[at];
     if (!q) return finish();
     questionMs = 0; answered = false; confidenceSaved = false;
+    $('#questionClock').textContent = '00:00';
     $('#counter').textContent = session.minutes ? `Questão ${at + 1}` : `${at + 1} / ${queue.length}`;
     $('#progress').style.width = session.minutes ? `${Math.min(100, sessionMs / (session.minutes * 60000) * 100)}%` : `${at / queue.length * 100}%`;
     $('#qsubject').textContent = q.subject; $('#qtopic').textContent = q.topic;
@@ -281,6 +287,7 @@ if (typeof document !== 'undefined') {
     queue = buildQueue(filtered(), state, manifest, role, minutes ? 100 : count);
     if (!queue.length) return toast('Nenhuma questão disponível agora com esses filtros. Tente outra disciplina ou aguarde a revisão.');
     session = { minutes }; sessionMs = 0; at = 0; sessionResult = { done: 0, correct: 0, totalMs: 0 };
+    $('#sessionSummary').hidden = true;
     $('#sessionClock').textContent = minutes ? `${minutes}:00 restantes` : '';
     $('#sessionClock').hidden = !minutes;
     show('quiz'); draw(); clearInterval(timer); timer = setInterval(tick, 250);
@@ -294,7 +301,7 @@ if (typeof document !== 'undefined') {
     const summary = $('#sessionSummary');
     if (result.done) {
       const accuracy = Math.round(result.correct / result.done * 100);
-      summary.textContent = `Sessão concluída: ${result.done} questões · ${accuracy}% de acertos · média de ${formatClock(result.totalMs / result.done)} por questão.`;
+      summary.textContent = `Sessão concluída: ${result.done} ${result.done === 1 ? 'questão' : 'questões'} · ${accuracy}% de acertos · média de ${formatClock(result.totalMs / result.done)} por questão.`;
       summary.hidden = false;
       toast(accuracy >= 80 ? 'Sessão concluída com boa precisão. Continue no seu ritmo.' : 'Sessão concluída. Os erros já entraram na fila de revisão.');
     }
