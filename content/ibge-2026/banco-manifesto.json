@@ -1,0 +1,115 @@
+{
+  "id": "ibge-pss-2026-censo-agro",
+  "title": "IBGE 2026 - Censo Agropecuário, Florestal e Aquícola",
+  "status": "researching",
+  "ownerOnlyPublishing": true,
+  "exam": {
+    "board": "IBFC",
+    "notice": "Edital nº 01/2026",
+    "totalQuestions": 60,
+    "alternatives": 5,
+    "pointsPerQuestion": 1,
+    "minimumTotalPoints": 18,
+    "minimumPerSubjectPoint": 1,
+    "durationHours": 4,
+    "examDate": "2026-09-27"
+  },
+  "roles": [
+    {
+      "id": "aca",
+      "name": "Agente Censitário Administrativo (ACA)",
+      "vacancies": 1110,
+      "subjects": [
+        {"name": "Língua Portuguesa", "questions": 15, "points": 15},
+        {"name": "Raciocínio Lógico Quantitativo", "questions": 10, "points": 10},
+        {"name": "Noções de Administração", "questions": 35, "points": 35}
+      ]
+    },
+    {
+      "id": "aci",
+      "name": "Agente Censitário de Informática (ACI)",
+      "vacancies": 1089,
+      "subjects": [
+        {"name": "Língua Portuguesa", "questions": 15, "points": 15},
+        {"name": "Raciocínio Lógico Quantitativo", "questions": 10, "points": 10},
+        {"name": "Noções de Informática", "questions": 35, "points": 35}
+      ]
+    },
+    {
+      "id": "aor",
+      "name": "Agente Operacional Regional (AOR)",
+      "vacancies": 948,
+      "subjects": [
+        {"name": "Língua Portuguesa", "questions": 15, "points": 15},
+        {"name": "Raciocínio Lógico Quantitativo", "questions": 10, "points": 10},
+        {"name": "Noções de Administração/Situações Gerenciais", "questions": 30, "points": 30},
+        {"name": "Noções Básicas de Informática", "questions": 5, "points": 5}
+      ]
+    },
+    {
+      "id": "acr",
+      "name": "Agente Censitário Regional (ACR)",
+      "vacancies": 948,
+      "subjects": [
+        {"name": "Língua Portuguesa", "questions": 15, "points": 15},
+        {"name": "Raciocínio Lógico Quantitativo", "questions": 10, "points": 10},
+        {"name": "Noções de Administração/Situações Gerenciais", "questions": 15, "points": 15},
+        {"name": "Conhecimentos Técnicos", "questions": 20, "points": 20}
+      ]
+    },
+    {
+      "id": "acs",
+      "name": "Agente Censitário Supervisor (ACS)",
+      "vacancies": 4143,
+      "subjects": [
+        {"name": "Língua Portuguesa", "questions": 15, "points": 15},
+        {"name": "Raciocínio Lógico Quantitativo", "questions": 10, "points": 10},
+        {"name": "Noções de Administração/Situações Gerenciais", "questions": 20, "points": 20},
+        {"name": "Conhecimentos Técnicos", "questions": 15, "points": 15}
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "notice",
+      "type": "official_notice",
+      "title": "Edital nº 01/2026 - IBGE",
+      "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf",
+      "localFile": "C:/Users/Alex/Downloads/IBGE2026Edital.pdf",
+      "status": "ingested"
+    },
+    {
+      "id": "technical-study",
+      "type": "official_technical_material",
+      "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+      "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf",
+      "localFile": "tmp/pdfs/estudo-conhecimentos-tecnicos.pdf",
+      "status": "ingested"
+    },
+    {
+      "id": "ibfc-page",
+      "type": "official_board_page",
+      "title": "Página oficial do processo seletivo no IBFC",
+      "url": "https://concursos-adm-sigcp.ibfc.org.br/informacoes/496/",
+      "status": "researching"
+    }
+  ],
+  "qualityGates": [
+    "source-backed",
+    "current-version-checked",
+    "single-unambiguous-answer",
+    "five-plausible-alternatives",
+    "answer-position-balanced",
+    "duplicate-and-near-duplicate-screened",
+    "independent-factual-review",
+    "explanation-and-distractor-review",
+    "difficulty-calibrated"
+  ],
+  "nextPipelineSteps": [
+    "Extract all programmatic topics into a normalized taxonomy",
+    "Map official technical material chapters to ACR and ACS",
+    "Collect IBFC questions and answer keys from comparable official exams",
+    "Generate and audit question batches by role, subject, and topic",
+    "Approve the first version before publishing to students"
+  ]
+}
