@@ -109,13 +109,15 @@ EDITAL:\n${editalForPrompt}`;
   try {
     const run = key => isResearch ? groqResearch(key, prompt) : groqJson(key, prompt);
     let result;
-    let primaryError = null;
     try {
       result = await run(groqKey || backupKey);
     } catch (error) {
-      primaryError = error;
       if (!backupKey || backupKey === groqKey) throw error;
-      result = await run(backupKey);
+      try {
+        result = await run(backupKey);
+      } catch (backupError) {
+        throw new Error(`Chave principal: ${error.message || 'falhou'}. Chave de backup: ${backupError.message || 'falhou'}.`);
+      }
       result.result.strategy = result.result.strategy || {};
       result.result.strategy.notes = [...(result.result.strategy.notes || []), 'A chave Groq principal falhou; foi usada a chave de backup.'];
     }
