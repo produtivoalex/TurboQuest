@@ -1,0 +1,110 @@
+{
+  "batch": "ibge-2026-tecnico-004",
+  "status": "review",
+  "questions": [
+    {
+      "id": "ibge26-tec-0017",
+      "roles": ["acr", "acs"],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "data de referência",
+      "difficulty": "hard",
+      "statement": "A data de referência de um levantamento é utilizada para:",
+      "options": ["definir o momento ao qual determinadas informações devem se referir", "substituir a data de entrevista em todos os registros", "indicar o prazo de pagamento da inscrição", "determinar o número de recenseadores do setor", "fixar a data de divulgação do resultado"],
+      "answer": 0,
+      "explanation": "A data de referência fixa o momento específico ao qual determinadas informações coletadas devem ser relacionadas. Ela não é a data da entrevista nem o cronograma administrativo do processo seletivo.",
+      "whyWrong": ["É a alternativa correta: define o momento temporal das informações.", "A data da entrevista não substitui automaticamente a referência do levantamento.", "Pagamento de inscrição pertence ao cronograma do edital.", "O número de recenseadores não decorre da data de referência.", "Divulgação de resultado é evento posterior e distinto."],
+      "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "p. 51", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}]
+    },
+    {
+      "id": "ibge26-tec-0018",
+      "roles": ["acr", "acs"],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "atividade agropecuária",
+      "difficulty": "hard",
+      "statement": "Qual situação, isoladamente, não caracteriza uma atividade agropecuária, florestal ou aquícola a ser recenseada?",
+      "options": ["cultivo de lavoura para produção", "criação de animais destinados à produção", "criação de cães domésticos sem finalidade produtiva", "manejo de floresta para exploração", "criação de peixes em atividade aquícola"],
+      "answer": 2,
+      "explanation": "A apostila diferencia atividades produtivas enquadradas no Censo de criações domésticas ou destinadas a finalidades não agropecuárias. A criação de cães domésticos, isoladamente e sem finalidade produtiva, não se enquadra.",
+      "whyWrong": ["Cultivo para produção é atividade agropecuária.", "Criação destinada à produção integra o escopo quando enquadrada.", "É a alternativa correta: criação doméstica de cães não é atividade agropecuária do levantamento.", "Manejo ou exploração florestal integra o conteúdo técnico.", "Criação de peixes é atividade aquícola quando desenvolvida como produção."],
+      "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "p. 54", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}]
+    },
+    {
+      "id": "ibge26-tec-0019",
+      "roles": ["acr", "acs"],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "lavouras",
+      "difficulty": "medium",
+      "statement": "A diferença central entre uma lavoura permanente e uma lavoura temporária, conforme a apostila, relaciona-se principalmente:",
+      "options": ["à necessidade de o cultivo permanecer produzindo por muitos anos sem novo plantio", "ao fato de toda lavoura temporária ser feita em área urbana", "à impossibilidade de colher produtos de lavoura permanente", "à exigência de exportação para a lavoura permanente", "à ausência de qualquer etapa de pós-colheita na lavoura temporária"],
+      "answer": 0,
+      "explanation": "A lavoura permanente é plantada uma vez e continua produzindo por muitos anos, como café, laranja e uva. A classificação não depende de localização urbana, exportação ou ausência de colheita.",
+      "whyWrong": ["É a alternativa correta: a permanência do cultivo após o plantio é o ponto distintivo.", "A distinção não é definida pela área urbana ou rural.", "Lavouras permanentes também possuem colheita.", "Exportação não é requisito conceitual.", "As etapas produtivas não desaparecem por causa da classificação."],
+      "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "p. 56", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}]
+    },
+    {
+      "id": "ibge26-tec-0020",
+      "roles": ["acr", "acs"],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "áreas não contínuas",
+      "difficulty": "very-hard",
+      "statement": "Duas áreas não contíguas pertencem ao mesmo produtor e estão no mesmo município. Para avaliar se podem integrar um único estabelecimento, a equipe deve:",
+      "options": ["considerá-las sempre um único estabelecimento", "considerá-las sempre estabelecimentos distintos", "verificar as condições específicas de continuidade e exploração previstas no material", "usar apenas o valor total da produção", "decidir pela distância entre as áreas, sem outros critérios"],
+      "answer": 2,
+      "explanation": "Áreas não contínuas no mesmo município podem formar um único estabelecimento, mas isso depende do atendimento conjunto às condições previstas no material técnico. Não basta apenas haver o mesmo produtor ou estar no mesmo município.",
+      "whyWrong": ["A mesma titularidade não resolve sozinha o enquadramento.", "A não contiguidade não determina automaticamente estabelecimentos distintos.", "É a alternativa correta: o caso exige verificar as condições específicas.", "Valor da produção não é o único critério.", "Distância isolada não substitui a análise das condições do conceito."],
+      "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 61-64", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}]
+    },
+    {
+      "id": "ibge26-tec-0021",
+      "roles": ["acr", "acs"],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "sucessão e partilha",
+      "difficulty": "very-hard",
+      "statement": "Em um estabelecimento em processo de sucessão ou partilha, os herdeiros apresentam consenso sobre a exploração. Segundo a orientação técnica, a situação tende a ser recenseada:",
+      "options": ["como um único estabelecimento, observando o responsável adequado pelas informações", "como tantos estabelecimentos quantos forem os herdeiros", "apenas depois da conclusão judicial da partilha", "somente se houver venda da propriedade", "como unidade não recenseável"],
+      "answer": 0,
+      "explanation": "Quando há consenso entre os herdeiros, o estabelecimento em sucessão ou partilha deve ser recenseado como um único estabelecimento, cabendo ao inventariante, representante legal ou condômino responsável prestar as informações.",
+      "whyWrong": ["É a alternativa correta e corresponde à orientação para existência de consenso.", "Número de herdeiros não determina automaticamente o número de estabelecimentos.", "A conclusão judicial não é apresentada como condição geral quando há consenso.", "Venda não é requisito para aplicar a orientação.", "A situação pode ser recenseável e não é excluída por estar em sucessão."],
+      "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 64-65", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}]
+    },
+    {
+      "id": "ibge26-tec-0022",
+      "roles": ["acr", "acs"],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "exploração comunitária",
+      "difficulty": "hard",
+      "statement": "A exploração comunitária é caracterizada principalmente pelo uso coletivo de uma mesma área por diferentes produtores que:",
+      "options": ["realizam atividades produtivas em conjunto", "não podem possuir qualquer vínculo com o território", "devem ser registrados como proprietários individuais", "são automaticamente excluídos do levantamento", "só podem existir em áreas urbanas"],
+      "answer": 0,
+      "explanation": "A exploração comunitária ocorre quando uma mesma área é utilizada coletivamente por diferentes produtores que realizam atividades produtivas em conjunto. O conceito não depende de propriedade individual nem de localização urbana.",
+      "whyWrong": ["É a alternativa correta e reproduz o núcleo conceitual da exploração comunitária.", "A relação com território pode ser central nesse tipo de exploração.", "Uso coletivo não transforma automaticamente todos em proprietários individuais.", "Não há exclusão automática pelo caráter comunitário.", "O exemplo do material inclui contextos rurais e tradicionais."],
+      "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "p. 66", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}]
+    },
+    {
+      "id": "ibge26-tec-0023",
+      "roles": ["acr", "acs"],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "qualidade da coleta",
+      "difficulty": "hard",
+      "statement": "A necessidade de conferir corretamente o questionário decorre principalmente do fato de que:",
+      "options": ["o preenchimento influencia a qualidade das informações e a fidelidade dos resultados produzidos", "o questionário é apenas um documento administrativo sem uso estatístico", "erros de preenchimento são corrigidos automaticamente pelo mapa", "a coleta é válida mesmo sem registrar as unidades investigadas", "a supervisão não utiliza os dados para orientar correções"],
+      "answer": 0,
+      "explanation": "O material destaca que o correto preenchimento do questionário é essencial para garantir a qualidade das informações coletadas e a fidelidade dos dados produzidos pelo Censo.",
+      "whyWrong": ["É a alternativa correta: relaciona preenchimento, qualidade e fidelidade estatística.", "O questionário registra informações essenciais para a produção estatística.", "Mapa e questionário cumprem funções diferentes e não corrigem automaticamente respostas.", "Sem registro adequado não há coleta confiável.", "A supervisão utiliza informações e indicadores para acompanhar e corrigir a operação."],
+      "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "p. 22", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}]
+    },
+    {
+      "id": "ibge26-tec-0024",
+      "roles": ["acr", "acs"],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "estrutura de qualidade",
+      "difficulty": "very-hard",
+      "statement": "Na estrutura censitária descrita na apostila, a função do Centro Estadual de Qualidade (CEQ) está relacionada principalmente:",
+      "options": ["ao monitoramento estadual da qualidade dos dados coletados", "à substituição de todos os postos censitários", "à definição dos limites municipais", "à realização exclusiva de entrevistas domiciliares", "à emissão de documentos de identidade dos candidatos"],
+      "answer": 0,
+      "explanation": "O CEQ é vinculado às Superintendências Estaduais e responde pelo monitoramento, em nível estadual, da qualidade dos dados coletados no Censo Agropecuário.",
+      "whyWrong": ["É a alternativa correta: descreve a responsabilidade estadual do CEQ.", "O CEQ não substitui os postos censitários, que têm função de apoio operacional.", "Limites municipais não são a função principal do CEQ.", "Entrevistas não definem sua atribuição institucional.", "Documentos de identidade pertencem a procedimentos do processo seletivo, não ao CEQ."],
+      "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "p. 13", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}]
+    }
+  ]
+}
