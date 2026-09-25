@@ -1,7 +1,13 @@
 {
   "id": "ibge-pss-2026-censo-agro",
   "title": "IBGE 2026 - Censo Agropecuário, Florestal e Aquícola",
-  "status": "researching",
+  "status": "building",
+  "targetQuestionCount": 1500,
+  "questionMix": {
+    "officialOrLicensed": "when authorized",
+    "originalModeled": 0.75,
+    "adaptedFromOfficialPattern": 0.25
+  },
   "ownerOnlyPublishing": true,
   "exam": {
     "board": "IBFC",

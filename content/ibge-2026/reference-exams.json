@@ -1,0 +1,24 @@
+{
+  "purpose": "analisar estilo, distribuição, dificuldade e padrões da IBFC sem republicar material protegido sem autorização",
+  "sources": [
+    {
+      "title": "IBGE - Processo Seletivo Simplificado Edital nº 6/2021",
+      "url": "https://concursos-adm-sigcp.ibfc.org.br/informacoes/355/",
+      "availableMaterials": ["cadernos de questões", "gabaritos preliminares", "gabaritos pós-recursos"],
+      "use": "calibrar Português, Lógica e Administração e estudar o formato IBFC"
+    },
+    {
+      "title": "IBGE - Coordenador Censitário de Área (CCA) - prova IBFC",
+      "url": "https://fs.ibfc.org.br/arquivos/6da5a00f4e20cf9b94c29b3b9d39664a.pdf",
+      "availableMaterials": ["caderno de prova", "gabarito"],
+      "use": "calibrar contexto censitário, operações de campo e estilo aplicado"
+    },
+    {
+      "title": "IBGE - edital e prova de nível médio de 2021",
+      "url": "https://fs.ibfc.org.br/arquivos/4ff46a3ae69bb68909723784684242ab.pdf",
+      "availableMaterials": ["gabarito oficial pós-recurso"],
+      "use": "conferir distribuição de alternativas e temas recorrentes"
+    }
+  ],
+  "editorialRule": "Questões anteriores serão mantidas como referência ou link para a fonte. A publicação integral exige autorização; o banco próprio usará questões autorais inéditas baseadas no conteúdo e no padrão observado."
+}
