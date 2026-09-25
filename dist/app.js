@@ -320,6 +320,7 @@ if (typeof document !== 'undefined') {
   $('#role').addEventListener('change', () => { state.role = $('#role').value; save(); renderSubjects(); });
   $('#subject').addEventListener('change', renderTopics);
   $('#mode').addEventListener('change', () => { $('#customCountField').hidden = $('#mode').value !== 'custom'; });
+  document.addEventListener('visibilitychange', () => { lastTick = performance.now(); });
   $('#clear').addEventListener('click', () => { $('#subject').value = ''; renderTopics(); $('#topic').value = ''; $('#difficulty').value = ''; });
   $('#apply').addEventListener('click', () => { $('#customize').hidden = true; toast('Filtros aplicados à próxima sessão.'); });
   $('#role').value = state.role || '';
