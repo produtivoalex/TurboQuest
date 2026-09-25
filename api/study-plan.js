@@ -24,7 +24,7 @@ export default async function handler(req, res) {
   const prompt = isResearch
     ? `Você é o motor estratégico do TurboQuest. O estudante vai prestar ${exam}, para o cargo: ${cargo || 'não informado'}.
 Analise o edital abaixo e faça uma pesquisa ampla e atualizada na web, usando fontes oficiais, provas anteriores da mesma banca e questões de concursos equivalentes. Não invente fontes: registre URLs e explique a relevância.
-Crie um plano de estudo acionável e uma primeira bateria de questões difíceis, sem alternativas óbvias, respeitando a distribuição e os pesos do edital. Inclua gabarito e explicação curta. Responda SOMENTE JSON válido no formato:
+Crie um plano de estudo acionável e no máximo 6 questões difíceis, sem alternativas óbvias, respeitando a distribuição e os pesos do edital. Inclua gabarito e explicação curta. Responda SOMENTE JSON válido no formato:
 {"sources":[{"title":"","url":"","why":""}],"strategy":{"priorities":[{"subject":"","weight":0,"questionShare":0,"topics":[]}],"notes":[]},"questions":[{"subject":"","difficulty":"medium|hard","statement":"","options":["","","",""],"answer":0,"explanation":"","sourceUrl":""}]}
 EDITAL:\n${edital.slice(0, 220000)}`
     : `Você é um analista especialista em editais de concursos brasileiros. Analise integralmente este edital para o TurboQuest. Extraia cargo(s), banca, órgão, datas, número de questões, pesos, disciplinas, tópicos, critérios e qualquer regra relevante. Não faça perguntas ainda. Responda SOMENTE JSON válido no formato:
@@ -33,7 +33,7 @@ EDITAL:\n${edital.slice(0, 220000)}`;
 
   const payload = {
     contents: [{ role: 'user', parts: [{ text: prompt }] }],
-    generationConfig: { responseMimeType: 'application/json', thinkingConfig: { thinkingLevel: 'high' } }
+    generationConfig: { responseMimeType: 'application/json', maxOutputTokens: 4500, thinkingConfig: { thinkingLevel: isResearch ? 'low' : 'high' } }
   };
   if (isResearch) payload.tools = [{ googleSearch: {} }];
 
