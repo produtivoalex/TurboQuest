@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "notice": "ibge-pss-2026-censo-agro",
+  "subjects": {
+    "Língua Portuguesa": [
+      "compreensão e interpretação", "significação das palavras", "pontuação e sequência lógica", "ortografia e acentuação", "classes de palavras", "concordância", "regência", "verbos e vozes verbais", "pronomes", "sintaxe", "coesão e coerência", "redação e reescrita operacional"
+    ],
+    "Raciocínio Lógico Quantitativo": [
+      "estruturas lógicas", "lógica de argumentação", "diagramas lógicos", "relações entre pessoas, lugares, coisas e eventos", "aritmética", "álgebra básica", "geometria básica", "dedução e avaliação de condições"
+    ],
+    "Noções de Administração": [
+      "administração e organizações como sistemas abertos", "planejamento", "organização", "direção", "coordenação", "controle", "motivação", "comunicação", "liderança", "eficiência e grupos", "papéis e interações", "trabalho em equipe", "responsabilidade", "autoridade", "poder", "delegação", "qualidade em serviços", "atendimento ao público", "documentação e arquivo"
+    ],
+    "Noções de Administração/Situações Gerenciais": [
+      "administração e organizações como sistemas abertos", "funções administrativas", "motivação, comunicação e liderança", "processo decisório", "resolução de problemas", "gerência e gestão de organizações e pessoas", "grupos, papéis e equipes", "responsabilidade, coordenação, autoridade, poder e delegação", "avaliação de desempenho", "qualidade nos serviços"
+    ],
+    "Noções de Informática": [
+      "hardware e periféricos", "diretórios e arquivos", "Windows 10 ou superior", "Android 13 ou superior", "manuseio de dados", "segurança, perfis, chaves e senhas", "vírus e antivírus", "backup e recuperação", "editores de texto", "planilhas", "Word e Excel", "navegadores", "redes", "transferência de arquivos", "correio eletrônico", "intranet e internet"
+    ],
+    "Noções Básicas de Informática": [
+      "Windows, desktop e menu iniciar", "pastas e arquivos", "Explorador de Arquivos", "criar, renomear, copiar, mover, recortar, colar, excluir e desfazer", "Android", "senhas e perfis", "integridade e confidencialidade", "planilhas, filtros, classificação e gráficos", "SOMA, MÉDIA e CONT.SE", "Wi-Fi e 4G", "operação online e offline", "logs e registros de transmissão"
+    ],
+    "Conhecimentos Técnicos": [
+      "IBGE, censos e produção de informações", "Censo Agropecuário, Florestal e Aquícola", "12º Censo e objetivo da operação", "estrutura organizacional censitária", "CNQ, CEQ e postos censitários", "atribuições de ACR, ACS e Recenseador", "instrumentos de trabalho", "setor censitário", "DMC e mapa digital", "manual e questionário", "mapas, escala e imagens de satélite", "descritivo do setor e limites", "divisão político-administrativa", "geocódigo e tipos de setor", "povos e comunidades tradicionais", "áreas de interesse operacional", "CNEFE e componentes do endereço", "latitude, longitude e GPS", "estabelecimento agropecuário", "data e período de referência", "unidades recenseáveis e não recenseáveis", "produção de subsistência", "lavoura, horticultura, aquicultura e exploração florestal", "produtor sem área", "propriedade versus estabelecimento", "sede e áreas em mais de um setor", "áreas não contínuas", "sucessão, partilha e litígio", "exploração comunitária", "sigilo, ética e qualidade da coleta"
+    ]
+  },
+  "generationPolicy": {
+    "questionTypes": ["interpretação", "aplicação em cenário", "distinção entre conceitos próximos", "procedimento operacional", "cálculo", "análise de erro", "afirmação e exceção"],
+    "difficultyMix": {"medium": 0.35, "hard": 0.5, "very-hard": 0.15},
+    "minimumAlternatives": 5,
+    "answerPositions": "balanced",
+    "mustCiteSource": true,
+    "mustExplainDistractors": true,
+    "rejectIf": ["resposta por bom senso sem conteúdo", "alternativa absurda", "mais de uma resposta defensável", "fonte ausente quando necessária", "fato não localizado na fonte", "duplicidade semântica", "gabarito não demonstrado"]
+  }
+}
