@@ -23,6 +23,7 @@
     .member-shell{min-height:100vh;background:linear-gradient(180deg,#10152b 0,#080b16 54%);color:var(--text);padding:24px clamp(16px,5vw,72px) 60px}.member-nav{display:flex;align-items:center;justify-content:space-between;max-width:1320px;margin:auto}.member-brand{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:850}.member-brand .bolt{width:34px;height:34px}.member-profile{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:13px}.member-avatar{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#8b6cff,#45d6e8);color:#fff;font-weight:800}.member-hero{max-width:1320px;margin:58px auto 42px}.member-hero .eyebrow{color:var(--cyan)}.member-hero h1{font-size:clamp(34px,6vw,68px);max-width:730px;line-height:1.02;margin:12px 0}.member-hero p{max-width:600px;color:#bbc2dc;font-size:18px}.member-row{max-width:1320px;margin:auto}.member-row h2{font-size:20px;margin:0 0 16px}.member-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}.member-card{min-height:285px;border:1px solid #ffffff16;border-radius:18px;overflow:hidden;background:#11172a;box-shadow:0 18px 44px #0005;transition:transform .2s,border-color .2s}.member-card:hover{transform:translateY(-5px);border-color:#8b6cff}.member-thumb{height:160px;padding:18px;display:flex;align-items:flex-end;background:linear-gradient(135deg,#234f68,#24205a 58%,#151a39);position:relative}.member-thumb:after{content:'✦';position:absolute;right:20px;top:10px;font-size:88px;color:#ffffff13}.member-thumb strong{font-size:25px;position:relative;z-index:1}.member-info{padding:16px}.member-info p{color:var(--muted);font-size:13px;min-height:40px;margin:8px 0 14px}.member-info .primary{width:100%}.member-meta{display:flex;gap:7px;flex-wrap:wrap}.member-meta span{font-size:11px;color:#c6cbea;background:#ffffff0d;padding:5px 8px;border-radius:99px}.member-footer{max-width:1320px;margin:56px auto 0;color:#687292;font-size:12px}
     #memberShell.hidden{display:none}#appShell{display:none}@media(max-width:600px){.member-shell{padding:18px 14px 40px}.member-hero{margin:45px auto 34px}.member-hero p{font-size:16px}.member-card{min-height:270px}}
   </style>
+<style>.member-thumb{background:radial-gradient(circle at 75% 20%,#45d6e844 0 2px,transparent 3px),linear-gradient(135deg,#173f55,#28205c 58%,#151a39)}.member-thumb:before{content:'⌁  ⌁  ⌁';position:absolute;inset:24px -10px auto;color:#45d6e855;font-size:42px;letter-spacing:18px;transform:rotate(-12deg)}.member-thumb:after{content:'IBGE  •  2026';position:absolute;right:17px;top:18px;font-size:11px;letter-spacing:.12em;color:#d9f8ff;background:#07121f88;padding:7px 9px;border:1px solid #73e9ff44;border-radius:8px}</style>
 </head>
 <body>
   <section class="member-shell" id="memberShell">
@@ -133,5 +134,21 @@
     if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js?v=dca8fdf').then(r=>r.update()).catch(()=>{}));
     renderDash();loadPublishedBank();initCloud();
   </script>
+<script>
+  (function(){
+    const version='member-v2';
+    if(localStorage.getItem('tq-ui-version')!==version){
+      localStorage.removeItem('tq-member-open');
+      localStorage.removeItem('tq-questions');
+      localStorage.removeItem('tq-plan');
+      localStorage.setItem('tq-ui-version',version);
+      location.reload();
+      return;
+    }
+    if(window.QUESTIONS)window.QUESTIONS.length=0;
+    const member=document.getElementById('memberShell'),app=document.getElementById('appShell');
+    if(member&&app&&localStorage.getItem('tq-member-open')!=='1'){member.classList.remove('hidden');app.style.display='none'}
+  })();
+</script>
 </body>
 </html>
