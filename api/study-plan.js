@@ -73,8 +73,10 @@ async function groqChat(key, model, messages, extra = {}) {
 }
 
 async function groqResearch(key, prompt, compact = false) {
-  const requestPrompt = compact ? prompt.slice(0, 2500) : prompt;
-  const response = await groqChat(key, GROQ_RESEARCH_MODEL, [{ role: 'user', content: `${requestPrompt}\n\nFaça pesquisa web ativa e obrigatória usando browser_search. Consulte fontes oficiais e provas anteriores da banca. Construa um background estratégico para geração posterior em massa: padrões de cobrança, prioridades, armadilhas, dificuldade e regras para distratores. Retorne SOMENTE JSON válido no formato solicitado. Gere até ${compact ? 1 : 4} questão inicial e cite somente URLs retornadas pela busca.` }], { max_completion_tokens: compact ? 700 : 1200, tool_choice: 'required', tools: [{ type: 'browser_search' }], reasoning_effort: 'low', timeoutMs: 25000 });
+  const requestPrompt = compact
+    ? `Concurso IBGE, cargo informado no contexto abaixo. Faça uma pesquisa web ativa curta sobre esse cargo e a banca. Retorne somente JSON compacto com sources, strategy e uma questão. Contexto: ${prompt.slice(0, 600)}`
+    : prompt;
+  const response = await groqChat(key, GROQ_RESEARCH_MODEL, [{ role: 'user', content: `${requestPrompt}\n\nFaça pesquisa web ativa e obrigatória usando browser_search. Consulte fontes oficiais e provas anteriores da banca. Construa um background estratégico para geração posterior em massa: padrões de cobrança, prioridades, armadilhas, dificuldade e regras para distratores. Retorne SOMENTE JSON válido no formato solicitado. Gere até ${compact ? 1 : 4} questão inicial e cite somente URLs retornadas pela busca.` }], { max_completion_tokens: compact ? 400 : 1200, tool_choice: 'required', tools: [{ type: 'browser_search' }], reasoning_effort: 'low', timeoutMs: 25000 });
   const result = parseModelJson(response.text);
   addGroqSources(result, response.data, response.text);
   if (!hasLiveResearch(result, null, GROQ_RESEARCH_MODEL, response.data) && !compact) throw new Error('O Groq não retornou evidências de pesquisa web ativa.');
