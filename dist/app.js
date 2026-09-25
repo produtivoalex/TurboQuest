@@ -287,10 +287,117 @@ const VIDEOS = [
   { test: q => /Conhecimentos Técnicos/.test(q.subject) && /estrutura censitária/i.test(q.topic), id: 'cW6h020IZhs', title: 'O que é o Censo Agropecuário — IBGE Explica' }
 ];
 
-function studyTip(q) {
-  return TIPS.find(([pattern]) => pattern.test(q.topic))?.[1] ||
-    'Antes de olhar as alternativas, sublinhe a condição decisiva do enunciado e formule sua resposta em uma frase. Depois compare com a explicação.';
+const TIP_SOURCES = {
+  percent: ['Khan Academy — percentuais de referência', 'https://www.khanacademy.org/math/6th-grade-illustrative-math/unit-3-unit-rates-and-percentages/lesson-13-benchmark-percentages/v/common-percentages'],
+  ratio: ['Khan Academy — taxas unitárias e razões', 'https://www.khanacademy.org/math/pre-algebra/pre-algebra-ratios-rates/pre-algebra-rates/a/rate-review'],
+  multiplication: ['Khan Academy — decompor multiplicações', 'https://www.khanacademy.org/math/arithmetic-home/multiply-divide/properties-of-multiplication/a/distributive-property-review'],
+  averages: ['OpenStax — média, mediana e valores extremos', 'https://openstax.org/books/statistics/pages/2-5-measures-of-the-center'],
+  probability: ['OpenStax — médias e probabilidade', 'https://openstax.org/books/prealgebra/pages/5-5-averages-and-probability'],
+  algebra: ['OpenStax — estratégia para problemas algébricos', 'https://openstax.org/books/intermediate-algebra/pages/2-2-use-a-problem-solving-strategy'],
+  geometry: ['Khan Academy — área e perímetro', 'https://www.khanacademy.org/math/geometry/basic-geometry-hs/perimeter-area-tutorial'],
+  logic: ['Khan Academy — condicionais e contrapositiva', 'https://www.khanacademy.org/test-prep/lsat-prep/xdf35b2883be7178a%3Alsat-prep-lessons/xdf35b2883be7178a%3Alsat-prep-logic-toolbox/a/logic-toolbox--article--conditional-reasoning-logical-equivalence'],
+  text: ['INEP — coesão e compreensão de textos', 'https://download.inep.gov.br/educacao_basica/prova_brasil_saeb/menu_do_professor/prova_lingua_portuguesa/matrizes_lp_4a_serie/TopicoIV_LP_4a_serie_EF_PROF.pdf'],
+  management: ['ENAP — funções administrativas e processo decisório', 'https://repositorio.enap.gov.br/bitstream/1/5592/10/analista_adm_area_1.pdf'],
+  technical: ['IBGE — material do Censo Agropecuário', 'https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf'],
+  spelling: ['Academia Brasileira de Letras — VOLP 2025–2026', 'https://www2.academia.org.br/nossa-lingua/vocabulario-ortografico']
+};
+
+function mathShortcut(q) {
+  const topic = q.topic.toLowerCase(), prompt = q.statement.toLowerCase();
+  let text, source = 'algebra';
+  if (/porcent|percentual|juros/.test(topic)) {
+    source = 'percent';
+    if (/pontos percentuais|redução relativa/.test(prompt)) text = 'Atalho: calcule primeiro a diferença em pontos; depois divida pela taxa inicial para achar a queda relativa. Não confunda “pontos” com “por cento da base”.';
+    else if (/sucessiv|semana seguinte|na seguinte/.test(topic + ' ' + prompt)) text = 'Atalho: use uma base por etapa. Subiu de 80 para 100? A alta usa 80; a queda de volta usa 100. Percentuais de ida e volta não se anulam porque a base mudou.';
+    else if (/ainda falta|pendente|resta/.test(prompt)) text = 'Atalho: ache a parte que falta primeiro (total − feito) e compare com o total original. Para 25%, pense em dividir por 4; para 10%, tire uma casa decimal.';
+    else text = 'Atalho mental: 10% é dividir por 10; 5% é metade de 10%; 25% é dividir por 4; 1% é dividir por 100. Quebre percentuais como 15% em 10% + 5% e some.';
+    if (!/sucessiv|semana seguinte|na seguinte/.test(topic + ' ' + prompt)) {
+      const fraction = q.explanation.match(/(\d+)\s*\/\s*(\d+)/);
+      if (fraction) {
+        let a = Number(fraction[1]), b = Number(fraction[2]);
+        const originalA = a, originalB = b;
+        while (b) [a, b] = [b, a % b];
+        if (a > 1) text = `Atalho neste item: reduza ${originalA}/${originalB} pelo fator ${a} antes de converter em %. Fica ${originalA / a}/${originalB / a}; daí a porcentagem sai quase sem divisão longa.`;
+      }
+    }
+  } else if (/razão|proporção|regra de três|velocidade|taxa/.test(topic)) {
+    source = 'ratio';
+    if (/agente|dispositivo|dia|hora/.test(prompt)) text = 'Atalho: reduza tudo a uma unidade de trabalho (por agente-hora ou agente-dia). Cancele fatores iguais antes de multiplicar; se mais agentes reduzem o tempo, a relação é inversa.';
+    else if (/transfer|redistribui/.test(prompt)) text = 'Atalho: numa transferência entre dois grupos, cada unidade deslocada reduz a diferença em 2. Ache a diferença inicial pela razão e desconte o dobro do que foi transferido.';
+    else text = 'Atalho: some as partes da razão, divida o total por essa soma e só então multiplique pela parte pedida. Se houver unidades diferentes, compare “por 1” (taxa unitária) antes de escalar.';
+  } else if (/conjunt|inclusão-exclusão/.test(topic)) {
+    source = 'probability';
+    text = /exatamente uma/.test(prompt) ? 'Atalho: “exatamente uma” = total do grupo A + total do B − 2 × interseção. A interseção sai duas vezes porque foi contada nos dois grupos.' : /nenhuma|não tinham|não domina/.test(prompt) ? 'Atalho: “nenhum” = total − (A + B − interseção). Tire a interseção só uma vez para não contar duas vezes quem está nos dois grupos.' : 'Atalho: desenhe dois círculos; some A + B e subtraia a interseção uma vez. Para “nenhum”, subtraia essa união do total.';
+  } else if (/probabilidad/.test(topic)) {
+    source = 'probability';
+    if (/ao menos|pelo menos|não seja|não ser|complemento/.test(prompt)) text = 'Atalho: para “ao menos um” ou “não acontecer”, calcule 1 − o evento contrário. Em retiradas sem reposição, reduza o total e a quantidade favorável após cada retirada.';
+    else text = 'Atalho: escreva favoráveis ÷ total. Se houver duas ordens possíveis (por exemplo, verde–azul ou azul–verde), calcule uma e multiplique por 2; sem reposição, atualize o total na segunda retirada.';
+  } else if (/média|mediana/.test(topic)) {
+    source = 'averages';
+    if (/meta|média diária|para obter média|para que a média/.test(prompt)) text = 'Atalho: média desejada × quantidade de dias = total-alvo. Subtraia a soma já feita; esse saldo é exatamente o que falta no último dia.';
+    else if (/ponderada|peso/.test(topic + ' ' + prompt)) text = 'Atalho: multiplique cada nota pela quantidade/peso, some os pontos e divida pela soma dos pesos. Não faça a média simples das notas quando os pesos diferem.';
+    else if (/mediana/.test(topic)) text = 'Atalho: ordene e conte posições, sem somar todos os valores. Ímpar: pegue o do meio; par: faça a média dos dois centrais. Um valor extremo não muda a posição central.';
+    else text = 'Atalho: média × número de valores dá a soma total. Ao acrescentar um valor, compare-o com a média antiga: só o excedente (ou falta) altera a soma, depois divida pelo novo total.';
+  } else if (/fraç/.test(topic)) {
+    source = 'ratio';
+    text = /resta|falta|restante/.test(prompt) ? 'Atalho: trate o todo como 1. Some as partes feitas usando denominador comum; o que falta é 1 menos essa soma. Em frações sucessivas, confirme se a segunda parte é do total ou só do restante.' : 'Atalho: simplifique antes de operar. Para somar, use o menor denominador comum; para multiplicar, cancele fatores cruzados antes da conta para manter números pequenos.';
+  } else if (/sequênci/.test(topic)) {
+    source = 'multiplication'; text = 'Atalho: compare diferenças entre termos antes de testar multiplicações. Se as diferenças aumentam em padrão regular, estenda esse padrão uma etapa e some ao último termo.';
+  } else if (/equação|sistema/.test(topic)) {
+    source = 'algebra';
+    if (/a mais|a menos|diferença/.test(prompt) && /juntos|somam|totalizaram/.test(prompt)) text = 'Atalho mental: com soma S e diferença d, o maior é (S+d)÷2 e o menor (S−d)÷2. Confira qual dos dois o enunciado pediu; evita montar sistema.';
+    else text = 'Atalho de prova: teste as alternativas na condição do enunciado (soma, diferença ou total). Em múltipla escolha, uma substituição rápida costuma ser mais curta que isolar a incógnita.';
+  } else if (/análise combinatória|ordena|arranjo/.test(topic)) {
+    source = 'probability'; text = 'Atalho: fixe o que já está determinado; para itens obrigatoriamente juntos, trate o par como um bloco e depois conte as ordens internas. Cuidado para não contar o par separado.';
+  } else if (/geometria|escala/.test(topic)) {
+    source = 'geometry';
+    if (/faixa|contorna|margem/.test(prompt)) text = 'Atalho: na borda interna, desconte a largura duas vezes de cada dimensão (um lado de cada extremidade); só então multiplique comprimento × largura.';
+    else if (/escala/.test(topic)) text = 'Atalho: aplique a escala a um lado primeiro, converta as unidades e só depois calcule área. Na escala 1:n, 1 cm vira n cm reais; em áreas, o fator de escala também seria elevado ao quadrado.';
+    else text = 'Atalho: identifique se pedem área (lado × lado, unidade²) ou perímetro (contorno, unidade). Retângulo: área = base × altura; perímetro = 2 × (base + altura).';
+  } else if (/condicional|proposicional|negação|argumentação|dedução|conjunção|disjunção|diagramas/.test(topic)) {
+    source = 'logic';
+    if (/contrapositiva/.test(topic) || /se .* então/.test(prompt)) text = 'Atalho: transforme “se P, então Q” em “P→Q”. Só é falsa em P verdadeiro e Q falso; a equivalente garantida é a contrapositiva “não Q→não P”. Não conclua P só porque viu Q.';
+    else if (/negação|quantificador/.test(topic)) text = 'Atalho: negue por partes. “Todo” vira “existe pelo menos um que não”; “algum” vira “nenhum”. Negar “A e B” vira “não A ou não B”.';
+    else text = 'Atalho: desenhe conjuntos como círculos e preserve apenas o que as premissas obrigam. “Alguns B são C” não garante que algum A seja C, mesmo se todo A estiver dentro de B.';
+  } else {
+    source = 'multiplication'; text = 'Atalho: antes da conta exata, estime o intervalo e elimine opções incompatíveis. Depois simplifique fatores ou unidades em cruz; multiplique só os números que sobrarem.';
+  }
+  if (source !== 'logic' && q.options?.length) text += ' Em múltipla escolha, estime para riscar opções distantes e faça a conta exata só no final.';
+  return { text, source: TIP_SOURCES[source] };
 }
+
+function studyShortcut(q) {
+  if (/Raciocínio Lógico Quantitativo/.test(q.subject)) return mathShortcut(q);
+  let text = TIPS.find(([pattern]) => pattern.test(q.topic))?.[1];
+  const topic = q.topic.toLowerCase(), statement = q.statement.toLowerCase();
+  if (/Língua Portuguesa/.test(q.subject)) {
+    if (/interpreta|inferência|compreensão|coesão|conector/.test(topic)) text = 'Atalho: localize no texto a frase que comprova a alternativa. Desconfie de opções que acrescentem causa, certeza ou regra que o autor não afirmou.';
+    else if (/crase/.test(topic)) text = 'Atalho: troque o termo feminino por um masculino. Se surgir “ao”, há preposição + artigo; antes de verbo, pronome ou palavra sem artigo, não force crase.';
+    else if (/concordância/.test(topic)) text = 'Atalho: encontre o núcleo do sujeito e ignore termos entre ele e o verbo. Com “haver” = existir e “fazer” = tempo decorrido, use singular.';
+    else if (/regência/.test(topic)) text = 'Atalho: cubra o complemento e pergunte ao verbo/nome qual preposição ele exige. Depois confira se há artigo feminino para decidir a crase.';
+    else if (/pontuação/.test(topic)) text = 'Atalho: nunca separe sujeito de verbo ou verbo de complemento por vírgula. Retire mentalmente o trecho entre vírgulas para ver se ele é explicativo ou essencial.';
+    else if (/voz verbal/.test(topic)) text = 'Atalho: marque quem pratica a ação e quem a recebe. Na passiva, o objeto vira sujeito paciente; preserve tempo verbal e agente da ação.';
+    else if (/acentuação|ortografia|parônimos/.test(topic)) text = 'Atalho: identifique a regra ou o sentido exato pedido antes de comparar grafias. Em parônimos, substitua a palavra na frase para testar o significado.';
+    else text ||= 'Atalho: leia primeiro o comando, depois volte ao trecho relevante. Na reescrita, compare sentido, referente e relação lógica, não apenas a aparência gramatical.';
+    return { text, source: /ortografia|acentuação|parônimos/.test(topic) ? TIP_SOURCES.spelling : TIP_SOURCES.text };
+  }
+  if (/Administração/.test(q.subject)) {
+    if (/Noções de Administração/.test(q.subject) && !/Situações Gerenciais/.test(q.subject)) text ||= 'Atalho: identifique a função pelo verbo da situação: definir meta = planejar; distribuir recursos = organizar; orientar pessoas = dirigir; comparar resultado = controlar.';
+    else text ||= 'Atalho: escolha a ação que enfrenta a causa descrita, define responsável e permite conferir o resultado. Desconfie de promessa, punição ou indicador isolado sem acompanhamento.';
+    return { text, source: TIP_SOURCES.management };
+  }
+  if (/Conhecimentos Técnicos/.test(q.subject)) return { text: text || 'Atalho: primeiro localize o critério de classificação (território, período, sede ou exploração); só então compare as alternativas. Não substitua regra do manual por aparência ou conveniência.', source: TIP_SOURCES.technical };
+  if (/Informática/.test(q.subject)) {
+    text ||= /planilha|CONT.SE|MÉDIA|SOMA|filtro|gráfico/i.test(topic) ? 'Atalho: pergunte se a tarefa conta, soma, calcula média, ordena ou apenas oculta linhas. O nome da função e o efeito do comando eliminam opções de categoria errada.' :
+      /arquivo|cópia|backup/i.test(topic) ? 'Atalho: pergunte o que muda: copiar duplica e preserva origem; mover troca de local; sincronizar replica mudanças; backup mantém recuperação anterior.' :
+      'Atalho: identifique qual propriedade ou etapa está em jogo (acesso, integridade, transmissão ou conexão). Elimine opções que prometem garantia absoluta.';
+    const source = /CONT.SE|planilha|filtro|MÉDIA|SOMA/i.test(topic) ? ['Microsoft Support — ajuda do Excel', 'https://support.microsoft.com/pt-br/excel'] : ['CERT.br — Cartilha de Segurança para Internet', 'https://cartilha.cert.br/'];
+    return { text, source };
+  }
+  return { text: text || 'Atalho: encontre a condição que o enunciado exige e descarte primeiro alternativas que a contradizem.', source: null };
+}
+
+function studyTip(q) { return studyShortcut(q).text; }
 
 function studyVideo(q, catalog = null) {
   const curated = VIDEOS.find(video => video.test(q));
@@ -299,7 +406,7 @@ function studyVideo(q, catalog = null) {
 }
 
 if (typeof module !== 'undefined') module.exports = {
-  loadState, median, subjectAccuracy, priorityForQuestion, eligibleAt, examWeights, buildQueue, reviewQueue, schedule, formatClock, formatDuration, subjectReport, studyTip, studyVideo, unlockAchievements, ACHIEVEMENTS, localDay
+  loadState, median, subjectAccuracy, priorityForQuestion, eligibleAt, examWeights, buildQueue, reviewQueue, schedule, formatClock, formatDuration, subjectReport, studyTip, studyShortcut, studyVideo, unlockAchievements, ACHIEVEMENTS, localDay
 };
 
 if (typeof document !== 'undefined') {
@@ -567,9 +674,15 @@ if (typeof document !== 'undefined') {
     }
     $('#explain').append(explanation);
     const tip = document.createElement('div'); tip.className = 'tip';
-    const tipTitle = document.createElement('b'); tipTitle.textContent = 'Dica para resolver mais rápido';
-    const tipBody = document.createElement('span'); tipBody.textContent = studyTip(q);
-    tip.append(tipTitle, tipBody); $('#explain').append(tip);
+    const tipTitle = document.createElement('b'); tipTitle.textContent = 'Atalho de prova';
+    const tipBody = document.createElement('span');
+    const shortcut = studyShortcut(q); tipBody.textContent = shortcut.text;
+    tip.append(tipTitle, tipBody);
+    if (shortcut.source) {
+      const source = document.createElement('a'); source.href = shortcut.source[1]; source.target = '_blank'; source.rel = 'noopener noreferrer';
+      source.className = 'tip-source'; source.textContent = `Ver método: ${shortcut.source[0]} ↗`; tip.append(document.createElement('br'), source);
+    }
+    $('#explain').append(tip);
     const video = studyVideo(q, videoCatalog);
     const videoCard = document.createElement('div'); videoCard.className = 'video-card';
     const videoTitle = document.createElement('b'); videoTitle.textContent = video?.match === 'curated' ? 'Aula selecionada para este assunto' : video?.match === 'specific' ? 'Vídeo indexado sobre este assunto' : video ? 'Vídeo relacionado ao assunto' : 'Quer ver uma aula?';
@@ -783,5 +896,5 @@ if (typeof document !== 'undefined') {
     $('#available').textContent = bank.length; renderSubjects(); renderProfile(); renderResume();
     if (manifest?.exam?.categoryLabel) $('#examType').textContent = `${manifest.exam.categoryLabel} · IBGE · ${manifest.exam.board} · 2026`;
   }).catch(() => toast('Não foi possível carregar o banco. Verifique sua conexão.'));
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=batch-010-v1').then(registration => registration.update()).catch(() => {});
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=fast-tips-v1').then(registration => registration.update()).catch(() => {});
 }
