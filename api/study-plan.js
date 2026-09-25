@@ -14,11 +14,11 @@ function parseModelJson(text) {
   return { summary: cleaned };
 }
 
-function validateQuestions(value) {
+function validateQuestions(value, editorial = false) {
   const questions = Array.isArray(value?.questions) ? value.questions : [];
   const valid = questions.filter(question => {
     const options = Array.isArray(question?.options) ? question.options : [];
-    return question && String(question.statement || '').length >= 40 && options.length >= 4 &&
+    return question && String(question.statement || '').length >= 40 && options.length >= (editorial ? 5 : 4) &&
       options.every(option => String(option || '').length >= 8) &&
       Number.isInteger(question.answer) && question.answer >= 0 && question.answer < options.length &&
       String(question.explanation || '').length >= 80;
@@ -104,13 +104,13 @@ async function groqJson(key, prompt) {
   return { result: parseModelJson(response.text), grounding: null, model: GROQ_FORMAT_MODEL };
 }
 
-async function groqGenerate(key, prompt, count) {
-  const response = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: prompt + '\n\nGere exatamente ' + count + ' questões. Retorne SOMENTE JSON válido, sem markdown.' }], {
+async function groqGenerate(key, prompt, count, editorial = false) {
+  const response = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: prompt + '\n\nGere exatamente ' + count + ' questões. ' + (editorial ? 'Use exatamente 5 alternativas plausíveis por questão e inclua whyWrong com 5 justificativas.' : '') + ' Retorne SOMENTE JSON válido, sem markdown.' }], {
     max_completion_tokens: 6500,
     temperature: 0.35,
     timeoutMs: 55000
   });
-  const result = validateQuestions(parseModelJson(response.text));
+  const result = validateQuestions(parseModelJson(response.text), editorial);
   if (result.questions.length < Math.max(1, Math.floor(count * 0.8))) {
     throw new Error('O modelo retornou ' + result.questions.length + ' questões válidas de ' + count + ' solicitadas.');
   }
@@ -120,7 +120,7 @@ async function groqGenerate(key, prompt, count) {
 function buildGeneratePrompt({ exam, cargo, edital, background }) {
   return 'Você é um elaborador sênior de questões para concursos. Gere questões de altíssima qualidade a partir do edital e do background pesquisado.\n' +
     'Respeite disciplinas, pesos, tópicos e atribuições do cargo. Exija raciocínio, interpretação, aplicação ou distinção conceitual real. Use enunciados contextualizados no estilo da banca, sem copiar questões. Crie quatro alternativas plausíveis, homogêneas e tecnicamente próximas, sem alternativas absurdas ou que revelem a resposta. Varie a posição do gabarito entre A, B, C e D. Não repita ideia, cenário, tópico ou estrutura dentro do lote. A dificuldade deve ser real. Explique o raciocínio e por que os distratores estão errados. Nunca invente regra, número ou fonte; use sourceUrl apenas de URLs do background.\n' +
-    'Formato: {"questions":[{"subject":"","difficulty":"medium|hard|very-hard","topic":"","statement":"","options":["","","",""],"answer":0,"explanation":"","whyWrong":["","","",""],"sourceUrl":""}]}\n' +
+    'Formato editorial: {"questions":[{"subject":"","difficulty":"medium|hard|very-hard","topic":"","statement":"","options":["","","","",""],"answer":0,"explanation":"","whyWrong":["","","","",""],"sourceUrl":""}]}\n' +
     'CONCURSO: ' + exam + '\nCARGO: ' + (cargo || 'não informado') + '\nEDITAL:\n' + edital + '\nBACKGROUND PESQUISADO:\n' + (background || 'Nenhum background foi fornecido; use somente o edital.');
 }
 
@@ -134,6 +134,7 @@ export default async function handler(req, res) {
 
   const isResearch = action === 'research';
   const isGenerate = action === 'generate';
+  const editorial = Boolean(req.body?.editorial);
   const requestedCount = Math.max(1, Math.min(10, Number(req.body?.count) || 5));
   const background = String(req.body?.background || '').slice(0, 30000);
   const editalForPrompt = isResearch ? edital.slice(0, 5000) : edital.slice(0, 220000);
@@ -150,7 +151,7 @@ EDITAL:\n${editalForPrompt}`;
   if (isGenerate) prompt = buildGeneratePrompt({ exam, cargo, edital: edital.slice(0, 50000), background });
 
   try {
-    const run = (key, compact = false) => isResearch ? groqResearch(key, prompt, compact) : isGenerate ? groqGenerate(key, prompt, requestedCount) : groqJson(key, prompt);
+    const run = (key, compact = false) => isResearch ? groqResearch(key, prompt, compact) : isGenerate ? groqGenerate(key, prompt, requestedCount, editorial) : groqJson(key, prompt);
     let result;
     try {
       result = await run(groqKey || backupKey);
