@@ -1,0 +1,58 @@
+{
+  "batch": "ibge-2026-tecnico-003",
+  "status": "review",
+  "questions": [
+    {
+      "id": "ibge26-tec-0013",
+      "roles": ["acr", "acs"],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "setor censitário e unidade territorial",
+      "difficulty": "hard",
+      "statement": "No Censo Agropecuário, o setor censitário é importante para a coleta porque:",
+      "options": ["é a menor área geográfica definida pelo IBGE para organizar a unidade territorial de coleta", "corresponde sempre a um município inteiro", "pode ser alterado livremente pelo recenseador durante o percurso", "é definido apenas pelo número de estabelecimentos encontrados", "substitui todas as demais divisões territoriais brasileiras"],
+      "answer": 0,
+      "explanation": "O setor censitário é apresentado como a menor área geográfica definida pelo IBGE e constitui a unidade territorial de coleta. Ele organiza a responsabilidade de campo, mas não equivale necessariamente a um município nem pode ser alterado livremente.",
+      "whyWrong": ["É a alternativa correta: o setor organiza a unidade territorial de coleta.", "Um município pode conter diversos setores censitários.", "O perímetro oficial não pode ser alterado por iniciativa do recenseador.", "A definição territorial não depende apenas da contagem encontrada em campo.", "O setor é uma divisão operacional e não elimina as demais divisões territoriais."],
+      "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "p. 20", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}]
+    },
+    {
+      "id": "ibge26-tec-0014",
+      "roles": ["acr", "acs"],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "geocódigo",
+      "difficulty": "very-hard",
+      "statement": "A função principal do geocódigo de um setor censitário é:",
+      "options": ["identificar unicamente o setor e reunir referências da sua localização territorial", "registrar o nome do informante responsável pelo estabelecimento", "indicar o valor total da produção do setor", "substituir o endereço de cada estabelecimento", "definir automaticamente o resultado da entrevista"],
+      "answer": 0,
+      "explanation": "O geocódigo é um código de identificação única do setor censitário e reúne referências territoriais, como unidade da federação, município, distrito, subdistrito e número do setor. Ele não substitui os registros dos estabelecimentos.",
+      "whyWrong": ["É a alternativa correta: o código identifica o setor e sua posição na estrutura territorial.", "O informante é uma informação da coleta, não a finalidade do geocódigo.", "O geocódigo não contém o resultado econômico do setor.", "Endereços dos estabelecimentos continuam sendo registrados segundo os instrumentos próprios.", "O código identifica território, mas não decide o conteúdo das entrevistas."],
+      "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "p. 34", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}]
+    },
+    {
+      "id": "ibge26-tec-0015",
+      "roles": ["acr", "acs"],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "Povos e Comunidades Tradicionais",
+      "difficulty": "hard",
+      "statement": "Ao trabalhar com um povo ou comunidade tradicional, a equipe deve evitar presumir que todas as pessoas possuem a mesma relação com o território porque:",
+      "options": ["a identidade e as formas de organização podem ser diversas, devendo a abordagem respeitar a realidade do grupo", "as comunidades tradicionais não possuem qualquer forma de organização social", "a coleta deve ignorar práticas culturais para aplicar um único padrão", "a identidade só pode ser reconhecida pela localização urbana", "o território não possui relevância para a reprodução social do grupo"],
+      "answer": 0,
+      "explanation": "A apostila destaca a diversidade dos povos e comunidades tradicionais, suas formas próprias de organização e suas relações específicas com territórios e recursos. A operação deve reconhecer essa diversidade e adotar abordagem adequada.",
+      "whyWrong": ["É a alternativa correta: diversidade e respeito à realidade do grupo são centrais.", "O conceito pressupõe formas próprias de organização social, não ausência delas.", "Ignorar práticas culturais pode prejudicar a abordagem e a qualidade da coleta.", "A identidade não depende de localização urbana.", "A relação com território e recursos é parte importante da reprodução cultural, social, religiosa e econômica."],
+      "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 39-42", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}]
+    },
+    {
+      "id": "ibge26-tec-0016",
+      "roles": ["acr", "acs"],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "mapa do setor e navegação",
+      "difficulty": "hard",
+      "statement": "Ao planejar o deslocamento em um setor rural, o uso do mapa, do descritivo e de imagens de satélite deve ser compreendido como:",
+      "options": ["conjunto de instrumentos complementares para localizar limites, caminhos e unidades", "substituição da observação de campo por imagens automáticas", "dispensa da consulta à legenda do mapa", "autorização para escolher qualquer trajeto fora do setor", "mecanismo que torna desnecessária a comunicação com a supervisão"],
+      "answer": 0,
+      "explanation": "Os instrumentos de trabalho se complementam: o mapa apresenta a área e seus elementos, o descritivo detalha o percurso e imagens auxiliam o reconhecimento. A tecnologia apoia, mas não substitui a interpretação e os procedimentos de campo.",
+      "whyWrong": ["É a alternativa correta: os instrumentos devem ser usados de forma integrada.", "A imagem não substitui observação, orientação técnica e conferência em campo.", "A legenda é necessária para interpretar corretamente os símbolos.", "O trajeto deve respeitar a área e os procedimentos do setor.", "Dificuldades ou inconsistências continuam devendo ser comunicadas à supervisão."],
+      "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 20-30", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}]
+    }
+  ]
+}
