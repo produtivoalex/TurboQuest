@@ -10,10 +10,9 @@ async function readJson(file, fallback, request) {
     try { return JSON.parse(await fs.readFile(path.join(root, file), 'utf8')); }
     catch (_) {
       try {
-        const host = request?.headers?.host || process.env.VERCEL_URL;
+        const host = request?.headers?.host || process.env.VERCEL_URL || 'turboquest.vercel.app';
         const protocol = request?.headers?.['x-forwarded-proto'] || 'https';
-        if (!host) return fallback;
-        const response = await fetch(`${protocol}://${host}/${file}`);
+        const response = await fetch(`${protocol}://${host}/${file}?content_version=1`);
         return response.ok ? await response.json() : fallback;
       } catch (_) { return fallback; }
     }
