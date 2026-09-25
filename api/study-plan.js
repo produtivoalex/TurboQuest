@@ -1,4 +1,4 @@
-const MODEL = 'gemini-3.8-flash';
+const MODEL = 'gemini-3.1-flash-lite';
 const GROQ_RESEARCH_MODEL = process.env.GROQ_RESEARCH_MODEL || 'openai/gpt-oss-120b';
 const GROQ_FORMAT_MODEL = process.env.GROQ_FORMAT_MODEL || 'openai/gpt-oss-20b';
 
