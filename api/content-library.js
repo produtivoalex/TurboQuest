@@ -2,10 +2,14 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const root = process.cwd();
+const sourceRoot = new URL('../', import.meta.url);
 
 async function readJson(file, fallback) {
-  try { return JSON.parse(await fs.readFile(path.join(root, file), 'utf8')); }
-  catch (_) { return fallback; }
+  try { return JSON.parse(await fs.readFile(new URL(file, sourceRoot), 'utf8')); }
+  catch (_) {
+    try { return JSON.parse(await fs.readFile(path.join(root, file), 'utf8')); }
+    catch (_) { return fallback; }
+  }
 }
 
 export default async function handler(req, res) {
