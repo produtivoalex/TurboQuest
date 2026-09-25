@@ -56,7 +56,7 @@
   </div>
   <div class="toast" id="toast"></div>
   <script>
-    (function(){const member=document.getElementById('memberShell'),app=document.getElementById('appShell'),enter=document.getElementById('enterIbge');function openApp(){member.classList.add('hidden');app.style.display='grid';localStorage.setItem('tq-member-open','1');window.scrollTo(0,0)}if(localStorage.getItem('tq-member-open')==='1')openApp();enter.addEventListener('click',openApp)})();
+    (function(){const member=document.getElementById('memberShell'),app=document.getElementById('appShell'),enter=document.getElementById('enterIbge');function openApp(){member.classList.add('hidden');app.style.display='grid';document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById('quiz')?.classList.add('active');localStorage.setItem('tq-member-open','1');window.scrollTo(0,0)}if(localStorage.getItem('tq-member-open')==='1')openApp();enter.addEventListener('click',openApp)})();
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -131,12 +131,12 @@
     $('#researchBtn').addEventListener('click',()=>$('#generatorCard').style.display='block');
     $('#importBridgeResponse').addEventListener('click',()=>$('#generatorCard').style.display='block');
     let deferredInstall;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstall=e;$('#installBtn').hidden=false});$('#installBtn').onclick=async()=>{if(!deferredInstall)return;deferredInstall.prompt();await deferredInstall.userChoice;deferredInstall=null;$('#installBtn').hidden=true};
-    if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js?v=9be76fc').then(r=>r.update()).catch(()=>{}));
+    if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js?v=auto-v7').then(r=>r.update()).catch(()=>{}));
     renderDash();loadPublishedBank();initCloud();
   </script>
 <script>
   (function(){
-    const version='member-v2';
+    const version='member-v3';
     if(localStorage.getItem('tq-ui-version')!==version){
       localStorage.removeItem('tq-member-open');
       localStorage.removeItem('tq-questions');
