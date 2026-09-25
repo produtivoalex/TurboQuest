@@ -3,7 +3,8 @@ import fs from 'node:fs';
 const file = process.argv[2];
 if (!file) throw new Error('Uso: node scripts/validate-question-bank.mjs caminho/questions.json');
 const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-const questions = Array.isArray(data) ? data : data.questions;
+const entries = Array.isArray(data) ? data : data.questions;
+const questions = entries?.filter(q => q.status === 'approved');
 if (!Array.isArray(questions)) throw new Error('O arquivo precisa ser um array ou possuir a chave questions.');
 
 const errors = [];
@@ -33,4 +34,4 @@ if (errors.length) {
   errors.forEach(error => console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`Banco válido: ${questions.length} questão(ões) aprovadas.`);
+console.log(`Banco válido: ${questions.length} questão(ões) aprovadas; ${entries.length - questions.length} em revisão fora da publicação.`);

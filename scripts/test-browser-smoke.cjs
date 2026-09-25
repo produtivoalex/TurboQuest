@@ -33,7 +33,7 @@ const server = http.createServer(async (req, res) => {
     page.on('pageerror', error => errors.push(error.message));
     const base = `http://127.0.0.1:${server.address().port}`;
     await page.goto(base);
-    await page.locator('#available').getByText('320').waitFor();
+    await page.locator('#available').getByText('420').waitFor();
     if (process.env.TQ_SCREENSHOT) await page.screenshot({ path: process.env.TQ_SCREENSHOT });
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, 'sem rolagem horizontal no celular');
     await page.locator('.hero-cta').click();

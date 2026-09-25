@@ -58,7 +58,7 @@ function priorityForQuestion(q, state, bank, now) {
   const topicCorrect = topicRecords.reduce((sum, item) => sum + (item.correct || 0), 0);
   const topicNeed = topicAttempts ? Math.max(0, .85 - topicCorrect / topicAttempts) : 0;
   if (!record) {
-    const curated = /^ibge26-b009-/.test(q.id) ? 12 : /^ibge26-b008-/.test(q.id) ? 8 : /^ibge26-b007-/.test(q.id) ? 5 : 0;
+    const curated = /^ibge26-b010-/.test(q.id) ? 16 : /^ibge26-b009-/.test(q.id) ? 12 : /^ibge26-b008-/.test(q.id) ? 8 : /^ibge26-b007-/.test(q.id) ? 5 : 0;
     const templated = q.statement.includes('Considere o contexto da operação descrito no edital') ||
       q.explanation.includes('A alternativa correta preserva o critério do enunciado') ? 15 : 0;
     return 40 + curated - templated + 16 * subjectNeed + 18 * topicNeed;
@@ -783,5 +783,5 @@ if (typeof document !== 'undefined') {
     $('#available').textContent = bank.length; renderSubjects(); renderProfile(); renderResume();
     if (manifest?.exam?.categoryLabel) $('#examType').textContent = `${manifest.exam.categoryLabel} · IBGE · ${manifest.exam.board} · 2026`;
   }).catch(() => toast('Não foi possível carregar o banco. Verifique sua conexão.'));
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=reviews-videos-awards-v1').then(registration => registration.update()).catch(() => {});
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=batch-010-v1').then(registration => registration.update()).catch(() => {});
 }

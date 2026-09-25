@@ -20,7 +20,7 @@ const aca = bank.filter(q => q.roles.includes('aca'));
 const portuguese = aca.filter(q => q.subject === 'Língua Portuguesa');
 const freshAdmin = engine.buildQueue(aca.filter(q => q.subject === 'Noções de Administração'),
   { records: {} }, manifest, 'aca', 1, now);
-assert(/^ibge26-b009-/.test(freshAdmin[0].id), 'lote de substituição precede lotes antigos não revisados');
+assert(/^ibge26-b010-/.test(freshAdmin[0].id), 'lote novo revisado precede lotes antigos não revisados');
 const missed = portuguese[portuguese.length - 1];
 const weakRecords = Object.fromEntries(portuguese.slice(0, 12).map(q => [q.id,
   { attempts: 2, correct: 0, wrong: 2, dueAt: now - 1000 }]));

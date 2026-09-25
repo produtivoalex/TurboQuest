@@ -1,0 +1,3601 @@
+{
+  "id": "ibge26-b010",
+  "sourceType": "original",
+  "questions": [
+    {
+      "id": "ibge26-b010-001",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "interpretação de texto",
+      "difficulty": "hard",
+      "statement": "Leia: “O posto ampliou o atendimento, mas manteve a mesma equipe. O ganho veio da redistribuição das visitas.” Qual inferência é sustentada pelo trecho, sem acrescentar uma causa não informada?",
+      "options": [
+        "A organização do trabalho contribuiu para ampliar o atendimento.",
+        "A equipe foi ampliada após o aumento das visitas.",
+        "A tecnologia substituiu parte dos agentes.",
+        "O posto reduziu a duração de cada entrevista.",
+        "O ganho decorreu exclusivamente de horas extras."
+      ],
+      "answer": 0,
+      "explanation": "O texto atribui o ganho à redistribuição das visitas, isto é, a uma mudança de organização. O trecho diz que a equipe permaneceu a mesma. Não há menção a tecnologia ou substituição de pessoas. A duração das entrevistas não é informada. Horas extras não aparecem como explicação no texto.",
+      "whyWrong": [
+        "O texto atribui o ganho à redistribuição das visitas, isto é, a uma mudança de organização.",
+        "O trecho diz que a equipe permaneceu a mesma.",
+        "Não há menção a tecnologia ou substituição de pessoas.",
+        "A duração das entrevistas não é informada.",
+        "Horas extras não aparecem como explicação no texto."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-002",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "coesão referencial",
+      "difficulty": "hard",
+      "statement": "No comunicado “A equipe enviou os mapas aos supervisores depois que eles concluíram a conferência”, a redação deve deixar claro que a conferência foi feita pelos supervisores. Qual reescrita elimina a ambiguidade?",
+      "options": [
+        "A equipe enviou os mapas aos supervisores depois que eles concluíram a conferência.",
+        "Após os supervisores concluírem a conferência, a equipe lhes enviou os mapas.",
+        "Depois de concluírem a conferência, eles receberam os mapas da equipe.",
+        "A equipe, depois que concluíram a conferência, enviou-lhes os mapas.",
+        "Os mapas foram enviados depois da conferência deles pelos supervisores."
+      ],
+      "answer": 1,
+      "explanation": "O sujeito explícito “os supervisores” identifica quem concluiu a conferência e “lhes” retoma esse grupo. O pronome “eles” ainda pode recuperar mais de um antecedente. O sujeito de “concluírem” fica implícito e “eles” não resolve a referência. Há desajuste entre “a equipe” singular e “concluíram” plural, além da ambiguidade. A construção final deixa incerta a relação entre “deles” e “supervisores”.",
+      "whyWrong": [
+        "O pronome “eles” ainda pode recuperar mais de um antecedente.",
+        "O sujeito explícito “os supervisores” identifica quem concluiu a conferência e “lhes” retoma esse grupo.",
+        "O sujeito de “concluírem” fica implícito e “eles” não resolve a referência.",
+        "Há desajuste entre “a equipe” singular e “concluíram” plural, além da ambiguidade.",
+        "A construção final deixa incerta a relação entre “deles” e “supervisores”."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-003",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "pontuação e sentido",
+      "difficulty": "hard",
+      "statement": "Compare “Os agentes que receberam o mapa digital iniciarão amanhã” com “Os agentes, que receberam o mapa digital, iniciarão amanhã”. Qual interpretação da segunda frase é adequada?",
+      "options": [
+        "As vírgulas restringem o início aos agentes que receberam o mapa.",
+        "As duas frases têm obrigatoriamente o mesmo alcance de “agentes”.",
+        "As vírgulas apresentam o recebimento do mapa como informação acessória sobre todos os agentes mencionados.",
+        "A segunda frase afirma que nenhum agente recebeu o mapa.",
+        "As vírgulas transformam “receberam” em verbo principal da oração."
+      ],
+      "answer": 2,
+      "explanation": "A oração entre vírgulas é explicativa; no contexto, comenta o grupo de agentes já identificado. A restrição caracteriza a versão sem vírgulas, na qual apenas parte do grupo é selecionada. A presença ou ausência das vírgulas altera o alcance da oração relativa. A segunda oração afirma, e não nega, o recebimento do mapa. O verbo principal continua sendo “iniciarão”; “receberam” integra a oração relativa.",
+      "whyWrong": [
+        "A restrição caracteriza a versão sem vírgulas, na qual apenas parte do grupo é selecionada.",
+        "A presença ou ausência das vírgulas altera o alcance da oração relativa.",
+        "A oração entre vírgulas é explicativa; no contexto, comenta o grupo de agentes já identificado.",
+        "A segunda oração afirma, e não nega, o recebimento do mapa.",
+        "O verbo principal continua sendo “iniciarão”; “receberam” integra a oração relativa."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-004",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "regência verbal",
+      "difficulty": "hard",
+      "statement": "Um aviso formal precisa registrar que a supervisora informou aos agentes a mudança de horário. Qual redação mantém a regência e o sentido, sem trocar destinatário por objeto informado?",
+      "options": [
+        "A supervisora informou aos agentes de que o horário mudou.",
+        "A supervisora informou à mudança de horário aos agentes.",
+        "A supervisora informou os agentes para a mudança de horário.",
+        "A supervisora informou os agentes da mudança de horário.",
+        "A supervisora informou na mudança os agentes."
+      ],
+      "answer": 3,
+      "explanation": "“Informar alguém de algo” é construção aceita: agentes são destinatários e mudança é o conteúdo. A construção cruza “informou aos agentes que” com “informou os agentes de que”. A mudança é o conteúdo, não destinatário introduzido por “a”. A preposição “para” não exprime adequadamente o conteúdo da informação nesse verbo. “Na mudança” não estabelece a relação de regência pedida.",
+      "whyWrong": [
+        "A construção cruza “informou aos agentes que” com “informou os agentes de que”.",
+        "A mudança é o conteúdo, não destinatário introduzido por “a”.",
+        "A preposição “para” não exprime adequadamente o conteúdo da informação nesse verbo.",
+        "“Informar alguém de algo” é construção aceita: agentes são destinatários e mudança é o conteúdo.",
+        "“Na mudança” não estabelece a relação de regência pedida."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-005",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "concordância verbal",
+      "difficulty": "hard",
+      "statement": "Num relatório, lê-se: “Mais de um recenseador ___ a inconsistência, mas apenas um deles ___ o chamado”. Quais formas completam corretamente, pela regra geral de concordância?",
+      "options": [
+        "identificaram; registraram",
+        "identificou; registraram",
+        "identificaram; registrou",
+        "identificara; registraram",
+        "identificou; registrou"
+      ],
+      "answer": 4,
+      "explanation": "“Mais de um” leva, em regra, o verbo ao singular; “apenas um deles” também determina singular. O plural nas duas lacunas ignora os núcleos singulares das expressões usadas. A segunda forma não concorda com “um deles”. A primeira forma não segue a concordância geral de “mais de um”. A primeira forma altera o tempo verbal e a segunda mantém discordância com “um”.",
+      "whyWrong": [
+        "O plural nas duas lacunas ignora os núcleos singulares das expressões usadas.",
+        "A segunda forma não concorda com “um deles”.",
+        "A primeira forma não segue a concordância geral de “mais de um”.",
+        "A primeira forma altera o tempo verbal e a segunda mantém discordância com “um”.",
+        "“Mais de um” leva, em regra, o verbo ao singular; “apenas um deles” também determina singular."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-006",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "crase",
+      "difficulty": "hard",
+      "statement": "Assinale a redação em que o sinal indicativo de crase é exigido pela combinação de preposição e artigo, sem depender de um nome próprio facultativo.",
+      "options": [
+        "O registro foi encaminhado à supervisão antes do encerramento do turno.",
+        "O registro foi encaminhado à cada supervisor da unidade.",
+        "O registro foi encaminhado à uma equipe de apoio.",
+        "O registro foi encaminhado à todos os servidores.",
+        "O registro foi encaminhado à quem revisou o mapa."
+      ],
+      "answer": 0,
+      "explanation": "“Encaminhado a” exige preposição, e “a supervisão” admite artigo feminino; a fusão produz “à”. Não se usa artigo feminino antes do pronome indefinido “cada”. O artigo indefinido “uma” não se funde com a preposição “a” nessa construção. “Todos” é masculino plural, incompatível com a forma singular feminina “à”. O pronome “quem” não recebe artigo feminino que justifique a crase.",
+      "whyWrong": [
+        "“Encaminhado a” exige preposição, e “a supervisão” admite artigo feminino; a fusão produz “à”.",
+        "Não se usa artigo feminino antes do pronome indefinido “cada”.",
+        "O artigo indefinido “uma” não se funde com a preposição “a” nessa construção.",
+        "“Todos” é masculino plural, incompatível com a forma singular feminina “à”.",
+        "O pronome “quem” não recebe artigo feminino que justifique a crase."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-007",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "valor semântico",
+      "difficulty": "hard",
+      "statement": "No registro “Embora houvesse conexão, os dados permaneceram no aparelho”, qual relação o conectivo estabelece entre as duas informações?",
+      "options": [
+        "Causa: a conexão provocou a permanência dos dados.",
+        "Concessão: a conexão criava expectativa de transmissão, mas ela não se concretizou.",
+        "Condição: os dados só ficariam no aparelho se houvesse conexão.",
+        "Conclusão: a permanência prova que a conexão foi criada.",
+        "Finalidade: a conexão existia para manter os dados localmente."
+      ],
+      "answer": 1,
+      "explanation": "“Embora” introduz fato admitido que não impede o resultado contrário à expectativa. A frase não diz que a conexão causou o armazenamento local. Não há estrutura condicional do tipo “se... então”. O enunciado não conclui a existência da conexão a partir do armazenamento. Nenhuma finalidade ou intenção é expressa pelo conectivo.",
+      "whyWrong": [
+        "A frase não diz que a conexão causou o armazenamento local.",
+        "“Embora” introduz fato admitido que não impede o resultado contrário à expectativa.",
+        "Não há estrutura condicional do tipo “se... então”.",
+        "O enunciado não conclui a existência da conexão a partir do armazenamento.",
+        "Nenhuma finalidade ou intenção é expressa pelo conectivo."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-008",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "voz passiva analítica",
+      "difficulty": "hard",
+      "statement": "Transforme sem alterar o tempo verbal nem o sentido: “A equipe havia conferido os formulários antes da transmissão”. Qual versão passiva é adequada?",
+      "options": [
+        "Os formulários foram conferidos pela equipe antes da transmissão.",
+        "Os formulários eram conferidos pela equipe antes da transmissão.",
+        "Os formulários haviam sido conferidos pela equipe antes da transmissão.",
+        "A equipe tinha sido conferida pelos formulários antes da transmissão.",
+        "Os formulários haveriam de conferir a equipe antes da transmissão."
+      ],
+      "answer": 2,
+      "explanation": "O objeto “os formulários” vira sujeito paciente e “haviam sido conferidos” preserva o pretérito mais-que-perfeito composto. “Foram conferidos” altera a relação temporal expressa por “havia conferido”. “Eram conferidos” sugere ação habitual ou em curso, não anterioridade concluída. A inversão dos participantes faz dos formulários agentes da conferência. A construção final não é passiva equivalente e atribui ação aos formulários.",
+      "whyWrong": [
+        "“Foram conferidos” altera a relação temporal expressa por “havia conferido”.",
+        "“Eram conferidos” sugere ação habitual ou em curso, não anterioridade concluída.",
+        "O objeto “os formulários” vira sujeito paciente e “haviam sido conferidos” preserva o pretérito mais-que-perfeito composto.",
+        "A inversão dos participantes faz dos formulários agentes da conferência.",
+        "A construção final não é passiva equivalente e atribui ação aos formulários."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-009",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "parônimos",
+      "difficulty": "hard",
+      "statement": "Em um ofício, o agente pretende dizer que corrigiu um dado anteriormente registrado de modo equivocado. Qual verbo exprime a correção, e não a confirmação do dado?",
+      "options": [
+        "Ratificar o dado.",
+        "Reiterar o dado.",
+        "Referendar o dado.",
+        "Retificar o dado.",
+        "Reproduzir o dado."
+      ],
+      "answer": 3,
+      "explanation": "“Retificar” é corrigir; no contexto, substitui ou ajusta o registro incorreto. “Ratificar” é confirmar, exatamente o oposto da correção pretendida. “Reiterar” é repetir, sem corrigir o conteúdo. “Referendar” é aprovar ou validar, não alterar o dado equivocado. “Reproduzir” é copiar ou repetir o conteúdo anterior.",
+      "whyWrong": [
+        "“Ratificar” é confirmar, exatamente o oposto da correção pretendida.",
+        "“Reiterar” é repetir, sem corrigir o conteúdo.",
+        "“Referendar” é aprovar ou validar, não alterar o dado equivocado.",
+        "“Retificar” é corrigir; no contexto, substitui ou ajusta o registro incorreto.",
+        "“Reproduzir” é copiar ou repetir o conteúdo anterior."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-010",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "acentuação",
+      "difficulty": "hard",
+      "statement": "Um comunicado contém as palavras “saída”, “juízo”, “raiz” e “juiz”. Qual análise explica o acento das duas primeiras sem acentuar indevidamente as duas últimas?",
+      "options": [
+        "Toda palavra terminada em “iz” recebe acento gráfico.",
+        "O acento depende apenas de a palavra ter duas sílabas.",
+        "“Raiz” e “juiz” deveriam receber acento por terminarem em z.",
+        "“Saída” e “juízo” são acentuadas por serem proparoxítonas.",
+        "O i tônico fica isolado na sílaba de “saída” e “juízo”, mas não na de “raiz” e “juiz”."
+      ],
+      "answer": 4,
+      "explanation": "A regra do hiato acentua i/u tônicos isolados ou seguidos de s na sílaba; em “raiz” e “juiz”, o z integra a sílaba. A terminação “iz” não produz essa regra de acentuação. Número de sílabas, isoladamente, não justifica o acento apresentado. O z após o i impede aplicar a regra do i isolado nesses casos. Nenhuma das duas palavras destacadas tem tonicidade proparoxítona.",
+      "whyWrong": [
+        "A terminação “iz” não produz essa regra de acentuação.",
+        "Número de sílabas, isoladamente, não justifica o acento apresentado.",
+        "O z após o i impede aplicar a regra do i isolado nesses casos.",
+        "Nenhuma das duas palavras destacadas tem tonicidade proparoxítona.",
+        "A regra do hiato acentua i/u tônicos isolados ou seguidos de s na sílaba; em “raiz” e “juiz”, o z integra a sílaba."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-011",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "pontuação de adjunto deslocado",
+      "difficulty": "hard",
+      "statement": "Um relatório começa por um adjunto adverbial longo: “Após a conferência dos limites descritos no mapa digital os agentes iniciaram as visitas”. Qual revisão melhora a marcação sintática?",
+      "options": [
+        "Após a conferência dos limites descritos no mapa digital, os agentes iniciaram as visitas.",
+        "Após, a conferência dos limites descritos no mapa digital os agentes iniciaram as visitas.",
+        "Após a conferência dos limites descritos no mapa digital os agentes, iniciaram as visitas.",
+        "Após a conferência, dos limites descritos no mapa digital os agentes iniciaram as visitas.",
+        "Após a conferência dos limites descritos no mapa digital, os agentes, iniciaram as visitas."
+      ],
+      "answer": 0,
+      "explanation": "A vírgula após o adjunto longo deslocado separa a circunstância inicial da oração principal. A vírgula após “Após” rompe a locução prepositiva e seu complemento. A vírgula entre sujeito “os agentes” e verbo “iniciaram” é indevida. A pausa separa “conferência” de seu complemento “dos limites”. A segunda vírgula isola indevidamente o sujeito do predicado.",
+      "whyWrong": [
+        "A vírgula após o adjunto longo deslocado separa a circunstância inicial da oração principal.",
+        "A vírgula após “Após” rompe a locução prepositiva e seu complemento.",
+        "A vírgula entre sujeito “os agentes” e verbo “iniciaram” é indevida.",
+        "A pausa separa “conferência” de seu complemento “dos limites”.",
+        "A segunda vírgula isola indevidamente o sujeito do predicado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-012",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "concordância com haver",
+      "difficulty": "hard",
+      "statement": "No sentido de existir, o verbo “haver” é impessoal. Qual forma corrige o trecho “Haviam dois mapas pendentes e houveram três alterações” mantendo os tempos?",
+      "options": [
+        "Haviam dois mapas pendentes e houve três alterações.",
+        "Havia dois mapas pendentes e houve três alterações.",
+        "Havia dois mapas pendentes e houveram três alterações.",
+        "Houvera dois mapas pendentes e houve três alterações.",
+        "Haviam dois mapas pendentes e houveram três alterações."
+      ],
+      "answer": 1,
+      "explanation": "“Haver” existencial fica na terceira pessoa do singular: “havia” e “houve”, mesmo com complementos plurais. A primeira forma segue indevidamente o plural de “mapas”. A segunda forma segue indevidamente o plural de “alterações”. “Houvera” muda o tempo verbal original da primeira oração. As duas flexões plurais tratam objetos como sujeitos de verbo impessoal.",
+      "whyWrong": [
+        "A primeira forma segue indevidamente o plural de “mapas”.",
+        "“Haver” existencial fica na terceira pessoa do singular: “havia” e “houve”, mesmo com complementos plurais.",
+        "A segunda forma segue indevidamente o plural de “alterações”.",
+        "“Houvera” muda o tempo verbal original da primeira oração.",
+        "As duas flexões plurais tratam objetos como sujeitos de verbo impessoal."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-013",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "coesão causal e adversativa",
+      "difficulty": "hard",
+      "statement": "Leia: “O arquivo estava íntegro; contudo, a transmissão falhou”. Qual substituição mantém a oposição expressa por “contudo”, sem converter a relação em causa ou conclusão?",
+      "options": [
+        "O arquivo estava íntegro; portanto, a transmissão falhou.",
+        "O arquivo estava íntegro; porque a transmissão falhou.",
+        "O arquivo estava íntegro; entretanto, a transmissão falhou.",
+        "O arquivo estava íntegro; logo, a transmissão falhou.",
+        "O arquivo estava íntegro; visto que a transmissão falhou."
+      ],
+      "answer": 2,
+      "explanation": "“Entretanto” é adversativo como “contudo” e preserva o contraste entre integridade e falha. “Portanto” introduz conclusão, não oposição. “Porque” marca causa e não mantém a relação adversativa. “Logo” também apresenta uma conclusão não afirmada no original. “Visto que” tem valor causal e desloca o sentido da frase.",
+      "whyWrong": [
+        "“Portanto” introduz conclusão, não oposição.",
+        "“Porque” marca causa e não mantém a relação adversativa.",
+        "“Entretanto” é adversativo como “contudo” e preserva o contraste entre integridade e falha.",
+        "“Logo” também apresenta uma conclusão não afirmada no original.",
+        "“Visto que” tem valor causal e desloca o sentido da frase."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-014",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "regência nominal",
+      "difficulty": "hard",
+      "statement": "Em “A equipe está atenta ___ mudanças no cronograma e apta ___ executar o novo roteiro”, qual preenchimento respeita a regência nominal e a forma adequada dos complementos?",
+      "options": [
+        "as; à",
+        "à; as",
+        "às; à",
+        "às; a",
+        "as; a"
+      ],
+      "answer": 3,
+      "explanation": "“Atenta a” mais artigo plural “as” resulta em “às”; “apta a” antes de infinitivo não recebe artigo. Falta a preposição exigida por “atenta” e sobra crase antes do infinitivo. “Mudanças” é plural, de modo que “à” singular não concorda; “apta” exige preposição. Há crase indevida antes do verbo “executar”. Falta a preposição fundida ao artigo antes de “mudanças”.",
+      "whyWrong": [
+        "Falta a preposição exigida por “atenta” e sobra crase antes do infinitivo.",
+        "“Mudanças” é plural, de modo que “à” singular não concorda; “apta” exige preposição.",
+        "Há crase indevida antes do verbo “executar”.",
+        "“Atenta a” mais artigo plural “as” resulta em “às”; “apta a” antes de infinitivo não recebe artigo.",
+        "Falta a preposição fundida ao artigo antes de “mudanças”."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-015",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "ambiguidade",
+      "difficulty": "hard",
+      "statement": "A frase “O supervisor encontrou o agente com o mapa” permite duas leituras. Qual reescrita afirma inequivocamente que o agente portava o mapa?",
+      "options": [
+        "Com o mapa, o supervisor encontrou o agente.",
+        "O supervisor encontrou com o mapa o agente.",
+        "O supervisor, com o mapa, encontrou o agente.",
+        "O agente encontrou o supervisor com o mapa.",
+        "O supervisor encontrou o agente que portava o mapa."
+      ],
+      "answer": 4,
+      "explanation": "A oração “que portava o mapa” liga o objeto diretamente ao agente. O termo deslocado tende a ligar o mapa ao supervisor. “Com o mapa” ainda admite ligação à ação ou ao supervisor. A intercalação atribui explicitamente o mapa ao supervisor. Além de inverter quem encontrou quem, mantém ambiguidade sobre quem portava o mapa.",
+      "whyWrong": [
+        "O termo deslocado tende a ligar o mapa ao supervisor.",
+        "“Com o mapa” ainda admite ligação à ação ou ao supervisor.",
+        "A intercalação atribui explicitamente o mapa ao supervisor.",
+        "Além de inverter quem encontrou quem, mantém ambiguidade sobre quem portava o mapa.",
+        "A oração “que portava o mapa” liga o objeto diretamente ao agente."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-016",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "ortografia",
+      "difficulty": "hard",
+      "statement": "Um registro administrativo deve empregar corretamente “sessão”, “seção” e “cessão”. Qual frase usa as três formas de acordo com seus sentidos?",
+      "options": [
+        "A seção de mapas solicitou a cessão do equipamento durante a sessão de treinamento.",
+        "A sessão de mapas solicitou a seção do equipamento durante a cessão de treinamento.",
+        "A cessão de mapas solicitou a sessão do equipamento durante a seção de treinamento.",
+        "A seção de mapas solicitou a sessão do equipamento durante a cessão de treinamento.",
+        "A cessão de mapas solicitou a seção do equipamento durante a sessão de treinamento."
+      ],
+      "answer": 0,
+      "explanation": "“Seção” é unidade ou divisão; “cessão” é transferência; “sessão” é reunião ou período de atividade. “Sessão” não nomeia a unidade de mapas, e “seção” não descreve transferência do equipamento. “Cessão” não designa a unidade, e “sessão” não designa o ato de ceder. A reunião não é “cessão” e o empréstimo não é “sessão”. A primeira palavra não designa a unidade de mapas e a segunda não nomeia a transferência.",
+      "whyWrong": [
+        "“Seção” é unidade ou divisão; “cessão” é transferência; “sessão” é reunião ou período de atividade.",
+        "“Sessão” não nomeia a unidade de mapas, e “seção” não descreve transferência do equipamento.",
+        "“Cessão” não designa a unidade, e “sessão” não designa o ato de ceder.",
+        "A reunião não é “cessão” e o empréstimo não é “sessão”.",
+        "A primeira palavra não designa a unidade de mapas e a segunda não nomeia a transferência."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-017",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "colocação pronominal",
+      "difficulty": "hard",
+      "statement": "Em uma comunicação formal, qual frase usa a colocação do pronome de modo compatível com a palavra atrativa presente na oração?",
+      "options": [
+        "Nunca divulgam-se dados individuais dos informantes.",
+        "Nunca se divulgam dados individuais dos informantes.",
+        "Não divulgam-se dados individuais dos informantes.",
+        "Jamais divulgar-se-ão dados individuais dos informantes.",
+        "Quem informou-me sobre os dados individuais?"
+      ],
+      "answer": 1,
+      "explanation": "O advérbio negativo “nunca” atrai o pronome para antes do verbo, justificando “se divulgam”. A ênclise depois de “nunca” contraria a atração pela negativa. “Não” também exige próclise nesse contexto. “Jamais” atrai o pronome e impede a mesóclise apresentada. O pronome relativo/interrogativo “quem” atrai “me”: “Quem me informou?”.",
+      "whyWrong": [
+        "A ênclise depois de “nunca” contraria a atração pela negativa.",
+        "O advérbio negativo “nunca” atrai o pronome para antes do verbo, justificando “se divulgam”.",
+        "“Não” também exige próclise nesse contexto.",
+        "“Jamais” atrai o pronome e impede a mesóclise apresentada.",
+        "O pronome relativo/interrogativo “quem” atrai “me”: “Quem me informou?”."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-018",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "reescrita",
+      "difficulty": "hard",
+      "statement": "Considere o aviso: “Se faltar conexão, registre os dados localmente; transmita-os quando ela voltar”. Qual reescrita preserva a ordem das ações e o referente do pronome?",
+      "options": [
+        "Na ausência de conexão, deixe de registrar dados até que a conexão retorne.",
+        "Transmita os dados antes de registrá-los, caso a conexão retorne.",
+        "Na ausência de conexão, registre os dados no aparelho e transmita-os quando a conexão for restabelecida.",
+        "Quando os dados voltarem, registre a conexão localmente e transmita-a.",
+        "Registre a conexão no aparelho, embora os dados não possam ser transmitidos."
+      ],
+      "answer": 2,
+      "explanation": "O registro local ocorre primeiro; a transmissão vem depois do restabelecimento da conexão. O aviso manda registrar mesmo sem conexão, não suspender o trabalho. A transmissão não antecede o registro no procedimento original. “Ela” retoma conexão, não os dados, e a sequência foi invertida. O objeto do registro são dados, não a própria conexão.",
+      "whyWrong": [
+        "O aviso manda registrar mesmo sem conexão, não suspender o trabalho.",
+        "A transmissão não antecede o registro no procedimento original.",
+        "O registro local ocorre primeiro; a transmissão vem depois do restabelecimento da conexão.",
+        "“Ela” retoma conexão, não os dados, e a sequência foi invertida.",
+        "O objeto do registro são dados, não a própria conexão."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-019",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "inferência textual",
+      "difficulty": "hard",
+      "statement": "Leia: “O mapa sugere um acesso mais curto. Entretanto, o descritivo situa a ponte fora do setor”. Qual decisão é compatível com as duas frases, sem tratar sugestão visual como limite oficial?",
+      "options": [
+        "Tomar o acesso mais curto como prova de que a ponte pertence ao setor.",
+        "Ignorar o descritivo porque um mapa sempre o substitui.",
+        "Concluir que a ponte foi removida da área após a impressão do mapa.",
+        "Conferir o limite pelo descritivo antes de usar o acesso sugerido pelo mapa.",
+        "Alterar o limite do setor para incluir a ponte e encurtar o trajeto."
+      ],
+      "answer": 3,
+      "explanation": "O contraste introduzido por “entretanto” exige considerar a informação textual sobre o limite antes de decidir a rota. A facilidade de acesso não demonstra pertencimento territorial. O trecho não autoriza descartar o descritivo em favor da aparência visual. Não há dado sobre alteração física da ponte ou data do mapa. Uma rota conveniente não autoriza redefinir limites oficiais.",
+      "whyWrong": [
+        "A facilidade de acesso não demonstra pertencimento territorial.",
+        "O trecho não autoriza descartar o descritivo em favor da aparência visual.",
+        "Não há dado sobre alteração física da ponte ou data do mapa.",
+        "O contraste introduzido por “entretanto” exige considerar a informação textual sobre o limite antes de decidir a rota.",
+        "Uma rota conveniente não autoriza redefinir limites oficiais."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-020",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Língua Portuguesa",
+      "topic": "paralelismo sintático",
+      "difficulty": "hard",
+      "statement": "Uma lista de tarefas diz “Conferir mapas, a atualização de cadastros e que os dados sejam enviados”. Qual reescrita usa estruturas paralelas sem perder as três ações?",
+      "options": [
+        "Conferir mapas, cadastros atualizados e que os dados sejam enviados.",
+        "A conferência de mapas, atualizar cadastros e envio de dados.",
+        "Conferir mapas, a atualização de cadastros e enviar dados.",
+        "Mapas conferidos, atualizar cadastros e dados enviados.",
+        "Conferir mapas, atualizar cadastros e enviar dados."
+      ],
+      "answer": 4,
+      "explanation": "Os três infinitivos coordenados nomeiam ações no mesmo formato e preservam o conteúdo da lista. Mistura verbo, grupo nominal e oração subordinada. Mistura nominalização, verbo e grupo nominal. Alterna infinitivo, grupo nominal e infinitivo, quebrando o paralelismo. Mistura particípios e infinitivo, além de não formular três comandos equivalentes.",
+      "whyWrong": [
+        "Mistura verbo, grupo nominal e oração subordinada.",
+        "Mistura nominalização, verbo e grupo nominal.",
+        "Alterna infinitivo, grupo nominal e infinitivo, quebrando o paralelismo.",
+        "Mistura particípios e infinitivo, além de não formular três comandos equivalentes.",
+        "Os três infinitivos coordenados nomeiam ações no mesmo formato e preservam o conteúdo da lista."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Língua Portuguesa",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-021",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "conjuntos",
+      "difficulty": "hard",
+      "statement": "De 90 formulários, 48 tinham a marca A, 37 a marca B e 15 tinham ambas. Quantos não tinham nenhuma das duas marcas?",
+      "options": [
+        "20",
+        "5",
+        "15",
+        "25",
+        "35"
+      ],
+      "answer": 0,
+      "explanation": "A união tem 48+37−15=70 formulários; os restantes são 90−70=20. Somar a interseção duas vezes superestima a união e produz resto incorreto. Quinze é a interseção informada, não o complemento da união. Vinte e cinco não resulta de retirar uma única vez a interseção dos 90. Trinta e cinco ignora parte dos formulários presentes em apenas um grupo.",
+      "whyWrong": [
+        "A união tem 48+37−15=70 formulários; os restantes são 90−70=20.",
+        "Somar a interseção duas vezes superestima a união e produz resto incorreto.",
+        "Quinze é a interseção informada, não o complemento da união.",
+        "Vinte e cinco não resulta de retirar uma única vez a interseção dos 90.",
+        "Trinta e cinco ignora parte dos formulários presentes em apenas um grupo."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-022",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "condicional",
+      "difficulty": "hard",
+      "statement": "Considere como verdadeira a regra: “Se o mapa foi validado, então o setor foi liberado”. Sabendo apenas que o setor não foi liberado, qual conclusão lógica decorre da regra?",
+      "options": [
+        "O mapa foi validado, mas houve atraso.",
+        "O mapa não foi validado.",
+        "Todo mapa não validado jamais será liberado.",
+        "O setor foi liberado por outro supervisor.",
+        "Nada pode ser inferido sobre a validação."
+      ],
+      "answer": 1,
+      "explanation": "Pela contrapositiva de P→Q, não Q implica não P: sem liberação, não houve validação no modelo dado. P e não Q tornariam falsa a regra adotada como verdadeira. A regra não afirma que não validação seja a única impossibilidade futura. A conclusão contradiz o fato informado de que o setor não foi liberado. A contrapositiva permite, sim, inferir a ausência de validação.",
+      "whyWrong": [
+        "P e não Q tornariam falsa a regra adotada como verdadeira.",
+        "Pela contrapositiva de P→Q, não Q implica não P: sem liberação, não houve validação no modelo dado.",
+        "A regra não afirma que não validação seja a única impossibilidade futura.",
+        "A conclusão contradiz o fato informado de que o setor não foi liberado.",
+        "A contrapositiva permite, sim, inferir a ausência de validação."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-023",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "razão e proporção",
+      "difficulty": "hard",
+      "statement": "Dois grupos dividiram 168 visitas na razão 4:3. Após a redistribuição, 12 visitas passaram do grupo maior ao menor. Qual passou a ser a diferença entre as cargas?",
+      "options": [
+        "12",
+        "24",
+        "0",
+        "36",
+        "48"
+      ],
+      "answer": 2,
+      "explanation": "As cargas iniciais são 96 e 72; depois da transferência ficam 84 e 84, portanto diferença zero. Doze é o volume transferido, não a diferença final entre os grupos. Vinte e quatro era a diferença antes da transferência, que cai em 24. Trinta e seis não corresponde nem à razão inicial nem às cargas posteriores. Quarenta e oito ignora que transferir 12 reduz a diferença em 24.",
+      "whyWrong": [
+        "Doze é o volume transferido, não a diferença final entre os grupos.",
+        "Vinte e quatro era a diferença antes da transferência, que cai em 24.",
+        "As cargas iniciais são 96 e 72; depois da transferência ficam 84 e 84, portanto diferença zero.",
+        "Trinta e seis não corresponde nem à razão inicial nem às cargas posteriores.",
+        "Quarenta e oito ignora que transferir 12 reduz a diferença em 24."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-024",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "probabilidade",
+      "difficulty": "hard",
+      "statement": "Uma caixa contém 5 fichas verdes e 3 amarelas. Duas fichas são retiradas sem reposição. Qual a probabilidade de terem cores diferentes?",
+      "options": [
+        "15/56",
+        "25/64",
+        "3/8",
+        "15/28",
+        "5/8"
+      ],
+      "answer": 3,
+      "explanation": "Há dois caminhos: verde-amarela (5/8×3/7) e amarela-verde (3/8×5/7); a soma é 30/56=15/28. Conta apenas uma das duas ordens possíveis de cores diferentes. Usa como se houvesse reposição e ainda desconsidera a composição após a primeira retirada. Três oitavos é só a chance de amarelo na primeira retirada. Cinco oitavos é só a chance de verde na primeira retirada.",
+      "whyWrong": [
+        "Conta apenas uma das duas ordens possíveis de cores diferentes.",
+        "Usa como se houvesse reposição e ainda desconsidera a composição após a primeira retirada.",
+        "Três oitavos é só a chance de amarelo na primeira retirada.",
+        "Há dois caminhos: verde-amarela (5/8×3/7) e amarela-verde (3/8×5/7); a soma é 30/56=15/28.",
+        "Cinco oitavos é só a chance de verde na primeira retirada."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-025",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "média aritmética",
+      "difficulty": "hard",
+      "statement": "A média de quatro tempos de entrevista foi 18 minutos. Um quinto atendimento, de 28 minutos, foi acrescentado. Qual a nova média dos cinco tempos?",
+      "options": [
+        "19 minutos",
+        "21 minutos",
+        "22 minutos",
+        "23 minutos",
+        "20 minutos"
+      ],
+      "answer": 4,
+      "explanation": "A soma inicial é 4×18=72; somando 28, obtém-se 100, e 100/5=20 minutos. Dezenove não inclui corretamente os dez minutos acima da média antiga diluídos em cinco casos. Vinte e um resultaria de soma total 105, não 100. Vinte e dois extrapola o efeito de apenas um atendimento mais longo. Vinte e três ignora que quatro dos cinco tempos tinham média 18.",
+      "whyWrong": [
+        "Dezenove não inclui corretamente os dez minutos acima da média antiga diluídos em cinco casos.",
+        "Vinte e um resultaria de soma total 105, não 100.",
+        "Vinte e dois extrapola o efeito de apenas um atendimento mais longo.",
+        "Vinte e três ignora que quatro dos cinco tempos tinham média 18.",
+        "A soma inicial é 4×18=72; somando 28, obtém-se 100, e 100/5=20 minutos."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-026",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "sequências",
+      "difficulty": "hard",
+      "statement": "Uma sequência é construída somando números ímpares consecutivos: 6, 9, 14, 21, 30. Qual é o próximo termo?",
+      "options": [
+        "41",
+        "39",
+        "40",
+        "42",
+        "45"
+      ],
+      "answer": 0,
+      "explanation": "As diferenças são 3, 5, 7 e 9; a próxima é 11, logo 30+11=41. Trinta e nove repetiria o último incremento, que foi 9. Quarenta exigiria incremento par, rompendo a sequência ímpar. Quarenta e dois exigiria diferença 12, não a próxima ímpar. Quarenta e cinco usaria 15, saltando dois incrementos esperados.",
+      "whyWrong": [
+        "As diferenças são 3, 5, 7 e 9; a próxima é 11, logo 30+11=41.",
+        "Trinta e nove repetiria o último incremento, que foi 9.",
+        "Quarenta exigiria incremento par, rompendo a sequência ímpar.",
+        "Quarenta e dois exigiria diferença 12, não a próxima ímpar.",
+        "Quarenta e cinco usaria 15, saltando dois incrementos esperados."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-027",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "equações",
+      "difficulty": "hard",
+      "statement": "Uma equipe registrou 7 formulários a mais que outra. Juntas registraram 83. Quantos formulários registrou a equipe com menos registros?",
+      "options": [
+        "37",
+        "38",
+        "39",
+        "45",
+        "46"
+      ],
+      "answer": 1,
+      "explanation": "Se a menor registrou x, então x+(x+7)=83; 2x=76 e x=38. Trinta e sete levaria a soma 37+44=81, abaixo do total. Trinta e nove levaria a soma 39+46=85, acima do total. Quarenta e cinco é a carga da equipe maior, não da menor. Quarenta e seis não satisfaz soma 83 nem diferença 7.",
+      "whyWrong": [
+        "Trinta e sete levaria a soma 37+44=81, abaixo do total.",
+        "Se a menor registrou x, então x+(x+7)=83; 2x=76 e x=38.",
+        "Trinta e nove levaria a soma 39+46=85, acima do total.",
+        "Quarenta e cinco é a carga da equipe maior, não da menor.",
+        "Quarenta e seis não satisfaz soma 83 nem diferença 7."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-028",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "porcentagem",
+      "difficulty": "hard",
+      "statement": "De 240 cadastros, 30% exigiram revisão. Após revisar um quarto desses cadastros, quantos ainda exigem revisão?",
+      "options": [
+        "18",
+        "60",
+        "54",
+        "72",
+        "180"
+      ],
+      "answer": 2,
+      "explanation": "Trinta por cento de 240 são 72; um quarto de 72 é 18, restando 72−18=54. Dezoito é o número já revisado, não o saldo pendente. Sessenta não corresponde a três quartos dos 72 que exigiam revisão. Setenta e dois é o total inicialmente pendente, antes do trabalho. Cento e oitenta corresponde aos que não exigiam revisão inicialmente.",
+      "whyWrong": [
+        "Dezoito é o número já revisado, não o saldo pendente.",
+        "Sessenta não corresponde a três quartos dos 72 que exigiam revisão.",
+        "Trinta por cento de 240 são 72; um quarto de 72 é 18, restando 72−18=54.",
+        "Setenta e dois é o total inicialmente pendente, antes do trabalho.",
+        "Cento e oitenta corresponde aos que não exigiam revisão inicialmente."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-029",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "geometria básica",
+      "difficulty": "hard",
+      "statement": "Um terreno retangular mede 18 m por 12 m. Uma faixa de 2 m de largura contorna toda a parte interna, deixando um retângulo central. Qual a área central, em m²?",
+      "options": [
+        "160",
+        "140",
+        "144",
+        "112",
+        "216"
+      ],
+      "answer": 3,
+      "explanation": "A faixa retira 2 m de cada lado: o centro mede 14 m por 8 m; sua área é 112 m². Cento e sessenta usa apenas uma redução de largura e esquece a outra dimensão. Cento e quarenta não é produto das dimensões internas 14 e 8. Cento e quarenta e quatro seria a área de um quadrado de 12 m, inexistente aqui. Duzentos e dezesseis é a área total antes da faixa.",
+      "whyWrong": [
+        "Cento e sessenta usa apenas uma redução de largura e esquece a outra dimensão.",
+        "Cento e quarenta não é produto das dimensões internas 14 e 8.",
+        "Cento e quarenta e quatro seria a área de um quadrado de 12 m, inexistente aqui.",
+        "A faixa retira 2 m de cada lado: o centro mede 14 m por 8 m; sua área é 112 m².",
+        "Duzentos e dezesseis é a área total antes da faixa."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-030",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "negação lógica",
+      "difficulty": "hard",
+      "statement": "Qual é a negação de “Todos os mapas foram revisados e algum setor foi liberado”, considerando os quantificadores no universo mencionado?",
+      "options": [
+        "Nenhum mapa foi revisado e nenhum setor foi liberado.",
+        "Algum mapa foi revisado ou algum setor foi liberado.",
+        "Todos os mapas não foram revisados e algum setor não foi liberado.",
+        "Algum mapa não foi revisado e nenhum setor foi liberado.",
+        "Algum mapa não foi revisado ou nenhum setor foi liberado."
+      ],
+      "answer": 4,
+      "explanation": "Negar A∧B produz não A∨não B; “não todos” é “algum não” e “não algum” é “nenhum”. Exige que as duas partes sejam falsas, condição mais forte que a negação. A frase pode ser verdadeira juntamente com a original e não a nega. Altera os quantificadores e mantém uma conjunção que não equivale à negação. Trocar a disjunção por conjunção exclui casos que também tornam a original falsa.",
+      "whyWrong": [
+        "Exige que as duas partes sejam falsas, condição mais forte que a negação.",
+        "A frase pode ser verdadeira juntamente com a original e não a nega.",
+        "Altera os quantificadores e mantém uma conjunção que não equivale à negação.",
+        "Trocar a disjunção por conjunção exclui casos que também tornam a original falsa.",
+        "Negar A∧B produz não A∨não B; “não todos” é “algum não” e “não algum” é “nenhum”."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-031",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "diagramas lógicos",
+      "difficulty": "hard",
+      "statement": "Sabe-se que todo supervisor é servidor e que alguns servidores são motoristas. O que é necessariamente verdadeiro, sem outras premissas?",
+      "options": [
+        "Todo supervisor é um dos servidores.",
+        "Algum supervisor é motorista.",
+        "Todo motorista é supervisor.",
+        "Nenhum supervisor é motorista.",
+        "Todo servidor é supervisor."
+      ],
+      "answer": 0,
+      "explanation": "A primeira inclusão é exatamente a premissa universal, independentemente da interseção com motoristas. Os servidores motoristas podem estar fora do subconjunto dos supervisores. Nada foi afirmado sobre inclusão dos motoristas no grupo de supervisores. Também é possível que alguns supervisores sejam motoristas; a exclusão não foi dada. A inclusão inversa não decorre de “todo supervisor é servidor”.",
+      "whyWrong": [
+        "A primeira inclusão é exatamente a premissa universal, independentemente da interseção com motoristas.",
+        "Os servidores motoristas podem estar fora do subconjunto dos supervisores.",
+        "Nada foi afirmado sobre inclusão dos motoristas no grupo de supervisores.",
+        "Também é possível que alguns supervisores sejam motoristas; a exclusão não foi dada.",
+        "A inclusão inversa não decorre de “todo supervisor é servidor”."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-032",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "aritmética",
+      "difficulty": "hard",
+      "statement": "Um posto usa caixas de 24 formulários. Foram preenchidos 196 formulários, e caixas abertas podem ficar parcialmente vazias. Qual o menor número de caixas necessárias?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "answer": 1,
+      "explanation": "Oito caixas comportam 192, insuficientes; a nona acomoda os quatro formulários restantes. Oito caixas faltariam quatro unidades para atingir 196. Dez caixas caberiam, mas não seriam o número mínimo solicitado. Onze caixas também excedem o mínimo, embora comportem o material. Doze caixas aumentariam ainda mais a sobra sem necessidade.",
+      "whyWrong": [
+        "Oito caixas faltariam quatro unidades para atingir 196.",
+        "Oito caixas comportam 192, insuficientes; a nona acomoda os quatro formulários restantes.",
+        "Dez caixas caberiam, mas não seriam o número mínimo solicitado.",
+        "Onze caixas também excedem o mínimo, embora comportem o material.",
+        "Doze caixas aumentariam ainda mais a sobra sem necessidade."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-033",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "frações",
+      "difficulty": "hard",
+      "statement": "Três quintos de um lote de mapas já foram conferidos. Dos mapas restantes, metade foi conferida no turno seguinte. Qual fração do lote total ainda falta conferir?",
+      "options": [
+        "2/5",
+        "3/10",
+        "1/5",
+        "1/2",
+        "4/5"
+      ],
+      "answer": 2,
+      "explanation": "Após 3/5, restam 2/5; metade desse restante é 1/5, deixando outros 1/5 por conferir. Dois quintos era a parte pendente antes do turno seguinte. Três décimos não resulta de tomar metade de 2/5. Metade foi aplicada ao restante, não ao lote inteiro. Quatro quintos seria a parte já conferida após os dois turnos.",
+      "whyWrong": [
+        "Dois quintos era a parte pendente antes do turno seguinte.",
+        "Três décimos não resulta de tomar metade de 2/5.",
+        "Após 3/5, restam 2/5; metade desse restante é 1/5, deixando outros 1/5 por conferir.",
+        "Metade foi aplicada ao restante, não ao lote inteiro.",
+        "Quatro quintos seria a parte já conferida após os dois turnos."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-034",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "argumentação",
+      "difficulty": "hard",
+      "statement": "Considere as premissas “Nenhum arquivo sem autorização pode ser divulgado” e “Este arquivo não tem autorização”. Qual conclusão respeita ambas, sem inverter a primeira regra?",
+      "options": [
+        "Todo arquivo autorizado deve ser divulgado.",
+        "Este arquivo poderá ser divulgado se for antigo.",
+        "Nenhum arquivo pode obter autorização posteriormente.",
+        "Este arquivo não pode ser divulgado.",
+        "Todo arquivo não divulgado carece de autorização."
+      ],
+      "answer": 3,
+      "explanation": "O arquivo pertence ao conjunto dos sem autorização, que a regra exclui da divulgação. A regra proíbe uma classe, mas não obriga a divulgação dos autorizados. A idade do arquivo não aparece como exceção em nenhuma premissa. As premissas não tratam da possibilidade de autorização futura. A conclusão inverte a direção da implicação: pode haver outros motivos para não divulgar.",
+      "whyWrong": [
+        "A regra proíbe uma classe, mas não obriga a divulgação dos autorizados.",
+        "A idade do arquivo não aparece como exceção em nenhuma premissa.",
+        "As premissas não tratam da possibilidade de autorização futura.",
+        "O arquivo pertence ao conjunto dos sem autorização, que a regra exclui da divulgação.",
+        "A conclusão inverte a direção da implicação: pode haver outros motivos para não divulgar."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-035",
+      "roles": [
+        "aca",
+        "aci",
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "regra de três",
+      "difficulty": "hard",
+      "statement": "Cinco agentes, trabalhando 6 horas por dia durante 4 dias, concluíram 360 verificações. No mesmo ritmo por agente-hora, quantas verificações fazem 4 agentes em 5 dias de 6 horas?",
+      "options": [
+        "300",
+        "288",
+        "420",
+        "450",
+        "360"
+      ],
+      "answer": 4,
+      "explanation": "O trabalho total inicial é 5×6×4=120 agente-horas, ou 3 verificações por agente-hora; o novo total também é 4×6×5=120. Trezentas trataria a redução de agentes sem compensar os dias adicionais. Duzentas e oitenta e oito decorre de razão incompleta entre os dois cenários. Quatrocentas e vinte supera o resultado apesar de as agente-horas serem iguais. Quatrocentas e cinquenta exigiriam ritmo maior que o mantido por hipótese.",
+      "whyWrong": [
+        "Trezentas trataria a redução de agentes sem compensar os dias adicionais.",
+        "Duzentas e oitenta e oito decorre de razão incompleta entre os dois cenários.",
+        "Quatrocentas e vinte supera o resultado apesar de as agente-horas serem iguais.",
+        "Quatrocentas e cinquenta exigiriam ritmo maior que o mantido por hipótese.",
+        "O trabalho total inicial é 5×6×4=120 agente-horas, ou 3 verificações por agente-hora; o novo total também é 4×6×5=120."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Raciocínio Lógico Quantitativo",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-036",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "sistemas abertos",
+      "difficulty": "hard",
+      "statement": "Uma unidade de atendimento recebe novas demandas da população, ajusta a distribuição de agentes e observa se os prazos melhoraram. Qual sequência traduz melhor seu funcionamento como sistema aberto?",
+      "options": [
+        "Entradas do ambiente, transformação interna, saídas e retorno sobre os resultados.",
+        "Entradas internas, isolamento do ambiente, saídas sem retorno.",
+        "Apenas resultados finais, sem depender de recursos ou demandas.",
+        "Somente decisões da chefia, sem informação dos usuários.",
+        "Controle de pessoas sem relação com a qualidade da entrega."
+      ],
+      "answer": 0,
+      "explanation": "Demandas são entradas; a organização do trabalho transforma recursos; o serviço é saída, e a avaliação fornece feedback. Um sistema aberto troca informação com o ambiente, não se isola dele. Resultados dependem de entradas e processos que a alternativa omite. A reação de usuários compõe o retorno necessário aos ajustes. Controle isolado não descreve fluxo completo de um sistema aberto.",
+      "whyWrong": [
+        "Demandas são entradas; a organização do trabalho transforma recursos; o serviço é saída, e a avaliação fornece feedback.",
+        "Um sistema aberto troca informação com o ambiente, não se isola dele.",
+        "Resultados dependem de entradas e processos que a alternativa omite.",
+        "A reação de usuários compõe o retorno necessário aos ajustes.",
+        "Controle isolado não descreve fluxo completo de um sistema aberto."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-037",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "planejamento",
+      "difficulty": "hard",
+      "statement": "Uma coordenação define que reduzirá em 20% as pendências até dezembro, identifica recursos e responsáveis, mas ainda não executa ações. Qual função administrativa predomina?",
+      "options": [
+        "Direção, por supervisionar pessoas durante a execução.",
+        "Planejamento, por definir objetivo, prazo e meios antes da execução.",
+        "Controle, por comparar resultado realizado com o padrão.",
+        "Organização, exclusivamente por separar documentos em pastas.",
+        "Avaliação final, por medir o impacto já produzido."
+      ],
+      "answer": 1,
+      "explanation": "Estabelecer meta, horizonte e meios é núcleo do planejamento; a execução e a medição vêm depois. Ainda não há condução da equipe durante a ação descrita. O resultado não ocorreu, portanto não pode ser comparado ao padrão. Organização distribui recursos e atribuições, mas a ênfase é a definição prévia da meta. Não existe impacto final medido nessa etapa.",
+      "whyWrong": [
+        "Ainda não há condução da equipe durante a ação descrita.",
+        "Estabelecer meta, horizonte e meios é núcleo do planejamento; a execução e a medição vêm depois.",
+        "O resultado não ocorreu, portanto não pode ser comparado ao padrão.",
+        "Organização distribui recursos e atribuições, mas a ênfase é a definição prévia da meta.",
+        "Não existe impacto final medido nessa etapa."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-038",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "organização",
+      "difficulty": "hard",
+      "statement": "Depois de fixar a meta anual, a chefia distribui servidores entre postos, define quem aprova cadastros e estabelece canais de reporte. Qual função aparece de forma mais direta?",
+      "options": [
+        "Controle corretivo baseado em desvios já observados.",
+        "Planejamento estratégico de longo prazo ainda não formulado.",
+        "Organização dos recursos e responsabilidades para executar o plano.",
+        "Motivação individual sem estrutura de tarefas.",
+        "Avaliação de impacto social da operação concluída."
+      ],
+      "answer": 2,
+      "explanation": "A chefia aloca pessoas, atribui papéis e define relações formais: tarefas típicas da organização. Não há desvio medido nem correção posterior no enunciado. A meta já foi estabelecida e a cena trata da estrutura para cumpri-la. Motivação pode influir, mas não descreve a distribuição de autoridade. A operação não foi concluída nem teve impacto mensurado.",
+      "whyWrong": [
+        "Não há desvio medido nem correção posterior no enunciado.",
+        "A meta já foi estabelecida e a cena trata da estrutura para cumpri-la.",
+        "A chefia aloca pessoas, atribui papéis e define relações formais: tarefas típicas da organização.",
+        "Motivação pode influir, mas não descreve a distribuição de autoridade.",
+        "A operação não foi concluída nem teve impacto mensurado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-039",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "direção",
+      "difficulty": "hard",
+      "statement": "Uma equipe conhece suas tarefas, mas recebe orientações divergentes e perde prioridade. A chefia reúne os agentes, esclarece objetivos e acompanha a execução. Que função se destaca?",
+      "options": [
+        "Controle contábil, ao encerrar a prestação de contas.",
+        "Planejamento, apenas por redigir um documento futuro.",
+        "Arquivo, por classificar documentos permanentes.",
+        "Direção, ao orientar e conduzir as pessoas na execução do trabalho.",
+        "Departamentalização, por criar novas unidades formais."
+      ],
+      "answer": 3,
+      "explanation": "Conduzir pessoas, comunicar prioridades e acompanhar execução caracterizam direção. Não há encerramento de contas nem foco contábil. O caso pede orientação presente, não só formulação prévia de plano. Classificação documental não responde ao conflito de orientação. Não se criaram departamentos nem se mudou a estrutura formal.",
+      "whyWrong": [
+        "Não há encerramento de contas nem foco contábil.",
+        "O caso pede orientação presente, não só formulação prévia de plano.",
+        "Classificação documental não responde ao conflito de orientação.",
+        "Conduzir pessoas, comunicar prioridades e acompanhar execução caracterizam direção.",
+        "Não se criaram departamentos nem se mudou a estrutura formal."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-040",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "controle",
+      "difficulty": "hard",
+      "statement": "A meta era concluir 400 registros; a unidade concluiu 340 e identificou atrasos de validação. Qual ação representa controle administrativo completo?",
+      "options": [
+        "Repetir a meta sem consultar a execução observada.",
+        "Aumentar a meta para 500 a fim de ocultar o desvio.",
+        "Punir toda a equipe antes de verificar as causas do atraso.",
+        "Arquivar os números por serem inferiores ao planejado.",
+        "Comparar o resultado com a meta, investigar o desvio e ajustar a validação."
+      ],
+      "answer": 4,
+      "explanation": "Controle envolve estabelecer padrão, medir desempenho, comparar e agir sobre desvios identificados. Repetir a meta não usa a informação de desempenho disponível. Alterar a meta para encobrir resultado destrói a comparação. Uma reação punitiva geral dispensa análise da causa específica. Arquivar sem investigar impede a ação corretiva.",
+      "whyWrong": [
+        "Repetir a meta não usa a informação de desempenho disponível.",
+        "Alterar a meta para encobrir resultado destrói a comparação.",
+        "Uma reação punitiva geral dispensa análise da causa específica.",
+        "Arquivar sem investigar impede a ação corretiva.",
+        "Controle envolve estabelecer padrão, medir desempenho, comparar e agir sobre desvios identificados."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-041",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "coordenação",
+      "difficulty": "hard",
+      "statement": "Duas equipes visitam a mesma rua enquanto outra rua fica sem cobertura, embora cada equipe cumpra suas tarefas internas. Qual intervenção é propriamente de coordenação?",
+      "options": [
+        "Integrar roteiros e responsabilidades entre equipes para eliminar sobreposição e lacuna.",
+        "Cobrar apenas mais velocidade de cada equipe, mantendo os roteiros.",
+        "Eliminar a conferência de ruas para reduzir reuniões.",
+        "Delegar o problema aos moradores sem combinar ações internas.",
+        "Trocar somente o nome das equipes nos relatórios."
+      ],
+      "answer": 0,
+      "explanation": "Coordenação articula atividades interdependentes, ajustando interfaces para o objetivo comum. Maior velocidade pode duplicar ainda mais o esforço errado. Sem conferência, a lacuna territorial tende a permanecer invisível. A articulação do trabalho é responsabilidade organizacional. Renomear equipes não altera as rotas ou cobertura real.",
+      "whyWrong": [
+        "Coordenação articula atividades interdependentes, ajustando interfaces para o objetivo comum.",
+        "Maior velocidade pode duplicar ainda mais o esforço errado.",
+        "Sem conferência, a lacuna territorial tende a permanecer invisível.",
+        "A articulação do trabalho é responsabilidade organizacional.",
+        "Renomear equipes não altera as rotas ou cobertura real."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-042",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "delegação",
+      "difficulty": "hard",
+      "statement": "Uma supervisora transfere a conferência diária a um agente, define critérios e acompanha amostras. Qual afirmação distingue a delegação de abandono de responsabilidade?",
+      "options": [
+        "A supervisora perde toda responsabilidade assim que comunica a tarefa.",
+        "A execução é atribuída ao agente, mas a supervisora mantém responsabilidade de acompanhar o resultado.",
+        "O agente recebe autoridade ilimitada para alterar os critérios.",
+        "A tarefa só é delegada se não houver qualquer controle posterior.",
+        "A autoridade formal sempre passa integralmente ao subordinado."
+      ],
+      "answer": 1,
+      "explanation": "Delegar atribui execução e autoridade compatível, mas não elimina o dever de supervisão de quem delega. A responsabilidade gerencial não desaparece pela transferência da tarefa. A autoridade delegada deve ter limites claros e relacionados à tarefa. Acompanhamento é parte de uma delegação eficaz. Não há transferência integral e irrestrita da autoridade formal.",
+      "whyWrong": [
+        "A responsabilidade gerencial não desaparece pela transferência da tarefa.",
+        "Delegar atribui execução e autoridade compatível, mas não elimina o dever de supervisão de quem delega.",
+        "A autoridade delegada deve ter limites claros e relacionados à tarefa.",
+        "Acompanhamento é parte de uma delegação eficaz.",
+        "Não há transferência integral e irrestrita da autoridade formal."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-043",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "eficiência e eficácia",
+      "difficulty": "hard",
+      "statement": "Uma equipe alcançou as 300 visitas planejadas, mas usou o dobro de horas previsto. Como avaliar, respectivamente, eficácia e eficiência nesse caso?",
+      "options": [
+        "Foi ineficaz e eficiente, porque trabalhou muitas horas.",
+        "Foi eficaz e necessariamente eficiente, pois cumpriu a meta.",
+        "Foi eficaz quanto à meta e menos eficiente quanto ao uso de horas.",
+        "Foi ineficaz porque a eficiência substitui a meta.",
+        "Nada pode ser dito sobre eficácia mesmo com a meta informada."
+      ],
+      "answer": 2,
+      "explanation": "Eficácia mede alcance do resultado; eficiência relaciona esse resultado aos recursos empregados. Muitas horas não provam boa utilização de recursos nem ausência de resultado. Cumprir a meta não garante uso econômico de horas. A meta foi alcançada, portanto a eficácia no recorte informado existe. O objetivo e o realizado foram explicitados, permitindo avaliar eficácia.",
+      "whyWrong": [
+        "Muitas horas não provam boa utilização de recursos nem ausência de resultado.",
+        "Cumprir a meta não garante uso econômico de horas.",
+        "Eficácia mede alcance do resultado; eficiência relaciona esse resultado aos recursos empregados.",
+        "A meta foi alcançada, portanto a eficácia no recorte informado existe.",
+        "O objetivo e o realizado foram explicitados, permitindo avaliar eficácia."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-044",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "efetividade",
+      "difficulty": "hard",
+      "statement": "Um posto concluiu todas as visitas e gastou pouco, mas parte relevante dos dados ficou inutilizável para orientar decisões públicas. Que dimensão foi mais diretamente comprometida?",
+      "options": [
+        "Apenas eficiência, pois baixo gasto sempre indica desperdício.",
+        "Apenas eficácia operacional, apesar de todas as visitas realizadas.",
+        "Autoridade formal, por inexistir chefe no enunciado.",
+        "Efetividade, porque a entrega não produziu plenamente o impacto útil esperado.",
+        "Amplitude de controle, porque há muitos subordinados."
+      ],
+      "answer": 3,
+      "explanation": "Efetividade observa o efeito concreto da ação; volume e custo favoráveis não bastam se o produto não serve à finalidade. Baixo gasto não é, por si, sinal de ineficiência. A meta de visitas foi cumprida, embora sua utilidade final esteja comprometida. A existência de chefia não é o ponto medido pelo caso. O tamanho da equipe não foi informado nem explica a inutilidade dos dados.",
+      "whyWrong": [
+        "Baixo gasto não é, por si, sinal de ineficiência.",
+        "A meta de visitas foi cumprida, embora sua utilidade final esteja comprometida.",
+        "A existência de chefia não é o ponto medido pelo caso.",
+        "Efetividade observa o efeito concreto da ação; volume e custo favoráveis não bastam se o produto não serve à finalidade.",
+        "O tamanho da equipe não foi informado nem explica a inutilidade dos dados."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-045",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "unidade de comando",
+      "difficulty": "hard",
+      "statement": "Um agente recebe ordens incompatíveis de dois superiores para o mesmo turno. Qual princípio organizacional é ameaçado e qual resposta tende a reduzir o conflito?",
+      "options": [
+        "Amplitude de controle; ampliar indefinidamente o número de chefes.",
+        "Especialização; impedir qualquer divisão de tarefas.",
+        "Efetividade; medir apenas resultados no fim do mês.",
+        "Centralização; retirar do agente todos os equipamentos.",
+        "Unidade de comando; esclarecer a autoridade responsável pela prioridade daquela tarefa."
+      ],
+      "answer": 4,
+      "explanation": "Unidade de comando busca evitar ordens conflitantes sobre a mesma atuação, definindo linha clara de responsabilidade. Amplitude trata da quantidade de subordinados por gestor, não resolve duas ordens divergentes. Especialização distribui tarefas por competência e não elimina toda divisão. Medir resultados depois não esclarece a prioridade imediata. Retirar equipamentos não define quem orienta o trabalho.",
+      "whyWrong": [
+        "Amplitude trata da quantidade de subordinados por gestor, não resolve duas ordens divergentes.",
+        "Especialização distribui tarefas por competência e não elimina toda divisão.",
+        "Medir resultados depois não esclarece a prioridade imediata.",
+        "Retirar equipamentos não define quem orienta o trabalho.",
+        "Unidade de comando busca evitar ordens conflitantes sobre a mesma atuação, definindo linha clara de responsabilidade."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-046",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "atendimento ao público",
+      "difficulty": "hard",
+      "statement": "Uma pessoa relata dificuldade com um formulário, mas o agente não tem competência para alterar o sistema. Qual conduta combina qualidade no atendimento e limite de atuação?",
+      "options": [
+        "Ouvir a demanda, explicar o procedimento possível e encaminhar o problema ao canal competente.",
+        "Prometer alteração imediata do sistema para encerrar a conversa.",
+        "Ignorar a pessoa porque o problema não é da competência do agente.",
+        "Pedir a senha pessoal dela para tentar corrigir diretamente.",
+        "Registrar informação falsa para liberar o formulário provisoriamente."
+      ],
+      "answer": 0,
+      "explanation": "Atendimento adequado esclarece o que pode ser feito e encaminha o que depende de outra área, sem promessas indevidas. Prometer solução fora da competência cria expectativa falsa. O limite de competência não elimina dever de orientar e encaminhar. Coletar senha de usuário compromete segurança e não é procedimento adequado. Registro falso prejudica integridade dos dados e não soluciona a causa.",
+      "whyWrong": [
+        "Atendimento adequado esclarece o que pode ser feito e encaminha o que depende de outra área, sem promessas indevidas.",
+        "Prometer solução fora da competência cria expectativa falsa.",
+        "O limite de competência não elimina dever de orientar e encaminhar.",
+        "Coletar senha de usuário compromete segurança e não é procedimento adequado.",
+        "Registro falso prejudica integridade dos dados e não soluciona a causa."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-047",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "qualidade",
+      "difficulty": "hard",
+      "statement": "Um serviço foi entregue rapidamente, mas vários registros precisaram ser refeitos por falta de conferência. Qual medida avalia melhor a qualidade sem confundi-la apenas com velocidade?",
+      "options": [
+        "Somente o número bruto de registros por hora.",
+        "A taxa de retrabalho combinada com prazo e conformidade dos registros.",
+        "A quantidade de reuniões realizadas antes do turno.",
+        "O número de pessoas alocadas, sem observar o produto.",
+        "A velocidade máxima de uma única pessoa da equipe."
+      ],
+      "answer": 1,
+      "explanation": "Qualidade envolve atendimento a requisitos e utilidade da entrega; retrabalho e conformidade complementam a medida de prazo. Produção rápida pode esconder defeitos e custo de correção. Reuniões não medem diretamente qualidade do registro entregue. Tamanho da equipe não informa precisão do resultado. O caso de um indivíduo não substitui indicador do serviço.",
+      "whyWrong": [
+        "Produção rápida pode esconder defeitos e custo de correção.",
+        "Qualidade envolve atendimento a requisitos e utilidade da entrega; retrabalho e conformidade complementam a medida de prazo.",
+        "Reuniões não medem diretamente qualidade do registro entregue.",
+        "Tamanho da equipe não informa precisão do resultado.",
+        "O caso de um indivíduo não substitui indicador do serviço."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-048",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "documentação e arquivo",
+      "difficulty": "hard",
+      "statement": "Um documento concluído precisa ser localizado meses depois para comprovar uma decisão. Qual prática favorece recuperação e rastreabilidade sem modificar o conteúdo?",
+      "options": [
+        "Mudar seu título semanalmente para refletir quem o consultou.",
+        "Guardar apenas em pasta pessoal sem padrão de nomeação.",
+        "Classificá-lo por critério definido, registrar sua localização e preservar a versão final.",
+        "Eliminar metadados e datas para reduzir tamanho.",
+        "Substituir o original por memória oral de quem participou."
+      ],
+      "answer": 2,
+      "explanation": "Classificação, identificação e guarda da versão final permitem localizar o documento e comprovar seu histórico. Renomeações arbitrárias dificultam localizar a versão estável. Pasta pessoal isolada cria dependência de um usuário e baixa rastreabilidade. Metadados e datas auxiliam identificação e prova de contexto. Memória oral não substitui documentação preservada.",
+      "whyWrong": [
+        "Renomeações arbitrárias dificultam localizar a versão estável.",
+        "Pasta pessoal isolada cria dependência de um usuário e baixa rastreabilidade.",
+        "Classificação, identificação e guarda da versão final permitem localizar o documento e comprovar seu histórico.",
+        "Metadados e datas auxiliam identificação e prova de contexto.",
+        "Memória oral não substitui documentação preservada."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-049",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "estrutura informal",
+      "difficulty": "hard",
+      "statement": "O organograma prevê comunicação por chefias, mas agentes de setores diferentes trocam dicas espontaneamente para resolver dúvidas. O que esse segundo fluxo exemplifica?",
+      "options": [
+        "Extinção automática do organograma formal.",
+        "Delegação legal de competência administrativa.",
+        "Criação obrigatória de um novo departamento.",
+        "Relações informais que coexistem com a estrutura formal.",
+        "Ausência completa de coordenação entre áreas."
+      ],
+      "answer": 3,
+      "explanation": "A rede espontânea de interação não depende das linhas oficiais e pode coexistir com elas. Trocas informais não revogam a estrutura oficial da organização. Compartilhar dicas não transfere competência formal de decisão. Não há criação de departamento no exemplo. A troca de informações pode até ajudar a coordenação.",
+      "whyWrong": [
+        "Trocas informais não revogam a estrutura oficial da organização.",
+        "Compartilhar dicas não transfere competência formal de decisão.",
+        "Não há criação de departamento no exemplo.",
+        "A rede espontânea de interação não depende das linhas oficiais e pode coexistir com elas.",
+        "A troca de informações pode até ajudar a coordenação."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-050",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "centralização",
+      "difficulty": "hard",
+      "statement": "Uma unidade exige autorização da direção até para repor material comum, gerando atrasos. Qual mudança caracteriza descentralização com controle preservado?",
+      "options": [
+        "Eliminar todas as regras e registros de compras.",
+        "Manter todas as decisões na direção, mas aumentar os formulários.",
+        "Permitir que qualquer pessoa aprove despesas sem teto.",
+        "Transferir apenas a culpa pelo atraso à equipe local.",
+        "Permitir reposições locais dentro de limites e exigir prestação de contas."
+      ],
+      "answer": 4,
+      "explanation": "Descentralizar desloca decisões delimitadas para níveis próximos da execução, mantendo padrões e prestação de contas. Ausência de regras não equivale a distribuição responsável de autoridade. Decisão ainda concentrada não muda a centralização. Autoridade irrestrita sem limites enfraquece o controle. Culpa não é competência decisória nem recurso operacional.",
+      "whyWrong": [
+        "Ausência de regras não equivale a distribuição responsável de autoridade.",
+        "Decisão ainda concentrada não muda a centralização.",
+        "Autoridade irrestrita sem limites enfraquece o controle.",
+        "Culpa não é competência decisória nem recurso operacional.",
+        "Descentralizar desloca decisões delimitadas para níveis próximos da execução, mantendo padrões e prestação de contas."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-051",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "planejamento tático",
+      "difficulty": "hard",
+      "statement": "A direção fixa o objetivo institucional anual; uma gerência transforma esse objetivo em metas trimestrais por unidade e recursos necessários. Esse desdobramento é predominantemente:",
+      "options": [
+        "Planejamento tático, que traduz a estratégia para áreas e horizontes intermediários.",
+        "Planejamento operacional de cada atendimento isolado.",
+        "Controle corretivo após o término da operação.",
+        "Apenas missão institucional, sem metas mensuráveis.",
+        "Arquivo corrente, por registrar os documentos da gerência."
+      ],
+      "answer": 0,
+      "explanation": "A gerência desdobra um objetivo amplo em metas e recursos por área, típico do nível tático. O plano não se limita a tarefas individuais e diárias. Não há resultado passado a corrigir, mas preparação do trimestre. Metas trimestrais são mais específicas que uma missão geral. Registrar o plano não transforma sua natureza em atividade de arquivo.",
+      "whyWrong": [
+        "A gerência desdobra um objetivo amplo em metas e recursos por área, típico do nível tático.",
+        "O plano não se limita a tarefas individuais e diárias.",
+        "Não há resultado passado a corrigir, mas preparação do trimestre.",
+        "Metas trimestrais são mais específicas que uma missão geral.",
+        "Registrar o plano não transforma sua natureza em atividade de arquivo."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-052",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "processo decisório",
+      "difficulty": "hard",
+      "statement": "Há três alternativas de rota. A chefia conhece tempo, custo e risco de cada uma e precisa escolher segundo critérios definidos antes da comparação. Qual ordem evita preferência arbitrária?",
+      "options": [
+        "Escolher a primeira rota e depois inventar critérios que a favoreçam.",
+        "Definir critérios e pesos, comparar as rotas e justificar a escolha pelos resultados.",
+        "Descartar os dados de custo porque tempo sempre prevalece.",
+        "Somar tempo e custo diretamente, ignorando unidades distintas.",
+        "Trocar os critérios sempre que uma alternativa perder."
+      ],
+      "answer": 1,
+      "explanation": "Critérios prévios tornam a comparação transparente e reduzem ajustes oportunistas ao resultado desejado. Critérios definidos depois da escolha apenas racionalizam uma preferência. Não há informação de que custo seja irrelevante no caso. Grandezas diferentes requerem escala ou ponderação apropriada. Mudar regras durante a comparação compromete a coerência da decisão.",
+      "whyWrong": [
+        "Critérios definidos depois da escolha apenas racionalizam uma preferência.",
+        "Critérios prévios tornam a comparação transparente e reduzem ajustes oportunistas ao resultado desejado.",
+        "Não há informação de que custo seja irrelevante no caso.",
+        "Grandezas diferentes requerem escala ou ponderação apropriada.",
+        "Mudar regras durante a comparação compromete a coerência da decisão."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-053",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "comunicação e feedback",
+      "difficulty": "hard",
+      "statement": "Após enviar orientação escrita, a chefia descobre interpretações distintas entre os postos. Qual medida fecha melhor o ciclo de comunicação?",
+      "options": [
+        "Reenviar o mesmo texto sem verificar a compreensão.",
+        "Presumir que os postos entenderam porque receberam a mensagem.",
+        "Verificar o entendimento, esclarecer dúvidas e registrar a orientação final.",
+        "Punir imediatamente quem pediu esclarecimento.",
+        "Substituir orientações por boatos informais."
+      ],
+      "answer": 2,
+      "explanation": "Feedback verifica se a mensagem foi compreendida; esclarecimento e registro reduzem divergências futuras. Repetição sem checagem pode reproduzir a mesma ambiguidade. Recebimento da mensagem não demonstra compreensão uniforme. Pedir esclarecimento é sinal útil para corrigir a comunicação. Boatos não fornecem orientação controlada e rastreável.",
+      "whyWrong": [
+        "Repetição sem checagem pode reproduzir a mesma ambiguidade.",
+        "Recebimento da mensagem não demonstra compreensão uniforme.",
+        "Feedback verifica se a mensagem foi compreendida; esclarecimento e registro reduzem divergências futuras.",
+        "Pedir esclarecimento é sinal útil para corrigir a comunicação.",
+        "Boatos não fornecem orientação controlada e rastreável."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-054",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "motivação",
+      "difficulty": "hard",
+      "statement": "Uma equipe compreende a meta, mas percebe que esforços diferentes recebem o mesmo retorno e não há critério de reconhecimento. Qual ação gerencial tende a melhorar a motivação com justiça?",
+      "options": [
+        "Prometer benefícios sem poder concedê-los.",
+        "Esconder critérios para evitar questionamentos.",
+        "Aumentar tarefas sem esclarecer a finalidade.",
+        "Explicar critérios, dar feedback e reconhecer resultados verificáveis.",
+        "Usar apenas cobrança pública dos que tiveram pior resultado."
+      ],
+      "answer": 3,
+      "explanation": "Critérios claros e retorno sobre resultados tornam a relação entre esforço e reconhecimento mais compreensível. Promessa inexequível prejudica confiança na gestão. Opacidade dificulta percepção de justiça e direção do esforço. Mais tarefas sem propósito não atacam o problema relatado. Exposição punitiva não substitui avaliação e feedback justos.",
+      "whyWrong": [
+        "Promessa inexequível prejudica confiança na gestão.",
+        "Opacidade dificulta percepção de justiça e direção do esforço.",
+        "Mais tarefas sem propósito não atacam o problema relatado.",
+        "Critérios claros e retorno sobre resultados tornam a relação entre esforço e reconhecimento mais compreensível.",
+        "Exposição punitiva não substitui avaliação e feedback justos."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-055",
+      "roles": [
+        "aca"
+      ],
+      "subject": "Noções de Administração",
+      "topic": "indicadores",
+      "difficulty": "hard",
+      "statement": "Uma chefia compara dois postos apenas pelo número de formulários, embora um atenda área extensa e outro, um bairro compacto. Qual análise é mais cuidadosa?",
+      "options": [
+        "Concluir que o posto com menos formulários é necessariamente menos dedicado.",
+        "Desconsiderar a extensão territorial por não constar do total bruto.",
+        "Usar somente o maior valor como meta universal para todas as áreas.",
+        "Punir o menor posto sem verificar se houve entrevistas mais longas.",
+        "Considerar contexto, tempo, recursos e qualidade antes de atribuir diferença a desempenho individual."
+      ],
+      "answer": 4,
+      "explanation": "Indicadores precisam ser interpretados com condições de trabalho e qualidade para evitar comparação enganosa. O volume isolado não prova dedicação de pessoas. Diferenças de deslocamento podem alterar capacidade de atendimento. Meta igual sem ajuste de contexto pode ser injusta e ineficaz. A ação corretiva exige investigar causas, inclusive duração das entrevistas.",
+      "whyWrong": [
+        "O volume isolado não prova dedicação de pessoas.",
+        "Diferenças de deslocamento podem alterar capacidade de atendimento.",
+        "Meta igual sem ajuste de contexto pode ser injusta e ineficaz.",
+        "A ação corretiva exige investigar causas, inclusive duração das entrevistas.",
+        "Indicadores precisam ser interpretados com condições de trabalho e qualidade para evitar comparação enganosa."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Administração",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-056",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "priorização",
+      "difficulty": "hard",
+      "statement": "Três ocorrências chegam simultaneamente: falha que impede a coleta em dois postos, pedido de material para a próxima semana e dúvida pontual já documentada. Com recursos limitados, que sequência é mais defensável?",
+      "options": [
+        "Conter a falha operacional, programar o material e responder à dúvida pelo procedimento existente.",
+        "Atender primeiro o pedido para a próxima semana, por ter prazo maior.",
+        "Resolver a dúvida pontual antes de verificar a paralisação dos postos.",
+        "Distribuir a equipe igualmente entre as três demandas sem avaliar impacto.",
+        "Suspender todas as decisões até que as três tenham a mesma urgência."
+      ],
+      "answer": 0,
+      "explanation": "Impacto imediato e urgência justificam tratar a paralisação primeiro, preservando tratamento planejado das demais. Prazo distante não supera bloqueio atual de duas unidades. Dúvida com procedimento conhecido pode receber resposta sem consumir prioridade máxima. Divisão igual ignora diferença de impacto e criticidade. A espera prolonga a falha sem benefício decisório.",
+      "whyWrong": [
+        "Impacto imediato e urgência justificam tratar a paralisação primeiro, preservando tratamento planejado das demais.",
+        "Prazo distante não supera bloqueio atual de duas unidades.",
+        "Dúvida com procedimento conhecido pode receber resposta sem consumir prioridade máxima.",
+        "Divisão igual ignora diferença de impacto e criticidade.",
+        "A espera prolonga a falha sem benefício decisório."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-057",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "feedback construtivo",
+      "difficulty": "hard",
+      "statement": "Um agente cometeu dois erros de lançamento. O supervisor deseja corrigi-los sem desmotivar a equipe. Qual abordagem é mais útil?",
+      "options": [
+        "Afirmar diante de todos que o agente é desatento, sem citar registros.",
+        "Mostrar os registros específicos, explicar o critério correto e combinar nova conferência.",
+        "Corrigir silenciosamente os dados e nunca informar o agente.",
+        "Dar apenas elogios para evitar desconforto, mantendo os erros.",
+        "Transferir o agente de área sem explicar o motivo da mudança."
+      ],
+      "answer": 1,
+      "explanation": "Feedback específico sobre comportamento e critério permite aprendizado e acompanhamento sem rotular a pessoa. Rótulo pessoal e exposição pública não esclarecem como corrigir. Correção silenciosa mantém a causa do erro desconhecida. Elogio sem apontar falha não repara a qualidade do registro. Transferência opaca não orienta a melhoria da execução.",
+      "whyWrong": [
+        "Rótulo pessoal e exposição pública não esclarecem como corrigir.",
+        "Feedback específico sobre comportamento e critério permite aprendizado e acompanhamento sem rotular a pessoa.",
+        "Correção silenciosa mantém a causa do erro desconhecida.",
+        "Elogio sem apontar falha não repara a qualidade do registro.",
+        "Transferência opaca não orienta a melhoria da execução."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-058",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "gestão de conflitos",
+      "difficulty": "hard",
+      "statement": "Dois postos disputam o mesmo veículo no mesmo horário e ambos alegam prioridade. A chefia dispõe de dados sobre distância, prazo e transporte alternativo. Qual ação favorece solução cooperativa?",
+      "options": [
+        "Decidir pela equipe que falou primeiro, sem verificar necessidade.",
+        "Prometer o veículo a ambos para evitar conflito imediato.",
+        "Ouvir ambos, explicitar critérios, ajustar horários ou alternativas e registrar o acordo.",
+        "Deixar que os grupos disputem a chave no dia da viagem.",
+        "Impedir qualquer deslocamento até o fim do mês."
+      ],
+      "answer": 2,
+      "explanation": "A negociação usa necessidades e restrições reais para construir decisão verificável e reduzir recorrência. Ordem de reclamação não é critério de impacto ou urgência. Promessas incompatíveis criam conflito maior na execução. Disputa informal não resolve alocação de recurso compartilhado. Bloqueio geral prejudica os dois postos sem explorar alternativas.",
+      "whyWrong": [
+        "Ordem de reclamação não é critério de impacto ou urgência.",
+        "Promessas incompatíveis criam conflito maior na execução.",
+        "A negociação usa necessidades e restrições reais para construir decisão verificável e reduzir recorrência.",
+        "Disputa informal não resolve alocação de recurso compartilhado.",
+        "Bloqueio geral prejudica os dois postos sem explorar alternativas."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-059",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "delegação",
+      "difficulty": "hard",
+      "statement": "Uma gestora delega análise de pendências, mas os agentes não sabem até que valor podem decidir sem consulta. Qual ajuste é necessário para tornar a delegação segura?",
+      "options": [
+        "Afirmar que a decisão delegada não requer qualquer prestação de contas.",
+        "Deixar os limites implícitos para medir iniciativa da equipe.",
+        "Exigir consulta para todo caso, inclusive os expressamente delegados.",
+        "Definir escopo, limites de decisão, indicadores e canal de escalonamento.",
+        "Transferir autoridade total sem relação com a análise de pendências."
+      ],
+      "answer": 3,
+      "explanation": "Delegação eficaz combina autoridade compatível, limites claros e acompanhamento de resultados. Prestação de contas permanece necessária mesmo após delegar. Ambiguidade sobre limites aumenta decisões inconsistentes. Consulta em todos os casos esvazia a autonomia concedida. Autoridade ilimitada não é exigida nem prudente para tarefa específica.",
+      "whyWrong": [
+        "Prestação de contas permanece necessária mesmo após delegar.",
+        "Ambiguidade sobre limites aumenta decisões inconsistentes.",
+        "Consulta em todos os casos esvazia a autonomia concedida.",
+        "Delegação eficaz combina autoridade compatível, limites claros e acompanhamento de resultados.",
+        "Autoridade ilimitada não é exigida nem prudente para tarefa específica."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-060",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "liderança situacional",
+      "difficulty": "hard",
+      "statement": "Uma equipe experiente domina o procedimento, mas perdeu autonomia porque o supervisor revisa cada passo. Qual mudança gerencial é mais coerente com essa maturidade?",
+      "options": [
+        "Aumentar a instrução minuciosa para cada ato já dominado.",
+        "Retirar objetivos e permitir que cada agente invente critérios.",
+        "Deixar de monitorar resultados porque a equipe é experiente.",
+        "Trocar todos os agentes para reiniciar o treinamento.",
+        "Ampliar autonomia dentro de metas e acompanhar resultados em pontos combinados."
+      ],
+      "answer": 4,
+      "explanation": "Equipe competente pode receber mais autonomia, sem abandonar objetivos ou pontos de controle. Microgerenciamento de rotina dominada consome tempo e inibe iniciativa. Autonomia não significa ausência de padrão e meta. Acompanhamento de resultados continua necessário. Substituição integral não responde ao excesso de supervisão.",
+      "whyWrong": [
+        "Microgerenciamento de rotina dominada consome tempo e inibe iniciativa.",
+        "Autonomia não significa ausência de padrão e meta.",
+        "Acompanhamento de resultados continua necessário.",
+        "Substituição integral não responde ao excesso de supervisão.",
+        "Equipe competente pode receber mais autonomia, sem abandonar objetivos ou pontos de controle."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-061",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "avaliação de desempenho",
+      "difficulty": "hard",
+      "statement": "Um avaliador registra apenas o último erro de um servidor, ignorando meses de trabalho consistente. Qual medida melhora a avaliação?",
+      "options": [
+        "Usar critérios definidos e evidências de todo o período, incluindo acertos e dificuldades.",
+        "Manter a última impressão porque é a mais recente.",
+        "Avaliar apenas a popularidade do servidor com colegas.",
+        "Retirar todos os registros de erro da avaliação.",
+        "Igualar todas as notas para não precisar justificar resultados."
+      ],
+      "answer": 0,
+      "explanation": "Período completo e evidências reduzem viés de recência e apoiam devolutiva justa. Fato recente não representa necessariamente todo o desempenho. Popularidade não substitui critérios ligados ao trabalho. Erros relevantes devem ser considerados junto com resultados positivos. Notas idênticas sem análise impedem reconhecer diferenças reais.",
+      "whyWrong": [
+        "Período completo e evidências reduzem viés de recência e apoiam devolutiva justa.",
+        "Fato recente não representa necessariamente todo o desempenho.",
+        "Popularidade não substitui critérios ligados ao trabalho.",
+        "Erros relevantes devem ser considerados junto com resultados positivos.",
+        "Notas idênticas sem análise impedem reconhecer diferenças reais."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-062",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "controle preventivo",
+      "difficulty": "hard",
+      "statement": "Antes de iniciar uma nova etapa, o supervisor confere se há mapas, baterias e treinamento mínimo em todos os postos. Qual é a natureza principal desse controle?",
+      "options": [
+        "Concomitante, pois mede somente o trabalho em andamento.",
+        "Preventiva, porque busca evitar falhas antes da execução.",
+        "Corretiva, pois repara resultado já entregue.",
+        "Finalística, porque dispensa verificação posterior.",
+        "Contábil, porque envolve necessariamente registro financeiro."
+      ],
+      "answer": 1,
+      "explanation": "A checagem prévia detecta falta de condições para operar e permite corrigir antes do início. O trabalho da etapa ainda não está em andamento. Não há produto final defeituoso a reparar. Prevenção não elimina controles durante e depois da execução. Baterias e treinamento não tornam o controle necessariamente financeiro.",
+      "whyWrong": [
+        "O trabalho da etapa ainda não está em andamento.",
+        "A checagem prévia detecta falta de condições para operar e permite corrigir antes do início.",
+        "Não há produto final defeituoso a reparar.",
+        "Prevenção não elimina controles durante e depois da execução.",
+        "Baterias e treinamento não tornam o controle necessariamente financeiro."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-063",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "controle corretivo",
+      "difficulty": "hard",
+      "statement": "Uma auditoria encontra registros duplicados já transmitidos. Qual resposta expressa controle corretivo e aprendizado, sem apenas apagar sintomas?",
+      "options": [
+        "Excluir todos os registros da semana para garantir que não haja duplicados.",
+        "Ignorar os duplicados por já terem sido transmitidos.",
+        "Corrigir os registros conforme protocolo, localizar a origem da duplicação e ajustar o processo.",
+        "Alterar apenas o relatório agregado e preservar dados inconsistentes.",
+        "Cobrar velocidade maior da equipe sem examinar o mecanismo de duplicação."
+      ],
+      "answer": 2,
+      "explanation": "Controle corretivo lida com falha detectada e com sua causa para evitar repetição. Exclusão em massa sacrifica registros válidos e não identifica a causa. Transmissão não transforma registro duplicado em dado correto. Maquiar o agregado mantém a inconsistência na base. Velocidade não substitui investigação do fluxo que duplicou dados.",
+      "whyWrong": [
+        "Exclusão em massa sacrifica registros válidos e não identifica a causa.",
+        "Transmissão não transforma registro duplicado em dado correto.",
+        "Controle corretivo lida com falha detectada e com sua causa para evitar repetição.",
+        "Maquiar o agregado mantém a inconsistência na base.",
+        "Velocidade não substitui investigação do fluxo que duplicou dados."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-064",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "tomada de decisão",
+      "difficulty": "hard",
+      "statement": "Uma chefia dispõe de prazo curto e informações incompletas para escolher entre dois locais de apoio. Qual procedimento reduz risco sem exigir certeza impossível?",
+      "options": [
+        "Aguardar informação perfeita mesmo depois de perder o prazo.",
+        "Escolher aleatoriamente e esconder as incertezas da equipe.",
+        "Ignorar riscos por não haver tempo de fazer cálculo exato.",
+        "Identificar premissas críticas, comparar opções disponíveis, documentar a escolha e prever revisão.",
+        "Decidir pelo local preferido sem confrontar nenhuma restrição."
+      ],
+      "answer": 3,
+      "explanation": "Sob incerteza, critérios explícitos e revisão posterior tornam a decisão justificável e ajustável. Esperar certeza absoluta pode inviabilizar o objetivo no prazo. Escolha aleatória sem transparência não usa os dados existentes. Incerteza aumenta a importância de mapear riscos essenciais. Preferência pessoal isolada não compara capacidade e limites dos locais.",
+      "whyWrong": [
+        "Esperar certeza absoluta pode inviabilizar o objetivo no prazo.",
+        "Escolha aleatória sem transparência não usa os dados existentes.",
+        "Incerteza aumenta a importância de mapear riscos essenciais.",
+        "Sob incerteza, critérios explícitos e revisão posterior tornam a decisão justificável e ajustável.",
+        "Preferência pessoal isolada não compara capacidade e limites dos locais."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-065",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "metas SMART",
+      "difficulty": "hard",
+      "statement": "Uma coordenação afirma: “Vamos melhorar muito a qualidade logo”. Qual formulação transforma essa intenção em meta mais verificável?",
+      "options": [
+        "Fazer o possível para que ninguém reclame algum dia.",
+        "Ter a melhor equipe do país sem indicador nem prazo.",
+        "Melhorar continuamente, independentemente de medida.",
+        "Eliminar todas as falhas imediatamente, sem verificar a situação inicial.",
+        "Reduzir de 12% para 6% os formulários devolvidos por erro até o fim do próximo mês."
+      ],
+      "answer": 4,
+      "explanation": "Valor inicial, alvo, indicador e prazo tornam a meta específica e mensurável; a viabilidade ainda deve ser avaliada. “Fazer o possível” não define resultado nem horizonte. Comparação nacional sem critério observável não orienta execução. Melhoria sem medida ou prazo é intenção, não meta operacional. Zero falhas instantâneas ignora base, prazo e factibilidade.",
+      "whyWrong": [
+        "“Fazer o possível” não define resultado nem horizonte.",
+        "Comparação nacional sem critério observável não orienta execução.",
+        "Melhoria sem medida ou prazo é intenção, não meta operacional.",
+        "Zero falhas instantâneas ignora base, prazo e factibilidade.",
+        "Valor inicial, alvo, indicador e prazo tornam a meta específica e mensurável; a viabilidade ainda deve ser avaliada."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-066",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "indicadores de desempenho",
+      "difficulty": "hard",
+      "statement": "Um posto aumentou o número de entrevistas, mas também duplicou a taxa de formulários devolvidos para correção. Qual leitura combina volume e qualidade?",
+      "options": [
+        "O aumento de volume deve ser lido junto à taxa de retrabalho antes de afirmar ganho líquido.",
+        "O volume maior prova, por si, qualidade superior.",
+        "A devolução é irrelevante porque a entrevista aconteceu.",
+        "Uma taxa de erro maior sempre significa mais produtividade líquida.",
+        "É impossível avaliar qualquer aspecto porque há dois indicadores."
+      ],
+      "answer": 0,
+      "explanation": "Volume e retrabalho captam dimensões distintas; ganhar quantidade pode aumentar custo e atrasar a entrega útil. Apenas contagem não demonstra conformidade ou utilidade do dado. Devolução exige trabalho adicional e afeta qualidade. Erro maior não garante produtividade efetiva. Os dois indicadores permitem avaliação mais informada, não menos.",
+      "whyWrong": [
+        "Volume e retrabalho captam dimensões distintas; ganhar quantidade pode aumentar custo e atrasar a entrega útil.",
+        "Apenas contagem não demonstra conformidade ou utilidade do dado.",
+        "Devolução exige trabalho adicional e afeta qualidade.",
+        "Erro maior não garante produtividade efetiva.",
+        "Os dois indicadores permitem avaliação mais informada, não menos."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-067",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "comunicação ascendente",
+      "difficulty": "hard",
+      "statement": "Agentes observam que uma orientação central produz erros recorrentes, mas receiam relatá-los. Qual mecanismo fortalece a comunicação ascendente?",
+      "options": [
+        "Enviar somente ordens de cima para baixo e proibir dúvidas.",
+        "Abrir canal de relato com retorno sobre providências, sem punição pelo apontamento fundamentado.",
+        "Exigir que problemas sejam comunicados apenas depois da prova final.",
+        "Atribuir automaticamente culpa ao primeiro agente que avisou.",
+        "Eliminar o registro de ocorrências para reduzir indicadores negativos."
+      ],
+      "answer": 1,
+      "explanation": "Comunicação ascendente permite que informação da execução chegue a quem decide e volte como resposta. Fluxo apenas descendente oculta sinais de falhas do procedimento. Atrasar relatos prolonga erros que poderiam ser corrigidos. Punição do mensageiro desestimula comunicação de riscos reais. Apagar ocorrências não elimina o problema operacional.",
+      "whyWrong": [
+        "Fluxo apenas descendente oculta sinais de falhas do procedimento.",
+        "Comunicação ascendente permite que informação da execução chegue a quem decide e volte como resposta.",
+        "Atrasar relatos prolonga erros que poderiam ser corrigidos.",
+        "Punição do mensageiro desestimula comunicação de riscos reais.",
+        "Apagar ocorrências não elimina o problema operacional."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-068",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "gestão de riscos",
+      "difficulty": "hard",
+      "statement": "Uma unidade depende de um único equipamento para transmitir os dados no último dia. Qual planejamento trata o risco sem presumir que a falha ocorrerá?",
+      "options": [
+        "Comprar outro equipamento sem verificar custo, compatibilidade ou necessidade.",
+        "Ignorar a possibilidade porque o aparelho nunca falhou.",
+        "Estimar probabilidade e impacto, preparar alternativa e testar a recuperação antes do prazo.",
+        "Parar a coleta desde já para evitar depender da transmissão.",
+        "Aguardar a falha e somente então procurar acesso à rede."
+      ],
+      "answer": 2,
+      "explanation": "Risco combina possibilidade de falha e consequência; contingência testada reduz o impacto se o evento ocorrer. Recurso extra pode ajudar, mas decisão sem análise não constitui plano completo. Histórico sem falha não torna a probabilidade nula. Paralisação antecipada não é resposta proporcional ao risco descrito. A reação apenas após o último prazo pode não permitir recuperação.",
+      "whyWrong": [
+        "Recurso extra pode ajudar, mas decisão sem análise não constitui plano completo.",
+        "Histórico sem falha não torna a probabilidade nula.",
+        "Risco combina possibilidade de falha e consequência; contingência testada reduz o impacto se o evento ocorrer.",
+        "Paralisação antecipada não é resposta proporcional ao risco descrito.",
+        "A reação apenas após o último prazo pode não permitir recuperação."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-069",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "trabalho em equipe",
+      "difficulty": "hard",
+      "statement": "Uma tarefa depende de conferência por um grupo e transmissão por outro. Ambos cumprem seus indicadores locais, mas a entrega final atrasa. Que intervenção ataca a interface?",
+      "options": [
+        "Cobrar apenas a taxa individual de cada grupo, sem tratar a transição.",
+        "Unificar os relatórios finais sem alterar o fluxo de trabalho.",
+        "Suspender a conferência para acelerar toda transmissão.",
+        "Definir passagem, prazo e confirmação de recebimento entre os grupos.",
+        "Impedir comunicação direta entre grupos para evitar divergência."
+      ],
+      "answer": 3,
+      "explanation": "O gargalo está na passagem entre etapas; acordo de entrega e confirmação torna a dependência administrável. Indicadores isolados podem esconder atraso entre equipes. Juntar relatórios depois não corrige a transferência operacional. Eliminar controle de qualidade cria outros defeitos. Bloquear comunicação dificulta resolução da interface.",
+      "whyWrong": [
+        "Indicadores isolados podem esconder atraso entre equipes.",
+        "Juntar relatórios depois não corrige a transferência operacional.",
+        "Eliminar controle de qualidade cria outros defeitos.",
+        "O gargalo está na passagem entre etapas; acordo de entrega e confirmação torna a dependência administrável.",
+        "Bloquear comunicação dificulta resolução da interface."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-070",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "capacitação",
+      "difficulty": "hard",
+      "statement": "Depois de treinamento expositivo, a equipe ainda erra um passo raro mas crítico. Qual reforço tende a produzir aprendizagem operacional verificável?",
+      "options": [
+        "Repetir apenas a leitura dos slides sem prática.",
+        "Supor que presença no treinamento comprova domínio.",
+        "Punir todo erro sem mostrar o procedimento correto.",
+        "Retirar o passo do processo mesmo sendo crítico.",
+        "Simular o passo em casos reais, observar execução e oferecer feedback específico."
+      ],
+      "answer": 4,
+      "explanation": "Prática contextualizada e feedback evidenciam se o agente consegue aplicar o procedimento quando necessário. Leitura isolada não testa desempenho na tarefa rara. Participação é evidência de presença, não de competência adquirida. Punição sem instrução não ensina sequência correta. A criticidade descrita impede simplesmente omitir o passo.",
+      "whyWrong": [
+        "Leitura isolada não testa desempenho na tarefa rara.",
+        "Participação é evidência de presença, não de competência adquirida.",
+        "Punição sem instrução não ensina sequência correta.",
+        "A criticidade descrita impede simplesmente omitir o passo.",
+        "Prática contextualizada e feedback evidenciam se o agente consegue aplicar o procedimento quando necessário."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-071",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "responsabilidade e autoridade",
+      "difficulty": "hard",
+      "statement": "Uma coordenadora responde por uma meta, mas não pode aprovar recursos nem ajustar escalas. Que desalinhamento prejudica seu desempenho?",
+      "options": [
+        "Responsabilidade por resultado sem autoridade compatível sobre meios necessários.",
+        "Autoridade excessiva por responder por uma meta mensurável.",
+        "Ausência de objetivos, pois a meta foi explicitada.",
+        "Excesso de descentralização, pois toda decisão está com ela.",
+        "Conflito de arquivos, porque não há classificação documental."
+      ],
+      "answer": 0,
+      "explanation": "A responsabilidade exige acesso a decisões e recursos proporcionais; sem meios, a cobrança perde efetividade. Não há poder excessivo; o caso afirma falta de competência decisória. A meta existe, embora faltem meios para alcançá-la. Decisões estão concentradas fora da coordenadora, não nela. Arquivo não é a variável limitante informada no enunciado.",
+      "whyWrong": [
+        "A responsabilidade exige acesso a decisões e recursos proporcionais; sem meios, a cobrança perde efetividade.",
+        "Não há poder excessivo; o caso afirma falta de competência decisória.",
+        "A meta existe, embora faltem meios para alcançá-la.",
+        "Decisões estão concentradas fora da coordenadora, não nela.",
+        "Arquivo não é a variável limitante informada no enunciado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-072",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "negociação",
+      "difficulty": "hard",
+      "statement": "Duas equipes querem o mesmo espaço de treinamento. Uma precisa dele pela manhã, outra somente à tarde, mas ambas pediram o dia inteiro por precaução. Qual solução explora os interesses reais?",
+      "options": [
+        "Dar o dia inteiro à equipe que formalizou primeiro o pedido.",
+        "Dividir o uso por turno, confirmando necessidades e horários de preparação.",
+        "Sortear uma equipe e deixar a outra sem espaço.",
+        "Negar o espaço a ambas para evitar reclamações.",
+        "Exigir que cada equipe mantenha o pedido integral, sem diálogo."
+      ],
+      "answer": 1,
+      "explanation": "Ao separar posições iniciais de necessidades concretas, o compartilhamento por turno pode atender ambos os interesses. Ordem de formalização não aproveita a compatibilidade revelada. Sorteio ignora que os horários necessários não coincidem. Negação total desperdiça recurso disponível. Insistir nas posições impede encontrar solução conjunta.",
+      "whyWrong": [
+        "Ordem de formalização não aproveita a compatibilidade revelada.",
+        "Ao separar posições iniciais de necessidades concretas, o compartilhamento por turno pode atender ambos os interesses.",
+        "Sorteio ignora que os horários necessários não coincidem.",
+        "Negação total desperdiça recurso disponível.",
+        "Insistir nas posições impede encontrar solução conjunta."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-073",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "qualidade em serviços",
+      "difficulty": "hard",
+      "statement": "Um posto responde rápido a reclamações, mas os mesmos problemas retornam semanalmente. Qual mudança é mais alinhada com melhoria contínua?",
+      "options": [
+        "Contar respostas enviadas como único sinal de solução definitiva.",
+        "Apagar reclamações antigas ao final de cada semana.",
+        "Investigar causas recorrentes, ajustar o processo e medir a reincidência.",
+        "Aumentar a velocidade de resposta sem alterar a causa.",
+        "Trocar o nome do canal para parecer um serviço novo."
+      ],
+      "answer": 2,
+      "explanation": "Melhoria contínua trata causas e verifica se a mudança reduziu recorrência, não apenas prazo da resposta. Responder não demonstra que a falha deixou de ocorrer. Apagar histórico destrói a evidência do problema repetido. Velocidade pode melhorar atendimento, mas não elimina causa sistêmica. Mudança de nome não modifica a entrega ao usuário.",
+      "whyWrong": [
+        "Responder não demonstra que a falha deixou de ocorrer.",
+        "Apagar histórico destrói a evidência do problema repetido.",
+        "Melhoria contínua trata causas e verifica se a mudança reduziu recorrência, não apenas prazo da resposta.",
+        "Velocidade pode melhorar atendimento, mas não elimina causa sistêmica.",
+        "Mudança de nome não modifica a entrega ao usuário."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-074",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "prestação de contas",
+      "difficulty": "hard",
+      "statement": "Uma chefia delegou compras de baixo valor. Ao fim do mês, recebe apenas o total gasto, sem comprovantes nem relação com as necessidades atendidas. O que falta à prestação de contas?",
+      "options": [
+        "Apenas um número maior para demonstrar que houve atividade.",
+        "A assinatura de todos os moradores atendidos, mesmo sem relação com compras.",
+        "A eliminação dos limites de compra previamente delegados.",
+        "Evidência das despesas e relação entre recursos usados, autorização e resultados obtidos.",
+        "Somente o nome do responsável, sem documentos de suporte."
+      ],
+      "answer": 3,
+      "explanation": "Prestação de contas exige rastreabilidade do gasto e avaliação de sua aderência à finalidade delegada. Volume gasto não prova conformidade nem utilidade. Assinaturas irrelevantes não substituem comprovantes e justificativas. Limites de delegação ajudam, e não atrapalham, o controle. Identificação isolada da pessoa não demonstra legitimidade das despesas.",
+      "whyWrong": [
+        "Volume gasto não prova conformidade nem utilidade.",
+        "Assinaturas irrelevantes não substituem comprovantes e justificativas.",
+        "Limites de delegação ajudam, e não atrapalham, o controle.",
+        "Prestação de contas exige rastreabilidade do gasto e avaliação de sua aderência à finalidade delegada.",
+        "Identificação isolada da pessoa não demonstra legitimidade das despesas."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-075",
+      "roles": [
+        "aor",
+        "acr",
+        "acs"
+      ],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "gestão de mudanças",
+      "difficulty": "hard",
+      "statement": "Um novo procedimento é tecnicamente correto, mas a equipe o abandona porque desconhece a razão da mudança e não recebeu prática. Qual implantação tende a aumentar adesão?",
+      "options": [
+        "Enviar ordem lacônica e presumir que todos inferirão os motivos.",
+        "Proibir perguntas até que a adesão seja total.",
+        "Trocar simultaneamente todos os procedimentos sem priorizar aprendizagem.",
+        "Medir apenas quantas mensagens foram enviadas pela chefia.",
+        "Explicar o problema resolvido, demonstrar o procedimento, treinar e recolher dificuldades de execução."
+      ],
+      "answer": 4,
+      "explanation": "Sentido da mudança, capacitação e feedback reduzem incerteza e revelam obstáculos reais à adoção. Ordem sem contexto ou prática não resolve as causas de abandono descritas. Bloquear dúvidas impede detectar falhas de compreensão. Múltiplas mudanças simultâneas podem ampliar dificuldade de aprendizagem. Quantidade de mensagens não comprova aplicação correta do novo processo.",
+      "whyWrong": [
+        "Ordem sem contexto ou prática não resolve as causas de abandono descritas.",
+        "Bloquear dúvidas impede detectar falhas de compreensão.",
+        "Múltiplas mudanças simultâneas podem ampliar dificuldade de aprendizagem.",
+        "Quantidade de mensagens não comprova aplicação correta do novo processo.",
+        "Sentido da mudança, capacitação e feedback reduzem incerteza e revelam obstáculos reais à adoção."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Situações Gerenciais",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-076",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "setor censitário",
+      "difficulty": "hard",
+      "statement": "Um agente recebe como área de trabalho um setor censitário. Qual afirmação relaciona corretamente essa área com a coleta, sem confundi-la com município ou estabelecimento?",
+      "options": [
+        "É a unidade territorial de coleta do IBGE, com contorno que delimita o trabalho do agente.",
+        "É sempre equivalente ao município inteiro em que o agente atua.",
+        "É uma propriedade rural com matrícula imobiliária única.",
+        "É toda área observável na tela do mapa, mesmo fora do contorno.",
+        "É a equipe de recenseadores, independentemente de área geográfica."
+      ],
+      "answer": 0,
+      "explanation": "A apostila define setor como a menor área geográfica estabelecida pelo IBGE e unidade territorial de coleta. Um município pode conter muitos setores; os limites não são equivalentes. Propriedade e setor são categorias diferentes: uma produtiva/patrimonial, outra territorial de coleta. A representação cartográfica pode mostrar referências externas ao perímetro. Setor identifica área, não grupo de pessoas.",
+      "whyWrong": [
+        "A apostila define setor como a menor área geográfica estabelecida pelo IBGE e unidade territorial de coleta.",
+        "Um município pode conter muitos setores; os limites não são equivalentes.",
+        "Propriedade e setor são categorias diferentes: uma produtiva/patrimonial, outra territorial de coleta.",
+        "A representação cartográfica pode mostrar referências externas ao perímetro.",
+        "Setor identifica área, não grupo de pessoas."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 20",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-077",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "mapa e descritivo",
+      "difficulty": "hard",
+      "statement": "No verso do mapa há um texto que descreve todo o contorno do setor. Em uma bifurcação pouco clara, que uso dos dois instrumentos respeita a orientação técnica?",
+      "options": [
+        "Presumir que qualquer estrada desenhada dentro do papel pertence integralmente ao setor.",
+        "Confrontar a representação gráfica com o descritivo para reconhecer o limite real da área de coleta.",
+        "Usar apenas o ponto mais próximo de deslocamento e descartar o texto.",
+        "Trocar o descritivo pelo endereço do primeiro morador encontrado.",
+        "Redesenhar o limite no dispositivo assim que a imagem parecer imprecisa."
+      ],
+      "answer": 1,
+      "explanation": "O mapa orienta visualmente, enquanto o descritivo define textualmente o contorno e auxilia no reconhecimento. O mapa pode retratar elementos de referência que não compõem toda a área de trabalho. Facilidade de deslocamento não substitui o limite documentado. Endereço individual não descreve o perímetro setorial completo. Recenseador não pode alterar perímetro por conta própria.",
+      "whyWrong": [
+        "O mapa pode retratar elementos de referência que não compõem toda a área de trabalho.",
+        "O mapa orienta visualmente, enquanto o descritivo define textualmente o contorno e auxilia no reconhecimento.",
+        "Facilidade de deslocamento não substitui o limite documentado.",
+        "Endereço individual não descreve o perímetro setorial completo.",
+        "Recenseador não pode alterar perímetro por conta própria."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 20",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-078",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "setores excluídos",
+      "difficulty": "hard",
+      "statement": "O perímetro externo de um setor rural envolve um núcleo que aparece na lista de “setores a serem excluídos”. Um entrevistado desse núcleo oferece informações ao recenseador rural. Como evitar duplicidade?",
+      "options": [
+        "Aceitar os dados porque o núcleo está dentro do contorno externo.",
+        "Coletar apenas estabelecimentos produtivos e ignorar os demais endereços.",
+        "Não coletar ali como parte do setor rural, pois outro recenseador responde pelo setor interno.",
+        "Somar o núcleo ao setor rural se a entrevista já começou.",
+        "Apagar a anotação de exclusão após confirmar a existência do núcleo."
+      ],
+      "answer": 2,
+      "explanation": "A indicação de exclusão retira o setor interno da responsabilidade do recenseador do setor envolvente. Contorno externo, sozinho, não incorpora territórios expressamente excluídos. A exclusão é territorial e não depende do tipo de atividade observada. O início de conversa não transfere competência territorial. Apagar referência oficial aumenta o risco de dupla coleta ou omissão.",
+      "whyWrong": [
+        "Contorno externo, sozinho, não incorpora territórios expressamente excluídos.",
+        "A exclusão é territorial e não depende do tipo de atividade observada.",
+        "A indicação de exclusão retira o setor interno da responsabilidade do recenseador do setor envolvente.",
+        "O início de conversa não transfere competência territorial.",
+        "Apagar referência oficial aumenta o risco de dupla coleta ou omissão."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 30",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-079",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "limites do setor",
+      "difficulty": "hard",
+      "statement": "Um caminho de campo não coincide claramente com a descrição recebida, e dois recenseadores discordam sobre a divisa. Qual decisão protege a integridade da cobertura?",
+      "options": [
+        "Dividir a área pela metade por acordo informal entre os recenseadores.",
+        "Coletar ambos os lados nos dois setores e deduplicar depois.",
+        "Deixar toda a faixa sem coleta para evitar conflito.",
+        "Comunicar a inconsistência imediatamente à supervisão e preservar o perímetro oficial até orientação.",
+        "Mover o limite no mapa conforme a preferência do morador mais próximo."
+      ],
+      "answer": 3,
+      "explanation": "A apostila manda comunicar dificuldades de limite à supervisão e proíbe ao recenseador alterar o perímetro. Acordo informal não redefine área oficial de responsabilidade. Coleta dupla cria risco de duplicidade e distorce a cobertura. Omissão deliberada deixa área sem responsável. Preferência individual não substitui documentação e decisão da supervisão.",
+      "whyWrong": [
+        "Acordo informal não redefine área oficial de responsabilidade.",
+        "Coleta dupla cria risco de duplicidade e distorce a cobertura.",
+        "Omissão deliberada deixa área sem responsável.",
+        "A apostila manda comunicar dificuldades de limite à supervisão e proíbe ao recenseador alterar o perímetro.",
+        "Preferência individual não substitui documentação e decisão da supervisão."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 30",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-080",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "CNEFE",
+      "difficulty": "hard",
+      "statement": "Um imóvel rural tem nome oficial da estrada, mas também um apelido conhecido no povoado. O agente pretende facilitar localização futura. Qual registro segue a prioridade do CNEFE?",
+      "options": [
+        "Trocar sempre o nome oficial pelo apelido, mesmo que o primeiro esteja correto.",
+        "Registrar apenas o CEP, dispensando os demais componentes.",
+        "Usar o nome do morador como logradouro para acelerar a busca.",
+        "Ignorar qualquer referência local, mesmo quando o endereço formal não distingue o imóvel.",
+        "Usar o endereço formal como base e acrescentar referência local quando ela ajudar a individualizar a unidade."
+      ],
+      "answer": 4,
+      "explanation": "O padrão prioriza endereço formal e admite referência reconhecida quando necessária à individualização e localização. Apelido não substitui automaticamente um logradouro oficial disponível. CEP, sozinho, não individualiza endereço rural específico. Identificar pessoa em componente do endereço fere a orientação de sigilo. Referências locais são úteis quando o endereço formal não basta.",
+      "whyWrong": [
+        "Apelido não substitui automaticamente um logradouro oficial disponível.",
+        "CEP, sozinho, não individualiza endereço rural específico.",
+        "Identificar pessoa em componente do endereço fere a orientação de sigilo.",
+        "Referências locais são úteis quando o endereço formal não basta.",
+        "O padrão prioriza endereço formal e admite referência reconhecida quando necessária à individualização e localização."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 43",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-081",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "ponto de referência",
+      "difficulty": "hard",
+      "statement": "Uma unidade não tem número nem complemento que permita achá-la; fica depois de uma ponte permanente. Qual anotação é mais apropriada?",
+      "options": [
+        "“Primeira construção após a ponte”, como ponto de referência estável.",
+        "“Casa da senhora que respondeu ao questionário”, identificando a pessoa.",
+        "Um número inventado para preencher a lacuna no endereço.",
+        "Apenas “zona rural”, sem referência individualizadora.",
+        "O nome do recenseador responsável pelo setor."
+      ],
+      "answer": 0,
+      "explanation": "Sem número ou complemento localizador, o ponto de referência é obrigatório; marco físico estável ajuda a reencontrar o local. Identificação de pessoas em componentes do endereço viola sigilo. Número fictício cria dado incorreto e não melhora localização. Expressão genérica não individualiza a unidade. Nome do agente não é componente localizador do imóvel.",
+      "whyWrong": [
+        "Sem número ou complemento localizador, o ponto de referência é obrigatório; marco físico estável ajuda a reencontrar o local.",
+        "Identificação de pessoas em componentes do endereço viola sigilo.",
+        "Número fictício cria dado incorreto e não melhora localização.",
+        "Expressão genérica não individualiza a unidade.",
+        "Nome do agente não é componente localizador do imóvel."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 47",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-082",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "abordagem inicial",
+      "difficulty": "hard",
+      "statement": "Ao ver uma área com árvores, o recenseador conclui visualmente que se trata de pomar comercial. Qual procedimento evita classificar por aparência uma unidade talvez não recenseável?",
+      "options": [
+        "Registrar automaticamente o pomar como estabelecimento por ter árvores.",
+        "Perguntar pela atividade e aplicar o questionário de abordagem inicial para definir a classificação.",
+        "Excluir automaticamente a unidade por parecer pequena.",
+        "Usar apenas fotografia externa para preencher os quesitos de produção.",
+        "Perguntar à propriedade vizinha e dispensar contato com o informante."
+      ],
+      "answer": 1,
+      "explanation": "A apostila diz que não se determina a atividade recenseável olhando de fora; a abordagem inicial orienta a classificação. Árvores podem ser lazer ou outra situação, sem produção enquadrável. Tamanho aparente não elimina unidade produtiva do conceito. Fotografia não informa finalidade nem período de exploração. A informação do vizinho não substitui a abordagem do responsável.",
+      "whyWrong": [
+        "Árvores podem ser lazer ou outra situação, sem produção enquadrável.",
+        "A apostila diz que não se determina a atividade recenseável olhando de fora; a abordagem inicial orienta a classificação.",
+        "Tamanho aparente não elimina unidade produtiva do conceito.",
+        "Fotografia não informa finalidade nem período de exploração.",
+        "A informação do vizinho não substitui a abordagem do responsável."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 53",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-083",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "produção de subsistência",
+      "difficulty": "hard",
+      "statement": "Uma família consome quase toda a produção da horta e troca pequena parte por produtos necessários à casa. Segundo a definição da apostila, qual análise é adequada?",
+      "options": [
+        "Qualquer troca transforma toda a produção em atividade exclusivamente comercial.",
+        "A subsistência exige que nada seja vendido ou trocado em hipótese alguma.",
+        "A troca eventual não afasta a subsistência se a atividade sustenta majoritariamente as necessidades vitais.",
+        "A classificação depende apenas da extensão da horta em hectares.",
+        "A família só pode produzir para subsistência se tiver documento de propriedade."
+      ],
+      "answer": 2,
+      "explanation": "A apostila admite venda ou troca eventual e enfatiza a dependência alimentar total ou majoritária da família. Troca pontual não altera, por si, o objetivo predominante. Proibição absoluta de troca contraria a definição expressa. Área física não determina isoladamente a finalidade produtiva. Título da terra não é requisito do conceito de subsistência.",
+      "whyWrong": [
+        "Troca pontual não altera, por si, o objetivo predominante.",
+        "Proibição absoluta de troca contraria a definição expressa.",
+        "A apostila admite venda ou troca eventual e enfatiza a dependência alimentar total ou majoritária da família.",
+        "Área física não determina isoladamente a finalidade produtiva.",
+        "Título da terra não é requisito do conceito de subsistência."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 53",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-084",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "conceito de estabelecimento",
+      "difficulty": "hard",
+      "statement": "Uma associação mantém produção aquícola para sustento de associados em área urbana pequena. Qual argumento é compatível com o conceito censitário?",
+      "options": [
+        "Não pode ser estabelecimento porque associação não é pessoa física.",
+        "Não pode ser estabelecimento porque fica em área urbana.",
+        "Só pode ser estabelecimento se vender toda a produção.",
+        "Pode ser estabelecimento pela exploração aquícola, apesar de porte, forma jurídica e local.",
+        "Só pode ser estabelecimento se atingir valor mínimo de mercado."
+      ],
+      "answer": 3,
+      "explanation": "O conceito abrange exploração aquícola, inclusive para subsistência, sem exigência isolada de porte, natureza jurídica ou área rural. A forma jurídica não exclui a unidade de produção. Localização urbana não é impedimento por si só. Produção para sustento também integra a finalidade prevista. Valor da produção não é limite geral do conceito.",
+      "whyWrong": [
+        "A forma jurídica não exclui a unidade de produção.",
+        "Localização urbana não é impedimento por si só.",
+        "Produção para sustento também integra a finalidade prevista.",
+        "O conceito abrange exploração aquícola, inclusive para subsistência, sem exigência isolada de porte, natureza jurídica ou área rural.",
+        "Valor da produção não é limite geral do conceito."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 55",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-085",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "produtor sem área",
+      "difficulty": "hard",
+      "statement": "Um extrativista recolhe castanha em área disponível temporariamente e conduz a atividade por conta própria, sem possuir terra delimitada. Qual registro evita omissão?",
+      "options": [
+        "Ignorar a atividade porque falta matrícula imobiliária em seu nome.",
+        "Atribuir toda a produção automaticamente ao dono da terra.",
+        "Classificar como atividade industrial apenas pela venda posterior.",
+        "Recensear somente se o extrativista morar permanentemente no local.",
+        "Investigar e registrar a atividade como possível produção de produtor sem área, aplicando o questionário."
+      ],
+      "answer": 4,
+      "explanation": "A apostila cita extrativista em área alheia entre exemplos de produtor sem área e manda registrar sua atividade. Propriedade formal não é exigida para esse enquadramento. Condução própria não permite imputação automática ao titular da terra. Venda posterior não converte a atividade extrativa em indústria. Residência permanente não é condição apresentada para o produtor sem área.",
+      "whyWrong": [
+        "Propriedade formal não é exigida para esse enquadramento.",
+        "Condução própria não permite imputação automática ao titular da terra.",
+        "Venda posterior não converte a atividade extrativa em indústria.",
+        "Residência permanente não é condição apresentada para o produtor sem área.",
+        "A apostila cita extrativista em área alheia entre exemplos de produtor sem área e manda registrar sua atividade."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 57",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-086",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "propriedade e estabelecimento",
+      "difficulty": "hard",
+      "statement": "Uma mesma fazenda foi arrendada em duas partes; cada arrendatário decide a produção e administra seus recursos separadamente. Qual unidade deve orientar a investigação?",
+      "options": [
+        "As explorações independentes, que podem constituir dois estabelecimentos na mesma propriedade.",
+        "A matrícula da fazenda, que obriga um único estabelecimento.",
+        "O endereço do proprietário, que substitui a gestão dos arrendatários.",
+        "A área maior apenas, porque a menor não pode ser estabelecimento.",
+        "Uma produção somada sem identificar responsáveis por cada exploração."
+      ],
+      "answer": 0,
+      "explanation": "Propriedade rural e estabelecimento são conceitos diferentes; produtores independentes podem formar unidades distintas. Unicidade da matrícula não impõe unidade de gestão produtiva. Titularidade do imóvel não define quem conduz cada exploração. Tamanho não é condição geral para reconhecer estabelecimento. Somar sem separar gestores pode ocultar unidades produtivas autônomas.",
+      "whyWrong": [
+        "Propriedade rural e estabelecimento são conceitos diferentes; produtores independentes podem formar unidades distintas.",
+        "Unicidade da matrícula não impõe unidade de gestão produtiva.",
+        "Titularidade do imóvel não define quem conduz cada exploração.",
+        "Tamanho não é condição geral para reconhecer estabelecimento.",
+        "Somar sem separar gestores pode ocultar unidades produtivas autônomas."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 60",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-087",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "sede e setor",
+      "difficulty": "hard",
+      "statement": "Uma exploração ocupa partes de dois setores; a sede onde se administram os trabalhos está dentro da área do setor menor. Qual setor responde pelo recenseamento da unidade?",
+      "options": [
+        "O setor da maior área, sempre, mesmo havendo sede.",
+        "O setor da sede, mesmo que detenha a menor parte das terras.",
+        "Os dois setores, cada um registrando a produção inteira.",
+        "O setor de residência particular do dono, ainda que fora da exploração.",
+        "Nenhum setor até que todas as terras estejam contínuas."
+      ],
+      "answer": 1,
+      "explanation": "Para estabelecimento em mais de um setor, prevalece o setor onde está a sede localizada na área da exploração. Maior área só é critério subsidiário quando não há sede. Duplicar a produção em dois setores distorce o levantamento. Residência externa não se torna sede apenas por ser do proprietário. A existência de limites setoriais não impede recensear a unidade.",
+      "whyWrong": [
+        "Maior área só é critério subsidiário quando não há sede.",
+        "Para estabelecimento em mais de um setor, prevalece o setor onde está a sede localizada na área da exploração.",
+        "Duplicar a produção em dois setores distorce o levantamento.",
+        "Residência externa não se torna sede apenas por ser do proprietário.",
+        "A existência de limites setoriais não impede recensear a unidade."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 61",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-088",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "áreas não contínuas",
+      "difficulty": "hard",
+      "statement": "Duas áreas descontínuas ficam no mesmo município e usam a mesma equipe, máquinas e administração. Que conjunto de condições permite considerá-las uma exploração única?",
+      "options": [
+        "Apenas identidade do proprietário da terra, sem observar gestão ou equipe.",
+        "Somente uso das mesmas máquinas, mesmo em municípios diferentes.",
+        "Município comum, recursos técnicos e humanos compartilhados e mesma administração, simultaneamente.",
+        "Mesma administração, mesmo sem compartilhamento de recursos humanos.",
+        "Qualquer proximidade física, ainda que produtores diferentes conduzam as áreas."
+      ],
+      "answer": 2,
+      "explanation": "A apostila exige simultaneamente quatro condições para reunir áreas não contínuas em um estabelecimento. Titularidade isolada não cobre recursos técnicos, humanos e administração. Coincidência de máquinas não supera município diferente nem outros critérios. Falta de equipe compartilhada impede a agregação pela regra. Proximidade sem gestão e recursos comuns não basta.",
+      "whyWrong": [
+        "Titularidade isolada não cobre recursos técnicos, humanos e administração.",
+        "Coincidência de máquinas não supera município diferente nem outros critérios.",
+        "A apostila exige simultaneamente quatro condições para reunir áreas não contínuas em um estabelecimento.",
+        "Falta de equipe compartilhada impede a agregação pela regra.",
+        "Proximidade sem gestão e recursos comuns não basta."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 61",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-089",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "continuidade territorial",
+      "difficulty": "hard",
+      "statement": "Uma linha férrea atravessa as terras de uma mesma unidade produtiva, sem mudança de administração. Qual decisão é compatível com a regra de continuidade da apostila?",
+      "options": [
+        "Criar obrigatoriamente um estabelecimento de cada lado dos trilhos.",
+        "Recensear só a parte com sede e descartar a outra.",
+        "Tratar a faixa ferroviária como município distinto.",
+        "Não dividir a exploração apenas pela ferrovia que corta a área.",
+        "Transferir a produção de um lado para estabelecimento vizinho."
+      ],
+      "answer": 3,
+      "explanation": "Apostila afirma que ferrovias, rios e estradas cortando terras não caracterizam, por si, descontinuidade. A separação física pela linha não obriga divisão da unidade produtiva. A outra parte continua integrando a exploração informada. Infraestrutura linear não cria nova divisão municipal no enunciado. Não há base para atribuir produção ao vizinho.",
+      "whyWrong": [
+        "A separação física pela linha não obriga divisão da unidade produtiva.",
+        "A outra parte continua integrando a exploração informada.",
+        "Infraestrutura linear não cria nova divisão municipal no enunciado.",
+        "Apostila afirma que ferrovias, rios e estradas cortando terras não caracterizam, por si, descontinuidade.",
+        "Não há base para atribuir produção ao vizinho."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 62",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-090",
+      "roles": [
+        "acr",
+        "acs"
+      ],
+      "subject": "Conhecimentos Técnicos",
+      "topic": "exploração comunitária",
+      "difficulty": "hard",
+      "statement": "Numa comunidade, famílias trabalham juntas numa área e repartem uma produção coletiva; em outro núcleo, cada família decide e usa a própria produção. Como varia o questionário?",
+      "options": [
+        "Um questionário por família em ambos os núcleos, ignorando produção conjunta.",
+        "Um questionário único para ambos, porque as terras são comunitárias.",
+        "Nenhum questionário, porque exploração comunitária não é recenseável.",
+        "Um questionário por trabalhador, independentemente da unidade de produção.",
+        "Um questionário para a produção coletiva; coleta individualizada no núcleo de decisões separadas."
+      ],
+      "answer": 4,
+      "explanation": "A apostila distingue produção coletiva conjunta, com um questionário, de produção individual, coletada por família. Separar questionários na produção comum duplicaria a unidade coletiva. Uso comunitário da terra não apaga decisões produtivas individuais. Exploração comunitária é contemplada expressamente pelo material. Número de trabalhadores não substitui a organização da produção.",
+      "whyWrong": [
+        "Separar questionários na produção comum duplicaria a unidade coletiva.",
+        "Uso comunitário da terra não apaga decisões produtivas individuais.",
+        "Exploração comunitária é contemplada expressamente pelo material.",
+        "Número de trabalhadores não substitui a organização da produção.",
+        "A apostila distingue produção coletiva conjunta, com um questionário, de produção individual, coletada por família."
+      ],
+      "sources": [
+        {
+          "title": "Estudo dos conhecimentos técnicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+          "locator": "p. 66",
+          "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-091",
+      "roles": [
+        "aci"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "backup e sincronização",
+      "difficulty": "hard",
+      "statement": "Um computador sincroniza continuamente uma pasta com a nuvem. Um usuário exclui por engano um arquivo, e a exclusão é sincronizada. Qual medida melhora a capacidade de recuperação?",
+      "options": [
+        "Manter backup versionado independente da sincronização e testar a restauração.",
+        "Confiar apenas na sincronização, pois ela impede toda exclusão.",
+        "Renomear a pasta após cada sincronização sem guardar versões.",
+        "Desativar todas as cópias locais e manter só o arquivo sincronizado.",
+        "Aumentar a velocidade da conexão para impedir erros do usuário."
+      ],
+      "answer": 0,
+      "explanation": "Sincronização replica mudanças, inclusive exclusões; cópia versionada oferece ponto anterior recuperável. A sincronização não distingue erro humano de alteração legítima. Renomear sem guardar histórico não recupera conteúdo excluído. Dependência de uma única cópia aumenta o risco de perda. Velocidade da rede não desfaz exclusão já propagada.",
+      "whyWrong": [
+        "Sincronização replica mudanças, inclusive exclusões; cópia versionada oferece ponto anterior recuperável.",
+        "A sincronização não distingue erro humano de alteração legítima.",
+        "Renomear sem guardar histórico não recupera conteúdo excluído.",
+        "Dependência de uma única cópia aumenta o risco de perda.",
+        "Velocidade da rede não desfaz exclusão já propagada."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Informática",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-092",
+      "roles": [
+        "aci"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "referência absoluta",
+      "difficulty": "hard",
+      "statement": "Em uma planilha, a célula C2 contém =B2*$F$1. Ao copiar essa fórmula para C5, sem alterar a posição de F1, qual referência é esperada na nova célula?",
+      "options": [
+        "=B2*$F$4",
+        "=B5*$F$1",
+        "=B5*F4",
+        "=B2*$F$1",
+        "=B5*$F5"
+      ],
+      "answer": 1,
+      "explanation": "B2 é relativa e desce três linhas para B5; $F$1 fixa coluna e linha, permanecendo inalterada. B2 deveria mudar e F1 não poderia passar a F4 por ser absoluta. F4 perde a fixação da referência absoluta e altera o cálculo. Manter B2 ignora a cópia relativa para a linha 5. Em $F5, só a coluna ficaria fixa, não a linha como no original.",
+      "whyWrong": [
+        "B2 deveria mudar e F1 não poderia passar a F4 por ser absoluta.",
+        "B2 é relativa e desce três linhas para B5; $F$1 fixa coluna e linha, permanecendo inalterada.",
+        "F4 perde a fixação da referência absoluta e altera o cálculo.",
+        "Manter B2 ignora a cópia relativa para a linha 5.",
+        "Em $F5, só a coluna ficaria fixa, não a linha como no original."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Informática",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-093",
+      "roles": [
+        "aci"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "permissões de acesso",
+      "difficulty": "hard",
+      "statement": "Uma pasta contém dados individuais e precisa ser consultada por cinco revisores, mas apenas dois devem corrigir os arquivos. Qual configuração aplica o menor privilégio?",
+      "options": [
+        "Edição irrestrita para toda a rede, para evitar solicitações de acesso.",
+        "Permissão de administrador para os cinco revisores.",
+        "Leitura para os cinco e edição apenas para os dois responsáveis pelas correções.",
+        "Bloqueio total aos dois responsáveis pelas correções.",
+        "Um único usuário e senha compartilhados entre todos os revisores."
+      ],
+      "answer": 2,
+      "explanation": "Cada pessoa recebe somente o acesso necessário à sua tarefa, preservando rastreabilidade e integridade. Escrita irrestrita amplia risco de alteração indevida. Privilégios de administrador excedem a necessidade de consulta. Quem corrige precisa de permissão de edição apropriada. Credencial compartilhada dificulta atribuir ações a responsáveis.",
+      "whyWrong": [
+        "Escrita irrestrita amplia risco de alteração indevida.",
+        "Privilégios de administrador excedem a necessidade de consulta.",
+        "Cada pessoa recebe somente o acesso necessário à sua tarefa, preservando rastreabilidade e integridade.",
+        "Quem corrige precisa de permissão de edição apropriada.",
+        "Credencial compartilhada dificulta atribuir ações a responsáveis."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Informática",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-094",
+      "roles": [
+        "aci"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "CONT.SE",
+      "difficulty": "hard",
+      "statement": "Na planilha, A1:A5 contém os valores 4, 7, 7, 9 e 12. O que retorna =CONT.SE(A1:A5;\">=7\")?",
+      "options": [
+        "3",
+        "7",
+        "35",
+        "4",
+        "5"
+      ],
+      "answer": 3,
+      "explanation": "Quatro células atendem ao critério: 7, 7, 9 e 12; CONT.SE conta ocorrências. Três contaria valores distintos, mas as duas células com 7 contam separadamente. Sete é um valor encontrado, não o número de células que satisfazem o critério. Trinta e cinco é a soma dos valores elegíveis, operação diferente de CONT.SE. Cinco incluiria o valor 4, que é menor que 7.",
+      "whyWrong": [
+        "Três contaria valores distintos, mas as duas células com 7 contam separadamente.",
+        "Sete é um valor encontrado, não o número de células que satisfazem o critério.",
+        "Trinta e cinco é a soma dos valores elegíveis, operação diferente de CONT.SE.",
+        "Quatro células atendem ao critério: 7, 7, 9 e 12; CONT.SE conta ocorrências.",
+        "Cinco incluiria o valor 4, que é menor que 7."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Informática",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-095",
+      "roles": [
+        "aci"
+      ],
+      "subject": "Noções de Informática",
+      "topic": "HTTPS",
+      "difficulty": "hard",
+      "statement": "Um estudante vê um cadeado e HTTPS em uma página que pede senha. O que essa indicação permite concluir, sem presumir que a página seja legítima?",
+      "options": [
+        "A página pertence necessariamente à instituição mencionada no conteúdo.",
+        "O cadeado garante que nenhuma informação será coletada pelo site.",
+        "HTTPS impede que o usuário acesse um domínio falso.",
+        "O navegador confirmou que todas as promessas comerciais da página são verdadeiras.",
+        "A conexão com aquele endereço usa criptografia, mas ainda é preciso verificar domínio e finalidade da página."
+      ],
+      "answer": 4,
+      "explanation": "HTTPS protege o tráfego com o servidor acessado; um site malicioso também pode obter certificado. Identidade visual e certificado não provam vínculo com a instituição anunciada. O próprio servidor pode receber dados enviados pelo usuário. Domínios falsos podem operar com HTTPS válido. Certificado não avalia a veracidade de alegações da página.",
+      "whyWrong": [
+        "Identidade visual e certificado não provam vínculo com a instituição anunciada.",
+        "O próprio servidor pode receber dados enviados pelo usuário.",
+        "Domínios falsos podem operar com HTTPS válido.",
+        "Certificado não avalia a veracidade de alegações da página.",
+        "HTTPS protege o tráfego com o servidor acessado; um site malicioso também pode obter certificado."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções de Informática",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-096",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "arquivos e cópias",
+      "difficulty": "hard",
+      "statement": "Um operador precisa entregar uma cópia de planilha ao supervisor e continuar trabalhando no arquivo original. Qual ação mantém os dois arquivos disponíveis?",
+      "options": [
+        "Copiar e colar o arquivo em local distinto, conferindo nomes e caminhos.",
+        "Recortar e colar o arquivo, pois o original permanecerá no local inicial.",
+        "Renomear apenas a extensão do arquivo para gerar outra cópia.",
+        "Excluir o original após abrir a planilha, sem salvar em outro lugar.",
+        "Criar um atalho e apagar o arquivo de origem."
+      ],
+      "answer": 0,
+      "explanation": "Copiar cria segunda instância, enquanto o original permanece no local inicial para edição. Recortar prepara a movimentação; após colar, o original sai do primeiro local. Renomear extensão altera o nome, não duplica o conteúdo. Exclusão elimina o arquivo original, contrariando o objetivo. Atalho depende do arquivo de origem e não é cópia independente.",
+      "whyWrong": [
+        "Copiar cria segunda instância, enquanto o original permanece no local inicial para edição.",
+        "Recortar prepara a movimentação; após colar, o original sai do primeiro local.",
+        "Renomear extensão altera o nome, não duplica o conteúdo.",
+        "Exclusão elimina o arquivo original, contrariando o objetivo.",
+        "Atalho depende do arquivo de origem e não é cópia independente."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções Básicas de Informática",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-097",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "operação offline",
+      "difficulty": "hard",
+      "statement": "Durante a coleta sem sinal de rede, o aplicativo salva formulários no aparelho. Qual cuidado evita afirmar transmissão antes de ela ocorrer?",
+      "options": [
+        "Considerar todo formulário salvo localmente como recebido pelo servidor.",
+        "Verificar o status local, sincronizar quando houver conexão e conferir recibo ou log de envio.",
+        "Apagar os dados locais assim que a bateria for recarregada.",
+        "Desligar a rede para garantir que o servidor já recebeu os dados.",
+        "Usar a hora da entrevista como prova suficiente de transmissão."
+      ],
+      "answer": 1,
+      "explanation": "Registro local e entrega ao servidor são etapas diferentes; log ou recibo confirma que a sincronização se concluiu. Salvar offline não garante transmissão remota. Apagar antes de confirmar entrega pode causar perda irreversível. Rede desligada impossibilita envio naquele momento. Horário da entrevista não demonstra recebimento pelo sistema central.",
+      "whyWrong": [
+        "Salvar offline não garante transmissão remota.",
+        "Registro local e entrega ao servidor são etapas diferentes; log ou recibo confirma que a sincronização se concluiu.",
+        "Apagar antes de confirmar entrega pode causar perda irreversível.",
+        "Rede desligada impossibilita envio naquele momento.",
+        "Horário da entrevista não demonstra recebimento pelo sistema central."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções Básicas de Informática",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-098",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "SOMA e MÉDIA",
+      "difficulty": "hard",
+      "statement": "As células B1:B4 contêm 2, 4, 6 e uma célula vazia. Qual par de resultados é esperado para SOMA(B1:B4) e MÉDIA(B1:B4)?",
+      "options": [
+        "12 e 3",
+        "12 e 6",
+        "12 e 4",
+        "8 e 4",
+        "4 e 12"
+      ],
+      "answer": 2,
+      "explanation": "SOMA adiciona 2+4+6=12; MÉDIA ignora a célula vazia e divide 12 por três valores numéricos. Dividir por quatro trataria indevidamente o vazio como zero na média. Seis é o maior valor observado, não a média dos três. O total 8 omite o valor 4 da soma. Os resultados foram invertidos e não correspondem às funções.",
+      "whyWrong": [
+        "Dividir por quatro trataria indevidamente o vazio como zero na média.",
+        "Seis é o maior valor observado, não a média dos três.",
+        "SOMA adiciona 2+4+6=12; MÉDIA ignora a célula vazia e divide 12 por três valores numéricos.",
+        "O total 8 omite o valor 4 da soma.",
+        "Os resultados foram invertidos e não correspondem às funções."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções Básicas de Informática",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-099",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "perfis e senhas",
+      "difficulty": "hard",
+      "statement": "Dois agentes usam o mesmo aparelho em turnos distintos. Qual prática permite atribuir ações a cada pessoa e restringir dados?",
+      "options": [
+        "Compartilhar uma senha única anotada na capa do aparelho.",
+        "Manter sessão permanente aberta para dispensar identificação.",
+        "Copiar dados pessoais para aplicativos privados de mensagens.",
+        "Usar perfis ou credenciais individuais, com permissões adequadas e bloqueio ao terminar o turno.",
+        "Desabilitar o bloqueio de tela para acelerar a troca de turno."
+      ],
+      "answer": 3,
+      "explanation": "Credenciais individuais sustentam controle de acesso e rastreabilidade, e o bloqueio evita uso indevido entre turnos. Senha compartilhada impede atribuir ações e expõe acesso. Sessão aberta não distingue quem fez cada alteração. Aplicativos privados ampliam exposição de dados pessoais. Sem bloqueio, terceiros podem acessar o aparelho e seus dados.",
+      "whyWrong": [
+        "Senha compartilhada impede atribuir ações e expõe acesso.",
+        "Sessão aberta não distingue quem fez cada alteração.",
+        "Aplicativos privados ampliam exposição de dados pessoais.",
+        "Credenciais individuais sustentam controle de acesso e rastreabilidade, e o bloqueio evita uso indevido entre turnos.",
+        "Sem bloqueio, terceiros podem acessar o aparelho e seus dados."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções Básicas de Informática",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "ibge26-b010-100",
+      "roles": [
+        "aor"
+      ],
+      "subject": "Noções Básicas de Informática",
+      "topic": "planilhas e filtros",
+      "difficulty": "hard",
+      "statement": "Uma planilha mostra apenas registros do setor 12 após aplicação de filtro. Qual afirmação evita confundir visualização com exclusão de dados?",
+      "options": [
+        "O filtro apagou definitivamente todas as linhas de outros setores.",
+        "O filtro transformou automaticamente os dados do setor 12 em gráfico.",
+        "A soma de qualquer coluna passa a ser zero por haver linhas ocultas.",
+        "A condição do filtro renomeia arquivos armazenados no computador.",
+        "As demais linhas podem continuar na planilha, apenas ocultas pela condição do filtro."
+      ],
+      "answer": 4,
+      "explanation": "Filtro seleciona linhas para exibição sem necessariamente remover registros da base original. Linhas não exibidas não são, por isso, deletadas. Gráfico exige representação específica e não surge só por filtrar. Cálculos dependem da fórmula utilizada; ocultação não impõe resultado zero. Filtro de planilha não altera nome de arquivos do sistema.",
+      "whyWrong": [
+        "Linhas não exibidas não são, por isso, deletadas.",
+        "Gráfico exige representação específica e não surge só por filtrar.",
+        "Cálculos dependem da fórmula utilizada; ocultação não impõe resultado zero.",
+        "Filtro de planilha não altera nome de arquivos do sistema.",
+        "Filtro seleciona linhas para exibição sem necessariamente remover registros da base original."
+      ],
+      "sources": [
+        {
+          "title": "Edital nº 01/2026 — conteúdo programático",
+          "locator": "Anexo IV — Noções Básicas de Informática",
+          "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+        }
+      ],
+      "status": "approved"
+    }
+  ]
+}
