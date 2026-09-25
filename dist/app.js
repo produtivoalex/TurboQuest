@@ -10,7 +10,7 @@ function localDay(now = Date.now()) {
 }
 
 function freshState() {
-  return { done: 0, correct: 0, role: '', records: {}, days: {}, totalStudyMs: 0, updatedAt: 0, activeSession: null };
+  return { done: 0, correct: 0, role: '', records: {}, days: {}, achievements: {}, totalStudyMs: 0, updatedAt: 0, activeSession: null };
 }
 
 function loadState(storage) {
@@ -111,6 +111,43 @@ function buildQueue(pool, state, manifest, role, count, now = Date.now()) {
     chosen.push(next); picked.add(next.id); subjectCounts[target]++;
   }
   return chosen;
+}
+
+function reviewQueue(pool, state, role, kind = 'all', count = 20) {
+  return pool.filter(q => (!role || q.roles.includes(role)) && (() => {
+    const record = state.records[q.id];
+    if (!record || record.retired) return false;
+    const outcome = record.lastOutcome || (record.wrong ? 'wrong' : record.hard ? 'hard' : '');
+    return (kind === 'all' || outcome === kind) && (outcome === 'wrong' || outcome === 'hard');
+  })()).sort((a, b) => {
+    const left = state.records[a.id], right = state.records[b.id];
+    return (left.lastOutcome === 'wrong' ? -1 : 0) - (right.lastOutcome === 'wrong' ? -1 : 0) ||
+      (left.lastAt || 0) - (right.lastAt || 0);
+  }).slice(0, count);
+}
+
+const ACHIEVEMENTS = [
+  { id: 'first', icon: '✦', title: 'Primeiro passo', target: 1, value: state => state.done || 0 },
+  { id: 'five', icon: '✧', title: 'Pegou ritmo', target: 5, value: state => state.done || 0 },
+  { id: 'ten', icon: '⚡', title: 'Dez resolvidas', target: 10, value: state => state.done || 0 },
+  { id: 'twentyfive', icon: '◆', title: '25 resolvidas', target: 25, value: state => state.done || 0 },
+  { id: 'fifty', icon: '✹', title: '50 resolvidas', target: 50, value: state => state.done || 0 },
+  { id: 'hundred', icon: '★', title: 'Centena', target: 100, value: state => state.done || 0 },
+  { id: 'firstReview', icon: '↻', title: 'Primeira revisão', target: 1, value: state => Object.values(state.days || {}).reduce((sum, day) => sum + (day.reviewed || 0), 0) },
+  { id: 'tenReviews', icon: '◎', title: 'Dez revisões', target: 10, value: state => Object.values(state.days || {}).reduce((sum, day) => sum + (day.reviewed || 0), 0) },
+  { id: 'recovered', icon: '↗', title: 'Aprendeu com o erro', target: 1, value: state => Object.values(state.records || {}).filter(record => record.wrong && record.lastOutcome === 'easy').length },
+  { id: 'threeDays', icon: '☀', title: 'Três dias de estudo', target: 3, value: state => Object.values(state.days || {}).filter(day => day.done > 0).length },
+  { id: 'fiveSubjects', icon: '◇', title: 'Explorador', target: 5, value: state => new Set(Object.values(state.records || {}).filter(record => record.attempts).map(record => record.subject)).size }
+];
+
+function unlockAchievements(state, now = Date.now()) {
+  state.achievements ||= {};
+  const unlocked = [];
+  for (const award of ACHIEVEMENTS) if (!state.achievements[award.id] && award.value(state) >= award.target) {
+    state.achievements[award.id] = now;
+    unlocked.push(award);
+  }
+  return unlocked;
 }
 
 function schedule(record, ok, confidence, now) {
@@ -255,18 +292,22 @@ function studyTip(q) {
     'Antes de olhar as alternativas, sublinhe a condição decisiva do enunciado e formule sua resposta em uma frase. Depois compare com a explicação.';
 }
 
-function studyVideo(q) { return VIDEOS.find(video => video.test(q)) || null; }
+function studyVideo(q, catalog = null) {
+  const curated = VIDEOS.find(video => video.test(q));
+  if (curated) return { ...curated, match: 'curated' };
+  return catalog?.entries?.[`${q.subject} | ${q.topic}`] || null;
+}
 
 if (typeof module !== 'undefined') module.exports = {
-  loadState, median, subjectAccuracy, priorityForQuestion, eligibleAt, examWeights, buildQueue, schedule, formatClock, formatDuration, subjectReport, studyTip, studyVideo, localDay
+  loadState, median, subjectAccuracy, priorityForQuestion, eligibleAt, examWeights, buildQueue, reviewQueue, schedule, formatClock, formatDuration, subjectReport, studyTip, studyVideo, unlockAchievements, ACHIEVEMENTS, localDay
 };
 
 if (typeof document !== 'undefined') {
   const state = loadState(localStorage);
-  let bank = [], manifest = null, queue = [], at = 0, session = null, timer = null;
+  let bank = [], manifest = null, videoCatalog = null, queue = [], at = 0, session = null, timer = null;
   let questionMs = 0, sessionMs = 0, lastTick = 0, answered = false, confidenceSaved = false;
   let selectedAnswer = null, speedBaseline = null, speedDayRate = null;
-  let sessionResult = { done: 0, correct: 0, totalMs: 0, subjects: {} };
+  let sessionResult = { done: 0, correct: 0, totalMs: 0, subjects: {}, awards: [] };
   let authConfig = null, auth = null, syncReady = false, syncTimer = null, syncing = false, dirty = false;
   const AUTH_KEY = 'tq-auth-v1';
 
@@ -291,6 +332,18 @@ if (typeof document !== 'undefined') {
     $('#dailyBar').style.width = `${Math.min(100, day.done / DAILY_GOAL * 100)}%`;
     $('#dailyNote').textContent = day.done >= DAILY_GOAL ? 'Meta de hoje concluída. Continue se fizer sentido para você.' :
       day.done ? `Mais ${DAILY_GOAL - day.done} para a meta de hoje.` : 'Comece com uma sessão curta. Sem pressão.';
+    const upcoming = ACHIEVEMENTS.find(award => !state.achievements?.[award.id]);
+    $('#nextMilestone').textContent = upcoming ? `Próximo marco: ${upcoming.title} · ${Math.min(upcoming.target, upcoming.value(state))}/${upcoming.target}` : 'Seus marcos atuais estão completos.';
+    renderReviewCount();
+  }
+
+  function renderReviewCount() {
+    const role = $('#role').value;
+    const errors = reviewQueue(bank, state, role, 'wrong', Infinity).length;
+    const doubts = reviewQueue(bank, state, role, 'hard', Infinity).length;
+    $('#reviewCount').textContent = errors || doubts ? `${errors} ${errors === 1 ? 'erro' : 'erros'} · ${doubts} ${doubts === 1 ? 'dúvida' : 'dúvidas'} disponíveis para revisão voluntária.` :
+      'Quando você errar ou marcar dúvida, a questão aparecerá aqui. A revisão automática respeita o intervalo programado.';
+    $('#reviewNow').disabled = !reviewQueue(bank, state, role, $('#reviewKind').value, 1).length;
   }
 
   function makeSubjectRow(row) {
@@ -313,6 +366,16 @@ if (typeof document !== 'undefined') {
     const weakest = rows.filter(row => !/^(Questões de versões anteriores|Histórico sem disciplina)$/.test(row.subject) && row.done >= 2).sort((a, b) => a.correct / a.done - b.correct / b.done)[0];
     $('#profileInsight').textContent = weakest ? `Sua maior oportunidade de revisão agora: ${weakest.subject} (${Math.round(weakest.correct / weakest.done * 100)}% em ${weakest.done} questões). ${weakest.done < 5 ? 'A amostra ainda é pequena; continue praticando.' : 'Priorize alguns exercícios desse assunto.'}` :
       'Comece a responder para descobrir onde vale concentrar a revisão. A análise de dificuldade precisa de pelo menos 2 questões por disciplina.';
+    const awards = state.achievements || {};
+    $('#achievementGrid').replaceChildren(...ACHIEVEMENTS.map(award => {
+      const card = document.createElement('div'); card.className = `achievement${awards[award.id] ? '' : ' locked'}`;
+      const icon = document.createElement('div'); icon.className = 'icon'; icon.textContent = award.icon;
+      const name = document.createElement('strong'); name.textContent = award.title;
+      const detail = document.createElement('small'); detail.textContent = awards[award.id] ? 'Conquistada' : `${Math.min(award.target, award.value(state))}/${award.target}`;
+      card.append(icon, name, detail); return card;
+    }));
+    const nextAward = ACHIEVEMENTS.find(award => !awards[award.id]);
+    $('#achievementProgress').textContent = nextAward ? `Próxima: ${nextAward.title} · ${Math.min(nextAward.target, nextAward.value(state))}/${nextAward.target}. Sem pressa.` : 'Todas as conquistas atuais liberadas. Continue estudando no seu ritmo.';
     $('#footerStatus').textContent = auth && syncReady ? 'TurboQuest · progresso sincronizado com sua conta quando há internet' : 'TurboQuest · progresso salvo neste dispositivo';
   }
 
@@ -437,7 +500,7 @@ if (typeof document !== 'undefined') {
 
   function persistSession() {
     if (!session) return;
-    state.activeSession = { queueIds: queue.map(q => q.id), at, minutes: session.minutes, sessionMs,
+    state.activeSession = { queueIds: queue.map(q => q.id), at, minutes: session.minutes, kind: session.kind, sessionMs,
       questionMs, result: sessionResult, answeredIndex: selectedAnswer, confidenceSaved, speedBaseline, speedDayRate, role: state.role };
     save();
     renderResume();
@@ -481,9 +544,11 @@ if (typeof document !== 'undefined') {
   }
 
   function updateMilestones(day, previousDone) {
-    if (previousDone < DAILY_GOAL && day.done >= DAILY_GOAL) toast('Meta de hoje concluída. Você construiu consistência.');
-    else if (day.done === 5) toast('Cinco questões feitas. Bom começo.');
-    else if (day.reviewed === 5) toast('Cinco revisões concluídas. Seu conhecimento está ficando mais firme.');
+    const unlocked = unlockAchievements(state);
+    sessionResult.awards ||= [];
+    sessionResult.awards.push(...unlocked.map(award => award.id));
+    // A single quiet message at major moments; smaller badges wait for the summary/profile.
+    if (previousDone < DAILY_GOAL && day.done >= DAILY_GOAL) toast('Meta de hoje concluída. Muito bem.');
   }
 
   function renderFeedback(index, restored = false) {
@@ -505,14 +570,14 @@ if (typeof document !== 'undefined') {
     const tipTitle = document.createElement('b'); tipTitle.textContent = 'Dica para resolver mais rápido';
     const tipBody = document.createElement('span'); tipBody.textContent = studyTip(q);
     tip.append(tipTitle, tipBody); $('#explain').append(tip);
-    const video = studyVideo(q);
+    const video = studyVideo(q, videoCatalog);
     const videoCard = document.createElement('div'); videoCard.className = 'video-card';
-    const videoTitle = document.createElement('b'); videoTitle.textContent = video ? 'Aula selecionada para este assunto' : 'Quer ver uma aula?';
+    const videoTitle = document.createElement('b'); videoTitle.textContent = video?.match === 'curated' ? 'Aula selecionada para este assunto' : video?.match === 'specific' ? 'Vídeo indexado sobre este assunto' : video ? 'Vídeo relacionado ao assunto' : 'Quer ver uma aula?';
     const videoText = document.createElement('p'); videoText.textContent = video ? `${video.title}${video.startSeconds ? ` · trecho ${formatClock(video.startSeconds * 1000)}${video.endSeconds ? `–${formatClock(video.endSeconds * 1000)}` : ''}` : ''}` : `Ainda não selecionamos um vídeo específico para “${q.topic}”. Você pode pesquisar pelo tópico.`;
     videoCard.append(videoTitle, videoText);
     if (video) {
       const reason = document.createElement('small'); reason.className = 'quiet';
-      reason.textContent = 'Seleção editorial: assunto específico, canal confiável e vídeo disponível.';
+      reason.textContent = video.match === 'curated' ? 'Seleção editorial por assunto e canal.' : video.match === 'specific' ? 'Correspondência automática pelo título; confira se a aula cobre a dúvida exata.' : 'Sugestão de contexto, não necessariamente sobre o detalhe da questão.';
       videoCard.append(reason, document.createElement('br'));
       const play = document.createElement('button'); play.className = 'outline'; play.type = 'button'; play.textContent = 'Assistir aqui';
       play.addEventListener('click', () => {
@@ -522,6 +587,10 @@ if (typeof document !== 'undefined') {
         frame.append(iframe); play.replaceWith(frame);
       }); videoCard.append(play);
       const link = document.createElement('a'); link.href = `https://www.youtube.com/watch?v=${video.id}${video.startSeconds ? `&t=${video.startSeconds}s` : ''}`; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = 'Abrir no YouTube'; link.className = 'textbtn'; videoCard.append(link);
+      if (video.match === 'related') {
+        const search = document.createElement('a'); search.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(`${q.subject} ${q.topic} aula`)}`;
+        search.target = '_blank'; search.rel = 'noopener noreferrer'; search.textContent = 'Buscar aula mais específica'; search.className = 'textbtn'; videoCard.append(search);
+      }
     } else {
       const link = document.createElement('a'); link.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(`${q.subject} ${q.topic} aula`)}`;
       link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = `Buscar aula de ${q.topic}`; link.className = 'textbtn'; videoCard.append(link);
@@ -549,6 +618,7 @@ if (typeof document !== 'undefined') {
     state.days[localDay(now)] = day;
     state.done++; if (ok) state.correct++;
     const record = { ...previous, subject: q.subject, topic: q.topic, attempts: previous.attempts + 1, correct: previous.correct + (ok ? 1 : 0),
+      lastOutcome: ok ? 'pending' : 'wrong',
       lastAt: now, lastMs: Math.round(questionMs),
       timeMs: (previous.timeMs || 0) + Math.round(questionMs),
       correctTimes: ok ? [...(previous.correctTimes || []).slice(-4), Math.round(questionMs)] : (previous.correctTimes || []) };
@@ -565,6 +635,9 @@ if (typeof document !== 'undefined') {
     if (confidenceSaved || !answered || !session) return;
     const q = queue[at], record = state.records[q.id];
     state.records[q.id] = schedule(record, true, level, Date.now());
+    const unlocked = unlockAchievements(state);
+    sessionResult.awards ||= [];
+    sessionResult.awards.push(...unlocked.map(award => award.id));
     confidenceSaved = true; persistSession();
     $('#confidence').hidden = true;
     const message = document.createElement('small'); message.className = 'review-note';
@@ -594,11 +667,25 @@ if (typeof document !== 'undefined') {
     const count = mode === 'custom' ? Math.max(1, Math.min(100, Number($('#customCount').value) || 10)) : mode === 'count20' ? 20 : 10;
     queue = buildQueue(filtered(), state, manifest, role, minutes ? 100 : count);
     if (!queue.length) return toast('Nenhuma questão disponível agora com esses filtros. Tente outra disciplina ou aguarde a revisão.');
-    session = { minutes }; sessionMs = 0; at = 0; sessionResult = { done: 0, correct: 0, totalMs: 0, subjects: {} };
+    beginSession(minutes, 'regular');
+  }
+
+  function beginSession(minutes, kind) {
+    session = { minutes, kind }; sessionMs = 0; at = 0; sessionResult = { done: 0, correct: 0, totalMs: 0, subjects: {}, awards: [] };
     $('#sessionSummary').hidden = true;
     $('#sessionClock').textContent = minutes ? `${minutes}:00 restantes` : '';
     $('#sessionClock').hidden = !minutes;
     show('quiz'); draw(); persistSession(); clearInterval(timer); timer = setInterval(tick, 250);
+  }
+
+  function startReview() {
+    if (!bank.length) return toast('Aguarde o carregamento das questões.');
+    if (state.activeSession && !confirm('Há uma sessão pausada. Iniciar revisão vai encerrar a fila anterior. Quer continuar?')) return;
+    const role = $('#role').value;
+    queue = reviewQueue(bank, state, role, $('#reviewKind').value, Number($('#reviewAmount').value));
+    if (!queue.length) return toast('Ainda não há questões desse tipo para revisar.');
+    if (role) { state.role = role; save(); }
+    beginSession(0, 'review');
   }
 
   function pause() {
@@ -616,8 +703,8 @@ if (typeof document !== 'undefined') {
     if (!saved.queueIds?.length || saved.queueIds.some(id => !byId.has(id)) || saved.at >= saved.queueIds.length)
       return toast('A fila salva contém questões indisponíveis. Encerre esta sessão para iniciar outra.');
     queue = saved.queueIds.map(id => byId.get(id));
-    at = saved.at; session = { minutes: saved.minutes || 0 }; sessionMs = saved.sessionMs || 0;
-    sessionResult = saved.result || { done: 0, correct: 0, totalMs: 0, subjects: {} };
+    at = saved.at; session = { minutes: saved.minutes || 0, kind: saved.kind || 'regular' }; sessionMs = saved.sessionMs || 0;
+    sessionResult = saved.result || { done: 0, correct: 0, totalMs: 0, subjects: {}, awards: [] };
     state.role = saved.role || state.role;
     $('#role').value = state.role;
     $('#sessionClock').hidden = !session.minutes;
@@ -627,13 +714,14 @@ if (typeof document !== 'undefined') {
 
   function finish() {
     if (!session) return;
+    const wasReview = session.kind === 'review';
     if (answered && !confidenceSaved && !$('#confidence').hidden) setConfidence('hard');
     clearInterval(timer); timer = null; session = null; state.activeSession = null;
     const result = sessionResult;
     const summary = $('#sessionSummary');
     if (result.done) {
       const accuracy = Math.round(result.correct / result.done * 100);
-      const heading = document.createElement('h3'); heading.textContent = 'Sessão concluída';
+      const heading = document.createElement('h3'); heading.textContent = wasReview ? 'Revisão concluída' : 'Sessão concluída';
       const overview = document.createElement('p'); overview.textContent = `${result.done} ${result.done === 1 ? 'questão' : 'questões'} · ${result.correct} acertos · ${result.done - result.correct} erros · ${accuracy}% de aproveitamento`;
       const timing = document.createElement('p'); timing.textContent = `${formatClock(sessionMs)} de estudo · média de ${formatClock(result.totalMs / result.done)} por questão`;
       const rows = Object.values(result.subjects).sort((a, b) => a.correct / a.done - b.correct / b.done);
@@ -643,6 +731,11 @@ if (typeof document !== 'undefined') {
         `Para revisar primeiro: ${rows[0].subject} (${rows[0].wrong} ${rows[0].wrong === 1 ? 'erro' : 'erros'} em ${rows[0].done} questões). ${rows[0].done < 5 ? 'É uma amostra pequena; confirme com mais exercícios.' : ''}` : '';
       const profileLink = document.createElement('button'); profileLink.type = 'button'; profileLink.className = 'textbtn'; profileLink.textContent = 'Ver todo o meu progresso →'; profileLink.addEventListener('click', () => { renderProfile(); show('profile'); });
       summary.replaceChildren(heading, overview, timing, label, list, insight, profileLink);
+      if (result.awards?.length) {
+        const awardLine = document.createElement('p'); awardLine.className = 'summary-awards';
+        awardLine.textContent = `${result.awards.length} ${result.awards.length === 1 ? 'nova conquista' : 'novas conquistas'}: ${result.awards.map(id => ACHIEVEMENTS.find(award => award.id === id)?.title).filter(Boolean).slice(0, 2).join(' · ')}${result.awards.length > 2 ? ' · e mais no perfil' : ''}`;
+        summary.append(awardLine);
+      }
       summary.hidden = false;
       toast(accuracy >= 80 ? 'Sessão concluída com boa precisão. Continue no seu ritmo.' : 'Sessão concluída. Os erros já entraram na fila de revisão.');
     }
@@ -666,10 +759,12 @@ if (typeof document !== 'undefined') {
   $('#endPaused').addEventListener('click', () => { resume(); if (session) finish(); });
   $('#next').addEventListener('click', next);
   $('#begin').addEventListener('click', start);
+  $('#reviewNow').addEventListener('click', startReview);
+  $('#reviewKind').addEventListener('change', renderReviewCount);
   $('#easy').addEventListener('click', () => setConfidence('easy'));
   $('#hard').addEventListener('click', () => setConfidence('hard'));
   $('#toggleFilters').addEventListener('click', () => { const panel = $('#customize'); panel.hidden = !panel.hidden; });
-  $('#role').addEventListener('change', () => { state.role = $('#role').value; save(); renderSubjects(); });
+  $('#role').addEventListener('change', () => { state.role = $('#role').value; save(); renderSubjects(); renderReviewCount(); });
   $('#subject').addEventListener('change', renderTopics);
   $('#mode').addEventListener('change', () => { $('#customCountField').hidden = $('#mode').value !== 'custom'; });
   document.addEventListener('visibilitychange', () => { if (document.hidden && session) persistSession(); lastTick = performance.now(); });
@@ -681,11 +776,12 @@ if (typeof document !== 'undefined') {
   renderStats(); renderProfile(); renderResume(); initAuth();
   Promise.all([
     fetch(`/content/ibge-2026/questions.json?v=${Date.now()}`, { cache: 'no-store' }).then(response => { if (!response.ok) throw new Error('Banco indisponível'); return response.json(); }),
-    fetch('/content/ibge-2026/banco-manifesto.json', { cache: 'no-store' }).then(response => response.ok ? response.json() : null).catch(() => null)
-  ]).then(([data, exam]) => {
-    bank = (data.questions || []).filter(q => q.status === 'approved'); manifest = exam;
+    fetch('/content/ibge-2026/banco-manifesto.json', { cache: 'no-store' }).then(response => response.ok ? response.json() : null).catch(() => null),
+    fetch('/content/ibge-2026/video-catalog.json', { cache: 'no-store' }).then(response => response.ok ? response.json() : null).catch(() => null)
+  ]).then(([data, exam, videos]) => {
+    bank = (data.questions || []).filter(q => q.status === 'approved'); manifest = exam; videoCatalog = videos;
     $('#available').textContent = bank.length; renderSubjects(); renderProfile(); renderResume();
     if (manifest?.exam?.categoryLabel) $('#examType').textContent = `${manifest.exam.categoryLabel} · IBGE · ${manifest.exam.board} · 2026`;
   }).catch(() => toast('Não foi possível carregar o banco. Verifique sua conexão.'));
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=resume-v1').then(registration => registration.update()).catch(() => {});
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=reviews-videos-awards-v1').then(registration => registration.update()).catch(() => {});
 }

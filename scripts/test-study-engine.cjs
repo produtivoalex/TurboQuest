@@ -2,6 +2,7 @@ const assert = require('node:assert/strict');
 const engine = require('../dist/app.js');
 const manifest = require('../content/ibge-2026/banco-manifesto.json');
 const bank = require('../content/ibge-2026/questions.json').questions.filter(q => q.status === 'approved');
+const videoCatalog = require('../content/ibge-2026/video-catalog.json');
 const now = Date.now();
 
 for (const role of manifest.roles) {
@@ -41,12 +42,19 @@ assert.equal(wrongAgain.dueAt - (now + 8 * 3600000), 16 * 3600000);
 assert.equal(engine.eligibleAt({ wrong: 1, lastAt: now, dueAt: now + 5 * 60000 }), now + 8 * 3600000,
   'prazos antigos de 5 minutos não voltam imediatamente');
 assert.equal(engine.buildQueue([missed], { records: { [missed.id]: { wrong: 1, lastAt: now, dueAt: now + 5 * 60000 } } }, manifest, 'aca', 1, now + 30 * 60000).length, 0);
+assert.equal(engine.reviewQueue([missed], { records: { [missed.id]: { ...wrong, lastAt: now } } }, 'aca', 'wrong', 10).length, 1,
+  'revisão voluntária acessa erro antes do prazo automático');
+assert.equal(engine.reviewQueue([missed], { records: { [missed.id]: { ...wrong, lastAt: now } } }, 'aca', 'hard', 10).length, 0);
+assert.equal(engine.reviewQueue([missed], { records: { [missed.id]: { ...hard, lastAt: now } } }, 'aca', 'hard', 10).length, 1);
 const easy = engine.schedule({ attempts: 1, correct: 1 }, true, 'easy', now);
 assert.equal(easy.dueAt - now, 14 * 86400000);
 assert.equal(engine.buildQueue([missed], { records: { [missed.id]: easy } }, manifest, 'aca', 1, now).length, 0);
 const easyAgain = engine.schedule(easy, true, 'easy', now + 14 * 86400000);
 assert.equal(easyAgain.retired, true);
 assert.equal(engine.buildQueue([missed], { records: { [missed.id]: easyAgain } }, manifest, 'aca', 1, now + 50 * 86400000).length, 0);
+const gamified = { done: 5, days: { '2026-09-25': { done: 5, reviewed: 1 } }, records: {} };
+assert.deepEqual(engine.unlockAchievements(gamified, now).map(item => item.id), ['first', 'five', 'firstReview']);
+assert.equal(engine.unlockAchievements(gamified, now).length, 0, 'conquista não dispara repetidamente');
 
 const old = engine.loadState({ getItem: key => key === 'tq-state-v3' ? '{"done":25,"correct":18}' : null });
 assert.equal(old.done, 25); assert.equal(old.correct, 18);
@@ -67,5 +75,7 @@ assert(bank.every(q => engine.studyTip(q).length > 50), 'todas as questões têm
 const phishing = bank.find(q => q.topic === 'phishing');
 assert.equal(engine.studyVideo(phishing).startSeconds, 61);
 assert.equal(engine.studyVideo(phishing).endSeconds, 449);
+assert(bank.every(q => /^[A-Za-z0-9_-]{11}$/.test(engine.studyVideo(q, videoCatalog)?.id || '')),
+  'todas as questões têm vídeo indexado com ID válido');
 assert.equal(manifest.exam.category, 'processo_seletivo_simplificado');
 console.log('Fila, matriz, revisões, migração, tempo, relatórios e dicas: OK');
