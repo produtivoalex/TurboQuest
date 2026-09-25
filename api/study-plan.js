@@ -29,6 +29,17 @@ function hasLiveResearch(value, grounding, model) {
   return true;
 }
 
+function addGroundingSources(value, grounding) {
+  if (!isResearchShape(value) || !grounding?.groundingChunks) return value;
+  const groundingSources = grounding.groundingChunks
+    .map(chunk => chunk.web)
+    .filter(web => web?.uri)
+    .map(web => ({ title: web.title || web.uri, url: web.uri, why: 'Fonte retornada pela pesquisa Google.' }));
+  const known = new Set(value.sources.map(source => source?.url));
+  value.sources = [...value.sources, ...groundingSources.filter(source => !known.has(source.url))];
+  return value;
+}
+
 async function groqChat(key, model, messages, extra = {}) {
   const { timeoutMs = 30000, ...requestOptions } = extra;
   const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -59,7 +70,7 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') return json(res, 405, { error: 'Método não permitido.' });
   const geminiKey = process.env.GEMINI_API_KEY;
   const groqKey = process.env.GROQ_API_KEY;
-  if (!geminiKey && !groqKey) return json(res, 503, { error: 'Configure GROQ_API_KEY ou GEMINI_API_KEY nas variáveis do Vercel.' });
+  if (!geminiKey) return json(res, 503, { error: 'GEMINI_API_KEY não está configurada no ambiente Production do Vercel.' });
   const { action, edital, cargo, exam = 'IBGE' } = req.body || {};
   if (!edital || edital.length < 80) return json(res, 400, { error: 'O edital precisa conter mais texto.' });
 
@@ -94,19 +105,10 @@ EDITAL:\n${editalForPrompt}`;
     const text = data.candidates?.[0]?.content?.parts?.map(p => p.text || '').join('') || '';
     const result = parseModelJson(text);
     const grounding = data.candidates?.[0]?.groundingMetadata || null;
+    addGroundingSources(result, grounding);
     if (isResearch && !hasLiveResearch(result, grounding, MODEL)) throw new Error('Gemini não retornou evidências de pesquisa web ativa.');
     return json(res, 200, { result, grounding, model: MODEL });
   } catch (error) {
-    if (groqKey) {
-      try {
-        const fallback = isResearch ? await groqResearch(groqKey, prompt) : await groqJson(groqKey, prompt);
-        fallback.result.strategy = fallback.result.strategy || {};
-        fallback.result.strategy.notes = [...(fallback.result.strategy.notes || []), 'Gemini indisponível; fallback automático para Groq.'];
-        return json(res, 200, fallback);
-      } catch (fallbackError) {
-        return json(res, 502, { error: `Gemini falhou e o fallback Groq também falhou: ${fallbackError.message || error.message}` });
-      }
-    }
-    return json(res, 502, { error: error.message || 'Não foi possível concluir a análise agora.' });
+    return json(res, 502, { error: `Gemini falhou: ${error.message || 'resposta inválida'}` });
   }
 }
