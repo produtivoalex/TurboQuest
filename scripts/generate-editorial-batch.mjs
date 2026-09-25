@@ -7,6 +7,8 @@ const manifest = await fs.readFile('content/ibge-2026/banco-manifesto.json', 'ut
 const taxonomy = await fs.readFile('content/ibge-2026/taxonomia.json', 'utf8');
 const edital = `IBGE PSS 2026, Edital 01/2026, banca IBFC. Prova de 60 questões e cinco alternativas. Cargos ACA, ACI, AOR, ACR e ACS. Matriz, tópicos e fontes estão no background editorial. Este lote deve priorizar conteúdos ainda pouco representados.`;
 const questions = [];
+const output = `content/ibge-2026/batches/batch-auto-${Date.now()}.json`;
+const save = async () => fs.writeFile(output, JSON.stringify({batch: output, status: 'review', questions}, null, 2) + '\n');
 for (let offset = 0; offset < count; offset += batchSize) {
   const requested = Math.min(batchSize, count - offset);
   process.stdout.write(`Lote ${offset + 1}-${offset + requested}/${count}... `);
@@ -19,7 +21,10 @@ for (let offset = 0; offset < count; offset += batchSize) {
     })
   });
   const data = await response.json();
-  if (!response.ok) throw new Error(data.error || `HTTP ${response.status}`);
+  if (!response.ok) {
+    console.error(data.error || `HTTP ${response.status}`);
+    break;
+  }
   const incoming = data.result?.questions || [];
   for (const question of incoming) {
     if (!Array.isArray(question.options) || question.options.length < 5) continue;
@@ -31,8 +36,7 @@ for (let offset = 0; offset < count; offset += batchSize) {
       status: 'review'
     });
   }
+  await save();
   console.log(`${incoming.length} recebidas`);
 }
-const output = `content/ibge-2026/batches/batch-auto-${Date.now()}.json`;
-await fs.writeFile(output, JSON.stringify({batch: output, status: 'review', questions}, null, 2) + '\n');
 console.log(`Salvas ${questions.length} questões em ${output}.`);
