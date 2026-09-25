@@ -131,7 +131,7 @@
     $('#researchBtn').addEventListener('click',()=>$('#generatorCard').style.display='block');
     $('#importBridgeResponse').addEventListener('click',()=>$('#generatorCard').style.display='block');
     let deferredInstall;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstall=e;$('#installBtn').hidden=false});$('#installBtn').onclick=async()=>{if(!deferredInstall)return;deferredInstall.prompt();await deferredInstall.userChoice;deferredInstall=null;$('#installBtn').hidden=true};
-    if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js?v=8e870b4').then(r=>r.update()).catch(()=>{}));
+    if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js?v=9be76fc').then(r=>r.update()).catch(()=>{}));
     renderDash();loadPublishedBank();initCloud();
   </script>
 <script>
