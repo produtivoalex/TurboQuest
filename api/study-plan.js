@@ -55,7 +55,7 @@ async function groqResearch(key, prompt) {
 }
 
 async function groqJson(key, prompt) {
-  const response = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: `${prompt}\n\nRetorne somente JSON válido, sem markdown.` }]);
+  const response = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: `${prompt.slice(0, 16000)}\n\nRetorne somente JSON válido, sem markdown.` }], { max_tokens: 2500 });
   return { result: parseModelJson(response.text), grounding: null, model: GROQ_FORMAT_MODEL };
 }
 
