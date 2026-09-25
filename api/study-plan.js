@@ -18,14 +18,13 @@ function isResearchShape(value) {
   return value && Array.isArray(value.sources) && value.strategy && Array.isArray(value.strategy.priorities);
 }
 
-function hasLiveResearch(value, grounding, model) {
+function hasLiveResearch(value, grounding, model, rawData) {
   if (!isResearchShape(value)) return false;
   const urls = value.sources.filter(source => /^https?:\/\//i.test(String(source?.url || '')));
-  if (!urls.length) return false;
   if (model === 'gemini') {
-    return Boolean(grounding && (grounding.webSearchQueries?.length || grounding.groundingChunks?.length || grounding.groundingSupports?.length));
+    return Boolean(urls.length && grounding && (grounding.webSearchQueries?.length || grounding.groundingChunks?.length || grounding.groundingSupports?.length));
   }
-  return true;
+  return Boolean(rawData?.choices?.[0]?.message?.executed_tools?.some(tool => tool.type === 'browser_search' || tool.search_results || tool.results) || urls.length);
 }
 
 function addGroundingSources(value, grounding) {
@@ -75,7 +74,7 @@ async function groqResearch(key, prompt) {
   const response = await groqChat(key, GROQ_RESEARCH_MODEL, [{ role: 'user', content: `${prompt}\n\nFaça pesquisa web ativa e obrigatória usando browser_search. Consulte fontes oficiais e provas anteriores da banca. Construa um background estratégico para geração posterior em massa: padrões de cobrança, prioridades, armadilhas, dificuldade e regras para distratores. Retorne SOMENTE JSON válido no formato solicitado. Gere até 4 questões iniciais e cite somente URLs retornadas pela busca.` }], { max_completion_tokens: 1200, tool_choice: 'required', tools: [{ type: 'browser_search' }], reasoning_effort: 'low', timeoutMs: 25000 });
   const result = parseModelJson(response.text);
   addGroqSources(result, response.data, response.text);
-  if (!hasLiveResearch(result, null, GROQ_RESEARCH_MODEL)) throw new Error('O Groq não retornou evidências de pesquisa web ativa.');
+  if (!hasLiveResearch(result, null, GROQ_RESEARCH_MODEL, response.data)) throw new Error('O Groq não retornou evidências de pesquisa web ativa.');
   result.strategy.notes = [...(result.strategy.notes || []), 'Pesquisa realizada pelo Groq e estruturada automaticamente pelo TurboQuest.'];
   return { result, grounding: null, model: GROQ_RESEARCH_MODEL };
 }
