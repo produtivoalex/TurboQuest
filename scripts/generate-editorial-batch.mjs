@@ -1,5 +1,9 @@
 import fs from 'node:fs/promises';
 
+if (process.env.TURBOQUEST_ALLOW_GROQ !== 'true') {
+  throw new Error('Geração editorial por Groq desativada. Gere os lotes na curadoria e importe com scripts/import-question-batch.mjs.');
+}
+
 const endpoint = process.env.TURBOQUEST_API || 'https://turboquest.vercel.app/api/study-plan';
 const count = Number(process.argv[2] || 50);
 const batchSize = 10;
