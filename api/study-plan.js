@@ -78,6 +78,9 @@ async function groqResearch(key, prompt, compact = false) {
   const result = parseModelJson(response.text);
   addGroqSources(result, response.data, response.text);
   if (!hasLiveResearch(result, null, GROQ_RESEARCH_MODEL, response.data) && !compact) throw new Error('O Groq não retornou evidências de pesquisa web ativa.');
+  result.sources = Array.isArray(result.sources) ? result.sources : [];
+  result.strategy = result.strategy || { priorities: [], notes: [] };
+  result.questions = Array.isArray(result.questions) ? result.questions : [];
   result.strategy.notes = [...(result.strategy.notes || []), 'Pesquisa realizada pelo Groq e estruturada automaticamente pelo TurboQuest.'];
   return { result, grounding: null, model: GROQ_RESEARCH_MODEL };
 }
