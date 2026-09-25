@@ -1,0 +1,58 @@
+{
+  "batch": "ibge-2026-shared-002",
+  "status": "review",
+  "questions": [
+    {
+      "id": "ibge26-adm-0003",
+      "roles": ["aca", "aor", "acr", "acs"],
+      "subject": "Noções de Administração/Situações Gerenciais",
+      "topic": "controle e indicadores",
+      "difficulty": "hard",
+      "statement": "Uma supervisão compara a produtividade observada com a meta, identifica uma queda concentrada em determinada equipe e ajusta a distribuição de tarefas. A sequência descrita representa principalmente:",
+      "options": ["planejamento sem acompanhamento", "controle com diagnóstico e ação corretiva", "delegação sem autoridade", "comunicação informal sem objetivo", "motivação sem avaliação de resultado"],
+      "answer": 1,
+      "explanation": "Controle envolve acompanhar resultados, compará-los com metas, identificar desvios e adotar medidas corretivas. A situação descreve esse ciclo de comparação, diagnóstico e ajuste.",
+      "whyWrong": ["O caso já envolve acompanhamento de resultado, não apenas definição prévia de planos.", "É a alternativa correta: compara uma meta, identifica desvio e corrige a execução.", "Não há transferência de autoridade como elemento central.", "A comunicação pode ocorrer, mas não define a função predominante.", "Motivação não é o processo principal descrito."],
+      "sources": [{"title": "Edital nº 01/2026 - Conteúdos Programáticos", "locator": "Anexo IV, pp. 213-216", "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"}]
+    },
+    {
+      "id": "ibge26-log-0003",
+      "roles": ["aca", "aci", "aor", "acr", "acs"],
+      "subject": "Raciocínio Lógico Quantitativo",
+      "topic": "lógica de argumentação",
+      "difficulty": "hard",
+      "statement": "Considere: se uma transmissão foi concluída, então o registro foi atualizado. O registro não foi atualizado. Sob a lógica clássica, a conclusão válida é:",
+      "options": ["a transmissão foi concluída", "a transmissão não foi concluída", "o registro foi atualizado parcialmente", "a transmissão e o registro são independentes", "não existe relação lógica entre as proposições"],
+      "answer": 1,
+      "explanation": "A estrutura é uma implicação P então Q. Se Q é falsa, P não pode ser verdadeira; caso contrário, a implicação seria falsa. Logo, a transmissão não foi concluída.",
+      "whyWrong": ["Contradiz a informação de que o consequente é falso.", "É a alternativa correta por modus tollens: P implica Q e não Q, logo não P.", "A premissa não cria a categoria de atualização parcial.", "A primeira premissa estabelece relação lógica entre as proposições.", "Existe relação explícita entre transmissão e atualização."],
+      "sources": [{"title": "Edital nº 01/2026 - Conteúdos Programáticos", "locator": "Anexo IV, pp. 213-216", "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"}]
+    },
+    {
+      "id": "ibge26-info-0002",
+      "roles": ["aci", "aor"],
+      "subject": "Noções de Informática",
+      "topic": "segurança da informação",
+      "difficulty": "hard",
+      "statement": "Um usuário precisa permitir que uma equipe consulte relatórios, mas somente um responsável possa alterá-los. A medida mais adequada é:",
+      "options": ["usar a mesma senha para todos", "conceder perfil de administrador a todos", "separar perfis e conceder somente as permissões necessárias", "desativar senhas para evitar bloqueios", "copiar os arquivos para dispositivos pessoais"],
+      "answer": 2,
+      "explanation": "A separação de perfis e o princípio do menor privilégio limitam o acesso às necessidades de cada função. Isso preserva confidencialidade, integridade e responsabilização individual.",
+      "whyWrong": ["Senha compartilhada reduz rastreabilidade e aumenta o risco de acesso indevido.", "Administrador para todos concede privilégios excessivos.", "É a alternativa correta: perfis distintos e permissões compatíveis.", "Desativar autenticação elimina uma camada básica de proteção.", "Dispositivos pessoais sem controle ampliam riscos de cópia e vazamento."],
+      "sources": [{"title": "Edital nº 01/2026 - Conteúdos Programáticos", "locator": "Anexo IV, p. 215", "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"}]
+    },
+    {
+      "id": "ibge26-port-0002",
+      "roles": ["aca", "aci", "aor", "acr", "acs"],
+      "subject": "Língua Portuguesa",
+      "topic": "coesão e conectores",
+      "difficulty": "hard",
+      "statement": "No período “A equipe revisou os registros, portanto encaminhou apenas as pendências”, o conector destacado estabelece relação de:",
+      "options": ["causa", "conclusão", "oposição", "condição", "explicação"],
+      "answer": 1,
+      "explanation": "“Portanto” possui valor conclusivo. O encaminhamento das pendências aparece como consequência lógica da revisão dos registros, e não como causa, oposição ou condição.",
+      "whyWrong": ["Causa indicaria motivo, não a consequência apresentada.", "É a alternativa correta: o segundo segmento é uma conclusão.", "Não há contraste entre as orações.", "Nenhuma condição foi estabelecida.", "O segundo segmento não explica o primeiro; decorre dele."],
+      "sources": [{"title": "Edital nº 01/2026 - Conteúdos Programáticos", "locator": "Anexo IV, pp. 213-216", "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"}]
+    }
+  ]
+}

@@ -1,7 +1,10 @@
 [
   {
     "id": "ibge26-tec-0001",
-    "roles": ["acr", "acs"],
+    "roles": [
+      "acr",
+      "acs"
+    ],
     "subject": "Conhecimentos Técnicos",
     "topic": "data e período de referência",
     "difficulty": "hard",
@@ -22,12 +25,21 @@
       "Receita não é o critério temporal determinante para essa decisão.",
       "A data da entrevista não pode substituir a data ou o período de referência do levantamento."
     ],
-    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "p. 51", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "sources": [
+      {
+        "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+        "locator": "p. 51",
+        "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+      }
+    ],
     "status": "approved"
   },
   {
     "id": "ibge26-tec-0002",
-    "roles": ["acr", "acs"],
+    "roles": [
+      "acr",
+      "acs"
+    ],
     "subject": "Conhecimentos Técnicos",
     "topic": "estabelecimento agropecuário",
     "difficulty": "medium",
@@ -48,17 +60,32 @@
       "É a alternativa correta, pois reúne os critérios e as independências do conceito.",
       "Exportação não é requisito para a unidade ser recenseável."
     ],
-    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 51 e 55", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "sources": [
+      {
+        "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+        "locator": "pp. 51 e 55",
+        "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+      }
+    ],
     "status": "approved"
   },
   {
     "id": "ibge26-tec-0003",
-    "roles": ["acr", "acs"],
+    "roles": [
+      "acr",
+      "acs"
+    ],
     "subject": "Conhecimentos Técnicos",
     "topic": "escala cartográfica",
     "difficulty": "hard",
     "statement": "Em um mapa de setor censitário com escala 1:50.000, a distância entre dois pontos de interesse mede 3 cm. Desconsiderando a inclinação do terreno, qual distância real essa medida representa?",
-    "options": ["150 metros", "500 metros", "1.500 metros", "15.000 metros", "150.000 metros"],
+    "options": [
+      "150 metros",
+      "500 metros",
+      "1.500 metros",
+      "15.000 metros",
+      "150.000 metros"
+    ],
     "answer": 2,
     "explanation": "Na escala 1:50.000, cada centímetro no mapa corresponde a 50.000 centímetros no terreno. Portanto, 3 cm correspondem a 150.000 cm. Dividindo por 100, obtêm-se 1.500 metros, ou 1,5 km.",
     "whyWrong": [
@@ -68,12 +95,21 @@
       "Desloca uma casa decimal na conversão final.",
       "Confunde a distância em centímetros com a distância já convertida para metros."
     ],
-    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 24-25", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "sources": [
+      {
+        "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+        "locator": "pp. 24-25",
+        "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+      }
+    ],
     "status": "approved"
   },
   {
     "id": "ibge26-tec-0004",
-    "roles": ["acr", "acs"],
+    "roles": [
+      "acr",
+      "acs"
+    ],
     "subject": "Conhecimentos Técnicos",
     "topic": "limites do setor censitário",
     "difficulty": "hard",
@@ -94,203 +130,661 @@
       "É a alternativa correta: comunicar a supervisão e preservar o limite oficial.",
       "A transferência sem registro também altera a responsabilidade territorial sem procedimento adequado."
     ],
-    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 28-30", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "sources": [
+      {
+        "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+        "locator": "pp. 28-30",
+        "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+      }
+    ],
     "status": "approved"
   },
   {
     "id": "ibge26-adm-0001",
-    "roles": ["aca"],
+    "roles": [
+      "aca"
+    ],
     "subject": "Noções de Administração",
     "topic": "organizações como sistemas abertos",
     "difficulty": "hard",
     "statement": "Uma unidade administrativa passa a acompanhar mudanças no ambiente, recebe informações de usuários, ajusta seus procedimentos e avalia os resultados produzidos. Esse comportamento exemplifica principalmente a ideia de organização como:",
-    "options": ["estrutura isolada do ambiente", "sistema aberto em interação com o ambiente", "estrutura sem objetivos mensuráveis", "grupo informal sem processos", "unidade que substitui planejamento por improviso"],
+    "options": [
+      "estrutura isolada do ambiente",
+      "sistema aberto em interação com o ambiente",
+      "estrutura sem objetivos mensuráveis",
+      "grupo informal sem processos",
+      "unidade que substitui planejamento por improviso"
+    ],
     "answer": 1,
     "explanation": "Organizações como sistemas abertos mantêm intercâmbio com o ambiente: recebem entradas, transformam recursos e informações, entregam resultados e usam retorno para ajustar sua atuação.",
-    "whyWrong": ["A interação descrita contradiz a ideia de isolamento.", "É a alternativa correta, pois descreve entradas, transformação, resultados e retroalimentação.", "A situação envolve objetivos e avaliação, não ausência de mensuração.", "O enunciado descreve uma organização formal, ainda que possa haver grupos informais.", "Ajustar procedimentos a partir de informações é gestão, não improviso obrigatório."],
-    "sources": [{"title": "Edital nº 01/2026 - Conteúdos Programáticos", "locator": "Anexo IV, p. 213", "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"}],
+    "whyWrong": [
+      "A interação descrita contradiz a ideia de isolamento.",
+      "É a alternativa correta, pois descreve entradas, transformação, resultados e retroalimentação.",
+      "A situação envolve objetivos e avaliação, não ausência de mensuração.",
+      "O enunciado descreve uma organização formal, ainda que possa haver grupos informais.",
+      "Ajustar procedimentos a partir de informações é gestão, não improviso obrigatório."
+    ],
+    "sources": [
+      {
+        "title": "Edital nº 01/2026 - Conteúdos Programáticos",
+        "locator": "Anexo IV, p. 213",
+        "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+      }
+    ],
     "status": "review"
   },
   {
     "id": "ibge26-adm-0002",
-    "roles": ["aca", "aor", "acr", "acs"],
+    "roles": [
+      "aca",
+      "aor",
+      "acr",
+      "acs"
+    ],
     "subject": "Noções de Administração/Situações Gerenciais",
     "topic": "delegação e responsabilidade",
     "difficulty": "hard",
     "statement": "Um gestor distribui a um servidor a autoridade para executar determinada atividade, define limites, fornece recursos e exige prestação de contas. Sobre essa situação, é correto afirmar que:",
-    "options": ["a delegação elimina toda responsabilidade do gestor", "a autoridade não pode ser delegada em nenhuma circunstância", "a delegação deve ocorrer sem definição de limites", "a autoridade pode ser delegada, permanecendo o dever de acompanhamento e responsabilização gerencial", "a prestação de contas é incompatível com a delegação"],
+    "options": [
+      "a delegação elimina toda responsabilidade do gestor",
+      "a autoridade não pode ser delegada em nenhuma circunstância",
+      "a delegação deve ocorrer sem definição de limites",
+      "a autoridade pode ser delegada, permanecendo o dever de acompanhamento e responsabilização gerencial",
+      "a prestação de contas é incompatível com a delegação"
+    ],
     "answer": 3,
     "explanation": "Delegar é atribuir autoridade e tarefa dentro de limites definidos. Isso não transforma a delegação em abandono da gestão: o superior continua responsável pelo acompanhamento, pelos controles e pela prestação institucional de contas.",
-    "whyWrong": ["A delegação não apaga o dever gerencial de acompanhar e responder pela gestão.", "A autoridade pode ser delegada conforme competência e limites institucionais.", "Sem limites, a delegação fica imprecisa e aumenta o risco de conflito e erro.", "É a alternativa correta, pois combina autoridade delegada com controle e responsabilidade gerencial.", "A prestação de contas é mecanismo essencial para uma delegação controlada."],
-    "sources": [{"title": "Edital nº 01/2026 - Conteúdos Programáticos", "locator": "Anexo IV, pp. 213-216", "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"}],
+    "whyWrong": [
+      "A delegação não apaga o dever gerencial de acompanhar e responder pela gestão.",
+      "A autoridade pode ser delegada conforme competência e limites institucionais.",
+      "Sem limites, a delegação fica imprecisa e aumenta o risco de conflito e erro.",
+      "É a alternativa correta, pois combina autoridade delegada com controle e responsabilidade gerencial.",
+      "A prestação de contas é mecanismo essencial para uma delegação controlada."
+    ],
+    "sources": [
+      {
+        "title": "Edital nº 01/2026 - Conteúdos Programáticos",
+        "locator": "Anexo IV, pp. 213-216",
+        "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+      }
+    ],
     "status": "review"
   },
   {
     "id": "ibge26-log-0001",
-    "roles": ["aca", "aci", "aor", "acr", "acs"],
+    "roles": [
+      "aca",
+      "aci",
+      "aor",
+      "acr",
+      "acs"
+    ],
     "subject": "Raciocínio Lógico Quantitativo",
     "topic": "estruturas lógicas",
     "difficulty": "hard",
     "statement": "Considere verdadeiras as afirmações: todo ACR utiliza o sistema gerencial; alguns supervisores são ACR. A conclusão necessariamente válida é:",
-    "options": ["todo supervisor utiliza o sistema gerencial", "nenhum supervisor utiliza o sistema gerencial", "alguns supervisores utilizam o sistema gerencial", "alguns usuários do sistema não são ACR", "todo usuário do sistema é supervisor"],
+    "options": [
+      "todo supervisor utiliza o sistema gerencial",
+      "nenhum supervisor utiliza o sistema gerencial",
+      "alguns supervisores utilizam o sistema gerencial",
+      "alguns usuários do sistema não são ACR",
+      "todo usuário do sistema é supervisor"
+    ],
     "answer": 2,
     "explanation": "Se todos os ACR utilizam o sistema e existe pelo menos um supervisor que é ACR, esse supervisor pertence ao conjunto dos que utilizam o sistema. Logo, alguns supervisores utilizam o sistema.",
-    "whyWrong": ["A premissa informa apenas alguns supervisores ACR, não todos.", "A conclusão contradiz a regra aplicada aos supervisores que são ACR.", "É a alternativa correta por aplicação direta das duas premissas.", "Nada permite concluir que exista usuário fora do conjunto de ACR.", "A relação indicada não autoriza inverter a afirmação e dizer que todo usuário é supervisor."],
-    "sources": [{"title": "Edital nº 01/2026 - Conteúdos Programáticos", "locator": "Anexo IV, pp. 213-216", "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"}],
+    "whyWrong": [
+      "A premissa informa apenas alguns supervisores ACR, não todos.",
+      "A conclusão contradiz a regra aplicada aos supervisores que são ACR.",
+      "É a alternativa correta por aplicação direta das duas premissas.",
+      "Nada permite concluir que exista usuário fora do conjunto de ACR.",
+      "A relação indicada não autoriza inverter a afirmação e dizer que todo usuário é supervisor."
+    ],
+    "sources": [
+      {
+        "title": "Edital nº 01/2026 - Conteúdos Programáticos",
+        "locator": "Anexo IV, pp. 213-216",
+        "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+      }
+    ],
     "status": "review"
   },
   {
     "id": "ibge26-log-0002",
-    "roles": ["aca", "aci", "aor", "acr", "acs"],
+    "roles": [
+      "aca",
+      "aci",
+      "aor",
+      "acr",
+      "acs"
+    ],
     "subject": "Raciocínio Lógico Quantitativo",
     "topic": "aritmética e porcentagem",
     "difficulty": "medium",
     "statement": "Uma equipe concluiu 72 dos 240 registros previstos para uma etapa da operação. Mantido o mesmo critério de contagem, qual percentual dos registros ainda falta concluir?",
-    "options": ["20%", "30%", "60%", "70%", "80%"],
+    "options": [
+      "20%",
+      "30%",
+      "60%",
+      "70%",
+      "80%"
+    ],
     "answer": 3,
     "explanation": "Foram concluídos 72 de 240 registros, isto é, 30%. O restante corresponde a 100% - 30% = 70%. Portanto, faltam 168 registros, equivalentes a 70% do total.",
-    "whyWrong": ["20% não corresponde à parte restante nem à fração concluída.", "30% é o percentual já concluído, não o percentual pendente.", "60% não resulta da diferença entre o total e a parte concluída.", "É a alternativa correta: 240 - 72 = 168, e 168/240 = 70%.", "80% excede o percentual pendente calculado a partir dos dados."],
-    "sources": [{"title": "Edital nº 01/2026 - Conteúdos Programáticos", "locator": "Anexo IV, pp. 213-216", "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"}],
+    "whyWrong": [
+      "20% não corresponde à parte restante nem à fração concluída.",
+      "30% é o percentual já concluído, não o percentual pendente.",
+      "60% não resulta da diferença entre o total e a parte concluída.",
+      "É a alternativa correta: 240 - 72 = 168, e 168/240 = 70%.",
+      "80% excede o percentual pendente calculado a partir dos dados."
+    ],
+    "sources": [
+      {
+        "title": "Edital nº 01/2026 - Conteúdos Programáticos",
+        "locator": "Anexo IV, pp. 213-216",
+        "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+      }
+    ],
     "status": "review"
   },
   {
     "id": "ibge26-info-0001",
-    "roles": ["aci", "aor"],
+    "roles": [
+      "aci",
+      "aor"
+    ],
     "subject": "Noções de Informática",
     "topic": "planilhas e CONT.SE",
     "difficulty": "hard",
     "statement": "Em uma planilha, a coluna B contém o status de registros e a célula E2 contém o texto \\\"Pendente\\\". Qual fórmula conta quantas células de B2 até B100 possuem exatamente esse status?",
-    "options": ["=SOMA(B2:B100;E2)", "=CONT.SE(B2:B100;E2)", "=MÉDIA(B2:B100;E2)", "=SE(B2:B100=E2)", "=CONT.VALORES(E2;B2:B100)"],
+    "options": [
+      "=SOMA(B2:B100;E2)",
+      "=CONT.SE(B2:B100;E2)",
+      "=MÉDIA(B2:B100;E2)",
+      "=SE(B2:B100=E2)",
+      "=CONT.VALORES(E2;B2:B100)"
+    ],
     "answer": 1,
     "explanation": "CONT.SE conta células que atendem a um critério. O primeiro argumento é o intervalo a ser examinado e o segundo é o critério, neste caso o conteúdo de E2.",
-    "whyWrong": ["SOMA realiza operação numérica e não conta ocorrências por critério textual.", "É a alternativa correta: intervalo B2:B100 e critério armazenado em E2.", "MÉDIA calcula média e não frequência de um texto.", "SE não é usada dessa forma para contar um intervalo inteiro.", "CONT.VALORES conta células preenchidas, sem exigir o status especificado."],
-    "sources": [{"title": "Edital nº 01/2026 - Conteúdos Programáticos", "locator": "Anexo IV, p. 214", "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"}],
+    "whyWrong": [
+      "SOMA realiza operação numérica e não conta ocorrências por critério textual.",
+      "É a alternativa correta: intervalo B2:B100 e critério armazenado em E2.",
+      "MÉDIA calcula média e não frequência de um texto.",
+      "SE não é usada dessa forma para contar um intervalo inteiro.",
+      "CONT.VALORES conta células preenchidas, sem exigir o status especificado."
+    ],
+    "sources": [
+      {
+        "title": "Edital nº 01/2026 - Conteúdos Programáticos",
+        "locator": "Anexo IV, p. 214",
+        "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+      }
+    ],
     "status": "review"
   },
   {
     "id": "ibge26-port-0001",
-    "roles": ["aca", "aci", "aor", "acr", "acs"],
+    "roles": [
+      "aca",
+      "aci",
+      "aor",
+      "acr",
+      "acs"
+    ],
     "subject": "Língua Portuguesa",
     "topic": "regência verbal",
     "difficulty": "hard",
     "statement": "Considerando o padrão formal da língua portuguesa, assinale a alternativa que completa corretamente a frase: \\\"A equipe informou ___ supervisão a ocorrência registrada no setor.\\\"",
-    "options": ["à", "a", "na", "pela", "com a"],
+    "options": [
+      "à",
+      "a",
+      "na",
+      "pela",
+      "com a"
+    ],
     "answer": 0,
     "explanation": "O verbo informar pode reger a pessoa destinatária com a preposição a: informar algo a alguém. Como o termo seguinte é “a supervisão”, ocorre a fusão da preposição a com o artigo a, formando “à supervisão”.",
-    "whyWrong": ["É a forma correta pela regência e pela ocorrência de crase diante de “a supervisão”.", "Sem crase, a construção não registra a fusão da preposição exigida com o artigo.", "“Na” introduz ideia de lugar ou inserção, não o destinatário da informação.", "“Pela” altera a relação sintática e não atende à regência pretendida.", "“Com a” não é a preposição exigida nesse sentido do verbo informar."],
-    "sources": [{"title": "Edital nº 01/2026 - Conteúdos Programáticos", "locator": "Anexo IV, pp. 213-216", "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"}],
+    "whyWrong": [
+      "É a forma correta pela regência e pela ocorrência de crase diante de “a supervisão”.",
+      "Sem crase, a construção não registra a fusão da preposição exigida com o artigo.",
+      "“Na” introduz ideia de lugar ou inserção, não o destinatário da informação.",
+      "“Pela” altera a relação sintática e não atende à regência pretendida.",
+      "“Com a” não é a preposição exigida nesse sentido do verbo informar."
+    ],
+    "sources": [
+      {
+        "title": "Edital nº 01/2026 - Conteúdos Programáticos",
+        "locator": "Anexo IV, pp. 213-216",
+        "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+      }
+    ],
     "status": "review"
   },
   {
     "id": "ibge26-tec-0005",
-    "roles": ["acr", "acs"],
+    "roles": [
+      "acr",
+      "acs"
+    ],
     "subject": "Conhecimentos Técnicos",
     "topic": "Dispositivo Móvel de Coleta",
     "difficulty": "medium",
     "statement": "Na operação censitária, o Dispositivo Móvel de Coleta (DMC) é utilizado principalmente para:",
-    "options": ["substituir integralmente a supervisão em campo", "registrar e armazenar informações coletadas, além de oferecer recursos operacionais", "alterar livremente os limites oficiais dos setores", "validar sozinho todas as respostas sem intervenção humana", "funcionar apenas como telefone pessoal do recenseador"],
+    "options": [
+      "substituir integralmente a supervisão em campo",
+      "registrar e armazenar informações coletadas, além de oferecer recursos operacionais",
+      "alterar livremente os limites oficiais dos setores",
+      "validar sozinho todas as respostas sem intervenção humana",
+      "funcionar apenas como telefone pessoal do recenseador"
+    ],
     "answer": 1,
     "explanation": "O DMC é um tablet destinado ao registro e armazenamento das informações coletadas em campo. Ele também disponibiliza recursos como mapa digital e questionário, mas não substitui a supervisão, a interpretação técnica nem as regras territoriais oficiais.",
-    "whyWrong": ["O dispositivo apoia a operação, mas não elimina a função de supervisão.", "É a alternativa correta: descreve a função central do DMC no material técnico.", "Os limites do setor não podem ser alterados livremente pelo uso do dispositivo.", "A qualidade depende de procedimentos, treinamento e conferência, não de validação automática total.", "O DMC é instrumento institucional de coleta, não aparelho de uso pessoal."],
-    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "p. 21", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "whyWrong": [
+      "O dispositivo apoia a operação, mas não elimina a função de supervisão.",
+      "É a alternativa correta: descreve a função central do DMC no material técnico.",
+      "Os limites do setor não podem ser alterados livremente pelo uso do dispositivo.",
+      "A qualidade depende de procedimentos, treinamento e conferência, não de validação automática total.",
+      "O DMC é instrumento institucional de coleta, não aparelho de uso pessoal."
+    ],
+    "sources": [
+      {
+        "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+        "locator": "p. 21",
+        "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+      }
+    ],
     "status": "review"
   },
   {
     "id": "ibge26-tec-0006",
-    "roles": ["acr", "acs"],
+    "roles": [
+      "acr",
+      "acs"
+    ],
     "subject": "Conhecimentos Técnicos",
     "topic": "coordenadas geográficas",
     "difficulty": "hard",
     "statement": "Um registro de coordenadas apresenta latitude -22,326 e longitude -42,669. A interpretação correta desses sinais é que o ponto está:",
-    "options": ["ao norte do Equador e a leste de Greenwich", "ao sul do Equador e a oeste de Greenwich", "ao sul do Equador e a leste de Greenwich", "ao norte do Equador e a oeste de Greenwich", "exatamente sobre o Equador e o meridiano de Greenwich"],
+    "options": [
+      "ao norte do Equador e a leste de Greenwich",
+      "ao sul do Equador e a oeste de Greenwich",
+      "ao sul do Equador e a leste de Greenwich",
+      "ao norte do Equador e a oeste de Greenwich",
+      "exatamente sobre o Equador e o meridiano de Greenwich"
+    ],
     "answer": 1,
     "explanation": "Latitudes negativas indicam posição ao sul da linha do Equador; longitudes negativas indicam posição a oeste do meridiano de Greenwich. Portanto, os dois valores negativos indicam sul e oeste.",
-    "whyWrong": ["Inverte o significado dos sinais e das referências geográficas.", "É a alternativa correta: latitude negativa é sul e longitude negativa é oeste.", "A longitude negativa não indica leste.", "A latitude negativa não indica norte.", "Valores negativos não significam que o ponto esteja sobre as linhas de referência."],
-    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 48-49", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "whyWrong": [
+      "Inverte o significado dos sinais e das referências geográficas.",
+      "É a alternativa correta: latitude negativa é sul e longitude negativa é oeste.",
+      "A longitude negativa não indica leste.",
+      "A latitude negativa não indica norte.",
+      "Valores negativos não significam que o ponto esteja sobre as linhas de referência."
+    ],
+    "sources": [
+      {
+        "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+        "locator": "pp. 48-49",
+        "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+      }
+    ],
     "status": "review"
   },
   {
     "id": "ibge26-tec-0007",
-    "roles": ["acr", "acs"],
+    "roles": [
+      "acr",
+      "acs"
+    ],
     "subject": "Conhecimentos Técnicos",
     "topic": "CNEFE e pontos de referência",
     "difficulty": "hard",
     "statement": "Em uma área rural sem numeração formal, a equipe precisa registrar um endereço de modo que a unidade possa ser localizada posteriormente. Nesse caso, a orientação mais adequada é:",
-    "options": ["deixar o endereço em branco, pois o CNEFE só admite vias urbanas", "inventar um número compatível com a sequência da estrada", "usar referência local reconhecida que individualize e permita localizar a unidade", "registrar apenas o nome do informante", "substituir o endereço por coordenadas sem registrar qualquer referência"],
+    "options": [
+      "deixar o endereço em branco, pois o CNEFE só admite vias urbanas",
+      "inventar um número compatível com a sequência da estrada",
+      "usar referência local reconhecida que individualize e permita localizar a unidade",
+      "registrar apenas o nome do informante",
+      "substituir o endereço por coordenadas sem registrar qualquer referência"
+    ],
     "answer": 2,
     "explanation": "O padrão do CNEFE prioriza o endereço formal, mas admite referências localmente reconhecidas quando o endereço não existe ou não permite a individualização. Em áreas rurais, pontos de referência são especialmente importantes para a localização posterior.",
-    "whyWrong": ["O CNEFE precisa registrar uma forma possível de localização, mesmo em área rural.", "Criar número viola a fidelidade do registro e pode gerar endereço inexistente.", "É a alternativa correta: a referência deve ser reconhecida e individualizar a unidade.", "O nome do informante não substitui um componente de localização do endereço.", "Coordenadas podem auxiliar, mas não justificam abandonar os demais registros possíveis."],
-    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 43-47", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "whyWrong": [
+      "O CNEFE precisa registrar uma forma possível de localização, mesmo em área rural.",
+      "Criar número viola a fidelidade do registro e pode gerar endereço inexistente.",
+      "É a alternativa correta: a referência deve ser reconhecida e individualizar a unidade.",
+      "O nome do informante não substitui um componente de localização do endereço.",
+      "Coordenadas podem auxiliar, mas não justificam abandonar os demais registros possíveis."
+    ],
+    "sources": [
+      {
+        "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+        "locator": "pp. 43-47",
+        "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+      }
+    ],
     "status": "review"
   },
   {
     "id": "ibge26-tec-0008",
-    "roles": ["acr", "acs"],
+    "roles": [
+      "acr",
+      "acs"
+    ],
     "subject": "Conhecimentos Técnicos",
     "topic": "unidades recenseáveis",
     "difficulty": "hard",
     "statement": "Uma residência possui um quintal com algumas árvores frutíferas e animais domésticos para consumo da família, mas não há unidade de exploração agropecuária, florestal ou aquícola. Conforme o material técnico, a situação deve ser classificada como:",
-    "options": ["estabelecimento obrigatório, pois toda residência rural é recenseável", "unidade não recenseável, pois não há atividade enquadrada como exploração a ser investigada", "estabelecimento recenseável apenas pelo número de animais domésticos", "unidade recenseável automaticamente pela existência de árvores frutíferas", "estabelecimento especial que deve ser contado duas vezes"],
+    "options": [
+      "estabelecimento obrigatório, pois toda residência rural é recenseável",
+      "unidade não recenseável, pois não há atividade enquadrada como exploração a ser investigada",
+      "estabelecimento recenseável apenas pelo número de animais domésticos",
+      "unidade recenseável automaticamente pela existência de árvores frutíferas",
+      "estabelecimento especial que deve ser contado duas vezes"
+    ],
     "answer": 1,
     "explanation": "O material diferencia a existência de uma moradia ou quintal da existência de uma unidade de exploração agropecuária, florestal ou aquícola. Sem atividade enquadrada, a situação descrita não constitui unidade recenseável do Censo Agropecuário.",
-    "whyWrong": ["A localização rural ou a existência de moradia não torna toda unidade automaticamente recenseável.", "É a alternativa correta diante da ausência de exploração enquadrada.", "Animais domésticos não bastam para caracterizar atividade agropecuária do Censo.", "Árvores no quintal, isoladamente, não determinam o enquadramento.", "Não há base para criar uma categoria especial ou duplicar a contagem."],
-    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "p. 52", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "whyWrong": [
+      "A localização rural ou a existência de moradia não torna toda unidade automaticamente recenseável.",
+      "É a alternativa correta diante da ausência de exploração enquadrada.",
+      "Animais domésticos não bastam para caracterizar atividade agropecuária do Censo.",
+      "Árvores no quintal, isoladamente, não determinam o enquadramento.",
+      "Não há base para criar uma categoria especial ou duplicar a contagem."
+    ],
+    "sources": [
+      {
+        "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+        "locator": "p. 52",
+        "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+      }
+    ],
     "status": "review"
   },
   {
     "id": "ibge26-tec-0009",
-    "roles": ["acr", "acs"],
+    "roles": [
+      "acr",
+      "acs"
+    ],
     "subject": "Conhecimentos Técnicos",
     "topic": "produtor sem área",
     "difficulty": "hard",
     "statement": "Um produtor instala colmeias em área de terceiros e desenvolve produção sem possuir área própria sob sua exploração. Essa situação é tratada no material técnico como:",
-    "options": ["atividade automaticamente excluída do Censo", "produtor sem área, devendo a atividade ser registrada e o questionário aplicado", "propriedade rural pertencente ao dono da área utilizada", "estabelecimento urbano sem relação com produção", "atividade que só pode ser registrada se houver compra da área"],
+    "options": [
+      "atividade automaticamente excluída do Censo",
+      "produtor sem área, devendo a atividade ser registrada e o questionário aplicado",
+      "propriedade rural pertencente ao dono da área utilizada",
+      "estabelecimento urbano sem relação com produção",
+      "atividade que só pode ser registrada se houver compra da área"
+    ],
     "answer": 1,
     "explanation": "Produtor sem área é aquele que desenvolve atividade produtiva utilizando recursos ou áreas disponíveis temporariamente, como colmeias em matas ou terras de outros estabelecimentos. A atividade deve ser registrada e o questionário aplicado conforme a orientação.",
-    "whyWrong": ["A ausência de área própria não exclui automaticamente a atividade.", "É a alternativa correta e corresponde ao exemplo de produção em colmeias.", "A área utilizada por terceiros não transforma automaticamente o produtor em proprietário.", "A atividade continua relacionada à produção agropecuária, ainda que não seja uma propriedade sua.", "A compra da área não é requisito para o conceito de produtor sem área."],
-    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 57-58", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "whyWrong": [
+      "A ausência de área própria não exclui automaticamente a atividade.",
+      "É a alternativa correta e corresponde ao exemplo de produção em colmeias.",
+      "A área utilizada por terceiros não transforma automaticamente o produtor em proprietário.",
+      "A atividade continua relacionada à produção agropecuária, ainda que não seja uma propriedade sua.",
+      "A compra da área não é requisito para o conceito de produtor sem área."
+    ],
+    "sources": [
+      {
+        "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+        "locator": "pp. 57-58",
+        "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+      }
+    ],
     "status": "review"
   },
   {
     "id": "ibge26-tec-0010",
-    "roles": ["acr", "acs"],
+    "roles": [
+      "acr",
+      "acs"
+    ],
     "subject": "Conhecimentos Técnicos",
     "topic": "propriedade e estabelecimento",
     "difficulty": "very-hard",
     "statement": "Uma propriedade rural possui uma área destinada apenas a lazer e um segundo espaço com produção agrícola enquadrada no Censo. Qual distinção deve orientar o registro?",
-    "options": ["propriedade rural e estabelecimento agropecuário são sempre sinônimos", "a propriedade inteira deve ser registrada, mesmo sem atividade enquadrada", "somente o espaço com atividade de produção ou exploração enquadrada pode constituir estabelecimento agropecuário", "nenhuma parte pode ser registrada porque há área de lazer", "o espaço produtivo só conta se tiver finalidade comercial"],
+    "options": [
+      "propriedade rural e estabelecimento agropecuário são sempre sinônimos",
+      "a propriedade inteira deve ser registrada, mesmo sem atividade enquadrada",
+      "somente o espaço com atividade de produção ou exploração enquadrada pode constituir estabelecimento agropecuário",
+      "nenhuma parte pode ser registrada porque há área de lazer",
+      "o espaço produtivo só conta se tiver finalidade comercial"
+    ],
     "answer": 2,
     "explanation": "Propriedade rural e estabelecimento agropecuário não são conceitos idênticos. O estabelecimento é a unidade de produção ou exploração dedicada total ou parcialmente a atividades enquadradas; uma área de lazer sem essa atividade não se torna estabelecimento apenas por integrar uma propriedade rural.",
-    "whyWrong": ["O material destaca justamente que os conceitos não são sinônimos.", "Área sem atividade enquadrada não deve ser incluída apenas por pertencer à propriedade.", "É a alternativa correta, pois aplica a distinção entre propriedade e unidade produtiva.", "A existência de área de lazer não elimina a parte produtiva que atende ao conceito.", "Finalidade comercial não é requisito geral para o conceito de estabelecimento."],
-    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 55 e 60", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "whyWrong": [
+      "O material destaca justamente que os conceitos não são sinônimos.",
+      "Área sem atividade enquadrada não deve ser incluída apenas por pertencer à propriedade.",
+      "É a alternativa correta, pois aplica a distinção entre propriedade e unidade produtiva.",
+      "A existência de área de lazer não elimina a parte produtiva que atende ao conceito.",
+      "Finalidade comercial não é requisito geral para o conceito de estabelecimento."
+    ],
+    "sources": [
+      {
+        "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+        "locator": "pp. 55 e 60",
+        "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+      }
+    ],
     "status": "review"
   },
   {
     "id": "ibge26-tec-0011",
-    "roles": ["acr", "acs"],
+    "roles": [
+      "acr",
+      "acs"
+    ],
     "subject": "Conhecimentos Técnicos",
     "topic": "Povos e Comunidades Tradicionais",
     "difficulty": "very-hard",
     "statement": "Ao identificar uma Área de Interesse Operacional relacionada a povo ou comunidade tradicional, a equipe deve compreender que essa área:",
-    "options": ["substitui automaticamente o setor censitário", "é um recorte diferenciado que indica presença efetiva ou potencial de PCT e pode exigir atenção operacional específica", "define propriedade privada e dispensa consulta à comunidade", "autoriza alterar os limites oficiais do setor", "impede qualquer coleta de dados no território"],
+    "options": [
+      "substitui automaticamente o setor censitário",
+      "é um recorte diferenciado que indica presença efetiva ou potencial de PCT e pode exigir atenção operacional específica",
+      "define propriedade privada e dispensa consulta à comunidade",
+      "autoriza alterar os limites oficiais do setor",
+      "impede qualquer coleta de dados no território"
+    ],
     "answer": 1,
     "explanation": "As Áreas de Interesse Operacional são recortes diferenciados e independentes dos setores censitários, utilizados para indicar presença efetiva ou potencial de povos e comunidades tradicionais. Elas orientam a operação, mas não substituem o setor nem autorizam alterar limites.",
-    "whyWrong": ["A AIO é independente do setor e não o substitui automaticamente.", "É a alternativa correta, pois reúne a natureza do recorte e sua finalidade operacional.", "AIO não define propriedade e não elimina procedimentos apropriados de abordagem.", "A existência de AIO não autoriza alteração territorial por iniciativa da equipe.", "A área exige cuidado e procedimentos adequados, mas não significa proibição absoluta de coleta."],
-    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "pp. 39-42", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "whyWrong": [
+      "A AIO é independente do setor e não o substitui automaticamente.",
+      "É a alternativa correta, pois reúne a natureza do recorte e sua finalidade operacional.",
+      "AIO não define propriedade e não elimina procedimentos apropriados de abordagem.",
+      "A existência de AIO não autoriza alteração territorial por iniciativa da equipe.",
+      "A área exige cuidado e procedimentos adequados, mas não significa proibição absoluta de coleta."
+    ],
+    "sources": [
+      {
+        "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+        "locator": "pp. 39-42",
+        "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+      }
+    ],
     "status": "review"
   },
   {
     "id": "ibge26-tec-0012",
-    "roles": ["acr", "acs"],
+    "roles": [
+      "acr",
+      "acs"
+    ],
     "subject": "Conhecimentos Técnicos",
     "topic": "produção de subsistência",
     "difficulty": "hard",
     "statement": "Uma família produz alimentos principalmente para o próprio consumo e troca ou vende ocasionalmente pequena parte da produção para atender a outras necessidades. Segundo a apostila, essa situação:",
-    "options": ["não é produção, pois não há venda integral", "é produção de subsistência, pois o destino predominante é atender às necessidades da família", "só é subsistência se não houver qualquer troca", "é exclusivamente atividade comercial", "deve ser excluída por não atingir valor mínimo de produção"],
+    "options": [
+      "não é produção, pois não há venda integral",
+      "é produção de subsistência, pois o destino predominante é atender às necessidades da família",
+      "só é subsistência se não houver qualquer troca",
+      "é exclusivamente atividade comercial",
+      "deve ser excluída por não atingir valor mínimo de produção"
+    ],
     "answer": 1,
     "explanation": "Produção de subsistência é aquela voltada principalmente às necessidades vitais do produtor e de sua família. A eventual comercialização ou troca de parte da produção não descaracteriza o conceito quando o destino predominante permanece sendo o consumo familiar.",
-    "whyWrong": ["A produção pode existir mesmo quando o destino principal não é comercial.", "É a alternativa correta: o critério é a finalidade predominante, admitida eventual troca ou venda.", "O material não exige ausência absoluta de troca ou comercialização.", "A venda eventual não transforma automaticamente a atividade em exclusivamente comercial.", "O conceito não depende de um valor mínimo geral apresentado dessa forma."],
-    "sources": [{"title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola", "locator": "p. 53", "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"}],
+    "whyWrong": [
+      "A produção pode existir mesmo quando o destino principal não é comercial.",
+      "É a alternativa correta: o critério é a finalidade predominante, admitida eventual troca ou venda.",
+      "O material não exige ausência absoluta de troca ou comercialização.",
+      "A venda eventual não transforma automaticamente a atividade em exclusivamente comercial.",
+      "O conceito não depende de um valor mínimo geral apresentado dessa forma."
+    ],
+    "sources": [
+      {
+        "title": "Conhecimentos básicos para o 12º Censo Agropecuário, Florestal e Aquícola",
+        "locator": "p. 53",
+        "url": "https://anexos.cdn.selecao.net.br/uploads/747/concursos/423/anexos/c3b6eba1-4aa5-4320-9af8-adc570bcc26c.pdf"
+      }
+    ],
+    "status": "review"
+  },
+  {
+    "id": "ibge26-adm-0003",
+    "roles": [
+      "aca",
+      "aor",
+      "acr",
+      "acs"
+    ],
+    "subject": "Noções de Administração/Situações Gerenciais",
+    "topic": "controle e indicadores",
+    "difficulty": "hard",
+    "statement": "Uma supervisão compara a produtividade observada com a meta, identifica uma queda concentrada em determinada equipe e ajusta a distribuição de tarefas. A sequência descrita representa principalmente:",
+    "options": [
+      "planejamento sem acompanhamento",
+      "controle com diagnóstico e ação corretiva",
+      "delegação sem autoridade",
+      "comunicação informal sem objetivo",
+      "motivação sem avaliação de resultado"
+    ],
+    "answer": 1,
+    "explanation": "Controle envolve acompanhar resultados, compará-los com metas, identificar desvios e adotar medidas corretivas. A situação descreve esse ciclo de comparação, diagnóstico e ajuste.",
+    "whyWrong": [
+      "O caso já envolve acompanhamento de resultado, não apenas definição prévia de planos.",
+      "É a alternativa correta: compara uma meta, identifica desvio e corrige a execução.",
+      "Não há transferência de autoridade como elemento central.",
+      "A comunicação pode ocorrer, mas não define a função predominante.",
+      "Motivação não é o processo principal descrito."
+    ],
+    "sources": [
+      {
+        "title": "Edital nº 01/2026 - Conteúdos Programáticos",
+        "locator": "Anexo IV, pp. 213-216",
+        "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+      }
+    ],
+    "status": "review"
+  },
+  {
+    "id": "ibge26-log-0003",
+    "roles": [
+      "aca",
+      "aci",
+      "aor",
+      "acr",
+      "acs"
+    ],
+    "subject": "Raciocínio Lógico Quantitativo",
+    "topic": "lógica de argumentação",
+    "difficulty": "hard",
+    "statement": "Considere: se uma transmissão foi concluída, então o registro foi atualizado. O registro não foi atualizado. Sob a lógica clássica, a conclusão válida é:",
+    "options": [
+      "a transmissão foi concluída",
+      "a transmissão não foi concluída",
+      "o registro foi atualizado parcialmente",
+      "a transmissão e o registro são independentes",
+      "não existe relação lógica entre as proposições"
+    ],
+    "answer": 1,
+    "explanation": "A estrutura é uma implicação P então Q. Se Q é falsa, P não pode ser verdadeira; caso contrário, a implicação seria falsa. Logo, a transmissão não foi concluída.",
+    "whyWrong": [
+      "Contradiz a informação de que o consequente é falso.",
+      "É a alternativa correta por modus tollens: P implica Q e não Q, logo não P.",
+      "A premissa não cria a categoria de atualização parcial.",
+      "A primeira premissa estabelece relação lógica entre as proposições.",
+      "Existe relação explícita entre transmissão e atualização."
+    ],
+    "sources": [
+      {
+        "title": "Edital nº 01/2026 - Conteúdos Programáticos",
+        "locator": "Anexo IV, pp. 213-216",
+        "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+      }
+    ],
+    "status": "review"
+  },
+  {
+    "id": "ibge26-info-0002",
+    "roles": [
+      "aci",
+      "aor"
+    ],
+    "subject": "Noções de Informática",
+    "topic": "segurança da informação",
+    "difficulty": "hard",
+    "statement": "Um usuário precisa permitir que uma equipe consulte relatórios, mas somente um responsável possa alterá-los. A medida mais adequada é:",
+    "options": [
+      "usar a mesma senha para todos",
+      "conceder perfil de administrador a todos",
+      "separar perfis e conceder somente as permissões necessárias",
+      "desativar senhas para evitar bloqueios",
+      "copiar os arquivos para dispositivos pessoais"
+    ],
+    "answer": 2,
+    "explanation": "A separação de perfis e o princípio do menor privilégio limitam o acesso às necessidades de cada função. Isso preserva confidencialidade, integridade e responsabilização individual.",
+    "whyWrong": [
+      "Senha compartilhada reduz rastreabilidade e aumenta o risco de acesso indevido.",
+      "Administrador para todos concede privilégios excessivos.",
+      "É a alternativa correta: perfis distintos e permissões compatíveis.",
+      "Desativar autenticação elimina uma camada básica de proteção.",
+      "Dispositivos pessoais sem controle ampliam riscos de cópia e vazamento."
+    ],
+    "sources": [
+      {
+        "title": "Edital nº 01/2026 - Conteúdos Programáticos",
+        "locator": "Anexo IV, p. 215",
+        "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+      }
+    ],
+    "status": "review"
+  },
+  {
+    "id": "ibge26-port-0002",
+    "roles": [
+      "aca",
+      "aci",
+      "aor",
+      "acr",
+      "acs"
+    ],
+    "subject": "Língua Portuguesa",
+    "topic": "coesão e conectores",
+    "difficulty": "hard",
+    "statement": "No período “A equipe revisou os registros, portanto encaminhou apenas as pendências”, o conector destacado estabelece relação de:",
+    "options": [
+      "causa",
+      "conclusão",
+      "oposição",
+      "condição",
+      "explicação"
+    ],
+    "answer": 1,
+    "explanation": "“Portanto” possui valor conclusivo. O encaminhamento das pendências aparece como consequência lógica da revisão dos registros, e não como causa, oposição ou condição.",
+    "whyWrong": [
+      "Causa indicaria motivo, não a consequência apresentada.",
+      "É a alternativa correta: o segundo segmento é uma conclusão.",
+      "Não há contraste entre as orações.",
+      "Nenhuma condição foi estabelecida.",
+      "O segundo segmento não explica o primeiro; decorre dele."
+    ],
+    "sources": [
+      {
+        "title": "Edital nº 01/2026 - Conteúdos Programáticos",
+        "locator": "Anexo IV, pp. 213-216",
+        "url": "https://servidor-arquivos.ibfc.org.br/arquivos-publicos/edital-01-2026-ibfc-11.06-final-marcadores.pdf"
+      }
+    ],
     "status": "review"
   }
 ]
