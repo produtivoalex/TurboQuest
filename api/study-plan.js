@@ -41,12 +41,12 @@ async function groqChat(key, model, messages, extra = {}) {
 }
 
 async function groqResearch(key, prompt) {
-  const research = await groqChat(key, GROQ_RESEARCH_MODEL, [{ role: 'user', content: `${prompt}\n\nFaça pesquisa web ativa e obrigatória. Consulte fontes oficiais, provas anteriores da banca e materiais relevantes. Organize por fontes, padrões da banca, prioridades e recomendações. Faça até 5 buscas internas e cite as URLs reais retornadas pela busca.` }], { tool_choice: 'required', tools: [{ type: 'browser_search' }], reasoning_effort: 'low' });
-  const formatPrompt = `Converta o dossiê de pesquisa abaixo em SOMENTE JSON válido, sem markdown e sem comentários. Não invente URLs: use apenas as fontes presentes no dossiê. Se algum campo não existir, use lista vazia ou string vazia. Gere no máximo 12 questões iniciais. Formato obrigatório:\n{"sources":[{"title":"","url":"","why":""}],"strategy":{"priorities":[{"subject":"","weight":0,"questionShare":0,"topics":[]}],"notes":[]},"questions":[{"subject":"","difficulty":"medium|hard","statement":"","options":["","","",""],"answer":0,"explanation":"","sourceUrl":""}]}\nDOSSIÊ:\n${research.text.slice(0, 70000)}`;
-  let formatted = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: formatPrompt }]);
+  const research = await groqChat(key, GROQ_RESEARCH_MODEL, [{ role: 'user', content: `${prompt}\n\nFaça pesquisa web ativa e obrigatória. Consulte fontes oficiais, provas anteriores da banca e materiais relevantes. Organize por fontes, padrões da banca, prioridades e recomendações. Faça até 5 buscas internas e cite as URLs reais retornadas pela busca.` }], { max_tokens: 3000, tool_choice: 'required', tools: [{ type: 'browser_search' }], reasoning_effort: 'low' });
+  const formatPrompt = `Converta o dossiê de pesquisa abaixo em SOMENTE JSON válido, sem markdown e sem comentários. Não invente URLs: use apenas as fontes presentes no dossiê. Se algum campo não existir, use lista vazia ou string vazia. Gere no máximo 6 questões iniciais. Formato obrigatório:\n{"sources":[{"title":"","url":"","why":""}],"strategy":{"priorities":[{"subject":"","weight":0,"questionShare":0,"topics":[]}],"notes":[]},"questions":[{"subject":"","difficulty":"medium|hard","statement":"","options":["","","",""],"answer":0,"explanation":"","sourceUrl":""}]}\nDOSSIÊ:\n${research.text.slice(0, 18000)}`;
+  let formatted = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: formatPrompt }], { max_tokens: 3000 });
   let result = parseModelJson(formatted.text);
   if (!isResearchShape(result)) {
-    formatted = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: `${formatPrompt}\n\nA resposta anterior não estava válida. Corrija e devolva somente o objeto JSON completo.` }]);
+    formatted = await groqChat(key, GROQ_FORMAT_MODEL, [{ role: 'user', content: `${formatPrompt}\n\nA resposta anterior não estava válida. Corrija e devolva somente o objeto JSON completo.` }], { max_tokens: 3000 });
     result = parseModelJson(formatted.text);
   }
   if (!hasLiveResearch(result, null, GROQ_RESEARCH_MODEL)) throw new Error('O Groq não retornou evidências de pesquisa web ativa.');
@@ -68,15 +68,16 @@ export default async function handler(req, res) {
   if (!edital || edital.length < 80) return json(res, 400, { error: 'O edital precisa conter mais texto.' });
 
   const isResearch = action === 'research';
+  const editalForPrompt = isResearch ? edital.slice(0, 16000) : edital.slice(0, 220000);
   const prompt = isResearch
     ? `Você é o motor estratégico do TurboQuest. O estudante vai prestar ${exam}, para o cargo: ${cargo || 'não informado'}.
 Analise o edital abaixo e faça uma pesquisa ampla e atualizada na web, usando fontes oficiais, provas anteriores da mesma banca e questões de concursos equivalentes. Não invente fontes: registre URLs e explique a relevância.
 Crie um plano de estudo acionável e no máximo 6 questões difíceis, sem alternativas óbvias, respeitando a distribuição e os pesos do edital. Inclua gabarito e explicação curta. Responda SOMENTE JSON válido no formato:
 {"sources":[{"title":"","url":"","why":""}],"strategy":{"priorities":[{"subject":"","weight":0,"questionShare":0,"topics":[]}],"notes":[]},"questions":[{"subject":"","difficulty":"medium|hard","statement":"","options":["","","",""],"answer":0,"explanation":"","sourceUrl":""}]}
-EDITAL:\n${edital.slice(0, 220000)}`
+EDITAL:\n${editalForPrompt}`
     : `Você é um analista especialista em editais de concursos brasileiros. Analise integralmente este edital para o TurboQuest. Extraia cargo(s), banca, órgão, datas, número de questões, pesos, disciplinas, tópicos, critérios e qualquer regra relevante. Não faça perguntas ainda. Responda SOMENTE JSON válido no formato:
 {"exam":"","board":"","roles":[""],"examDate":"","totalQuestions":0,"subjects":[{"name":"","questions":0,"weight":0,"topics":[]}],"summary":"","warnings":[]}
-EDITAL:\n${edital.slice(0, 220000)}`;
+EDITAL:\n${editalForPrompt}`;
 
   const payload = {
     contents: [{ role: 'user', parts: [{ text: prompt }] }],
