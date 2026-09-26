@@ -689,7 +689,7 @@ if (typeof document !== 'undefined') {
       const parts = guide.shortcut.split('→').map(part => part.trim()).filter(Boolean);
       parts.forEach((part, index) => {
         const step = document.createElement('span'); step.className = 'shortcut-step';
-        const label = document.createElement('small'); label.textContent = index === 0 ? 'RECONHEÇA' : index === parts.length - 1 ? 'RESULTADO' : 'FAÇA RÁPIDO';
+        const label = document.createElement('small'); label.textContent = String(index + 1).padStart(2, '0') + ' · ' + (index === 0 ? 'RECONHEÇA' : index === parts.length - 1 ? 'RESULTADO' : 'FAÇA RÁPIDO');
         const content = document.createElement('span'); content.textContent = part;
         step.append(label, content); tipBody.append(step);
         if (index < parts.length - 1) { const arrow = document.createElement('span'); arrow.className = 'shortcut-arrow'; arrow.setAttribute('aria-hidden', 'true'); arrow.textContent = '→'; tipBody.append(arrow); }
@@ -927,5 +927,5 @@ if (typeof document !== 'undefined') {
     $('#available').textContent = bank.length; renderSubjects(); renderProfile(); renderResume();
     if (manifest?.exam?.categoryLabel) $('#examType').textContent = `${manifest.exam.categoryLabel} · IBGE · ${manifest.exam.board} · 2026`;
   }).catch(() => toast('Não foi possível carregar o banco. Verifique sua conexão.'));
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=visual-shortcuts-v1').then(registration => registration.update()).catch(() => {});
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=visual-shortcuts-v2').then(registration => registration.update()).catch(() => {});
 }

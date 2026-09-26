@@ -1,262 +1,262 @@
 {
   "ibge26-b005-014": {
     "beginner": ["‘Se, e somente se’ significa que as duas coisas precisam combinar: transmissão acontece exatamente quando conexão e validação existem juntas.", "A palavra ‘e’ exige as duas condições ao mesmo tempo. Só conexão ou só validação não basta.", "Logo, conexão e validação são necessárias; juntas, também são suficientes para permitir a transmissão."],
-    "shortcut": "‘Se, e somente se’ + E → precisa de conexão e validação → só as duas juntas autorizam a transmissão.", "type": "exact"
+    "shortcut": "Veja ‘se, e somente se’: a regra vale nos dois sentidos → como há conexão E validação, confira se as duas estão presentes → só juntas autorizam transmitir.", "type": "exact"
   },
   "ibge26-b005-016": {
     "beginner": ["Na escala 1:100.000, cada 1 cm no mapa representa 100.000 cm reais. Como 100.000 cm = 1 km, cada centímetro vale 1 km.", "Então o retângulo real mede 8 km por 5 km.", "Área de retângulo é comprimento × largura: 8 × 5 = 40 km². Multiplicamos as medidas reais, não os centímetros do desenho."],
-    "shortcut": "Escala 1:100.000 → 1 cm vale 1 km → 8×5 = 40 km².", "type": "exact"
+    "shortcut": "Na escala 1:100.000, cada centímetro do mapa representa 1 km real → troque os lados por 8 km e 5 km → multiplique: 8×5=40 km².", "type": "exact"
   },
   "ibge26-b007-061": {
     "beginner": ["A meta inteira é 240. Foram feitas 180, então faltam 240 − 180 = 60 entrevistas.", "Para transformar a parte que falta em percentual, compare 60 com o total 240: 60/240.", "60 é um quarto de 240; um quarto corresponde a 25%."],
-    "shortcut": "Falta: 240−180 = 60 → 60 é ¼ de 240 → falta 25%.", "type": "exact"
+    "shortcut": "Para achar o que falta, tire o feito do total: 240−180=60 → 60 é a quarta parte de 240 → faltam 25% da meta.", "type": "exact"
   },
   "ibge26-b007-062": {
     "beginner": ["A razão 3:2 divide os formulários em 3 partes revisadas e 2 partes pendentes: são 5 partes no total.", "As 5 partes juntas valem 50; então cada parte vale 50 ÷ 5 = 10.", "Os revisados ocupam 3 partes: 3 × 10 = 30."],
-    "shortcut": "Razão 3:2 → 3+2=5 partes; 50÷5=10 por parte → revisados: 3×10=30.", "type": "exact"
+    "shortcut": "Na razão 3:2, some as partes: 3+2=5 → divida 50 por 5: cada parte vale 10 → revisados são 3 partes: 3×10=30.", "type": "exact"
   },
   "ibge26-b007-063": {
     "beginner": ["Some quem domina planilhas (34) com quem domina mapas (29): 34 + 29 = 63.", "As 12 pessoas que dominam as duas ferramentas aparecem nessa soma duas vezes. Tire uma cópia delas: 63 − 12.", "Assim, 51 pessoas dominam pelo menos uma ferramenta. As 9 restantes não dominam nenhuma, mas não foram perguntadas."],
-    "shortcut": "Perguntou ‘pelo menos uma’? → 34+29−12 → 51 pessoas (tire quem está nos dois uma vez).", "type": "exact"
+    "shortcut": "‘Pelo menos uma’ inclui quem está nos dois grupos → 34+29 conta as 12 pessoas em dobro → tire 12 uma vez: 34+29−12=51.", "type": "exact"
   },
   "ibge26-b007-064": {
     "beginner": ["Para negar uma frase que começa com ‘todos’, basta encontrar uma exceção: ‘pelo menos um não’. Não precisamos dizer que muitos falharam.", "A frase original exige duas coisas juntas: o setor foi revisado E foi transmitido.", "Negar ‘A e B’ significa: A falhou OU B falhou. Portanto, existe ao menos um setor não revisado ou não transmitido."],
-    "shortcut": "Negue ‘todos’ → ‘ao menos um não’; negue ‘A e B’ → ‘A falha OU B falha’ → use ‘ou’ na resposta.", "type": "exact"
+    "shortcut": "Para negar ‘todos’, basta uma exceção: ‘ao menos um não’ → a frase exige revisão E transmissão; basta uma falhar → escreva ‘não revisado OU não transmitido’.", "type": "exact"
   },
   "ibge26-b007-065": {
     "beginner": ["A regra diz: se validou, então pode transmitir. Ela explica o que acontece quando há validação.", "Saber que pode transmitir não nos conta como isso aconteceu. Pode haver outra razão; a regra não diz ‘somente se validado’.", "Então não dá para afirmar nem que foi validado nem que não foi. A conclusão segura é que a regra sozinha não permite saber."],
-    "shortcut": "Só sabe que pode transmitir → a regra não diz que validação é o único caminho → não dá para saber se foi validado.", "type": "attention"
+    "shortcut": "A regra diz o que acontece quando valida, mas não que só assim pode transmitir → saber que pode transmitir não revela a causa → não dá para concluir se foi validado.", "type": "attention"
   },
   "ibge26-b007-066": {
     "beginner": ["Uma média de 16 por dia durante 5 dias exige um total de 16 × 5 = 80 visitas.", "Some os quatro dias já feitos: 12 + 16 + 18 + 14 = 60.", "Para chegar a 80, faltam 80 − 60 = 20 visitas no quinto dia."],
-    "shortcut": "Meta de 16 por 5 dias → 16×5=80 no total; já fez 60 → faltam 20.", "type": "exact"
+    "shortcut": "Transforme a média em meta total: 16 por dia durante 5 dias = 80 → os quatro primeiros somam 60 → 80−60=20 no último dia.", "type": "exact"
   },
   "ibge26-b007-067": {
     "beginner": ["Imagine que os dois postos tivessem enviado a mesma quantidade. Como o total é 88, cada um teria 88 ÷ 2 = 44.", "Mas um enviou 12 a mais. Para criar essa diferença, tire 6 do menor e acrescente 6 ao maior: a diferença total passa a ser 12.", "O menor enviou 44 − 6 = 38; o maior, 50. Confira: 38 + 50 = 88."],
-    "shortcut": "Soma 88 menos diferença 12 → 76; divida por 2 → o menor fez 38.", "type": "exact"
+    "shortcut": "Tire a diferença do total: 88−12=76 → o que sobra representa duas vezes o grupo menor → divida por 2: 76÷2=38.", "type": "exact"
   },
   "ibge26-b007-068": {
     "beginner": ["Veja quanto se soma de um número para o próximo: 4→7 soma 3; 7→13 soma 6; 13→22 soma 9; 22→34 soma 12.", "Os acréscimos também seguem uma sequência: 3, 6, 9, 12. Aumentam 3 a cada passo, então o próximo é 15.", "Some 15 ao último número: 34 + 15 = 49."],
-    "shortcut": "Aumentos: +3, +6, +9, +12 → próximo aumento +15 → 34+15=49.", "type": "exact"
+    "shortcut": "Observe quanto cada termo aumenta: +3, +6, +9, +12 → o aumento cresce 3, então o próximo é +15 → some ao último: 34+15=49.", "type": "exact"
   },
   "ibge26-b007-069": {
     "beginner": ["Conte todas as fichas: 4 verdes + 3 azuis + 1 vermelha = 8.", "‘Não ser azul’ significa ser verde ou vermelha: 4 + 1 = 5 fichas favoráveis.", "Probabilidade é casos favoráveis ÷ casos possíveis: 5/8."],
-    "shortcut": "Quer ‘não azul’? → total 8, azuis 3 → 8−3=5: chance 5/8.", "type": "exact"
+    "shortcut": "Para ‘não azul’, conte o contrário: 8 fichas no total menos 3 azuis = 5 → são 5 casos favoráveis entre 8 possíveis → chance 5/8.", "type": "exact"
   },
   "ibge26-b007-070": {
     "beginner": ["A primeira regra diz que registro incompleto nunca é transmitido. Portanto, qualquer registro transmitido precisa ser completo.", "O enunciado garante que alguns registros do lote foram transmitidos.", "Esses registros transmitidos são completos; então podemos concluir que alguns registros do lote estão completos."],
-    "shortcut": "Transmitido não pode ser incompleto → alguns foram transmitidos → esses alguns são completos.", "type": "exact"
+    "shortcut": "A regra exclui incompletos da transmissão; quem foi transmitido é completo → alguns foram transmitidos → esses alguns são completos.", "type": "exact"
   },
   "ibge26-b008-076": {
     "beginner": ["O total previsto é 120 visitas; 84 foram feitas. Para saber a fração cumprida, compare 84 com 120: 84/120.", "Simplifique dividindo os dois números por 12: 84/120 = 7/10.", "Sete décimos equivalem a 70%. Portanto, 70% da meta foi cumprida."],
-    "shortcut": "84 de 120 → divida ambos por 12: 7/10 → 70% cumpridos.", "type": "exact"
+    "shortcut": "Escreva feito sobre meta: 84/120 → divida os dois por 12: 7/10 → sete décimos significam 70 de cada 100, então 70% da meta foi cumprida.", "type": "exact"
   },
   "ibge26-b008-077": {
     "beginner": ["Primeiro descubra o ritmo de uma pessoa em um dia. Três agentes por quatro dias são 12 agentes-dias.", "Os 12 agentes-dias produziram 72 cadastros; cada agente-dia produz 72÷12 = 6.", "Cinco agentes durante três dias dão 15 agentes-dias. Então: 15×6 = 90 cadastros."],
-    "shortcut": "Pessoas×dias → antes 3×4=12, agora 5×3=15 → 72×1,25=90.", "type": "exact"
+    "shortcut": "Compare pessoas×dias: antes 3×4=12, agora 5×3=15 → o novo cenário tem 15/12=1,25 vezes o trabalho → 72×1,25=90.", "type": "exact"
   },
   "ibge26-b008-078": {
     "beginner": ["Para média 20 em 5 dias, a equipe precisa somar 5×20 = 100 entrevistas.", "Nos quatro primeiros dias, fez 12+16+20+24 = 72.", "O quinto dia precisa completar o total: 100−72 = 28 entrevistas."],
-    "shortcut": "Meta: 5×20=100 → já fez 72 → 100−72=28 no último dia.", "type": "exact"
+    "shortcut": "A média 20 por 5 dias exige 100 entrevistas → os quatro primeiros somam 72 → tire 72 de 100: faltam 28.", "type": "exact"
   },
   "ibge26-b008-079": {
     "beginner": ["Some os que estudam Português e Lógica: 28+23=51.", "As 9 pessoas que estudam ambas aparecem duas vezes nessa soma, então o total que estuda ao menos uma é 51−9=42.", "Das 50 pessoas, 42 estudam alguma das duas. Restam 50−42=8 que não estudam nenhuma."],
-    "shortcut": "Nenhuma das duas → 28+23−9=42 estudam ao menos uma → 50−42=8.", "type": "exact"
+    "shortcut": "Ache quem estuda pelo menos uma: 28+23−9=42 (desconte quem estuda ambas) → tire essas 42 das 50 pessoas → 8 não estudam nenhuma.", "type": "exact"
   },
   "ibge26-b008-080": {
     "beginner": ["Há 4 verdes, 3 azuis e 1 vermelha: ao todo são 8 cartões.", "Os que não são azuis são verdes ou vermelhos: 4+1=5.", "A chance é 5 dos 8 cartões, isto é, 5/8."],
-    "shortcut": "Não azul → 8 cartões menos 3 azuis = 5 → chance 5/8.", "type": "exact"
+    "shortcut": "Para ‘não azul’, use o total menos os azuis: 8−3=5 → há 5 casos favoráveis em 8 → probabilidade 5/8.", "type": "exact"
   },
   "ibge26-b008-081": {
     "beginner": ["Compare os números vizinhos: 9−5=4, 13−9=4, 17−13=4 e 21−17=4.", "O padrão é sempre acrescentar 4.", "Depois de 21 vem 21+4=25."],
-    "shortcut": "A sequência sempre aumenta 4 → some ao 21 → próximo número: 25.", "type": "exact"
+    "shortcut": "A diferença entre os termos se repete: sempre aumenta 4 → não precisa refazer a sequência toda; some 4 ao último → 21+4=25.", "type": "exact"
   },
   "ibge26-b008-082": {
     "beginner": ["O lote é o mesmo; mais dispositivos trabalhando juntos terminam em menos tempo. A relação é inversa.", "O trabalho total pode ser contado em dispositivo-horas: 8 dispositivos × 6 horas = 48.", "Com 12 dispositivos, divida o trabalho: 48÷12=4 horas."],
-    "shortcut": "Lote igual → 8×6=48 horas-dispositivo → 48÷12 dispositivos=4 horas.", "type": "exact"
+    "shortcut": "O lote exige sempre o mesmo trabalho: 8 dispositivos×6 horas=48 unidades → divida pelas 12 máquinas → 48÷12=4 horas.", "type": "exact"
   },
   "ibge26-b008-083": {
     "beginner": ["Chame ‘foi validado’ de P e ‘pode ser transmitido’ de Q. A regra original é: se P, então Q.", "A contrapositiva troca a ordem e nega as duas partes: se não Q, então não P.", "Assim: se não pode ser transmitido, então não foi validado. Essa frase sempre tem o mesmo valor lógico da regra original."],
-    "shortcut": "Contrapositiva → inverta a ordem e negue as duas partes → ‘não pode transmitir, então não validou’.", "type": "exact"
+    "shortcut": "Para achar a contrapositiva, inverta as ideias e negue as duas → ‘pode transmitir’ vira ‘não pode’; ‘validou’ vira ‘não validou’ → essa frase é equivalente à original.", "type": "exact"
   },
   "ibge26-b008-084": {
     "beginner": ["‘Todos foram revisados’ só é verdadeiro se não houver nenhuma exceção.", "Para provar que essa frase é falsa, basta encontrar um relatório que não foi revisado.", "Logo, a negação é ‘pelo menos um relatório não foi revisado’. Não precisamos dizer quantos outros foram revisados."],
-    "shortcut": "Negue ‘todos foram’ → basta existir um que não foi → ‘pelo menos um relatório não foi revisado’.", "type": "exact"
+    "shortcut": "‘Todos foram revisados’ falha se houver uma exceção → basta um relatório não revisado → a negação é ‘pelo menos um não foi revisado’.", "type": "exact"
   },
   "ibge26-b008-085": {
     "beginner": ["A palavra ‘e’ junta duas exigências: documento presente E assinatura presente.", "Para a frase inteira ser verdadeira, as duas partes precisam acontecer juntas.", "Portanto, a única situação que atende é apresentar documento e assinatura."],
-    "shortcut": "A palavra ‘e’ exige os dois itens → documento presente E assinatura presente → qualquer falta reprova a condição.", "type": "exact"
+    "shortcut": "A palavra ‘e’ exige cumprir as duas coisas → confira documento e assinatura separadamente → a condição só vale com ambos presentes.", "type": "exact"
   },
   "ibge26-b008-086": {
     "beginner": ["2% de R$ 1.000 são R$ 20: 1% é R$ 10, então 2% é R$ 20.", "Em juros simples, esses R$ 20 se repetem sobre os R$ 1.000 iniciais todo mês. Em 3 meses: 3×20=R$ 60 de juros.", "Montante é capital + juros: R$ 1.000+R$ 60=R$ 1.060."],
-    "shortcut": "2% de 1.000 = 20 por mês → 3×20=60 de juros → 1.000+60=1.060.", "type": "exact"
+    "shortcut": "1% de 1.000 é 10, então 2% é 20 por mês → em juros simples, 3×20=60 → some ao capital: 1.000+60=1.060.", "type": "exact"
   },
   "ibge26-b008-087": {
     "beginner": ["Para somar 2/5 e 1/4, precisamos que as partes tenham o mesmo tamanho. O menor denominador comum é 20.", "2/5=8/20 e 1/4=5/20; foram percorridos 8/20+5/20=13/20.", "A rota inteira é 20/20. Falta 20/20−13/20=7/20."],
-    "shortcut": "Partes percorridas → 2/5=8/20 e 1/4=5/20; total 13/20 → falta 7/20.", "type": "exact"
+    "shortcut": "Para somar as partes, deixe os denominadores iguais: 2/5=8/20 e 1/4=5/20 → foram 13/20 da rota → tire de 20/20: faltam 7/20.", "type": "exact"
   },
   "ibge26-b008-088": {
     "beginner": ["O primeiro posto já está escolhido; sobram 3 postos diferentes para as próximas posições.", "Na segunda posição há 3 escolhas; depois sobram 2; na última, 1.", "Multiplique as escolhas: 3×2×1=6 ordens."],
-    "shortcut": "Primeiro já escolhido → restam 3×2×1 ordens → 6 possibilidades.", "type": "exact"
+    "shortcut": "Como o primeiro posto já está fixo, não conte essa posição → para os três restantes há 3×2×1 ordens → são 6 visitas possíveis.", "type": "exact"
   },
   "ibge26-b008-089": {
     "beginner": ["Mediana é o valor que fica no meio quando os dados estão em ordem. Eles já estão ordenados: 7, 9, 12, 16, 40.", "Como há 5 tempos, o terceiro fica no centro.", "O terceiro valor é 12. O 40 é o maior, mas não é o valor central."],
-    "shortcut": "5 valores em ordem → o do meio é o 3º → mediana 12 (não o maior, 40).", "type": "exact"
+    "shortcut": "Com 5 valores ordenados, vá direto ao terceiro, que fica no centro → o terceiro é 12 → 40 é o maior, não a mediana.", "type": "exact"
   },
   "ibge26-b008-090": {
     "beginner": ["A taxa mudou de 10% para 8%. A diferença é 2 pontos percentuais (10−8).", "A questão pede a queda comparada ao valor inicial, que era 10%. Então calcule 2÷10=0,2.", "0,2 equivale a 20%. A queda foi de 2 pontos percentuais, ou 20% da taxa inicial."],
-    "shortcut": "Queda de 10 para 8 → diferença 2; compare com o início: 2÷10=20% → queda de 2 pontos, ou 20% da taxa.", "type": "exact"
+    "shortcut": "A taxa caiu 2 pontos: 10−8=2 → compare essa queda com a taxa inicial: 2÷10=0,2 → isso representa 20% de redução relativa.", "type": "exact"
   },
   "ibge26-b009-027": {
     "beginner": ["Na subida, a produção aumentou 100−80=20. Compare esse aumento com o começo (80): 20/80=25%.", "Na queda, diminuiu 100−80=20, mas agora a base é 100: 20/100=20%.", "Os mesmos 20 registros representam percentuais diferentes porque o valor de referência mudou."],
-    "shortcut": "Subida: 20 a mais sobre 80 → 20÷80=25%; queda: 20 a menos sobre 100 → 20÷100=20%.", "type": "exact"
+    "shortcut": "Na subida, a base é 80: aumentou 20, então 20÷80=25% → na queda, a base agora é 100: caiu 20, então 20÷100=20% → percentuais usam o valor de partida de cada etapa.", "type": "exact"
   },
   "ibge26-b009-028": {
     "beginner": ["Quatro agentes por 3 dias são 12 agentes-dias. Eles fizeram 96 cadastros, então cada agente-dia rende 96÷12=8.", "No novo cenário há 6 agentes por 5 dias: 30 agentes-dias.", "Mantendo 8 por agente-dia, faça 30×8=240 cadastros."],
-    "shortcut": "Pessoas×dias → antes 4×3=12, agora 6×5=30 → 96×2,5=240.", "type": "exact"
+    "shortcut": "Compare pessoas×dias: antes 4×3=12, agora 6×5=30 → são 30/12=2,5 vezes mais trabalho → 96×2,5=240 cadastros.", "type": "exact"
   },
   "ibge26-b009-029": {
     "beginner": ["Português apenas: 41−19=22. Tiramos quem acertou as duas para sobrar quem acertou só Português.", "Lógica apenas: 38−19=19.", "‘Exatamente uma’ significa um grupo ou o outro, mas não os dois: 22+19=41."],
-    "shortcut": "Tire os 19 repetidos → 41−19=22 e 38−19=19 → some: 22+19=41.", "type": "exact"
+    "shortcut": "Para contar ‘só Português’, tire os 19 que também acertaram Lógica: 41−19=22 → ‘só Lógica’: 38−19=19 → some os grupos exclusivos: 22+19=41.", "type": "exact"
   },
   "ibge26-b009-030": {
     "beginner": ["No começo há 3 cartões A em 5: chance de A primeiro = 3/5.", "Sem reposição, esse cartão não volta. Restam 2 cartões A entre 4: chance de A de novo = 2/4.", "Para as duas coisas acontecerem em sequência, multiplique: 3/5×2/4=6/20=3/10."],
-    "shortcut": "Duas fichas A sem devolver → 3/5×2/4 → simplifique 2/4 para 1/2 → 3/10.", "type": "exact"
+    "shortcut": "Na primeira retirada, 3 de 5 são A: 3/5 → sem devolver, ficam 2 A entre 4 cartões: 2/4=1/2 → multiplique: 3/5×1/2=3/10.", "type": "exact"
   },
   "ibge26-b009-031": {
     "beginner": ["Cada acerto do primeiro grupo vale 1 ponto: 15×1=15. Cada acerto do segundo vale 2: 6×2=12.", "A candidata ganhou 15+12=27 pontos.", "A prova vale 20×1+10×2=40 pontos. Portanto, ela fez 27/40 dos pontos possíveis."],
-    "shortcut": "Pontos ganhos: 15+2×6=27 → total da prova: 20+2×10=40 → fração 27/40.", "type": "exact"
+    "shortcut": "Conte pontos, não questões: os acertos valem 15×1+6×2=27 → a prova vale 20×1+10×2=40 → aproveitamento: 27/40.", "type": "exact"
   },
   "ibge26-b009-032": {
     "beginner": ["Com 6 números ordenados, não existe um único do meio: os dois centrais são o 3º e o 4º, 12 e 17.", "A mediana é a média desses dois: (12+17)÷2=14,5.", "O tempo 40 é muito alto e pode puxar a média comum para cima; por isso a mediana representa melhor o centro neste caso."],
-    "shortcut": "6 valores → pegue os dois do meio: 12 e 17 → (12+17)÷2=14,5; 40 é o extremo.", "type": "exact"
+    "shortcut": "Com 6 valores, os dois centrais são o 3º e o 4º: 12 e 17 → faça a média deles: (12+17)÷2=14,5 → 40 é um extremo e puxa a média comum.", "type": "exact"
   },
   "ibge26-b009-033": {
     "beginner": ["A razão 3:5 tem 3+5=8 partes. O total de 144 está dividido nessas 8 partes.", "Cada parte vale 144÷8=18.", "O posto maior tem 5 partes: 5×18=90 registros."],
-    "shortcut": "Razão 3:5 → 8 partes; 144÷8=18 cada → maior grupo: 5×18=90.", "type": "exact"
+    "shortcut": "A razão 3:5 soma 8 partes → divida o total: 144÷8=18 por parte → o posto maior tem 5 partes: 5×18=90.", "type": "exact"
   },
   "ibge26-b009-034": {
     "beginner": ["A equipe já fez 18 visitas. O dobro de 18 é 36; menos 6 dá 30 visitas ainda pendentes.", "A pergunta pede a meta total, não só o que falta.", "Some o que já foi feito com o que falta: 18+30=48 visitas."],
-    "shortcut": "Falta 2×18−6=30 → some as 18 já feitas → meta total 48.", "type": "exact"
+    "shortcut": "Calcule primeiro o que falta: dobro de 18 menos 6 = 30 → a meta inclui também as 18 já feitas → 30+18=48 visitas.", "type": "exact"
   },
   "ibge26-b009-035": {
     "beginner": ["Calcule os aumentos: de 4 para 7 é +3; depois +6, +9 e +12.", "O aumento cresce 3 por vez; o próximo será +15.", "Some ao último termo: 34+15=49."],
-    "shortcut": "Aumentos +3, +6, +9, +12 → próximo +15 → 34+15=49.", "type": "exact"
+    "shortcut": "As diferenças são +3, +6, +9 e +12 → elas crescem 3 de cada vez, então a próxima é +15 → some ao último termo: 34+15=49.", "type": "exact"
   },
   "ibge26-b009-036": {
     "beginner": ["‘Algum formulário está incompleto’ quer dizer que existe pelo menos um incompleto.", "Para negar isso, não pode existir nenhum incompleto.", "Se nenhum está incompleto, todos estão completos. Essa é a negação exata; ‘a maioria’ seria mais fraco."],
-    "shortcut": "Negue ‘existe incompleto’ → ‘não existe incompleto’ → todos estão completos.", "type": "exact"
+    "shortcut": "‘Algum está incompleto’ quer dizer que existe ao menos um → sua negação diz que não existe nenhum incompleto → portanto, todos estão completos.", "type": "exact"
   },
   "ibge26-b009-037": {
     "beginner": ["A regra promete: sempre que houver prorrogação, haverá aviso. A prorrogação é a condição P; aviso é Q.", "Para mostrar que a promessa falhou, precisamos encontrar P acontecendo sem Q.", "Então o caso que refuta a regra é: prazo prorrogado e aviso ausente."],
-    "shortcut": "Para derrubar ‘prorrogou, então avisou’ → procure prorrogação sem aviso → essa é a única falha direta.", "type": "exact"
+    "shortcut": "A regra promete aviso sempre que houver prorrogação → para refutá-la, encontre prazo prorrogado sem aviso → esse é o único caso que contradiz diretamente a promessa.", "type": "exact"
   },
   "ibge26-b009-038": {
     "beginner": ["A inscrição passa por uma destas rotas: documento E pagamento; OU isenção deferida.", "Sem pagamento, a primeira rota falha. Sem isenção, a segunda rota também falha.", "Logo, não há nenhuma rota válida de aceitação: a inscrição não é aceita."],
-    "shortcut": "Sem pagamento e sem isenção → nenhuma das duas rotas de aceitação funciona → inscrição não aceita.", "type": "exact"
+    "shortcut": "A inscrição pode passar por documento E pagamento, ou por isenção → sem pagamento, a primeira opção falha; sem isenção, a segunda também → não é aceita.", "type": "exact"
   },
   "ibge26-b009-039": {
     "beginner": ["A escala 1:50.000 diz que 1 cm no mapa representa 50.000 cm no terreno.", "50.000 cm são 500 m, porque 100 cm = 1 m. Então 3 cm representam 3×500=1.500 m.", "1.500 m são 1,5 km. Converter a unidade evita confundir centímetros com quilômetros."],
-    "shortcut": "Escala 1:50.000 → 1 cm vale 500 m → 3×500=1.500 m=1,5 km.", "type": "exact"
+    "shortcut": "Na escala 1:50.000, 1 cm representa 50.000 cm, ou 500 m → para 3 cm, faça 3×500=1.500 m → converta: 1,5 km.", "type": "exact"
   },
   "ibge26-b009-040": {
     "beginner": ["Velocidade média é distância total dividida pelo tempo total; não é sempre a média simples das velocidades.", "Primeiro trecho: 60÷30=2 horas. Segundo: 60÷60=1 hora. No total, 120 km em 3 horas.", "120÷3=40 km/h. O veículo passou mais tempo na velocidade menor, por isso a média não é 45."],
-    "shortcut": "Dois trechos de 60 km → 60÷30=2h e 60÷60=1h → 120 km÷3h=40 km/h.", "type": "exact"
+    "shortcut": "Calcule o tempo de cada trecho: 60 km a 30 km/h levam 2 h; 60 km a 60 km/h levam 1 h → no total, 120 km em 3 h → média: 40 km/h.", "type": "exact"
   },
   "ibge26-b009-041": {
     "beginner": ["1% de R$ 2.400 é R$ 24; então 1,5% é R$ 24 + metade de R$ 24 = R$ 36 por mês.", "Juros simples repetem o mesmo valor todo mês: 4×R$ 36=R$ 144.", "A pergunta quer só os juros acumulados, não o capital mais os juros."],
-    "shortcut": "1% de 2.400=24; metade disso é 0,5%=12 → 1,5%=36/mês → 4×36=R$ 144.", "type": "exact"
+    "shortcut": "Ache 1% de R$ 2.400: R$ 24; metade disso é 0,5%: R$ 12 → 1,5% rende R$ 36 por mês → em 4 meses simples: 4×36=R$ 144.", "type": "exact"
   },
   "ibge26-b009-042": {
     "beginner": ["Como os dois relatórios precisam ficar juntos, imagine-os presos como um único bloco. Agora há 4 itens na fila: o bloco e os outros 3 relatórios.", "Os 4 itens podem ser organizados de 4×3×2×1=24 maneiras.", "Dentro do bloco, os dois relatórios podem trocar de lugar: 2 maneiras. Total: 24×2=48."],
-    "shortcut": "Junte os dois relatórios num bloco → 4 itens: 4×3×2×1=24 → troque a ordem do par: 24×2=48.", "type": "exact"
+    "shortcut": "Como o par precisa ficar junto, trate-o como um bloco: agora são 4 itens para ordenar → 4×3×2×1=24 ordens → o par troca de lugar de 2 formas: 24×2=48.", "type": "exact"
   },
   "ibge26-b009-043": {
     "beginner": ["De manhã foi feito 2/3 do total; à tarde, 1/4 do mesmo total. Use 12 como denominador comum: 8/12+3/12=11/12.", "Do total inteiro (12/12), foram feitos 11/12. Portanto, falta 1/12.", "Se 1/12 corresponde a 10 visitas, o total (12/12) é 12×10=120 visitas."],
-    "shortcut": "Feito 2/3+1/4=11/12 → falta 1/12; se 1/12 vale 10 → total 10×12=120.", "type": "exact"
+    "shortcut": "Some o que foi feito: 2/3+1/4=8/12+3/12=11/12 → sobra 1/12, que vale 10 visitas → multiplique 10 por 12: a meta era 120.", "type": "exact"
   },
   "ibge26-b009-044": {
     "beginner": ["A razão 9:1 tem 10 partes ao todo: 9 válidas e 1 inválida.", "As 10 partes juntas são 20 registros, então cada parte vale 20÷10=2.", "Os válidos ocupam 9 partes: 9×2=18."],
-    "shortcut": "Razão 9:1 → 10 partes no total; 20÷10=2 por parte → válidos: 9×2=18.", "type": "exact"
+    "shortcut": "Na razão 9:1, o total tem 10 partes → 20 registros divididos por 10 dão 2 por parte → válidos são 9 partes: 9×2=18.", "type": "exact"
   },
   "ibge26-b009-045": {
     "beginner": ["‘Ao menos um vermelho’ inclui um ou dois vermelhos. É mais fácil calcular o contrário: nenhum vermelho.", "Nenhum vermelho significa azul nas duas retiradas. Com reposição, a chance azul continua 6/10 em cada uma.", "Chance de dois azuis: 6/10×6/10=36/100. Então a chance de ao menos um vermelho é 100/100−36/100=64/100."],
-    "shortcut": "‘Ao menos um vermelho’ → tire a chance de dois azuis → 1−(6/10×6/10)=64/100.", "type": "exact"
+    "shortcut": "‘Ao menos um vermelho’ é mais fácil pelo contrário: nenhum vermelho significa dois azuis → com reposição, chance azul é 6/10 nas duas: 6/10×6/10=36/100 → tire do total: 100/100−36/100=64/100.", "type": "exact"
   },
   "ibge26-b009-046": {
     "beginner": ["Os dois postos somam 78. Se fossem iguais, cada um teria 78÷2=39.", "O primeiro tem 12 a mais. Para criar uma diferença de 12 em torno de 39, acrescente 6 ao primeiro e tire 6 do segundo.", "O primeiro fez 39+6=45. Confira: o segundo fez 33; 45+33=78 e 45−33=12."],
-    "shortcut": "Quer o maior? Some total e diferença: 78+12=90 → divida por 2 → 45.", "type": "exact"
+    "shortcut": "Para achar o maior, junte a soma com a diferença: 78+12=90 → isso corresponde a duas vezes o maior → divida por 2: 45 atendimentos.", "type": "exact"
   },
   "ibge26-b010-021": {
     "beginner": ["Some os formulários com marca A ou B: 48+37=85. Quem tem as duas marcas entrou duas vezes.", "Subtraia os 15 repetidos uma vez: 85−15=70 formulários com ao menos uma marca.", "Dos 90 totais, 90−70=20 não tinham nenhuma."],
-    "shortcut": "Nenhuma marca → primeiro 48+37−15=70 com alguma → 90−70=20 sem marca.", "type": "exact"
+    "shortcut": "Para achar quem não tem marca, conte primeiro quem tem pelo menos uma: 48+37−15=70 → tire esses 70 formulários dos 90 → 90−70=20 sem nenhuma.", "type": "exact"
   },
   "ibge26-b010-022": {
     "beginner": ["P = mapa validado; Q = setor liberado. A regra é P→Q.", "O setor não foi liberado: temos não Q. Se P tivesse acontecido, a regra obrigaria Q; mas Q não aconteceu.", "Logo, o mapa não foi validado. Essa conclusão usa a contrapositiva da regra."],
-    "shortcut": "Setor não liberado → a regra exigia liberação se validado → mapa não foi validado.", "type": "exact"
+    "shortcut": "A regra garante liberação quando o mapa é validado → o setor não foi liberado, então essa condição não aconteceu → o mapa não foi validado.", "type": "exact"
   },
   "ibge26-b010-023": {
     "beginner": ["A razão 4:3 tem 7 partes. Cada parte vale 168÷7=24; os grupos começaram com 4×24=96 e 3×24=72.", "Passar 12 do maior para o menor tira 12 de um lado e acrescenta 12 ao outro.", "As novas quantidades são 84 e 84; a diferença final é zero."],
-    "shortcut": "Diferença inicial: 1 parte×24=24 → transferir 12 reduz a distância em 24 → ficam iguais: diferença 0.", "type": "exact"
+    "shortcut": "A diferença inicial é 1 parte: 168÷7=24 → ao transferir 12, um grupo perde 12 e o outro ganha 12; a diferença cai 24 → ficam iguais.", "type": "exact"
   },
   "ibge26-b010-024": {
     "beginner": ["Cores diferentes podem sair em duas ordens: verde depois amarelo, OU amarelo depois verde.", "Verde-amarelo: 5/8×3/7=15/56. Sem reposição, depois da primeira retirada restam 7 fichas.", "Amarelo-verde tem a mesma chance, 15/56. Some os dois caminhos: 30/56=15/28."],
-    "shortcut": "Cores diferentes em duas ordens → 2×(5/8×3/7)=30/56 → simplifique: 15/28.", "type": "exact"
+    "shortcut": "Há duas ordens de cores diferentes: verde-amarelo e amarelo-verde → cada uma tem chance 5/8×3/7; dobre: 30/56 → simplifique para 15/28.", "type": "exact"
   },
   "ibge26-b010-025": {
     "beginner": ["Quatro tempos com média 18 somam 4×18=72 minutos.", "Adicione o quinto tempo: 72+28=100 minutos ao todo.", "Divida pelos 5 atendimentos: 100÷5=20 minutos de média."],
-    "shortcut": "O novo tempo tem 10 a mais que 18 → espalhe esse extra pelos 5 atendimentos: 10÷5=2 → média 20.", "type": "exact"
+    "shortcut": "O atendimento de 28 min tem 10 a mais que a média 18 → divida esse excesso pelos 5 atendimentos: 10÷5=2 → nova média: 18+2=20 min.", "type": "exact"
   },
   "ibge26-b010-026": {
     "beginner": ["Compare cada termo: 9−6=3; 14−9=5; 21−14=7; 30−21=9.", "Os aumentos são ímpares consecutivos: 3, 5, 7, 9. O próximo é 11.", "Some ao último termo: 30+11=41."],
-    "shortcut": "Aumentos ímpares: +3, +5, +7, +9 → próximo +11 → 30+11=41.", "type": "exact"
+    "shortcut": "Os aumentos são ímpares consecutivos: +3, +5, +7, +9 → depois de +9 vem +11 → some ao último termo: 30+11=41.", "type": "exact"
   },
   "ibge26-b010-027": {
     "beginner": ["Se as duas equipes tivessem registrado o mesmo, cada uma teria 83÷2=41,5.", "A diferença é 7: a menor fica 3,5 abaixo de 41,5 e a maior 3,5 acima.", "A menor registrou 41,5−3,5=38. Confira: 38+45=83 e a diferença é 7."],
-    "shortcut": "Quer o menor? 83−7=76 → metade de 76 → 38.", "type": "exact"
+    "shortcut": "Para achar o menor, tire a diferença do total: 83−7=76 → isso equivale a duas vezes o menor → 76÷2=38.", "type": "exact"
   },
   "ibge26-b010-028": {
     "beginner": ["Primeiro ache quantos precisam de revisão: 30% de 240. Dez por cento é 24; três vezes isso é 72.", "Um quarto de 72 foi revisado: 72÷4=18.", "Ainda faltam 72−18=54 cadastros."],
-    "shortcut": "30% de 240=72 → revise 1/4: 72÷4=18 → restam 72−18=54.", "type": "exact"
+    "shortcut": "30% de 240 são 72 cadastros pendentes → revisou 1/4, então ainda restam 3/4 → 72÷4×3=54 precisam de revisão.", "type": "exact"
   },
   "ibge26-b010-029": {
     "beginner": ["A faixa tem 2 m em cada lado do retângulo. No comprimento, tire 2 m da esquerda e 2 m da direita: 18−4=14 m.", "Na largura, também tire 2 m de cada lado: 12−4=8 m.", "Área central = 14×8=112 m². Não basta tirar 2 uma vez de cada medida."],
-    "shortcut": "Faixa de 2 m nos dois lados → centro: 18−4=14 e 12−4=8 → 14×8=112 m².", "type": "exact"
+    "shortcut": "A faixa de 2 m ocupa os dois lados de cada medida, então tire 4 m de cada dimensão → o centro mede 14×8 m → área: 14×8=112 m².", "type": "exact"
   },
   "ibge26-b010-030": {
     "beginner": ["A frase tem duas partes ligadas por ‘e’: A = todos os mapas foram revisados; B = algum setor foi liberado.", "Negar ‘A e B’ é dizer que A falhou OU B falhou.", "‘A falhou’ significa algum mapa não foi revisado. ‘B falhou’ significa nenhum setor foi liberado. Junte com ‘ou’."],
-    "shortcut": "Negue a frase com ‘e’ → use ‘ou’; ‘todos’ vira ‘algum não’ e ‘algum’ vira ‘nenhum’ → junte as duas partes.", "type": "exact"
+    "shortcut": "Ao negar uma frase com ‘e’, ligue as falhas com ‘ou’ → ‘todos foram’ vira ‘algum não foi’; ‘algum foi’ vira ‘nenhum foi’ → junte as duas negações.", "type": "exact"
   },
   "ibge26-b010-031": {
     "beginner": ["A primeira informação já diz que cada supervisor pertence ao grupo dos servidores.", "A segunda diz que alguns servidores também são motoristas, mas não diz se são supervisores.", "A única certeza é repetir a inclusão dada: todo supervisor é servidor. Não podemos inverter para dizer que todo servidor é supervisor."],
-    "shortcut": "A questão pergunta o que já foi garantido → repita ‘todo supervisor é servidor’ → não conclua que motorista é supervisor.", "type": "attention"
+    "shortcut": "Procure o que já está garantido pelas premissas → todo supervisor é servidor → não inverta: isso não prova que todo motorista é supervisor.", "type": "attention"
   },
   "ibge26-b010-032": {
     "beginner": ["Cada caixa comporta 24 formulários. Oito caixas comportam 8×24=192, mas precisamos guardar 196.", "Faltam 196−192=4 formulários; por isso, oito caixas não bastam.", "Abra uma nona caixa para os 4 restantes. O mínimo é 9 caixas."],
-    "shortcut": "24×8=192, faltam 4 formulários → precisa abrir mais uma caixa → 8+1=9.", "type": "exact"
+    "shortcut": "Veja quantas caixas cheias cabem: 24×8=192 → ainda faltam guardar 4 formulários, então abra outra caixa → mínimo: 8+1=9.", "type": "exact"
   },
   "ibge26-b010-033": {
     "beginner": ["O lote inteiro é 1. Depois de conferir 3/5, falta 2/5.", "Metade do que faltava foi conferida: metade de 2/5 é 1/5.", "A outra metade do restante também é 1/5; essa é a parte que continua sem conferir."],
-    "shortcut": "Depois de 3/5, sobra 2/5 → metade dessa sobra continua pendente → 2/5÷2=1/5.", "type": "exact"
+    "shortcut": "Depois de conferir 3/5, restam 2/5 do lote → metade foi feita e a outra metade ainda falta → 2/5÷2=1/5 do lote.", "type": "exact"
   },
   "ibge26-b010-034": {
     "beginner": ["A regra proíbe divulgar arquivo sem autorização.", "Este arquivo não tem autorização, então pertence exatamente à categoria proibida pela regra.", "Portanto, este arquivo não pode ser divulgado. Não conclua o contrário sobre arquivos autorizados: ter autorização não obriga a divulgação."],
-    "shortcut": "Sem autorização → não pode divulgar → este arquivo está sem autorização → não pode divulgar.", "type": "exact"
+    "shortcut": "A regra proíbe divulgar qualquer arquivo sem autorização → este arquivo não tem autorização → aplique a regra: ele não pode ser divulgado.", "type": "exact"
   },
   "ibge26-b010-035": {
     "beginner": ["No primeiro cenário, conte horas de trabalho de todas as pessoas: 5 agentes×6 horas×4 dias=120 agente-horas.", "360 verificações divididas por 120 agente-horas dão 3 verificações por agente-hora.", "No segundo cenário há 4×6×5=120 agente-horas também. Ao mesmo ritmo, são 120×3=360 verificações."],
-    "shortcut": "Pessoas×horas×dias → antes 5×6×4=120 e agora 4×6×5=120 → mesmas 360 verificações.", "type": "exact"
+    "shortcut": "Compare pessoas×horas por dia×dias: antes 5×6×4=120, agora 4×6×5=120 → o esforço total é igual → continuam 360 verificações.", "type": "exact"
   },
   "ibge26-log-0001": {
     "beginner": ["Todo ACR usa o sistema: cada pessoa ACR está dentro do grupo de usuários do sistema.", "‘Alguns supervisores são ACR’ garante que existe pelo menos um supervisor que também é ACR.", "Esse supervisor usa o sistema. Portanto, existe ao menos um supervisor que usa o sistema."],
-    "shortcut": "Alguns supervisores são ACR → todo ACR usa o sistema → esses supervisores usam o sistema.", "type": "exact"
+    "shortcut": "‘Alguns’ garante ao menos um supervisor que é ACR → todo ACR usa o sistema → esse supervisor também usa; diga ‘alguns’, não ‘todos’.", "type": "exact"
   },
   "ibge26-log-0002": {
     "beginner": ["Calcule primeiro a parte concluída: 72 de 240. Como 240÷10=24, 72 é 3×24; então foi feito 30%.", "A meta toda vale 100%. Se 30% já foi feito, falta 100%−30%=70%.", "A pergunta pede o percentual que falta, não o que já foi concluído."],
-    "shortcut": "72 de 240 → 72/240=3/10=30% feito → 100%−30%=70% falta.", "type": "exact"
+    "shortcut": "72/240 simplifica para 3/10, ou 30% concluídos → a meta inteira vale 100% → 100%−30%=70% ainda faltam.", "type": "exact"
   },
   "ibge26-log-0003": {
     "beginner": ["A regra diz: transmissão concluída → registro atualizado.", "O registro não foi atualizado. Se a transmissão tivesse sido concluída, ele precisaria estar atualizado; isso contradiz o fato informado.", "Logo, a transmissão não foi concluída."],
-    "shortcut": "Registro não atualizado → a regra exigia atualização se concluída → transmissão não foi concluída.", "type": "exact"
+    "shortcut": "Se a transmissão tivesse sido concluída, o registro estaria atualizado → ele não está → portanto, a transmissão não foi concluída.", "type": "exact"
   }
 }
