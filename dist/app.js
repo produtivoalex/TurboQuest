@@ -681,10 +681,20 @@ if (typeof document !== 'undefined') {
     const shortcut = studyShortcut(q);
     const tip = document.createElement(guide ? 'details' : 'div'); tip.className = guide ? 'shortcut-block advanced-shortcut' : 'shortcut-block';
     const tipHead = document.createElement(guide ? 'summary' : 'div'); tipHead.className = 'shortcut-head';
-    const tipTitle = document.createElement('b'); tipTitle.textContent = guide ? 'Superatalho · já tenho a base' : /mental|dividir por|metade|simplifique|cancele|decomponha|fração|frações/.test(shortcut.text.toLowerCase()) ? 'Cálculo mental / caminho curto' : 'Atalho de prova';
+    const tipTitle = document.createElement('b'); tipTitle.textContent = guide ? 'Atalho rápido · já tenho a base' : /mental|dividir por|metade|simplifique|cancele|decomponha|fração|frações/.test(shortcut.text.toLowerCase()) ? 'Cálculo mental / caminho curto' : 'Atalho de prova';
     const shortcutType = document.createElement('span'); shortcutType.className = 'shortcut-badge';
-    shortcutType.textContent = guide ? ({ exact: 'EXATO', attention: 'ATENÇÃO', estimate: 'ESTIMATIVA' }[guide.type] || 'MÉTODO RÁPIDO') : /^Atalho: antes da conta exata, estime/i.test(shortcut.text) ? 'ESTIMATIVA' : /pegadinha|não confunda|cuidado/i.test(shortcut.text) ? 'ATENÇÃO' : /mental|dividir por|metade|simplifique|cancele|fração|frações|25%|10%|soma S e diferença/i.test(shortcut.text) ? 'EXATO' : 'MÉTODO RÁPIDO';
-    const tipBody = document.createElement('p'); tipBody.className = 'shortcut-text'; tipBody.textContent = guide?.shortcut || shortcut.text;
+    shortcutType.textContent = guide ? ({ exact: 'EXATO', attention: 'EXATO', estimate: 'ESTIMATIVA' }[guide.type] || 'MÉTODO RÁPIDO') : /^Atalho: antes da conta exata, estime/i.test(shortcut.text) ? 'ESTIMATIVA' : /pegadinha|não confunda|cuidado/i.test(shortcut.text) ? 'ATENÇÃO' : /mental|dividir por|metade|simplifique|cancele|fração|frações|25%|10%|soma S e diferença/i.test(shortcut.text) ? 'EXATO' : 'MÉTODO RÁPIDO';
+    const tipBody = document.createElement(guide ? 'div' : 'p'); tipBody.className = guide ? 'shortcut-flow' : 'shortcut-text';
+    if (guide) {
+      const parts = guide.shortcut.split('→').map(part => part.trim()).filter(Boolean);
+      parts.forEach((part, index) => {
+        const step = document.createElement('span'); step.className = 'shortcut-step';
+        const label = document.createElement('small'); label.textContent = index === 0 ? 'RECONHEÇA' : index === parts.length - 1 ? 'RESULTADO' : 'FAÇA RÁPIDO';
+        const content = document.createElement('span'); content.textContent = part;
+        step.append(label, content); tipBody.append(step);
+        if (index < parts.length - 1) { const arrow = document.createElement('span'); arrow.className = 'shortcut-arrow'; arrow.setAttribute('aria-hidden', 'true'); arrow.textContent = '→'; tipBody.append(arrow); }
+      });
+    } else tipBody.textContent = shortcut.text;
     tipHead.append(tipTitle, shortcutType); tip.append(tipHead, tipBody);
     if (ok && speedBaseline && questionMs >= 10000 && questionMs <= speedBaseline * .85 && speedDayRate >= .8) {
       const speed = document.createElement('div'); speed.className = 'speed-note';
@@ -917,5 +927,5 @@ if (typeof document !== 'undefined') {
     $('#available').textContent = bank.length; renderSubjects(); renderProfile(); renderResume();
     if (manifest?.exam?.categoryLabel) $('#examType').textContent = `${manifest.exam.categoryLabel} · IBGE · ${manifest.exam.board} · 2026`;
   }).catch(() => toast('Não foi possível carregar o banco. Verifique sua conexão.'));
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=math-guides-v1').then(registration => registration.update()).catch(() => {});
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=visual-shortcuts-v1').then(registration => registration.update()).catch(() => {});
 }
