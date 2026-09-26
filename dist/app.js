@@ -411,7 +411,7 @@ if (typeof module !== 'undefined') module.exports = {
 
 if (typeof document !== 'undefined') {
   const state = loadState(localStorage);
-  let bank = [], manifest = null, videoCatalog = null, queue = [], at = 0, session = null, timer = null;
+  let bank = [], manifest = null, videoCatalog = null, mathGuides = {}, queue = [], at = 0, session = null, timer = null;
   let questionMs = 0, sessionMs = 0, lastTick = 0, answered = false, confidenceSaved = false;
   let selectedAnswer = null, speedBaseline = null, speedDayRate = null;
   let sessionResult = { done: 0, correct: 0, totalMs: 0, subjects: {}, awards: [] };
@@ -670,14 +670,21 @@ if (typeof document !== 'undefined') {
     const resultLine = document.createElement('small'); resultLine.textContent = ok ? 'Boa! Veja um jeito mais rápido de chegar lá.' : 'Confira a lógica e um caminho mais enxuto.';
     const resultCopy = document.createElement('div'); resultCopy.append(resultTitle, resultLine);
     learningHead.append(learningIcon, resultCopy);
-    const explanation = document.createElement('p'); explanation.className = 'answer-explanation'; explanation.textContent = q.explanation;
+    const guide = mathGuides[q.id];
+    const explanation = document.createElement(guide ? 'div' : 'p'); explanation.className = guide ? 'beginner-guide' : 'answer-explanation';
+    if (guide) {
+      const beginnerTitle = document.createElement('b'); beginnerTitle.className = 'beginner-title'; beginnerTitle.textContent = 'Entenda do zero · passo a passo';
+      const steps = document.createElement('ol');
+      guide.beginner.forEach(step => { const item = document.createElement('li'); item.textContent = step; steps.append(item); });
+      explanation.append(beginnerTitle, steps);
+    } else explanation.textContent = q.explanation;
     const shortcut = studyShortcut(q);
-    const tip = document.createElement('div'); tip.className = 'shortcut-block';
-    const tipHead = document.createElement('div'); tipHead.className = 'shortcut-head';
-    const tipTitle = document.createElement('b'); tipTitle.textContent = /mental|dividir por|metade|simplifique|cancele|decomponha|fração|frações/.test(shortcut.text.toLowerCase()) ? 'Cálculo mental / caminho curto' : 'Atalho de prova';
+    const tip = document.createElement(guide ? 'details' : 'div'); tip.className = guide ? 'shortcut-block advanced-shortcut' : 'shortcut-block';
+    const tipHead = document.createElement(guide ? 'summary' : 'div'); tipHead.className = 'shortcut-head';
+    const tipTitle = document.createElement('b'); tipTitle.textContent = guide ? 'Superatalho · já tenho a base' : /mental|dividir por|metade|simplifique|cancele|decomponha|fração|frações/.test(shortcut.text.toLowerCase()) ? 'Cálculo mental / caminho curto' : 'Atalho de prova';
     const shortcutType = document.createElement('span'); shortcutType.className = 'shortcut-badge';
-    shortcutType.textContent = /^Atalho: antes da conta exata, estime/i.test(shortcut.text) ? 'ESTIMATIVA' : /pegadinha|não confunda|cuidado/i.test(shortcut.text) ? 'ATENÇÃO' : /mental|dividir por|metade|simplifique|cancele|fração|frações|25%|10%|soma S e diferença/i.test(shortcut.text) ? 'EXATO' : 'MÉTODO RÁPIDO';
-    const tipBody = document.createElement('p'); tipBody.className = 'shortcut-text'; tipBody.textContent = shortcut.text;
+    shortcutType.textContent = guide ? ({ exact: 'EXATO', attention: 'ATENÇÃO', estimate: 'ESTIMATIVA' }[guide.type] || 'MÉTODO RÁPIDO') : /^Atalho: antes da conta exata, estime/i.test(shortcut.text) ? 'ESTIMATIVA' : /pegadinha|não confunda|cuidado/i.test(shortcut.text) ? 'ATENÇÃO' : /mental|dividir por|metade|simplifique|cancele|fração|frações|25%|10%|soma S e diferença/i.test(shortcut.text) ? 'EXATO' : 'MÉTODO RÁPIDO';
+    const tipBody = document.createElement('p'); tipBody.className = 'shortcut-text'; tipBody.textContent = guide?.shortcut || shortcut.text;
     tipHead.append(tipTitle, shortcutType); tip.append(tipHead, tipBody);
     if (ok && speedBaseline && questionMs >= 10000 && questionMs <= speedBaseline * .85 && speedDayRate >= .8) {
       const speed = document.createElement('div'); speed.className = 'speed-note';
@@ -689,10 +696,12 @@ if (typeof document !== 'undefined') {
       const source = document.createElement('a'); source.href = shortcut.source[1]; source.target = '_blank'; source.rel = 'noopener noreferrer';
       source.className = 'tip-source'; source.textContent = `Ver método: ${shortcut.source[0]} ↗`; tip.append(document.createElement('br'), source);
     }
-    const why = document.createElement('details'); why.className = 'why-shortcut';
-    const whySummary = document.createElement('summary'); whySummary.textContent = 'Por que esse caminho funciona?';
-    const whyText = document.createElement('p'); whyText.textContent = shortcutType.textContent === 'ESTIMATIVA' ? 'A estimativa serve para descartar opções incompatíveis; confirme a alternativa restante com o enunciado antes de marcar.' : shortcutType.textContent === 'ATENÇÃO' ? 'O atalho evita a confusão destacada sem alterar a regra cobrada. Confira a palavra-chave do enunciado antes de concluir.' : shortcutType.textContent === 'EXATO' ? 'O cálculo foi reorganizado, não aproximado: simplificar ou decompor preserva o mesmo valor e reduz as contas.' : 'A estratégia reduz etapas sem pular a condição principal. Use a explicação acima para conferir o resultado.';
-    why.append(whySummary, whyText); tip.append(why);
+    if (!guide) {
+      const why = document.createElement('details'); why.className = 'why-shortcut';
+      const whySummary = document.createElement('summary'); whySummary.textContent = 'Por que esse caminho funciona?';
+      const whyText = document.createElement('p'); whyText.textContent = shortcutType.textContent === 'ESTIMATIVA' ? 'A estimativa serve para descartar opções incompatíveis; confirme a alternativa restante com o enunciado antes de marcar.' : shortcutType.textContent === 'ATENÇÃO' ? 'O atalho evita a confusão destacada sem alterar a regra cobrada. Confira a palavra-chave do enunciado antes de concluir.' : shortcutType.textContent === 'EXATO' ? 'O cálculo foi reorganizado, não aproximado: simplificar ou decompor preserva o mesmo valor e reduz as contas.' : 'A estratégia reduz etapas sem pular a condição principal. Use a explicação acima para conferir o resultado.';
+      why.append(whySummary, whyText); tip.append(why);
+    }
     $('#explain').append(learning);
     const video = studyVideo(q, videoCatalog);
     const videoCard = document.createElement('div'); videoCard.className = 'video-card';
@@ -901,11 +910,12 @@ if (typeof document !== 'undefined') {
   Promise.all([
     fetch(`/content/ibge-2026/questions.json?v=${Date.now()}`, { cache: 'no-store' }).then(response => { if (!response.ok) throw new Error('Banco indisponível'); return response.json(); }),
     fetch('/content/ibge-2026/banco-manifesto.json', { cache: 'no-store' }).then(response => response.ok ? response.json() : null).catch(() => null),
-    fetch('/content/ibge-2026/video-catalog.json', { cache: 'no-store' }).then(response => response.ok ? response.json() : null).catch(() => null)
-  ]).then(([data, exam, videos]) => {
-    bank = (data.questions || []).filter(q => q.status === 'approved'); manifest = exam; videoCatalog = videos;
+    fetch('/content/ibge-2026/video-catalog.json', { cache: 'no-store' }).then(response => response.ok ? response.json() : null).catch(() => null),
+    fetch('/content/ibge-2026/math-guides.json', { cache: 'no-store' }).then(response => response.ok ? response.json() : {}).catch(() => ({}))
+  ]).then(([data, exam, videos, guides]) => {
+    bank = (data.questions || []).filter(q => q.status === 'approved'); manifest = exam; videoCatalog = videos; mathGuides = guides;
     $('#available').textContent = bank.length; renderSubjects(); renderProfile(); renderResume();
     if (manifest?.exam?.categoryLabel) $('#examType').textContent = `${manifest.exam.categoryLabel} · IBGE · ${manifest.exam.board} · 2026`;
   }).catch(() => toast('Não foi possível carregar o banco. Verifique sua conexão.'));
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=unified-shortcut-v1').then(registration => registration.update()).catch(() => {});
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=math-guides-v1').then(registration => registration.update()).catch(() => {});
 }
