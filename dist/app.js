@@ -663,26 +663,37 @@ if (typeof document !== 'undefined') {
     answered = true; selectedAnswer = index;
     const buttons = [...$('#answers').children];
     buttons.forEach((button, i) => { button.disabled = true; if (i === q.answer) button.classList.add('correct'); if (i === index && !ok) button.classList.add('wrong'); });
-    const explanation = document.createElement('div'); explanation.className = 'explanation';
-    const title = document.createElement('b'); title.textContent = ok ? 'Correto.' : 'Ainda não.';
-    const body = document.createElement('span'); body.textContent = ` ${q.explanation}`;
-    explanation.append(title, document.createElement('br'), body);
+    const learning = document.createElement('section'); learning.className = `learning-card ${ok ? 'is-correct' : 'is-wrong'}`;
+    const learningHead = document.createElement('div'); learningHead.className = 'learning-head';
+    const learningIcon = document.createElement('span'); learningIcon.className = 'learning-icon'; learningIcon.setAttribute('aria-hidden', 'true'); learningIcon.textContent = ok ? '✓' : '↗';
+    const resultTitle = document.createElement('b'); resultTitle.textContent = ok ? 'Resposta correta' : 'Vamos aprender com essa';
+    const resultLine = document.createElement('small'); resultLine.textContent = ok ? 'Boa! Veja um jeito mais rápido de chegar lá.' : 'Confira a lógica e um caminho mais enxuto.';
+    const resultCopy = document.createElement('div'); resultCopy.append(resultTitle, resultLine);
+    learningHead.append(learningIcon, resultCopy);
+    const explanation = document.createElement('p'); explanation.className = 'answer-explanation'; explanation.textContent = q.explanation;
+    const shortcut = studyShortcut(q);
+    const tip = document.createElement('div'); tip.className = 'shortcut-block';
+    const tipHead = document.createElement('div'); tipHead.className = 'shortcut-head';
+    const tipTitle = document.createElement('b'); tipTitle.textContent = /mental|dividir por|metade|simplifique|cancele|decomponha|fração|frações/.test(shortcut.text.toLowerCase()) ? 'Cálculo mental / caminho curto' : 'Atalho de prova';
+    const shortcutType = document.createElement('span'); shortcutType.className = 'shortcut-badge';
+    shortcutType.textContent = /^Atalho: antes da conta exata, estime/i.test(shortcut.text) ? 'ESTIMATIVA' : /pegadinha|não confunda|cuidado/i.test(shortcut.text) ? 'ATENÇÃO' : /mental|dividir por|metade|simplifique|cancele|fração|frações|25%|10%|soma S e diferença/i.test(shortcut.text) ? 'EXATO' : 'MÉTODO RÁPIDO';
+    const tipBody = document.createElement('p'); tipBody.className = 'shortcut-text'; tipBody.textContent = shortcut.text;
+    tipHead.append(tipTitle, shortcutType); tip.append(tipHead, tipBody);
     if (ok && speedBaseline && questionMs >= 10000 && questionMs <= speedBaseline * .85 && speedDayRate >= .8) {
       const speed = document.createElement('div'); speed.className = 'speed-note';
       speed.textContent = `Bom ritmo: ${Math.round((1 - questionMs / speedBaseline) * 100)}% mais rápido que seu padrão, mantendo a precisão.`;
-      explanation.append(speed);
+      learning.append(speed);
     }
-    $('#explain').append(explanation);
-    const tip = document.createElement('div'); tip.className = 'tip';
-    const tipTitle = document.createElement('b'); tipTitle.textContent = 'Atalho de prova';
-    const tipBody = document.createElement('span');
-    const shortcut = studyShortcut(q); tipBody.textContent = shortcut.text;
-    tip.append(tipTitle, tipBody);
+    learning.append(learningHead, explanation, tip);
     if (shortcut.source) {
       const source = document.createElement('a'); source.href = shortcut.source[1]; source.target = '_blank'; source.rel = 'noopener noreferrer';
       source.className = 'tip-source'; source.textContent = `Ver método: ${shortcut.source[0]} ↗`; tip.append(document.createElement('br'), source);
     }
-    $('#explain').append(tip);
+    const why = document.createElement('details'); why.className = 'why-shortcut';
+    const whySummary = document.createElement('summary'); whySummary.textContent = 'Por que esse caminho funciona?';
+    const whyText = document.createElement('p'); whyText.textContent = shortcutType.textContent === 'ESTIMATIVA' ? 'A estimativa serve para descartar opções incompatíveis; confirme a alternativa restante com o enunciado antes de marcar.' : shortcutType.textContent === 'ATENÇÃO' ? 'O atalho evita a confusão destacada sem alterar a regra cobrada. Confira a palavra-chave do enunciado antes de concluir.' : shortcutType.textContent === 'EXATO' ? 'O cálculo foi reorganizado, não aproximado: simplificar ou decompor preserva o mesmo valor e reduz as contas.' : 'A estratégia reduz etapas sem pular a condição principal. Use a explicação acima para conferir o resultado.';
+    why.append(whySummary, whyText); tip.append(why);
+    $('#explain').append(learning);
     const video = studyVideo(q, videoCatalog);
     const videoCard = document.createElement('div'); videoCard.className = 'video-card';
     const videoTitle = document.createElement('b'); videoTitle.textContent = video?.match === 'curated' ? 'Aula selecionada para este assunto' : video?.match === 'specific' ? 'Vídeo indexado sobre este assunto' : video ? 'Vídeo relacionado ao assunto' : 'Quer ver uma aula?';
@@ -896,5 +907,5 @@ if (typeof document !== 'undefined') {
     $('#available').textContent = bank.length; renderSubjects(); renderProfile(); renderResume();
     if (manifest?.exam?.categoryLabel) $('#examType').textContent = `${manifest.exam.categoryLabel} · IBGE · ${manifest.exam.board} · 2026`;
   }).catch(() => toast('Não foi possível carregar o banco. Verifique sua conexão.'));
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=fast-tips-v1').then(registration => registration.update()).catch(() => {});
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js?v=unified-shortcut-v1').then(registration => registration.update()).catch(() => {});
 }
